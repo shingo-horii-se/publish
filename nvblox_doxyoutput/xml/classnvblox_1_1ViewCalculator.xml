@@ -1,0 +1,726 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1ViewCalculator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::ViewCalculator</compoundname>
+    <includes refid="view__calculator_8h" local="no">view_calculator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1ViewCalculator_1a7c14c6273c6c307a63b9b7000a89de4d" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; bool &gt;</type>
+        <definition>device_vector&lt;bool&gt; nvblox::ViewCalculator::aabb_device_buffer_</definition>
+        <argsstring></argsstring>
+        <name>aabb_device_buffer_</name>
+        <qualifiedname>nvblox::ViewCalculator::aabb_device_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="171" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ViewCalculator_1a7401fa91e1267ebaa94698e741d43dad" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; bool &gt;</type>
+        <definition>host_vector&lt;bool&gt; nvblox::ViewCalculator::aabb_host_buffer_</definition>
+        <argsstring></argsstring>
+        <name>aabb_host_buffer_</name>
+        <qualifiedname>nvblox::ViewCalculator::aabb_host_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="172" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ViewCalculator_1a10830fb081e8f87dde2d6f2e0d556631" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nvblox::ViewCalculator::raycast_to_pixels_</definition>
+        <argsstring></argsstring>
+        <name>raycast_to_pixels_</name>
+        <qualifiedname>nvblox::ViewCalculator::raycast_to_pixels_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="177" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ViewCalculator_1a7931ee145c350e782a81c392e4525d6a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int nvblox::ViewCalculator::raycast_subsampling_factor_</definition>
+        <argsstring></argsstring>
+        <name>raycast_subsampling_factor_</name>
+        <qualifiedname>nvblox::ViewCalculator::raycast_subsampling_factor_</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="180" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ViewCalculator_1a805eb4b96fcb70d910c5656f5d9622d2" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::ViewCalculator::cuda_stream_</definition>
+        <argsstring></argsstring>
+        <name>cuda_stream_</name>
+        <qualifiedname>nvblox::ViewCalculator::cuda_stream_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="182" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a7383047da20efdcdc194e2eec5c1482b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ViewCalculator::ViewCalculator</definition>
+        <argsstring>()</argsstring>
+        <name>ViewCalculator</name>
+        <qualifiedname>nvblox::ViewCalculator::ViewCalculator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1ae98ee5098ebd180e1651cbf2593db704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ViewCalculator::~ViewCalculator</definition>
+        <argsstring>()</argsstring>
+        <name>~ViewCalculator</name>
+        <qualifiedname>nvblox::ViewCalculator::~ViewCalculator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a4df44325ef88d244dab10bf423fa8c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::ViewCalculator::getBlocksInImageViewRaycast</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Camera &amp;camera, const float block_size, const float max_integration_distance_behind_surface_m, const float max_integration_distance_m)</argsstring>
+        <name>getBlocksInImageViewRaycast</name>
+        <qualifiedname>nvblox::ViewCalculator::getBlocksInImageViewRaycast</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_behind_surface_m</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <briefdescription>
+<para>Gets blocks which fall into the camera view (using a depth image) Performs ray casting to get the blocks in view Operates by ray through the grid returning the blocks traversed in the ray casting process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of pixels on the image plane raycast is determined by the class parameter raycast_subsampling_factor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the blocks in the layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_behind_surface_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The truncation distance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The max integration distance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a vector of the 3D indices of the blocks in view. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="81" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1aa5a0115873c40541202a8449a4ce1d16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::ViewCalculator::getBlocksInImageViewRaycast</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Lidar &amp;lidar, const float block_size, const float max_integration_distance_behind_surface_m, const float max_integration_distance_m)</argsstring>
+        <name>getBlocksInImageViewRaycast</name>
+        <qualifiedname>nvblox::ViewCalculator::getBlocksInImageViewRaycast</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_behind_surface_m</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <briefdescription>
+<para>Gets blocks which fall into the lidar view (using a depth image) Performs ray casting to get the blocks in view Operates by ray through the grid returning the blocks traversed in the ray casting process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of pixels on the image plane raycast is determined by the class parameter raycast_subsampling_factor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lidar (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the blocks in the layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_behind_surface_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The truncation distance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The max integration distance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a vector of the 3D indices of the blocks in view. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="100" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1ae37ecf55d22ef29a3b2ac7af56267fb2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int nvblox::ViewCalculator::raycast_subsampling_factor</definition>
+        <argsstring>() const</argsstring>
+        <name>raycast_subsampling_factor</name>
+        <qualifiedname>nvblox::ViewCalculator::raycast_subsampling_factor</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The rate at which we subsample pixels to raycast. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that we always raycast the edges of the frame, no matter the subsample rate. For example, for a 100px by 100px image with a subsampling factor of 4, 25x25 rays are traced, and the blocks those rays touch are returned. <simplesect kind="return"><para>the ray casting subsampling factor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="112" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a8c9954907ac8687af0958270468986ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ViewCalculator::raycast_subsampling_factor</definition>
+        <argsstring>(unsigned int raycast_subsampling_rate)</argsstring>
+        <name>raycast_subsampling_factor</name>
+        <qualifiedname>nvblox::ViewCalculator::raycast_subsampling_factor</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>raycast_subsampling_rate</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ViewCalculator_1ae37ecf55d22ef29a3b2ac7af56267fb2" kindref="member">raycast_subsampling_factor()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>raycast_subsampling_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ray casting subsampling factor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="117" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a629823e04ee9a9803c0ab9eaddbba5ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::ViewCalculator::raycast_to_pixels</definition>
+        <argsstring>() const</argsstring>
+        <name>raycast_to_pixels</name>
+        <qualifiedname>nvblox::ViewCalculator::raycast_to_pixels</qualifiedname>
+        <briefdescription>
+<para>A parameter getter If this parameter is true, calls to <ref refid="classnvblox_1_1ViewCalculator_1a4df44325ef88d244dab10bf423fa8c1c" kindref="member">getBlocksInImageViewRaycast()</ref> finds block by raycasting through (subsampled) pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If false blocks are generated by raycasting to the corners of blocks touched by ray end points. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="124" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a89c82b41895461aa03df9fb68026fab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ViewCalculator::raycast_to_pixels</definition>
+        <argsstring>(bool raycast_to_pixels)</argsstring>
+        <name>raycast_to_pixels</name>
+        <qualifiedname>nvblox::ViewCalculator::raycast_to_pixels</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>raycast_to_pixels</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ViewCalculator_1a629823e04ee9a9803c0ab9eaddbba5ff" kindref="member">raycast_to_pixels()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>raycast_to_pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to raycast to block corners. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="129" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a1c6a399a94c65704646704cfedcad3a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>static std::vector&lt; Index3D &gt; nvblox::ViewCalculator::getBlocksInViewPlanes</definition>
+        <argsstring>(const Transform &amp;T_L_C, const Camera &amp;camera, const float block_size, const float max_distance)</argsstring>
+        <name>getBlocksInViewPlanes</name>
+        <qualifiedname>nvblox::ViewCalculator::getBlocksInViewPlanes</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_distance</declname>
+        </param>
+        <briefdescription>
+<para>Gets blocks which fall into the camera view (without using an image) Operates by checking if voxel block corners fall inside the pyramid formed by the 4 images sides and the max distance plane. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the blocks in the layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum distance of blocks considered. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a vector of the 3D indices of the blocks in view. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="44" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a70e8c58e2651e19fead0e9844b00dfa1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>static std::vector&lt; Index3D &gt; nvblox::ViewCalculator::getBlocksInImageViewPlanes</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Camera &amp;camera, const float block_size, const float max_integration_distance_behind_surface_m, const float max_integration_distance_m)</argsstring>
+        <name>getBlocksInImageViewPlanes</name>
+        <qualifiedname>nvblox::ViewCalculator::getBlocksInImageViewPlanes</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_behind_surface_m</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <briefdescription>
+<para>Gets blocks which fall into the camera view (using a depth image) Operates by checking if voxel block corners fall inside the pyrimid formed by the 4 images sides and the max distance plane. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The max distance is the smaller of either max_integration_distance_m or the maximum value in the depth image + truncation distance. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the blocks in the layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_behind_surface_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The truncation distance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The max integration distance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a vector of the 3D indices of the blocks in view. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="62" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a7ba2690f8d560aa4d7aa2889b57800b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SensorType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ViewCalculator::getBlocksByRaycastingCorners</definition>
+        <argsstring>(const Transform &amp;T_L_C, const SensorType &amp;camera, const DepthImage &amp;depth_frame, float block_size, const float max_integration_distance_behind_surface_m, const float max_integration_distance_m, const Index3D &amp;min_index, const Index3D &amp;aabb_size, bool *aabb_updated_cuda)</argsstring>
+        <name>getBlocksByRaycastingCorners</name>
+        <qualifiedname>nvblox::ViewCalculator::getBlocksByRaycastingCorners</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const SensorType &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_behind_surface_m</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>min_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>aabb_size</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>aabb_updated_cuda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="135" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1ad60d49b2c3bd04ef8531e5bf248497a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SensorType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ViewCalculator::getBlocksByRaycastingPixels</definition>
+        <argsstring>(const Transform &amp;T_L_C, const SensorType &amp;camera, const DepthImage &amp;depth_frame, float block_size, const float max_integration_distance_behind_surface_m, const float max_integration_distance_m, const Index3D &amp;min_index, const Index3D &amp;aabb_size, bool *aabb_updated_cuda)</argsstring>
+        <name>getBlocksByRaycastingPixels</name>
+        <qualifiedname>nvblox::ViewCalculator::getBlocksByRaycastingPixels</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const SensorType &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_behind_surface_m</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>min_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>aabb_size</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>aabb_updated_cuda</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="148" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ViewCalculator_1a39063c039bcab9b529fe11a411e295bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SensorType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::ViewCalculator::getBlocksInImageViewRaycastTemplate</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const SensorType &amp;camera, const float block_size, const float max_integration_distance_behind_surface_m, const float max_integration_distance_m)</argsstring>
+        <name>getBlocksInImageViewRaycastTemplate</name>
+        <qualifiedname>nvblox::ViewCalculator::getBlocksInImageViewRaycastTemplate</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const SensorType &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_behind_surface_m</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="163" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class that calculates the blocks in the camera view, given intrinsic and extrinsic parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" line="30" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/view_calculator.h" bodystart="30" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1ViewCalculator_1a7c14c6273c6c307a63b9b7000a89de4d" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>aabb_device_buffer_</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a7401fa91e1267ebaa94698e741d43dad" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>aabb_host_buffer_</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a805eb4b96fcb70d910c5656f5d9622d2" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>cuda_stream_</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a7ba2690f8d560aa4d7aa2889b57800b7" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>getBlocksByRaycastingCorners</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1ad60d49b2c3bd04ef8531e5bf248497a8" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>getBlocksByRaycastingPixels</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a70e8c58e2651e19fead0e9844b00dfa1" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>getBlocksInImageViewPlanes</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a4df44325ef88d244dab10bf423fa8c1c" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>getBlocksInImageViewRaycast</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1aa5a0115873c40541202a8449a4ce1d16" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>getBlocksInImageViewRaycast</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a39063c039bcab9b529fe11a411e295bd" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>getBlocksInImageViewRaycastTemplate</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a1c6a399a94c65704646704cfedcad3a4" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>getBlocksInViewPlanes</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1ae37ecf55d22ef29a3b2ac7af56267fb2" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>raycast_subsampling_factor</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a8c9954907ac8687af0958270468986ce" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>raycast_subsampling_factor</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a7931ee145c350e782a81c392e4525d6a" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>raycast_subsampling_factor_</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a629823e04ee9a9803c0ab9eaddbba5ff" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>raycast_to_pixels</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a89c82b41895461aa03df9fb68026fab3" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>raycast_to_pixels</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a10830fb081e8f87dde2d6f2e0d556631" prot="private" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>raycast_to_pixels_</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1a7383047da20efdcdc194e2eec5c1482b" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>ViewCalculator</name></member>
+      <member refid="classnvblox_1_1ViewCalculator_1ae98ee5098ebd180e1651cbf2593db704" prot="public" virt="non-virtual"><scope>nvblox::ViewCalculator</scope><name>~ViewCalculator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

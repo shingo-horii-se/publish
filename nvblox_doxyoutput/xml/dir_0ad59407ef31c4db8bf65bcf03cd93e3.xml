@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_0ad59407ef31c4db8bf65bcf03cd93e3" kind="dir">
+    <compoundname>integrators</compoundname>
+    <innerdir refid="dir_c2ad25448f701f3ef9760c6b214a9c7b">internal</innerdir>
+    <innerfile refid="esdf__integrator_8h">esdf_integrator.h</innerfile>
+    <innerfile refid="occupancy__decay__integrator_8h">occupancy_decay_integrator.h</innerfile>
+    <innerfile refid="projective__color__integrator_8h">projective_color_integrator.h</innerfile>
+    <innerfile refid="projective__occupancy__integrator_8h">projective_occupancy_integrator.h</innerfile>
+    <innerfile refid="projective__tsdf__integrator_8h">projective_tsdf_integrator.h</innerfile>
+    <innerfile refid="view__calculator_8h">view_calculator.h</innerfile>
+    <innerfile refid="weighting__function_8h">weighting_function.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/"/>
+  </compounddef>
+</doxygen>

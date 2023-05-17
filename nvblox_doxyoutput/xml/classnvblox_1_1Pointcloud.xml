@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1Pointcloud" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::Pointcloud</compoundname>
+    <includes refid="pointcloud_8h" local="no">pointcloud.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;</type>
+        <definition>unified_vector&lt;Vector3f&gt; nvblox::Pointcloud::points_</definition>
+        <argsstring></argsstring>
+        <name>points_</name>
+        <qualifiedname>nvblox::Pointcloud::points_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="80" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1ac86286bbd52b18b994b330b92699bcf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Pointcloud::Pointcloud</definition>
+        <argsstring>(int num_points, MemoryType memory_type=kDefaultPointcloudMemoryType)</argsstring>
+        <name>Pointcloud</name>
+        <qualifiedname>nvblox::Pointcloud::Pointcloud</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num_points</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+          <defval><ref refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" kindref="member">kDefaultPointcloudMemoryType</ref></defval>
+        </param>
+        <briefdescription>
+<para>Construct an empty pointcloud. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a58661ba7488649e6e7a004a823d6c4a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Pointcloud::Pointcloud</definition>
+        <argsstring>(MemoryType memory_type=kDefaultPointcloudMemoryType)</argsstring>
+        <name>Pointcloud</name>
+        <qualifiedname>nvblox::Pointcloud::Pointcloud</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+          <defval><ref refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" kindref="member">kDefaultPointcloudMemoryType</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="34" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a3aa7d0d89728bf7f02f4c4a59166e262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Pointcloud::Pointcloud</definition>
+        <argsstring>(const std::vector&lt; Vector3f &gt; &amp;points, MemoryType memory_type=kDefaultPointcloudMemoryType)</argsstring>
+        <name>Pointcloud</name>
+        <qualifiedname>nvblox::Pointcloud::Pointcloud</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; &amp;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+          <defval><ref refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" kindref="member">kDefaultPointcloudMemoryType</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor from points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="37" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a0551b3dd69d3c4da848a520748028692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Pointcloud::Pointcloud</definition>
+        <argsstring>(Pointcloud &amp;&amp;other)=default</argsstring>
+        <name>Pointcloud</name>
+        <qualifiedname>nvblox::Pointcloud::Pointcloud</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="41" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1ae4402fe399de7ddbc4af28dc704065b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;</type>
+        <definition>Pointcloud &amp; nvblox::Pointcloud::operator=</definition>
+        <argsstring>(Pointcloud &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::Pointcloud::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a050cbb89358357d129726960aa00b806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Pointcloud::Pointcloud</definition>
+        <argsstring>(const Pointcloud &amp;other)</argsstring>
+        <name>Pointcloud</name>
+        <qualifiedname>nvblox::Pointcloud::Pointcloud</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Deep copy constructor (second can be used to transition memory type) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="45" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a4756781f285a906901cbf7b8f3b9611e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Pointcloud::Pointcloud</definition>
+        <argsstring>(const Pointcloud &amp;other, MemoryType memory_type)</argsstring>
+        <name>Pointcloud</name>
+        <qualifiedname>nvblox::Pointcloud::Pointcloud</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="46" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a432a5b0bfd6c42fd12741f98e2345699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;</type>
+        <definition>Pointcloud &amp; nvblox::Pointcloud::operator=</definition>
+        <argsstring>(const Pointcloud &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::Pointcloud::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1af4a978236c1a10d70eca54b9ebc147bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Pointcloud::resize</definition>
+        <argsstring>(int num_points)</argsstring>
+        <name>resize</name>
+        <qualifiedname>nvblox::Pointcloud::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num_points</declname>
+        </param>
+        <briefdescription>
+<para>Expand memory available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="50" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1ac97f6d0980336c44dab2d64dd033dff0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::Pointcloud::num_points</definition>
+        <argsstring>() const</argsstring>
+        <name>num_points</name>
+        <qualifiedname>nvblox::Pointcloud::num_points</qualifiedname>
+        <briefdescription>
+<para>Attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="53" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a09bf3c1ac8885f2d2d1ace131d1b5f92" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::Pointcloud::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>nvblox::Pointcloud::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="54" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>MemoryType nvblox::Pointcloud::memory_type</definition>
+        <argsstring>() const</argsstring>
+        <name>memory_type</name>
+        <qualifiedname>nvblox::Pointcloud::memory_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="55" column="21" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a4eae4c8f89282bb2849605fbeacb4927" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Pointcloud::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>nvblox::Pointcloud::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="56" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a4738ef5a8241c37aeb9031aa6f5db8f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+        <definition>const Vector3f &amp; nvblox::Pointcloud::operator()</definition>
+        <argsstring>(const int idx) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::Pointcloud::operator()</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Access NOTE(alexmillane): The guard-rails are off here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If you declare a kDevice <ref refid="classnvblox_1_1Image" kindref="compound">Image</ref> and try to access its data, you will get undefined behaviour. If you access out of bounds, you&apos;re gonna have a bad time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="62" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a5480957c36e99a6c5d1d5cbb71952934" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+        <definition>Vector3f &amp; nvblox::Pointcloud::operator()</definition>
+        <argsstring>(const int idx)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::Pointcloud::operator()</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="65" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a61695c23ff72ac577df29de18f907f2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; &amp;</type>
+        <definition>const unified_vector&lt; Vector3f &gt; &amp; nvblox::Pointcloud::points</definition>
+        <argsstring>() const</argsstring>
+        <name>points</name>
+        <qualifiedname>nvblox::Pointcloud::points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="66" column="24" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1ab5c3c285ccfa3605b4f9acfd66d09a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; &amp;</type>
+        <definition>unified_vector&lt; Vector3f &gt; &amp; nvblox::Pointcloud::points</definition>
+        <argsstring>()</argsstring>
+        <name>points</name>
+        <qualifiedname>nvblox::Pointcloud::points</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="67" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a0ab5aadeb64813602e9d252391e29575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Pointcloud::push_back</definition>
+        <argsstring>(Vector3f &amp;&amp;point)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>nvblox::Pointcloud::push_back</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;&amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Add points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="70" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1ad507961c09ec157027d583ad7fd9b620" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> *</type>
+        <definition>Vector3f * nvblox::Pointcloud::dataPtr</definition>
+        <argsstring>()</argsstring>
+        <name>dataPtr</name>
+        <qualifiedname>nvblox::Pointcloud::dataPtr</qualifiedname>
+        <briefdescription>
+<para>Raw pointer access. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="73" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1a7d45b6545b018cbfb7467826e06990e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> *</type>
+        <definition>const Vector3f * nvblox::Pointcloud::dataConstPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>dataConstPtr</name>
+        <qualifiedname>nvblox::Pointcloud::dataConstPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="74" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Pointcloud_1aa671e6e94ec8e79301be7ebeb8a027ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Pointcloud::setZero</definition>
+        <argsstring>()</argsstring>
+        <name>setZero</name>
+        <qualifiedname>nvblox::Pointcloud::setZero</qualifiedname>
+        <briefdescription>
+<para>Set the image to 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="77" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> that lives in either device, host or unified memory. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>We represent a pointcloud as a vector of 3D vectors. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>nvblox::Pointcloud</label>
+        <link refid="classnvblox_1_1Pointcloud"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>points_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::unified_vector&lt; Vector3f &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="29" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="29" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1Pointcloud_1a7d45b6545b018cbfb7467826e06990e7" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>dataConstPtr</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1ad507961c09ec157027d583ad7fd9b620" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>dataPtr</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a4eae4c8f89282bb2849605fbeacb4927" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>empty</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>memory_type</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1ac97f6d0980336c44dab2d64dd033dff0" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>num_points</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a4738ef5a8241c37aeb9031aa6f5db8f5" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>operator()</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a5480957c36e99a6c5d1d5cbb71952934" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>operator()</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1ae4402fe399de7ddbc4af28dc704065b9" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a432a5b0bfd6c42fd12741f98e2345699" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1ac86286bbd52b18b994b330b92699bcf5" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>Pointcloud</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a58661ba7488649e6e7a004a823d6c4a2" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>Pointcloud</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a3aa7d0d89728bf7f02f4c4a59166e262" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>Pointcloud</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a0551b3dd69d3c4da848a520748028692" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>Pointcloud</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a050cbb89358357d129726960aa00b806" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>Pointcloud</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a4756781f285a906901cbf7b8f3b9611e" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>Pointcloud</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a61695c23ff72ac577df29de18f907f2b" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>points</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1ab5c3c285ccfa3605b4f9acfd66d09a8a" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>points</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" prot="protected" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>points_</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a0ab5aadeb64813602e9d252391e29575" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>push_back</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1af4a978236c1a10d70eca54b9ebc147bc" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>resize</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1aa671e6e94ec8e79301be7ebeb8a027ac" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>setZero</name></member>
+      <member refid="classnvblox_1_1Pointcloud_1a09bf3c1ac8885f2d2d1ace131d1b5f92" prot="public" virt="non-virtual"><scope>nvblox::Pointcloud</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

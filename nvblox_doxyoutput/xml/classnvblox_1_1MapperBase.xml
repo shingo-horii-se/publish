@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1MapperBase" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::MapperBase</compoundname>
+    <derivedcompoundref refid="classnvblox_1_1Mapper" prot="public" virt="non-virtual">nvblox::Mapper</derivedcompoundref>
+    <includes refid="mapper_8h" local="no">mapper.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref></type>
+        <definition>LayerCake nvblox::MapperBase::layers_</definition>
+        <argsstring></argsstring>
+        <name>layers_</name>
+        <qualifiedname>nvblox::MapperBase::layers_</qualifiedname>
+        <briefdescription>
+<para>Map layers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="52" column="13" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1MapperBase_1a1193cdd4888db0580fd359c0e9aa5637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::MapperBase::MapperBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>MapperBase</name>
+        <qualifiedname>nvblox::MapperBase::MapperBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="43" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MapperBase_1a33c9a3be6b1ac58e9eaf4de52fb2aa1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::MapperBase::~MapperBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MapperBase</name>
+        <qualifiedname>nvblox::MapperBase::~MapperBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="44" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MapperBase_1a078171621053d268d3bf5e7f87d960df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::MapperBase::MapperBase</definition>
+        <argsstring>(MapperBase &amp;&amp;other)=default</argsstring>
+        <name>MapperBase</name>
+        <qualifiedname>nvblox::MapperBase::MapperBase</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="47" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MapperBase_1ad1df7d3c28174cd0b2911e606e769984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref> &amp;</type>
+        <definition>MapperBase &amp; nvblox::MapperBase::operator=</definition>
+        <argsstring>(MapperBase &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::MapperBase::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="48" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The mapper classes wraps layers and integrators together. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In the base class we only specify that a mapper should contain map layers and leave it up to sub-classes to add functionality. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>nvblox::Mapper</label>
+        <link refid="classnvblox_1_1Mapper"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nvblox::MapperBase</label>
+        <link refid="classnvblox_1_1MapperBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>nvblox::LayerCake</label>
+        <link refid="classnvblox_1_1LayerCake"/>
+      </node>
+      <node id="1">
+        <label>nvblox::MapperBase</label>
+        <link refid="classnvblox_1_1MapperBase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>layers_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="41" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="41" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" prot="protected" virt="non-virtual"><scope>nvblox::MapperBase</scope><name>layers_</name></member>
+      <member refid="classnvblox_1_1MapperBase_1a1193cdd4888db0580fd359c0e9aa5637" prot="public" virt="non-virtual"><scope>nvblox::MapperBase</scope><name>MapperBase</name></member>
+      <member refid="classnvblox_1_1MapperBase_1a078171621053d268d3bf5e7f87d960df" prot="public" virt="non-virtual"><scope>nvblox::MapperBase</scope><name>MapperBase</name></member>
+      <member refid="classnvblox_1_1MapperBase_1ad1df7d3c28174cd0b2911e606e769984" prot="public" virt="non-virtual"><scope>nvblox::MapperBase</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1MapperBase_1a33c9a3be6b1ac58e9eaf4de52fb2aa1c" prot="public" virt="virtual"><scope>nvblox::MapperBase</scope><name>~MapperBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

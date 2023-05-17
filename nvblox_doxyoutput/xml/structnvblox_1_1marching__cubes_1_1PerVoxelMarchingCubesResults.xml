@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::marching_cubes::PerVoxelMarchingCubesResults</compoundname>
+    <includes refid="marching__cubes_8h" local="no">marching_cubes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1a4a0db0a0353a7febcb32ffa5e5ab3645" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>Vector3f nvblox::marching_cubes::PerVoxelMarchingCubesResults::vertex_coords[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>vertex_coords</name>
+        <qualifiedname>nvblox::marching_cubes::PerVoxelMarchingCubesResults::vertex_coords</qualifiedname>
+        <briefdescription>
+<para>The 3D positions of the corners of a 2x2x2 cube of voxels formed by the surrounding voxel neighbours in the positive direction of each coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" line="37" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1a5be4f06a0fa580cfd4c14faba854e61d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::marching_cubes::PerVoxelMarchingCubesResults::vertex_sdf[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>vertex_sdf</name>
+        <qualifiedname>nvblox::marching_cubes::PerVoxelMarchingCubesResults::vertex_sdf</qualifiedname>
+        <briefdescription>
+<para>The value of the TSDF at each of the neighbouring voxels described above. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" line="39" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1abcc87796a7ebf1b41258feeead4db0d2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nvblox::marching_cubes::PerVoxelMarchingCubesResults::contains_mesh</definition>
+        <argsstring></argsstring>
+        <name>contains_mesh</name>
+        <qualifiedname>nvblox::marching_cubes::PerVoxelMarchingCubesResults::contains_mesh</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Does this voxel contain a mesh? (Does it straddle a zero level set?) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" line="41" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1a2ae1e6cecb093845721cbe7d610d1f8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t nvblox::marching_cubes::PerVoxelMarchingCubesResults::marching_cubes_table_index</definition>
+        <argsstring></argsstring>
+        <name>marching_cubes_table_index</name>
+        <qualifiedname>nvblox::marching_cubes::PerVoxelMarchingCubesResults::marching_cubes_table_index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The index into the marching cubes triangle table (found in nvblox/mesh/impl/marching_cubes_table.h). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This index is determined based on the tsdf configuration (+/-) of the surrounding voxels and is the main contribution of marching cubes algorithm. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" line="46" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1aa95ed60f4bc818a451840a65fe8bb0c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::marching_cubes::PerVoxelMarchingCubesResults::vertex_vector_start_index</definition>
+        <argsstring></argsstring>
+        <name>vertex_vector_start_index</name>
+        <qualifiedname>nvblox::marching_cubes::PerVoxelMarchingCubesResults::vertex_vector_start_index</qualifiedname>
+        <briefdescription>
+<para>At the end of marching cubes, vertices calculated for this and other voxels in this <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> are stored in a single vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This member indicates where in this vertex vector the vertices associated with this voxel begin. It is calculated through an exclusive prefix sum of the numbers of vertices in each voxel of this <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" line="52" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This (internal) struct contains intermediate results of marching cubes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" line="34" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/marching_cubes.h" bodystart="34" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1abcc87796a7ebf1b41258feeead4db0d2" prot="public" virt="non-virtual"><scope>nvblox::marching_cubes::PerVoxelMarchingCubesResults</scope><name>contains_mesh</name></member>
+      <member refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1a2ae1e6cecb093845721cbe7d610d1f8d" prot="public" virt="non-virtual"><scope>nvblox::marching_cubes::PerVoxelMarchingCubesResults</scope><name>marching_cubes_table_index</name></member>
+      <member refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1a4a0db0a0353a7febcb32ffa5e5ab3645" prot="public" virt="non-virtual"><scope>nvblox::marching_cubes::PerVoxelMarchingCubesResults</scope><name>vertex_coords</name></member>
+      <member refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1a5be4f06a0fa580cfd4c14faba854e61d" prot="public" virt="non-virtual"><scope>nvblox::marching_cubes::PerVoxelMarchingCubesResults</scope><name>vertex_sdf</name></member>
+      <member refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults_1aa95ed60f4bc818a451840a65fe8bb0c7" prot="public" virt="non-virtual"><scope>nvblox::marching_cubes::PerVoxelMarchingCubesResults</scope><name>vertex_vector_start_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

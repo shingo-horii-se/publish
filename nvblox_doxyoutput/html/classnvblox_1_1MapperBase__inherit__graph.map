@@ -1,0 +1,4 @@
+<map id="nvblox::MapperBase" name="nvblox::MapperBase">
+<area shape="rect" id="node1" title="The mapper classes wraps layers and integrators together." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1Mapper.html" title="The Mapper class is what we consider the default mapping behaviour in nvblox." alt="" coords="20,80,129,107"/>
+</map>

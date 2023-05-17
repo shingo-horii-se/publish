@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1CudaMeshBlock" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::CudaMeshBlock</compoundname>
+    <includes refid="mesh__block_8h" local="no">mesh_block.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1CudaMeshBlock_1a75bdfa8e7a3ade3c1751a06a4b27345d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> *</type>
+        <definition>Vector3f* nvblox::CudaMeshBlock::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <qualifiedname>nvblox::CudaMeshBlock::vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="88" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1CudaMeshBlock_1a54224cf98738d0c23c5bc10b6906022b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> *</type>
+        <definition>Vector3f* nvblox::CudaMeshBlock::normals</definition>
+        <argsstring></argsstring>
+        <name>normals</name>
+        <qualifiedname>nvblox::CudaMeshBlock::normals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="89" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1CudaMeshBlock_1afddeb3cb6d916686460939904baf39d0" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* nvblox::CudaMeshBlock::triangles</definition>
+        <argsstring></argsstring>
+        <name>triangles</name>
+        <qualifiedname>nvblox::CudaMeshBlock::triangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="90" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1CudaMeshBlock_1a116c493e0b3d8ea51fa7f78038a82b14" prot="public" static="no" mutable="no">
+        <type><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> *</type>
+        <definition>Color* nvblox::CudaMeshBlock::colors</definition>
+        <argsstring></argsstring>
+        <name>colors</name>
+        <qualifiedname>nvblox::CudaMeshBlock::colors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="91" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1CudaMeshBlock_1a35bdbf6f6b2517b7eb10273d69bde968" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::CudaMeshBlock::vertices_size</definition>
+        <argsstring></argsstring>
+        <name>vertices_size</name>
+        <qualifiedname>nvblox::CudaMeshBlock::vertices_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="92" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1CudaMeshBlock_1aac18f3cf764ebcf197abf73502cfe300" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::CudaMeshBlock::triangles_size</definition>
+        <argsstring></argsstring>
+        <name>triangles_size</name>
+        <qualifiedname>nvblox::CudaMeshBlock::triangles_size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="93" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnvblox_1_1CudaMeshBlock_1a0e5824d9250cd1da4410a46678056638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::CudaMeshBlock::CudaMeshBlock</definition>
+        <argsstring>()=default</argsstring>
+        <name>CudaMeshBlock</name>
+        <qualifiedname>nvblox::CudaMeshBlock::CudaMeshBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="85" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1CudaMeshBlock_1a4bb0c88915bef5a46088b56dc0c2be19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::CudaMeshBlock::CudaMeshBlock</definition>
+        <argsstring>(MeshBlock *block)</argsstring>
+        <name>CudaMeshBlock</name>
+        <qualifiedname>nvblox::CudaMeshBlock::CudaMeshBlock</qualifiedname>
+        <param>
+          <type><ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> *</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="86" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper struct for mesh blocks on CUDA. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>NOTE: We need this because we can&apos;t pass <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> to kernel functions because of the presence of <ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref> members. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>nvblox::Color</label>
+        <link refid="structnvblox_1_1Color"/>
+      </node>
+      <node id="1">
+        <label>nvblox::CudaMeshBlock</label>
+        <link refid="structnvblox_1_1CudaMeshBlock"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>colors</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="84" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="84" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1CudaMeshBlock_1a116c493e0b3d8ea51fa7f78038a82b14" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>colors</name></member>
+      <member refid="structnvblox_1_1CudaMeshBlock_1a0e5824d9250cd1da4410a46678056638" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>CudaMeshBlock</name></member>
+      <member refid="structnvblox_1_1CudaMeshBlock_1a4bb0c88915bef5a46088b56dc0c2be19" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>CudaMeshBlock</name></member>
+      <member refid="structnvblox_1_1CudaMeshBlock_1a54224cf98738d0c23c5bc10b6906022b" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>normals</name></member>
+      <member refid="structnvblox_1_1CudaMeshBlock_1afddeb3cb6d916686460939904baf39d0" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>triangles</name></member>
+      <member refid="structnvblox_1_1CudaMeshBlock_1aac18f3cf764ebcf197abf73502cfe300" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>triangles_size</name></member>
+      <member refid="structnvblox_1_1CudaMeshBlock_1a75bdfa8e7a3ade3c1751a06a4b27345d" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>vertices</name></member>
+      <member refid="structnvblox_1_1CudaMeshBlock_1a35bdbf6f6b2517b7eb10273d69bde968" prot="public" virt="non-virtual"><scope>nvblox::CudaMeshBlock</scope><name>vertices_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

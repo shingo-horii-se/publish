@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="unified__vector_8h" kind="file" language="C++">
+    <compoundname>unified_vector.h</compoundname>
+    <includes local="no">type_traits</includes>
+    <includes local="no">vector</includes>
+    <includes refid="logging_8h" local="yes">nvblox/utils/logging.h</includes>
+    <includes refid="iterator_8h" local="yes">nvblox/core/iterator.h</includes>
+    <includes refid="types_8h" local="yes">nvblox/core/types.h</includes>
+    <includes local="yes">nvblox/core/internal/impl/unified_vector_impl.h</includes>
+    <includedby refid="esdf__integrator_8h" local="yes">esdf_integrator.h</includedby>
+    <includedby refid="image__projector_8h" local="yes">image_projector.h</includedby>
+    <includedby refid="layer_8h" local="yes">layer.h</includedby>
+    <includedby refid="mesh__block_8h" local="yes">mesh_block.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <includedby refid="pointcloud_8h" local="yes">pointcloud.h</includedby>
+    <includedby refid="view__calculator_8h" local="yes">view_calculator.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>nvblox/core/iterator.h</label>
+        <link refid="iterator_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="13">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="8">
+        <label>cstddef</label>
+      </node>
+      <node id="7">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="5">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>iterator</label>
+      </node>
+      <node id="14">
+        <label>nvblox/core/internal/impl/unified_vector_impl.h</label>
+      </node>
+      <node id="2">
+        <label>type_traits</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>bounding_boxes.h</label>
+        <link refid="bounding__boxes_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>esdf_integrator.h</label>
+        <link refid="esdf__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>integrators_common.h</label>
+        <link refid="integrators__common_8h"/>
+      </node>
+      <node id="18">
+        <label>projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>occupancy_decay_integrator.h</label>
+        <link refid="occupancy__decay__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>projective_color_integrator.h</label>
+        <link refid="projective__color__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>view_calculator.h</label>
+        <link refid="view__calculator_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>interpolation_3d.h</label>
+        <link refid="interpolation__3d_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>layer_cake_io.h</label>
+        <link refid="layer__cake__io_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>mesh_io.h</label>
+        <link refid="mesh__io_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>pointcloud_io.h</label>
+        <link refid="pointcloud__io_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>accessors.h</label>
+        <link refid="accessors_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>common_names.h</label>
+        <link refid="common__names_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>layer.h</label>
+        <link refid="layer_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>layer_cake.h</label>
+        <link refid="layer__cake_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>marching_cubes.h</label>
+        <link refid="marching__cubes_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>mesh_block.h</label>
+        <link refid="mesh__block_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mesh_integrator.h</label>
+        <link refid="mesh__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="31">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>sphere_tracer.h</label>
+        <link refid="sphere__tracer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>image_projector.h</label>
+        <link refid="image__projector_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>pointcloud.h</label>
+        <link refid="pointcloud_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>common_types.h</label>
+        <link refid="common__types_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>layer_serialization.h</label>
+        <link refid="layer__serialization_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>layer_type_register.h</label>
+        <link refid="layer__type__register_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>serializer.h</label>
+        <link refid="serializer_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1unified__vector" prot="public">nvblox::unified_vector</innerclass>
+    <innerclass refid="classnvblox_1_1device__vector" prot="public">nvblox::device_vector</innerclass>
+    <innerclass refid="classnvblox_1_1host__vector" prot="public">nvblox::host_vector</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logging_8h" kindref="compound">nvblox/utils/logging.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="iterator_8h" kindref="compound">nvblox/core/iterator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">nvblox/core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="30" refid="classnvblox_1_1unified__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="classnvblox_1_1unified__vector_1a4f15ef2fa9eb257167b0fb509ef6ad41" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator&lt;T&gt;</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a4f15ef2fa9eb257167b0fb509ef6ad41" kindref="member">iterator</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classnvblox_1_1unified__vector_1a124ce13d9abe85a83925b34695581401" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator&lt;const T&gt;</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a124ce13d9abe85a83925b34695581401" kindref="member">const_iterator</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" kindref="member">kDefaultMemoryType</ref><sp/>=<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a6cfafb52f266dacc4afe9ad59914fcd6" kindref="member">MemoryType::kUnified</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::is_default_constructible&lt;T&gt;::value,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Objects<sp/>stored<sp/>in<sp/>unified<sp/>vector<sp/>should<sp/>be<sp/>default<sp/>constructible.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classnvblox_1_1unified__vector_1a244143cd9f9e3101bb5f892f1afe0533" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1a244143cd9f9e3101bb5f892f1afe0533" kindref="member">unified_vector</ref>(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" kindref="member">kDefaultMemoryType</ref>);</highlight></codeline>
+<codeline lineno="43" refid="classnvblox_1_1unified__vector_1a47e9ab4246124cd1726c17efa031ea5d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1a47e9ab4246124cd1726c17efa031ea5d" kindref="member">unified_vector</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" kindref="member">kDefaultMemoryType</ref>);</highlight></codeline>
+<codeline lineno="44" refid="classnvblox_1_1unified__vector_1a5613b939a32cc02d3db195695a8257b3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1a5613b939a32cc02d3db195695a8257b3" kindref="member">unified_vector</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>initial,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" kindref="member">kDefaultMemoryType</ref>);</highlight></codeline>
+<codeline lineno="47" refid="classnvblox_1_1unified__vector_1a5dfe14221901366a7d8d7c42f79843a9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1a5dfe14221901366a7d8d7c42f79843a9" kindref="member">unified_vector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/>other,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" kindref="member">kDefaultMemoryType</ref>);</highlight></codeline>
+<codeline lineno="49" refid="classnvblox_1_1unified__vector_1a387523fda871ffc6518dad5467c887d5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1a387523fda871ffc6518dad5467c887d5" kindref="member">unified_vector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;&amp;<sp/>other,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" kindref="member">kDefaultMemoryType</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classnvblox_1_1unified__vector_1a0b75be155fd4bfb7754c4759409766bc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1a0b75be155fd4bfb7754c4759409766bc" kindref="member">unified_vector</ref>(<ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classnvblox_1_1unified__vector_1a2f1c1676a5454f161453accb162121e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a2f1c1676a5454f161453accb162121e4" kindref="member">~unified_vector</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classnvblox_1_1unified__vector_1ae26720c8545d906f7ce94207cf30f635" refkind="member"><highlight class="normal"><sp/><sp/>T&amp;<sp/><ref refid="classnvblox_1_1unified__vector_1ae26720c8545d906f7ce94207cf30f635" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="60" refid="classnvblox_1_1unified__vector_1ad8791a05305931166144516e8d62e8f8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="classnvblox_1_1unified__vector_1ad8791a05305931166144516e8d62e8f8" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61" refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="62" refid="classnvblox_1_1unified__vector_1aa82bd290fb2fe274c5d8257af74e0a42" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1unified__vector_1aa82bd290fb2fe274c5d8257af74e0a42" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="63" refid="classnvblox_1_1unified__vector_1adda0ca47456b6f2835111d1dfd9407e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1unified__vector_1adda0ca47456b6f2835111d1dfd9407e7" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classnvblox_1_1unified__vector_1a8dd1edb6632ab950058d9e6cf4faa77a" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;T&gt;<sp/><ref refid="classnvblox_1_1unified__vector_1a8dd1edb6632ab950058d9e6cf4faa77a" kindref="member">toVector</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classnvblox_1_1unified__vector_1acd9c016cd7694fe5ac79ed18844b38e1" refkind="member"><highlight class="normal"><sp/><sp/>T*<sp/><ref refid="classnvblox_1_1unified__vector_1acd9c016cd7694fe5ac79ed18844b38e1" kindref="member">data</ref>();</highlight></codeline>
+<codeline lineno="70" refid="classnvblox_1_1unified__vector_1a2826d03fbfac13804bb2b6e688e7ba72" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/><ref refid="classnvblox_1_1unified__vector_1a2826d03fbfac13804bb2b6e688e7ba72" kindref="member">data</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classnvblox_1_1unified__vector_1a8458a4b71dd738480bfd45ddcc80010a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a8458a4b71dd738480bfd45ddcc80010a" kindref="member">toGPU</ref>();</highlight></codeline>
+<codeline lineno="74" refid="classnvblox_1_1unified__vector_1afae625c833546347da34d5e8cc23a90e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1afae625c833546347da34d5e8cc23a90e" kindref="member">toCPU</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classnvblox_1_1unified__vector_1a6ae91632a69939ae80bd7666ecf5beca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a6ae91632a69939ae80bd7666ecf5beca" kindref="member">capacity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78" refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79" refid="classnvblox_1_1unified__vector_1a89a554c5fb921bdc089a63fd18ace5d0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89a554c5fb921bdc089a63fd18ace5d0" kindref="member">empty</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classnvblox_1_1unified__vector_1a4dfcb7dcf7f3e454d084f9aaf2fe4c87" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a4dfcb7dcf7f3e454d084f9aaf2fe4c87" kindref="member">reserve</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a6ae91632a69939ae80bd7666ecf5beca" kindref="member">capacity</ref>);</highlight></codeline>
+<codeline lineno="83" refid="classnvblox_1_1unified__vector_1a73ee465555917acb6fc75f14a3132819" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a73ee465555917acb6fc75f14a3132819" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="84" refid="classnvblox_1_1unified__vector_1ad07c8f0316f0823ee6fca1759f1c32a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1ad07c8f0316f0823ee6fca1759f1c32a2" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classnvblox_1_1unified__vector_1aed4c9f981e2fd47e30915f5000e008c3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1aed4c9f981e2fd47e30915f5000e008c3" kindref="member">push_back</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1unified__vector_1a91bb5b7efe81837c68a1ed8cfe99d859" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">iterator</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a91bb5b7efe81837c68a1ed8cfe99d859" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="91" refid="classnvblox_1_1unified__vector_1a04b34f02f2ec54f242fd3b6cc50a808d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">iterator</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a04b34f02f2ec54f242fd3b6cc50a808d" kindref="member">end</ref>();</highlight></codeline>
+<codeline lineno="92" refid="classnvblox_1_1unified__vector_1a95bdf73a5e109d5815f09396061fad37" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">const_iterator</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a95bdf73a5e109d5815f09396061fad37" kindref="member">begin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a38223d699514cc33684fcd7c60044995" kindref="member">cbegin</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="93" refid="classnvblox_1_1unified__vector_1ad5859fa8169c23b4c98bec9df1d67896" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">const_iterator</ref><sp/><ref refid="classnvblox_1_1unified__vector_1ad5859fa8169c23b4c98bec9df1d67896" kindref="member">end</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1aca7cd87509a08e54afb0b6cd199de5ca" kindref="member">cend</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="94" refid="classnvblox_1_1unified__vector_1a38223d699514cc33684fcd7c60044995" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">const_iterator</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a38223d699514cc33684fcd7c60044995" kindref="member">cbegin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95" refid="classnvblox_1_1unified__vector_1aca7cd87509a08e54afb0b6cd199de5ca" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1RawIterator" kindref="compound">const_iterator</ref><sp/><ref refid="classnvblox_1_1unified__vector_1aca7cd87509a08e54afb0b6cd199de5ca" kindref="member">cend</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memory_type_;<sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classnvblox_1_1unified__vector_1a3c13a87c0a4a204a59cb0591977cc18e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a3c13a87c0a4a204a59cb0591977cc18e" kindref="member">setZero</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type_;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>T*<sp/>buffer_;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buffer_size_;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buffer_capacity_;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="113" refid="classnvblox_1_1device__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115" refid="classnvblox_1_1device__vector_1a14a6341b3f26269a1536d290c94f0f49" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector_1a14a6341b3f26269a1536d290c94f0f49" kindref="member">device_vector</ref>()<sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">kDevice</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="116" refid="classnvblox_1_1device__vector_1ac3d36ca96c4b2324e7bfb507979bccc8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector_1ac3d36ca96c4b2324e7bfb507979bccc8" kindref="member">device_vector</ref>(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref>)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117" refid="classnvblox_1_1device__vector_1a5cf71df9876ad48b54ea0485499abb2b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector_1a5cf71df9876ad48b54ea0485499abb2b" kindref="member">device_vector</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>)<sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(<ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">kDevice</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="118" refid="classnvblox_1_1device__vector_1a91aa9d0cba5186719059ca84cd68630f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector_1a91aa9d0cba5186719059ca84cd68630f" kindref="member">device_vector</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>initial)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(<ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/>initial,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">kDevice</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Conversions<sp/>from<sp/>base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classnvblox_1_1device__vector_1a06c87221f1f799ce7bbb42486b4ff63c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector_1a06c87221f1f799ce7bbb42486b4ff63c" kindref="member">device_vector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(other,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">kDevice</ref>){};</highlight></codeline>
+<codeline lineno="124" refid="classnvblox_1_1device__vector_1a1de0e555dbca74665dd210caad3bf7aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector_1a1de0e555dbca74665dd210caad3bf7aa" kindref="member">device_vector</ref>(<ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(std::move(other),<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">kDevice</ref>){};</highlight></codeline>
+<codeline lineno="126" refid="classnvblox_1_1device__vector_1a6cdd70f023a089d98bff5359c54b11cf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&amp;<sp/><ref refid="classnvblox_1_1device__vector_1a6cdd70f023a089d98bff5359c54b11cf" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" kindref="member">unified_vector&lt;T&gt;::operator=</ref>(other);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130" refid="classnvblox_1_1device__vector_1a6c42325a56c30f3467a552382d53bcb8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&amp;<sp/><ref refid="classnvblox_1_1device__vector_1a6c42325a56c30f3467a552382d53bcb8" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" kindref="member">unified_vector&lt;T&gt;::operator=</ref>(std::move(other));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>std::vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classnvblox_1_1device__vector_1aec1cef9a792b58fd2adbcfe3bec0ce13" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector_1aec1cef9a792b58fd2adbcfe3bec0ce13" kindref="member">device_vector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(other,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">kDevice</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="138" refid="classnvblox_1_1device__vector_1aa24f54b9918f0aebc7bcd17fcfc714b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector&lt;T&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1device__vector_1aa24f54b9918f0aebc7bcd17fcfc714b5" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" kindref="member">unified_vector&lt;T&gt;::operator=</ref>(other);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="146" refid="classnvblox_1_1host__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148" refid="classnvblox_1_1host__vector_1a38cdf643fd5c142ee71f761cb3e2d423" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector_1a38cdf643fd5c142ee71f761cb3e2d423" kindref="member">host_vector</ref>()<sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223aab2568040d6d4e966d109b5adf7f5175" kindref="member">kHost</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="149" refid="classnvblox_1_1host__vector_1a1cfeb7941bfc10b1e0557219dd6c0465" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector_1a1cfeb7941bfc10b1e0557219dd6c0465" kindref="member">host_vector</ref>(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref>)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150" refid="classnvblox_1_1host__vector_1a1d77facc2f4602631ef13843d35ee182" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector_1a1d77facc2f4602631ef13843d35ee182" kindref="member">host_vector</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>)<sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(<ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223aab2568040d6d4e966d109b5adf7f5175" kindref="member">kHost</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="151" refid="classnvblox_1_1host__vector_1a00f27b2563ff28a857abee7ac6a764ae" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector_1a00f27b2563ff28a857abee7ac6a764ae" kindref="member">host_vector</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>initial)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(<ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>,<sp/>initial,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223aab2568040d6d4e966d109b5adf7f5175" kindref="member">kHost</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Conversions<sp/>from<sp/>base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classnvblox_1_1host__vector_1a6b17a0fd77d9211ca183f591a34efee0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector_1a6b17a0fd77d9211ca183f591a34efee0" kindref="member">host_vector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(other,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223aab2568040d6d4e966d109b5adf7f5175" kindref="member">kHost</ref>){};</highlight></codeline>
+<codeline lineno="157" refid="classnvblox_1_1host__vector_1a4470eabb89f49bfd4ad704eb9510aca2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector_1a4470eabb89f49bfd4ad704eb9510aca2" kindref="member">host_vector</ref>(<ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(std::move(other),<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223aab2568040d6d4e966d109b5adf7f5175" kindref="member">kHost</ref>){};</highlight></codeline>
+<codeline lineno="159" refid="classnvblox_1_1host__vector_1a53af24ac7005bc64ff95d44b85ca3d5d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&amp;<sp/><ref refid="classnvblox_1_1host__vector_1a53af24ac7005bc64ff95d44b85ca3d5d" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" kindref="member">unified_vector&lt;T&gt;::operator=</ref>(other);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163" refid="classnvblox_1_1host__vector_1ae5da0bec2f79479949e180af5a635c9b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&amp;<sp/><ref refid="classnvblox_1_1host__vector_1ae5da0bec2f79479949e180af5a635c9b" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;T&gt;</ref>&amp;&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" kindref="member">unified_vector&lt;T&gt;::operator=</ref>(std::move(other));</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>std::vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classnvblox_1_1host__vector_1ac6a4b1071f663f2f92bffe003fee7084" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector_1ac6a4b1071f663f2f92bffe003fee7084" kindref="member">host_vector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt;T&gt;(other,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>::<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223aab2568040d6d4e966d109b5adf7f5175" kindref="member">kHost</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="171" refid="classnvblox_1_1host__vector_1a66bb7e04b735a6d1cdb345933c6debdd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector&lt;T&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1host__vector_1a66bb7e04b735a6d1cdb345933c6debdd" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1unified__vector_1aa3cc039369640cb5f1acebfa563bd949" kindref="member">unified_vector&lt;T&gt;::operator=</ref>(other);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nvblox/core/internal/impl/unified_vector_impl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h"/>
+  </compounddef>
+</doxygen>

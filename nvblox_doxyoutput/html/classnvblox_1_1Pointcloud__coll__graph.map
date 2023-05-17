@@ -1,0 +1,4 @@
+<map id="nvblox::Pointcloud" name="nvblox::Pointcloud">
+<area shape="rect" id="node1" title="Pointcloud that lives in either device, host or unified memory." alt="" coords="14,112,140,139"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1unified__vector.html" title=" " alt="" coords="5,5,149,48"/>
+</map>

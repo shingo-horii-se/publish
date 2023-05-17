@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_533c6cd4a58f5e04b6da6d205ab8957a" kind="dir">
+    <compoundname>serialization</compoundname>
+    <innerdir refid="dir_620942b2a7536891b701ea4332b7be72">internal</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/"/>
+  </compounddef>
+</doxygen>

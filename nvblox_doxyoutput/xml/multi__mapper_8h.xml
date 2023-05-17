@@ -1,0 +1,665 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="multi__mapper_8h" kind="file" language="C++">
+    <compoundname>multi_mapper.h</compoundname>
+    <includes refid="mapper_8h" local="yes">nvblox/mapper/mapper.h</includes>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <incdepgraph>
+      <node id="31">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox/core/hash.h</label>
+        <link refid="hash_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>nvblox/core/iterator.h</label>
+        <link refid="iterator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>nvblox/core/log_odds.h</label>
+        <link refid="log__odds_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>nvblox/core/unified_ptr.h</label>
+        <link refid="unified__ptr_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>nvblox/core/unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>nvblox/gpu_hash/gpu_layer_view.h</label>
+        <link refid="gpu__layer__view_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>nvblox/integrators/esdf_integrator.h</label>
+        <link refid="esdf__integrator_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>nvblox/integrators/internal/projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>nvblox/integrators/occupancy_decay_integrator.h</label>
+        <link refid="occupancy__decay__integrator_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>nvblox/integrators/projective_color_integrator.h</label>
+        <link refid="projective__color__integrator_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>nvblox/integrators/projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>nvblox/integrators/projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>nvblox/integrators/view_calculator.h</label>
+        <link refid="view__calculator_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>nvblox/integrators/weighting_function.h</label>
+        <link refid="weighting__function_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>nvblox/map/blox.h</label>
+        <link refid="blox_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>nvblox/map/common_names.h</label>
+        <link refid="common__names_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>nvblox/map/layer.h</label>
+        <link refid="layer_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>nvblox/map/layer_cake.h</label>
+        <link refid="layer__cake_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>nvblox/map/voxels.h</label>
+        <link refid="voxels_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox/mapper/mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>nvblox/mesh/internal/marching_cubes.h</label>
+        <link refid="marching__cubes_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>nvblox/mesh/mesh_block.h</label>
+        <link refid="mesh__block_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>nvblox/mesh/mesh_integrator.h</label>
+        <link refid="mesh__integrator_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>nvblox/rays/sphere_tracer.h</label>
+        <link refid="sphere__tracer_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>nvblox/semantics/image_masker.h</label>
+        <link refid="image__masker_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>nvblox/sensors/camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>nvblox/sensors/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>nvblox/sensors/lidar.h</label>
+        <link refid="lidar_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>nvblox/utils/nvtx_ranges.h</label>
+        <link refid="nvtx__ranges_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>nvblox/utils/timing.h</label>
+        <link refid="timing_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="12">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="63">
+        <label>algorithm</label>
+      </node>
+      <node id="28">
+        <label>atomic</label>
+      </node>
+      <node id="64">
+        <label>chrono</label>
+      </node>
+      <node id="16">
+        <label>cmath</label>
+      </node>
+      <node id="22">
+        <label>cstddef</label>
+      </node>
+      <node id="10">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="20">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="23">
+        <label>iterator</label>
+      </node>
+      <node id="65">
+        <label>limits</label>
+      </node>
+      <node id="66">
+        <label>map</label>
+      </node>
+      <node id="26">
+        <label>memory</label>
+      </node>
+      <node id="67">
+        <label>mutex</label>
+      </node>
+      <node id="70">
+        <label>nvToolsExt.h</label>
+      </node>
+      <node id="29">
+        <label>nvblox/core/internal/impl/unified_ptr_impl.h</label>
+      </node>
+      <node id="24">
+        <label>nvblox/core/internal/impl/unified_vector_impl.h</label>
+      </node>
+      <node id="36">
+        <label>nvblox/core/traits.h</label>
+      </node>
+      <node id="54">
+        <label>nvblox/integrators/internal/impl/projective_integrator_impl.h</label>
+      </node>
+      <node id="50">
+        <label>nvblox/integrators/internal/impl/weighting_function_impl.h</label>
+      </node>
+      <node id="33">
+        <label>nvblox/map/internal/impl/blox_impl.h</label>
+      </node>
+      <node id="58">
+        <label>nvblox/map/internal/impl/layer_cake_impl.h</label>
+      </node>
+      <node id="38">
+        <label>nvblox/map/internal/impl/layer_impl.h</label>
+      </node>
+      <node id="46">
+        <label>nvblox/sensors/internal/impl/camera_impl.h</label>
+      </node>
+      <node id="41">
+        <label>nvblox/sensors/internal/impl/image_impl.h</label>
+      </node>
+      <node id="48">
+        <label>nvblox/sensors/internal/impl/lidar_impl.h</label>
+      </node>
+      <node id="32">
+        <label>stdint.h</label>
+      </node>
+      <node id="68">
+        <label>string</label>
+      </node>
+      <node id="18">
+        <label>type_traits</label>
+      </node>
+      <node id="57">
+        <label>typeindex</label>
+      </node>
+      <node id="6">
+        <label>unordered_map</label>
+      </node>
+      <node id="3">
+        <label>unordered_set</label>
+      </node>
+      <node id="7">
+        <label>utility</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1MultiMapper" prot="public">nvblox::MultiMapper</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mapper_8h" kindref="compound">nvblox/mapper/mapper.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classnvblox_1_1MultiMapper" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1MultiMapper" kindref="compound">MultiMapper</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classnvblox_1_1MultiMapper_1af48c197947de9a00298e89340244b2d5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1MultiMapper_1af48c197947de9a00298e89340244b2d5" kindref="member">MultiMapper</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>voxel_size_m,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type<sp/>=<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" kindref="member">ProjectiveLayerType</ref><sp/>masked_projective_layer_type<sp/>=</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa421dc33c3f07425cb36e9fdea3492b21" kindref="member">ProjectiveLayerType::kOccupancy</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" kindref="member">ProjectiveLayerType</ref><sp/>unmasked_projective_layer_type<sp/>=</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa50ef3837f3af039a7563f851682eab91" kindref="member">ProjectiveLayerType::kTsdf</ref>);</highlight></codeline>
+<codeline lineno="32" refid="classnvblox_1_1MultiMapper_1ad608056fd34250684df1bd8b2a9b55c0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1MultiMapper_1ad608056fd34250684df1bd8b2a9b55c0" kindref="member">~MultiMapper</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classnvblox_1_1MultiMapper_1ac0c8fa53b5bd34a7bf022caae3e6b3d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MultiMapper_1ac0c8fa53b5bd34a7bf022caae3e6b3d2" kindref="member">integrateDepth</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>mask,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_CD,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_CM_CD,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>depth_camera,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>mask_camera);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classnvblox_1_1MultiMapper_1a99068f07edc808219d301c73f82aa399" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MultiMapper_1a99068f07edc808219d301c73f82aa399" kindref="member">integrateColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/>color_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>mask,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Access<sp/>to<sp/>the<sp/>internal<sp/>mappers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classnvblox_1_1MultiMapper_1a8668b72dabf818f9b862a040aaa533ba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1a8668b72dabf818f9b862a040aaa533ba" kindref="member">unmasked_mapper</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classnvblox_1_1MultiMapper_1ac01429dcd04bafdf8116c14d51e10bac" kindref="member">unmasked_mapper_</ref>.get();<sp/>}</highlight></codeline>
+<codeline lineno="60" refid="classnvblox_1_1MultiMapper_1a4fc7f709117a0d8fd58e76b8da57513e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1a4fc7f709117a0d8fd58e76b8da57513e" kindref="member">masked_mapper</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classnvblox_1_1MultiMapper_1aed608139fbe0ecd70ad1bf4e726e342d" kindref="member">masked_mapper_</ref>.get();<sp/>}</highlight></codeline>
+<codeline lineno="61" refid="classnvblox_1_1MultiMapper_1a3e86460d83a4c6ac142c3e25e72ac53f" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Mapper&gt;&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1a3e86460d83a4c6ac142c3e25e72ac53f" kindref="member">unmasked_mapper</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MultiMapper_1ac01429dcd04bafdf8116c14d51e10bac" kindref="member">unmasked_mapper_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="classnvblox_1_1MultiMapper_1a5e76b84bc24f39a0694eebadfac90961" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Mapper&gt;&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1a5e76b84bc24f39a0694eebadfac90961" kindref="member">masked_mapper</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MultiMapper_1aed608139fbe0ecd70ad1bf4e726e342d" kindref="member">masked_mapper_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>functions<sp/>return<sp/>a<sp/>reference<sp/>to<sp/>the<sp/>masked<sp/>images<sp/>generated<sp/>during</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>preceeding<sp/>calls<sp/>to<sp/>integrateColor()<sp/>and<sp/>integrateDepth().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classnvblox_1_1MultiMapper_1a50d95486c91529fbcb4d9a1b29fff08e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1a50d95486c91529fbcb4d9a1b29fff08e" kindref="member">getLastDepthFrameUnmasked</ref>();</highlight></codeline>
+<codeline lineno="67" refid="classnvblox_1_1MultiMapper_1a224b4781bbf329794ec49f1d49455b0a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1a224b4781bbf329794ec49f1d49455b0a" kindref="member">getLastDepthFrameMasked</ref>();</highlight></codeline>
+<codeline lineno="68" refid="classnvblox_1_1MultiMapper_1ae088c707c3d437b58d7627513703c5bb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1ae088c707c3d437b58d7627513703c5bb" kindref="member">getLastColorFrameUnmasked</ref>();</highlight></codeline>
+<codeline lineno="69" refid="classnvblox_1_1MultiMapper_1aa84b3e55eb307d16bdfc81b2f3d219ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1aa84b3e55eb307d16bdfc81b2f3d219ea" kindref="member">getLastColorFrameMasked</ref>();</highlight></codeline>
+<codeline lineno="70" refid="classnvblox_1_1MultiMapper_1a25504604996c275cef9ba7b5f28d8cd2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1a25504604996c275cef9ba7b5f28d8cd2" kindref="member">getLastDepthFrameMaskOverlay</ref>();</highlight></codeline>
+<codeline lineno="71" refid="classnvblox_1_1MultiMapper_1aa42ee2432a1913ecc499c2044eb91fb2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/><ref refid="classnvblox_1_1MultiMapper_1aa42ee2432a1913ecc499c2044eb91fb2" kindref="member">getLastColorFrameMaskOverlay</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classnvblox_1_1MultiMapper_1a8f0a61cfa2d78a915a0cd862a9a952a9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MultiMapper_1a8f0a61cfa2d78a915a0cd862a9a952a9" kindref="member">setDepthMaskedImageInvalidPixel</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth_value);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classnvblox_1_1MultiMapper_1a52a17d6e87c0b178db6be3500210fe40" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MultiMapper_1a52a17d6e87c0b178db6be3500210fe40" kindref="member">setDepthUnmaskedImageInvalidPixel</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth_value);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Split<sp/>depth<sp/>images<sp/>based<sp/>on<sp/>a<sp/>mask.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Note<sp/>that<sp/>we<sp/>internally<sp/>pre-allocate<sp/>space<sp/>for<sp/>the<sp/>split<sp/>images<sp/>on<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>call.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classnvblox_1_1MultiMapper_1ad67e25ac350f64a8a29a499a81852783" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageMasker" kindref="compound">ImageMasker</ref><sp/><ref refid="classnvblox_1_1MultiMapper_1ad67e25ac350f64a8a29a499a81852783" kindref="member">image_masker_</ref>;</highlight></codeline>
+<codeline lineno="88" refid="classnvblox_1_1MultiMapper_1a04b056d2d7b7c87a14039c9c12635d79" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref><sp/><ref refid="classnvblox_1_1MultiMapper_1a04b056d2d7b7c87a14039c9c12635d79" kindref="member">depth_frame_unmasked_</ref>;</highlight></codeline>
+<codeline lineno="89" refid="classnvblox_1_1MultiMapper_1a8858f50725c6b3ede6f646e3987a7eeb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref><sp/><ref refid="classnvblox_1_1MultiMapper_1a8858f50725c6b3ede6f646e3987a7eeb" kindref="member">depth_frame_masked_</ref>;</highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1MultiMapper_1a456e3eef8cf952e6e4b24cbc86ce9398" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref><sp/><ref refid="classnvblox_1_1MultiMapper_1a456e3eef8cf952e6e4b24cbc86ce9398" kindref="member">color_frame_unmasked_</ref>;</highlight></codeline>
+<codeline lineno="91" refid="classnvblox_1_1MultiMapper_1a540e90800f9a279003a08caf50ef76d2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref><sp/><ref refid="classnvblox_1_1MultiMapper_1a540e90800f9a279003a08caf50ef76d2" kindref="member">color_frame_masked_</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Mask<sp/>overlays<sp/>used<sp/>as<sp/>debug<sp/>outputs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classnvblox_1_1MultiMapper_1a45ab40dc576651dcf1be531dda334f84" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref><sp/><ref refid="classnvblox_1_1MultiMapper_1a45ab40dc576651dcf1be531dda334f84" kindref="member">masked_depth_overlay_</ref>;</highlight></codeline>
+<codeline lineno="95" refid="classnvblox_1_1MultiMapper_1a0e0813390faefe073e0a319eb8f3e40b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref><sp/><ref refid="classnvblox_1_1MultiMapper_1a0e0813390faefe073e0a319eb8f3e40b" kindref="member">masked_color_overlay_</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>two<sp/>mappers<sp/>to<sp/>which<sp/>the<sp/>frames<sp/>are<sp/>integrated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classnvblox_1_1MultiMapper_1ac01429dcd04bafdf8116c14d51e10bac" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Mapper&gt;<sp/><ref refid="classnvblox_1_1MultiMapper_1ac01429dcd04bafdf8116c14d51e10bac" kindref="member">unmasked_mapper_</ref>;</highlight></codeline>
+<codeline lineno="99" refid="classnvblox_1_1MultiMapper_1aed608139fbe0ecd70ad1bf4e726e342d" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Mapper&gt;<sp/><ref refid="classnvblox_1_1MultiMapper_1aed608139fbe0ecd70ad1bf4e726e342d" kindref="member">masked_mapper_</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/multi_mapper.h"/>
+  </compounddef>
+</doxygen>

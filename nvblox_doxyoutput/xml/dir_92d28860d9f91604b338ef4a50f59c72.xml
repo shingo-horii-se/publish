@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_92d28860d9f91604b338ef4a50f59c72" kind="dir">
+    <compoundname>mesh</compoundname>
+    <innerdir refid="dir_92184dbe46fddfd3e71c370233e186e6">internal</innerdir>
+    <innerfile refid="mesh_8h">mesh.h</innerfile>
+    <innerfile refid="mesh__block_8h">mesh_block.h</innerfile>
+    <innerfile refid="mesh__integrator_8h">mesh_integrator.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/"/>
+  </compounddef>
+</doxygen>

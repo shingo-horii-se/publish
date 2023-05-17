@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="gpu__layer__view_8h" kind="file" language="C++">
+    <compoundname>gpu_layer_view.h</compoundname>
+    <includes local="no">memory</includes>
+    <includedby refid="layer_8h" local="yes">layer.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <includedby refid="projective__integrator_8h" local="yes">projective_integrator.h</includedby>
+    <includedby refid="sphere__tracer_8h" local="yes">sphere_tracer.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>gpu_layer_view.h</label>
+        <link refid="gpu__layer__view_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>bounding_boxes.h</label>
+        <link refid="bounding__boxes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gpu_layer_view.h</label>
+        <link refid="gpu__layer__view_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>esdf_integrator.h</label>
+        <link refid="esdf__integrator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>integrators_common.h</label>
+        <link refid="integrators__common_8h"/>
+      </node>
+      <node id="17">
+        <label>projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>occupancy_decay_integrator.h</label>
+        <link refid="occupancy__decay__integrator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>projective_color_integrator.h</label>
+        <link refid="projective__color__integrator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>interpolation_3d.h</label>
+        <link refid="interpolation__3d_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>layer_cake_io.h</label>
+        <link refid="layer__cake__io_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>mesh_io.h</label>
+        <link refid="mesh__io_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>pointcloud_io.h</label>
+        <link refid="pointcloud__io_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>accessors.h</label>
+        <link refid="accessors_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>common_names.h</label>
+        <link refid="common__names_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>layer.h</label>
+        <link refid="layer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>layer_cake.h</label>
+        <link refid="layer__cake_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>marching_cubes.h</label>
+        <link refid="marching__cubes_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mesh_block.h</label>
+        <link refid="mesh__block_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mesh_integrator.h</label>
+        <link refid="mesh__integrator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="30">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sphere_tracer.h</label>
+        <link refid="sphere__tracer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>common_types.h</label>
+        <link refid="common__types_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>layer_serialization.h</label>
+        <link refid="layer__serialization_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>layer_type_register.h</label>
+        <link refid="layer__type__register_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>serializer.h</label>
+        <link refid="serializer_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1GPULayerView" prot="public">nvblox::GPULayerView</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BlockType&gt;</highlight></codeline>
+<codeline lineno="23" refid="classnvblox_1_1GPUHashImpl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1GPUHashImpl" kindref="compound">GPUHashImpl</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BlockType&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BlockType&gt;</highlight></codeline>
+<codeline lineno="29" refid="classnvblox_1_1GPULayerView" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classnvblox_1_1GPULayerView_1acae91f0578c0f4c36fc98d9812cb991c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1BlockLayer" kindref="compound">LayerType</ref><sp/>=<sp/><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer&lt;BlockType&gt;</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classnvblox_1_1GPULayerView_1aeb062e7c86bf2d515b15004d4c283bb3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView_1aeb062e7c86bf2d515b15004d4c283bb3" kindref="member">GPULayerView</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34" refid="classnvblox_1_1GPULayerView_1a576444dbb3a6ac518a127cfb662f7e27" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView_1a576444dbb3a6ac518a127cfb662f7e27" kindref="member">GPULayerView</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max_num_blocks);</highlight></codeline>
+<codeline lineno="35" refid="classnvblox_1_1GPULayerView_1a0b7b3dc60f9605fd6847d1d8f5910833" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView_1a0b7b3dc60f9605fd6847d1d8f5910833" kindref="member">GPULayerView</ref>(<ref refid="classnvblox_1_1BlockLayer" kindref="compound">LayerType</ref>*<sp/>layer_ptr);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classnvblox_1_1GPULayerView_1a27b3189efadf324c5926ee34cf1a6731" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView_1a27b3189efadf324c5926ee34cf1a6731" kindref="member">GPULayerView</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="38" refid="classnvblox_1_1GPULayerView_1aef48edf3b418900fdbd395032f96414f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView_1aef48edf3b418900fdbd395032f96414f" kindref="member">GPULayerView</ref>(<ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="39" refid="classnvblox_1_1GPULayerView_1a4b1442640fe08501f0d8110e6aa53c03" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref>&amp;<sp/><ref refid="classnvblox_1_1GPULayerView_1a4b1442640fe08501f0d8110e6aa53c03" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="40" refid="classnvblox_1_1GPULayerView_1a3686736464cb7f4715552518c718b09d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref>&amp;<sp/><ref refid="classnvblox_1_1GPULayerView_1a3686736464cb7f4715552518c718b09d" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classnvblox_1_1GPULayerView_1aa52025ee94aca788dece0d2f20634d38" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1GPULayerView_1aa52025ee94aca788dece0d2f20634d38" kindref="member">~GPULayerView</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Creates<sp/>a<sp/>new<sp/>GPULayerView<sp/>from<sp/>a<sp/>layer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classnvblox_1_1GPULayerView_1a3524b09bf78c349001acea7fc7c8ecb7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView_1a3524b09bf78c349001acea7fc7c8ecb7" kindref="member">reset</ref>(<ref refid="classnvblox_1_1BlockLayer" kindref="compound">LayerType</ref>*<sp/>layer_ptr);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Resizes<sp/>the<sp/>underlying<sp/>GPU<sp/>hash<sp/>as<sp/>well<sp/>as<sp/>deleting<sp/>its<sp/>contents</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classnvblox_1_1GPULayerView_1a70a32f1d04f77bbdf06b6aee2be283f3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView_1a70a32f1d04f77bbdf06b6aee2be283f3" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>new_max_num_blocks);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classnvblox_1_1GPULayerView_1a179047cdd75ffc52cdeca8e19e8ab6ad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView_1a179047cdd75ffc52cdeca8e19e8ab6ad" kindref="member">block_size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>block_size_;<sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classnvblox_1_1GPULayerView_1a1eded184d71db147438bc93dd494aa91" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPUHashImpl" kindref="compound">GPUHashImpl&lt;BlockType&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1GPULayerView_1a1eded184d71db147438bc93dd494aa91" kindref="member">getHash</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*gpu_hash_ptr_;<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classnvblox_1_1GPULayerView_1ac026e6b34719e88514bf5715ebfc3e40" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView_1ac026e6b34719e88514bf5715ebfc3e40" kindref="member">size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classnvblox_1_1GPULayerView_1aa3c96ebc9edc5bdf6a1333787e55d9b9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView_1aa3c96ebc9edc5bdf6a1333787e55d9b9" kindref="member">max_load_factor</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max_load_factor_;<sp/>}</highlight></codeline>
+<codeline lineno="58" refid="classnvblox_1_1GPULayerView_1a39e08efea4d37922c1c2e9648503ae4e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1GPULayerView_1a39e08efea4d37922c1c2e9648503ae4e" kindref="member">size_expansion_factor</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size_expansion_factor_;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Layer<sp/>params</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>block_size_;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>load<sp/>factor<sp/>at<sp/>which<sp/>we<sp/>reallocate<sp/>space.<sp/>Load<sp/>factors<sp/>of<sp/>above<sp/>0.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>seem<sp/>to<sp/>cause<sp/>the<sp/>hash<sp/>table<sp/>to<sp/>overfill<sp/>in<sp/>some<sp/>cases,<sp/>so<sp/>please<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>loads<sp/>lower<sp/>than<sp/>that.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_load_factor_<sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>factor<sp/>by<sp/>which<sp/>we<sp/>overallocate<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size_expansion_factor_<sp/>=<sp/>2.0f;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE(alexmillane):<sp/>To<sp/>keep<sp/>GPU<sp/>code<sp/>out<sp/>of<sp/>the<sp/>header<sp/>we<sp/>use<sp/>PIMPL<sp/>to<sp/>hide</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>details<sp/>of<sp/>the<sp/>GPU<sp/>hash.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;GPUHashImpl&lt;BlockType&gt;&gt;<sp/>gpu_hash_ptr_;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOTE(alexmillane):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>I<sp/>am<sp/>leaving<sp/>this<sp/>here<sp/>as<sp/>a<sp/>reminder<sp/>to<sp/>NOT<sp/>include<sp/>the<sp/>implementation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>The<sp/>implementation<sp/>file<sp/>is<sp/>instead<sp/>included<sp/>by<sp/>.cu<sp/>files<sp/>which<sp/>declare</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>specializations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>The<sp/>problem<sp/>is<sp/>that<sp/>we<sp/>don&apos;t<sp/>want<sp/>the<sp/>GPULayerView<sp/>implementation,<sp/>which</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>contains<sp/>CUDA<sp/>calls<sp/>and<sp/>stdgpu<sp/>code,<sp/>bleeding<sp/>into<sp/>into<sp/>layer.h,<sp/>one<sp/>of<sp/>our</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>main<sp/>interace<sp/>headers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;nvblox/gpu_hash/internal/cuda/impl/gpu_layer_view_impl.cuh&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h"/>
+  </compounddef>
+</doxygen>

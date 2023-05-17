@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1ImageBase" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::ImageBase</compoundname>
+    <derivedcompoundref refid="classnvblox_1_1Image" prot="public" virt="non-virtual">nvblox::Image&lt; float &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classnvblox_1_1Image" prot="public" virt="non-virtual">nvblox::Image&lt; Color &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classnvblox_1_1Image" prot="public" virt="non-virtual">nvblox::Image&lt; _ElementType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classnvblox_1_1ImageView" prot="public" virt="non-virtual">nvblox::ImageView&lt; _ElementType &gt;</derivedcompoundref>
+    <includes refid="image_8h" local="no">image.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename _ElementType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" prot="public" static="no">
+        <type>_ElementType</type>
+        <definition>typedef _ElementType nvblox::ImageBase&lt; _ElementType &gt;::ElementType</definition>
+        <argsstring></argsstring>
+        <name>ElementType</name>
+        <qualifiedname>nvblox::ImageBase::ElementType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="59" column="24" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::ImageBase&lt; _ElementType &gt;::rows_</definition>
+        <argsstring></argsstring>
+        <name>rows_</name>
+        <qualifiedname>nvblox::ImageBase::rows_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="106" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::ImageBase&lt; _ElementType &gt;::cols_</definition>
+        <argsstring></argsstring>
+        <name>cols_</name>
+        <qualifiedname>nvblox::ImageBase::cols_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="107" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> *</type>
+        <definition>ElementType* nvblox::ImageBase&lt; _ElementType &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>nvblox::ImageBase::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="108" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a9394ed699e8b48977dbf425f8a94bb0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::ImageBase&lt; _ElementType &gt;::~ImageBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ImageBase</name>
+        <qualifiedname>nvblox::ImageBase::~ImageBase</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="62" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::ImageBase&lt; _ElementType &gt;::cols</definition>
+        <argsstring>() const</argsstring>
+        <name>cols</name>
+        <qualifiedname>nvblox::ImageBase::cols</qualifiedname>
+        <briefdescription>
+<para>Attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="65" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::ImageBase&lt; _ElementType &gt;::rows</definition>
+        <argsstring>() const</argsstring>
+        <name>rows</name>
+        <qualifiedname>nvblox::ImageBase::rows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="66" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1ad854bf8480a21045488e98e85e5ed28d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::ImageBase&lt; _ElementType &gt;::numel</definition>
+        <argsstring>() const</argsstring>
+        <name>numel</name>
+        <qualifiedname>nvblox::ImageBase::numel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="67" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a11906bfe86bb4c4956ab93f501c7c73b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::ImageBase&lt; _ElementType &gt;::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <qualifiedname>nvblox::ImageBase::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="68" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a63357bf56903529282f781514bc162fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::ImageBase&lt; _ElementType &gt;::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <qualifiedname>nvblox::ImageBase::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="69" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1aab8397c3df9d5735d5975a9ac9fb5804" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> &amp;</type>
+        <definition>const ElementType &amp; nvblox::ImageBase&lt; _ElementType &gt;::operator()</definition>
+        <argsstring>(const int row_idx, const int col_idx) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::ImageBase::operator()</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>row_idx</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col_idx</declname>
+        </param>
+        <briefdescription>
+<para>Access NOTE(alexmillane): The guard-rails are off here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If you declare a kDevice <ref refid="classnvblox_1_1Image" kindref="compound">Image</ref> and try to access its data, you will get undefined behaviour. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="74" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1ad9dbdb0ea96b7105632ee6c526aa7440" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> &amp;</type>
+        <definition>ElementType &amp; nvblox::ImageBase&lt; _ElementType &gt;::operator()</definition>
+        <argsstring>(const int row_idx, const int col_idx)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::ImageBase::operator()</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>row_idx</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="78" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a36da952d6f8858e22bc9bcbcaf75aeb1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> &amp;</type>
+        <definition>const ElementType &amp; nvblox::ImageBase&lt; _ElementType &gt;::operator()</definition>
+        <argsstring>(const int linear_idx) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::ImageBase::operator()</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>linear_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="81" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1ad4d1c7922f30076be956d53d3ca425cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> &amp;</type>
+        <definition>ElementType &amp; nvblox::ImageBase&lt; _ElementType &gt;::operator()</definition>
+        <argsstring>(const int linear_idx)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::ImageBase::operator()</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>linear_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="84" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1af18aec811c976ef51a3d91e791cf3a5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> *</type>
+        <definition>ElementType * nvblox::ImageBase&lt; _ElementType &gt;::dataPtr</definition>
+        <argsstring>()</argsstring>
+        <name>dataPtr</name>
+        <qualifiedname>nvblox::ImageBase::dataPtr</qualifiedname>
+        <briefdescription>
+<para>Raw pointer access. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="89" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a535d9177d9a0eeb3df283676206f011c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> *</type>
+        <definition>const ElementType * nvblox::ImageBase&lt; _ElementType &gt;::dataConstPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>dataConstPtr</name>
+        <qualifiedname>nvblox::ImageBase::dataConstPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="90" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a52fd3795cb941f3de812f10c7eaadb7b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ImageBase&lt; _ElementType &gt;::ImageBase</definition>
+        <argsstring>(int rows, int cols, ElementType *data=nullptr)</argsstring>
+        <name>ImageBase</name>
+        <qualifiedname>nvblox::ImageBase::ImageBase</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref> *</type>
+          <declname>data</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructors protected. Only callable from the child classes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="94" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="94" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a63c5eb5434b0de06b4b6e7688e74f680" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ImageBase&lt; _ElementType &gt;::ImageBase</definition>
+        <argsstring>()</argsstring>
+        <name>ImageBase</name>
+        <qualifiedname>nvblox::ImageBase::ImageBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="96" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1aea81e82f1984f34eed7314805823e031" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ImageBase&lt; _ElementType &gt;::ImageBase</definition>
+        <argsstring>(const ImageBase &amp;other)=delete</argsstring>
+        <name>ImageBase</name>
+        <qualifiedname>nvblox::ImageBase::ImageBase</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="99" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a99b33111882c220c7f336e0e28c45679" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref> &amp;</type>
+        <definition>ImageBase &amp; nvblox::ImageBase&lt; _ElementType &gt;::operator=</definition>
+        <argsstring>(const ImageBase &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::ImageBase::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="100" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a870f61cfb8a3a845a6d590d33a7c57b3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ImageBase&lt; _ElementType &gt;::ImageBase</definition>
+        <argsstring>(ImageBase &amp;&amp;other)=delete</argsstring>
+        <name>ImageBase</name>
+        <qualifiedname>nvblox::ImageBase::ImageBase</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="103" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageBase_1a75a04dd2f4c68ca26dd301dc1ed23b2f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref> &amp;</type>
+        <definition>ImageBase &amp; nvblox::ImageBase&lt; _ElementType &gt;::operator=</definition>
+        <argsstring>(ImageBase &amp;&amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::ImageBase::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="104" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>nvblox::Image&lt; Color &gt;</label>
+        <link refid="classnvblox_1_1Image"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::Image&lt; float &gt;</label>
+        <link refid="classnvblox_1_1Image"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox::Image&lt; _ElementType &gt;</label>
+        <link refid="classnvblox_1_1Image"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nvblox::ImageBase&lt; _ElementType &gt;</label>
+        <link refid="classnvblox_1_1ImageBase"/>
+      </node>
+      <node id="5">
+        <label>nvblox::ImageView&lt; _ElementType &gt;</label>
+        <link refid="classnvblox_1_1ImageView"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="56" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="56" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>cols</name></member>
+      <member refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>cols_</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>data_</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a535d9177d9a0eeb3df283676206f011c" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>dataConstPtr</name></member>
+      <member refid="classnvblox_1_1ImageBase_1af18aec811c976ef51a3d91e791cf3a5e" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>dataPtr</name></member>
+      <member refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>ElementType</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a63357bf56903529282f781514bc162fc" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>height</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a52fd3795cb941f3de812f10c7eaadb7b" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>ImageBase</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a63c5eb5434b0de06b4b6e7688e74f680" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>ImageBase</name></member>
+      <member refid="classnvblox_1_1ImageBase_1aea81e82f1984f34eed7314805823e031" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>ImageBase</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a870f61cfb8a3a845a6d590d33a7c57b3" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>ImageBase</name></member>
+      <member refid="classnvblox_1_1ImageBase_1ad854bf8480a21045488e98e85e5ed28d" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>numel</name></member>
+      <member refid="classnvblox_1_1ImageBase_1aab8397c3df9d5735d5975a9ac9fb5804" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>operator()</name></member>
+      <member refid="classnvblox_1_1ImageBase_1ad9dbdb0ea96b7105632ee6c526aa7440" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>operator()</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a36da952d6f8858e22bc9bcbcaf75aeb1" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>operator()</name></member>
+      <member refid="classnvblox_1_1ImageBase_1ad4d1c7922f30076be956d53d3ca425cd" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>operator()</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a99b33111882c220c7f336e0e28c45679" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a75a04dd2f4c68ca26dd301dc1ed23b2f" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>rows</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" prot="protected" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>rows_</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a11906bfe86bb4c4956ab93f501c7c73b" prot="public" virt="non-virtual"><scope>nvblox::ImageBase</scope><name>width</name></member>
+      <member refid="classnvblox_1_1ImageBase_1a9394ed699e8b48977dbf425f8a94bb0b" prot="public" virt="virtual"><scope>nvblox::ImageBase</scope><name>~ImageBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

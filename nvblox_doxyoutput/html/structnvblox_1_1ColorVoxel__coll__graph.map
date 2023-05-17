@@ -1,0 +1,4 @@
+<map id="nvblox::ColorVoxel" name="nvblox::ColorVoxel">
+<area shape="rect" id="node1" title="Voxel that stores the color near the surface." alt="" coords="5,96,134,123"/>
+<area shape="rect" id="node2" href="$structnvblox_1_1Color.html" title="Color, stored as 8&#45;bit RGBA, with helper functions for commonly&#45;used colors." alt="" coords="22,5,117,32"/>
+</map>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1timing_1_1TimerChrono" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::timing::TimerChrono</compoundname>
+    <includes refid="timing_8h" local="no">timing.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1TimerChrono_1a31ae441784a58b5866b97d1078adb681" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; std::chrono::system_clock &gt;</type>
+        <definition>std::chrono::time_point&lt;std::chrono::system_clock&gt; nvblox::timing::TimerChrono::time_</definition>
+        <argsstring></argsstring>
+        <name>time_</name>
+        <qualifiedname>nvblox::timing::TimerChrono::time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="160" column="27" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1TimerChrono_1a637e4366b37e83247d3319ee2cfd1687" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nvblox::timing::TimerChrono::timing_</definition>
+        <argsstring></argsstring>
+        <name>timing_</name>
+        <qualifiedname>nvblox::timing::TimerChrono::timing_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="162" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1TimerChrono_1a0c948981d1413363249905474676ea6d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t nvblox::timing::TimerChrono::handle_</definition>
+        <argsstring></argsstring>
+        <name>handle_</name>
+        <qualifiedname>nvblox::timing::TimerChrono::handle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="163" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1TimerChrono_1aa1acf8a747a12a2d4d54ac8e5e493200" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::TimerChrono::TimerChrono</definition>
+        <argsstring>(size_t handle, bool constructStopped=false)</argsstring>
+        <name>TimerChrono</name>
+        <qualifiedname>nvblox::timing::TimerChrono::TimerChrono</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>constructStopped</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="151" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1TimerChrono_1a8ec5f678bd603fcfc19709183bd7d58e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::TimerChrono::TimerChrono</definition>
+        <argsstring>(std::string const &amp;tag, bool constructStopped=false)</argsstring>
+        <name>TimerChrono</name>
+        <qualifiedname>nvblox::timing::TimerChrono::TimerChrono</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>constructStopped</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="152" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1TimerChrono_1adfcecd4ed546bffdc896f8482652aa8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::TimerChrono::~TimerChrono</definition>
+        <argsstring>()</argsstring>
+        <name>~TimerChrono</name>
+        <qualifiedname>nvblox::timing::TimerChrono::~TimerChrono</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="153" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1TimerChrono_1a6464377cc1e622361088a302a7ef05e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::TimerChrono::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>nvblox::timing::TimerChrono::Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="155" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1TimerChrono_1aabffa76a23be222f53df7184408aa854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::TimerChrono::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <qualifiedname>nvblox::timing::TimerChrono::Stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="156" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1TimerChrono_1ab34a33a6f4921db38f8dcdaaa40034ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::timing::TimerChrono::IsTiming</definition>
+        <argsstring>() const</argsstring>
+        <name>IsTiming</name>
+        <qualifiedname>nvblox::timing::TimerChrono::IsTiming</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="157" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="149" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="149" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1a0c948981d1413363249905474676ea6d" prot="private" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>handle_</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1ab34a33a6f4921db38f8dcdaaa40034ec" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>IsTiming</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1a6464377cc1e622361088a302a7ef05e3" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>Start</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1aabffa76a23be222f53df7184408aa854" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>Stop</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1a31ae441784a58b5866b97d1078adb681" prot="private" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>time_</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1aa1acf8a747a12a2d4d54ac8e5e493200" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>TimerChrono</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1a8ec5f678bd603fcfc19709183bd7d58e" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>TimerChrono</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1a637e4366b37e83247d3319ee2cfd1687" prot="private" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>timing_</name></member>
+      <member refid="classnvblox_1_1timing_1_1TimerChrono_1adfcecd4ed546bffdc896f8482652aa8a" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerChrono</scope><name>~TimerChrono</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

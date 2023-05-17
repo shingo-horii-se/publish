@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1Serializer" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::Serializer</compoundname>
+    <includes refid="serializer_8h" local="no">serializer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1Serializer_1aea01738aa303d6bc42b2f266e00e0400" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1SqliteDatabase" kindref="compound">SqliteDatabase</ref></type>
+        <definition>SqliteDatabase nvblox::Serializer::sqlite_</definition>
+        <argsstring></argsstring>
+        <name>sqlite_</name>
+        <qualifiedname>nvblox::Serializer::sqlite_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="114" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a052c0483999c9700e4584f118d8ec7e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Serializer::Serializer</definition>
+        <argsstring>()</argsstring>
+        <name>Serializer</name>
+        <qualifiedname>nvblox::Serializer::Serializer</qualifiedname>
+        <briefdescription>
+<para>Default constructor for invalid file. Must call open before using. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a6641b725422bca8efd0d6938a1361264" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::Serializer::~Serializer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Serializer</name>
+        <qualifiedname>nvblox::Serializer::~Serializer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="33" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a3ffe589cd54bada3f14f78041aab1122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Serializer::Serializer</definition>
+        <argsstring>(const std::string &amp;filename, std::ios_base::openmode openmode=std::ios::in)</argsstring>
+        <name>Serializer</name>
+        <qualifiedname>nvblox::Serializer::Serializer</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::ios_base::openmode</type>
+          <declname>openmode</declname>
+          <defval>std::ios::in</defval>
+        </param>
+        <briefdescription>
+<para>Open a particular file, default to open for reading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1ac2dc3630d209ebb9cc58826b0a4cbf5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>nvblox::Serializer::valid</qualifiedname>
+        <briefdescription>
+<para>Is the current file valid? This means that we have successfully opened a valid database file to write to or read from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a9fd65087b1a5ee9202ce6c7364c85301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::open</definition>
+        <argsstring>(const std::string &amp;filename, std::ios_base::openmode openmode=std::ios::in)</argsstring>
+        <name>open</name>
+        <qualifiedname>nvblox::Serializer::open</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::ios_base::openmode</type>
+          <declname>openmode</declname>
+          <defval>std::ios::in</defval>
+        </param>
+        <briefdescription>
+<para>Open a file for reading (std::ios::in) or writing (std::ios::out) or both. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>std::ios::out &amp; std::ios::trunc will cause the file to be truncated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a3131041d8f71f7396895a2db2e1bae25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref></type>
+        <definition>LayerCake nvblox::Serializer::loadLayerCake</definition>
+        <argsstring>(MemoryType memory_type)</argsstring>
+        <name>loadLayerCake</name>
+        <qualifiedname>nvblox::Serializer::loadLayerCake</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+<para>Load a layer cake from the opened file of a given memory type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="49" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a7b3e7f40e658a2bdb026dc927627c4e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::writeLayerCake</definition>
+        <argsstring>(const LayerCake &amp;cake)</argsstring>
+        <name>writeLayerCake</name>
+        <qualifiedname>nvblox::Serializer::writeLayerCake</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+          <declname>cake</declname>
+        </param>
+        <briefdescription>
+<para>Write out a layer cake to the opened file, return success. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a2ebaabaca2b0ad385636075aba5e4e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>nvblox::Serializer::close</qualifiedname>
+        <briefdescription>
+<para>Close the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="55" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a3fb733906e19f635cdbf7dc238d45b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::createLayerTables</definition>
+        <argsstring>(const std::string &amp;layer_name)</argsstring>
+        <name>createLayerTables</name>
+        <qualifiedname>nvblox::Serializer::createLayerTables</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <briefdescription>
+<para>Create a layer table &amp; metadata table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a1df9d3fcabe4f6d79bf054d6baccad8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::setLayerParameters</definition>
+        <argsstring>(const std::string &amp;layer_name, const LayerParameterStruct &amp;layer_params)</argsstring>
+        <name>setLayerParameters</name>
+        <qualifiedname>nvblox::Serializer::setLayerParameters</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref> &amp;</type>
+          <declname>layer_params</declname>
+        </param>
+        <briefdescription>
+<para>Serialize layer parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a9448568f2582a677b1fcc9a9d3f61102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getLayerParameters</definition>
+        <argsstring>(const std::string &amp;layer_name, LayerParameterStruct *layer_params)</argsstring>
+        <name>getLayerParameters</name>
+        <qualifiedname>nvblox::Serializer::getLayerParameters</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type><ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref> *</type>
+          <declname>layer_params</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize layer parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="67" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1acfaf025f62278ca58790f8ba7df052bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::addLayerData</definition>
+        <argsstring>(const std::string &amp;layer_name, const Index3D &amp;index, const std::vector&lt; Byte &gt; &amp;data)</argsstring>
+        <name>addLayerData</name>
+        <qualifiedname>nvblox::Serializer::addLayerData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write a new data parameter to the table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="71" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a88fb7fca116ed22a2189dcd3fedfbfca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::setLayerParameterString</definition>
+        <argsstring>(const std::string &amp;layer_name, const std::string &amp;param_name, const std::string &amp;param_value)</argsstring>
+        <name>setLayerParameterString</name>
+        <qualifiedname>nvblox::Serializer::setLayerParameterString</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>param_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>param_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a32cca13f31d3a2d3592c3d00b3c9a83e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::setLayerParameterInt</definition>
+        <argsstring>(const std::string &amp;layer_name, const std::string &amp;param_name, int param_value)</argsstring>
+        <name>setLayerParameterInt</name>
+        <qualifiedname>nvblox::Serializer::setLayerParameterInt</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>param_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>param_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1aefc2d7ff7d53e8af10cd509aee0958fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::setLayerParameterFloat</definition>
+        <argsstring>(const std::string &amp;layer_name, const std::string &amp;param_name, float param_value)</argsstring>
+        <name>setLayerParameterFloat</name>
+        <qualifiedname>nvblox::Serializer::setLayerParameterFloat</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>param_name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>param_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="81" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1aef0d7877f6292128bd22c68b7703aa7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getParameterNamesString</definition>
+        <argsstring>(const std::string &amp;layer_name, std::vector&lt; std::string &gt; *param_names)</argsstring>
+        <name>getParameterNamesString</name>
+        <qualifiedname>nvblox::Serializer::getParameterNamesString</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; *</type>
+          <declname>param_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="85" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a53968fed8a87e4bd2a83d7abdde2a657" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getParameterNamesInt</definition>
+        <argsstring>(const std::string &amp;layer_name, std::vector&lt; std::string &gt; *param_names)</argsstring>
+        <name>getParameterNamesInt</name>
+        <qualifiedname>nvblox::Serializer::getParameterNamesInt</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; *</type>
+          <declname>param_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="87" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a23467a7f5a716410fb629336ae86942c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getParameterNamesFloat</definition>
+        <argsstring>(const std::string &amp;layer_name, std::vector&lt; std::string &gt; *param_names)</argsstring>
+        <name>getParameterNamesFloat</name>
+        <qualifiedname>nvblox::Serializer::getParameterNamesFloat</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; *</type>
+          <declname>param_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="89" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a50e7da480588d6ec3ed39581f2e6ac41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getLayerParameterString</definition>
+        <argsstring>(const std::string &amp;layer_name, const std::string &amp;param_name, std::string *param_value)</argsstring>
+        <name>getLayerParameterString</name>
+        <qualifiedname>nvblox::Serializer::getLayerParameterString</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>param_name</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>param_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="93" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a80e3600f74fa71ebf69b785e6363ceb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getLayerParameterInt</definition>
+        <argsstring>(const std::string &amp;layer_name, const std::string &amp;param_name, int *param_value)</argsstring>
+        <name>getLayerParameterInt</name>
+        <qualifiedname>nvblox::Serializer::getLayerParameterInt</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>param_name</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>param_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a341bfd0707c995ff28a140479e956a21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getLayerParameterFloat</definition>
+        <argsstring>(const std::string &amp;layer_name, const std::string &amp;param_name, float *param_value)</argsstring>
+        <name>getLayerParameterFloat</name>
+        <qualifiedname>nvblox::Serializer::getLayerParameterFloat</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>param_name</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>param_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="98" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1afa19742df7e0a49b2c36ff86303b4e2e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getDataAtIndex</definition>
+        <argsstring>(const std::string &amp;layer_name, const Index3D &amp;index, std::vector&lt; Byte &gt; *data)</argsstring>
+        <name>getDataAtIndex</name>
+        <qualifiedname>nvblox::Serializer::getDataAtIndex</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="102" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a31af663b4a6d118f2158310c75c6b8c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getLayerNames</definition>
+        <argsstring>(std::vector&lt; std::string &gt; *layer_names)</argsstring>
+        <name>getLayerNames</name>
+        <qualifiedname>nvblox::Serializer::getLayerNames</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt; *</type>
+          <declname>layer_names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="105" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a94485a2f621898a9c673224289d8f0fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Serializer::getDataIndices</definition>
+        <argsstring>(const std::string &amp;layer_name, std::vector&lt; Index3D &gt; *indices)</argsstring>
+        <name>getDataIndices</name>
+        <qualifiedname>nvblox::Serializer::getDataIndices</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="106" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a617ccaeefca6c3fb5581216e9ad084fa" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string nvblox::Serializer::layerDataTableName</definition>
+        <argsstring>(const std::string &amp;layer_name) const</argsstring>
+        <name>layerDataTableName</name>
+        <qualifiedname>nvblox::Serializer::layerDataTableName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="110" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Serializer_1a8a6abce253035b3c670e16dabb4294a0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string nvblox::Serializer::layerMetadataTableName</definition>
+        <argsstring>(const std::string &amp;layer_name) const</argsstring>
+        <name>layerMetadataTableName</name>
+        <qualifiedname>nvblox::Serializer::layerMetadataTableName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layer_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="112" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to serialize and read a layer cake from an SQLite database. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" line="29" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/serializer.h" bodystart="29" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1Serializer_1acfaf025f62278ca58790f8ba7df052bc" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>addLayerData</name></member>
+      <member refid="classnvblox_1_1Serializer_1a2ebaabaca2b0ad385636075aba5e4e34" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>close</name></member>
+      <member refid="classnvblox_1_1Serializer_1a3fb733906e19f635cdbf7dc238d45b46" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>createLayerTables</name></member>
+      <member refid="classnvblox_1_1Serializer_1afa19742df7e0a49b2c36ff86303b4e2e" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getDataAtIndex</name></member>
+      <member refid="classnvblox_1_1Serializer_1a94485a2f621898a9c673224289d8f0fb" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getDataIndices</name></member>
+      <member refid="classnvblox_1_1Serializer_1a31af663b4a6d118f2158310c75c6b8c7" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getLayerNames</name></member>
+      <member refid="classnvblox_1_1Serializer_1a341bfd0707c995ff28a140479e956a21" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getLayerParameterFloat</name></member>
+      <member refid="classnvblox_1_1Serializer_1a80e3600f74fa71ebf69b785e6363ceb9" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getLayerParameterInt</name></member>
+      <member refid="classnvblox_1_1Serializer_1a9448568f2582a677b1fcc9a9d3f61102" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getLayerParameters</name></member>
+      <member refid="classnvblox_1_1Serializer_1a50e7da480588d6ec3ed39581f2e6ac41" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getLayerParameterString</name></member>
+      <member refid="classnvblox_1_1Serializer_1a23467a7f5a716410fb629336ae86942c" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getParameterNamesFloat</name></member>
+      <member refid="classnvblox_1_1Serializer_1a53968fed8a87e4bd2a83d7abdde2a657" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getParameterNamesInt</name></member>
+      <member refid="classnvblox_1_1Serializer_1aef0d7877f6292128bd22c68b7703aa7f" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>getParameterNamesString</name></member>
+      <member refid="classnvblox_1_1Serializer_1a617ccaeefca6c3fb5581216e9ad084fa" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>layerDataTableName</name></member>
+      <member refid="classnvblox_1_1Serializer_1a8a6abce253035b3c670e16dabb4294a0" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>layerMetadataTableName</name></member>
+      <member refid="classnvblox_1_1Serializer_1a3131041d8f71f7396895a2db2e1bae25" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>loadLayerCake</name></member>
+      <member refid="classnvblox_1_1Serializer_1a9fd65087b1a5ee9202ce6c7364c85301" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>open</name></member>
+      <member refid="classnvblox_1_1Serializer_1a052c0483999c9700e4584f118d8ec7e6" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>Serializer</name></member>
+      <member refid="classnvblox_1_1Serializer_1a3ffe589cd54bada3f14f78041aab1122" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>Serializer</name></member>
+      <member refid="classnvblox_1_1Serializer_1aefc2d7ff7d53e8af10cd509aee0958fc" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>setLayerParameterFloat</name></member>
+      <member refid="classnvblox_1_1Serializer_1a32cca13f31d3a2d3592c3d00b3c9a83e" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>setLayerParameterInt</name></member>
+      <member refid="classnvblox_1_1Serializer_1a1df9d3fcabe4f6d79bf054d6baccad8f" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>setLayerParameters</name></member>
+      <member refid="classnvblox_1_1Serializer_1a88fb7fca116ed22a2189dcd3fedfbfca" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>setLayerParameterString</name></member>
+      <member refid="classnvblox_1_1Serializer_1aea01738aa303d6bc42b2f266e00e0400" prot="private" virt="non-virtual"><scope>nvblox::Serializer</scope><name>sqlite_</name></member>
+      <member refid="classnvblox_1_1Serializer_1ac2dc3630d209ebb9cc58826b0a4cbf5c" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>valid</name></member>
+      <member refid="classnvblox_1_1Serializer_1a7b3e7f40e658a2bdb026dc927627c4e2" prot="public" virt="non-virtual"><scope>nvblox::Serializer</scope><name>writeLayerCake</name></member>
+      <member refid="classnvblox_1_1Serializer_1a6641b725422bca8efd0d6938a1361264" prot="public" virt="virtual"><scope>nvblox::Serializer</scope><name>~Serializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

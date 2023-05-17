@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1timing_1_1NvtxRange" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::timing::NvtxRange</compoundname>
+    <includes refid="nvtx__ranges_8h" local="no">nvtx_ranges.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1NvtxRange_1a6d42bc73da4f61cf1b8db93370ca27a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nvblox::timing::NvtxRange::started_</definition>
+        <argsstring></argsstring>
+        <name>started_</name>
+        <qualifiedname>nvblox::timing::NvtxRange::started_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="48" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1NvtxRange_1a0b2965dc2e101cee2938867ef55f1a96" prot="private" static="no" mutable="no">
+        <type>nvtxEventAttributes_t</type>
+        <definition>nvtxEventAttributes_t nvblox::timing::NvtxRange::event_attributes_</definition>
+        <argsstring></argsstring>
+        <name>event_attributes_</name>
+        <qualifiedname>nvblox::timing::NvtxRange::event_attributes_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="49" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1NvtxRange_1a042d14e24bac1ae04d57ae12c8aa0f02" prot="private" static="no" mutable="no">
+        <type>nvtxRangeId_t</type>
+        <definition>nvtxRangeId_t nvblox::timing::NvtxRange::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <qualifiedname>nvblox::timing::NvtxRange::id_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="50" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1a3d220d6c742c8cf0e52a9f1ba61f5fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::NvtxRange::NvtxRange</definition>
+        <argsstring>(const std::string &amp;message, const Color &amp;color, bool constructed_stopped=false)</argsstring>
+        <name>NvtxRange</name>
+        <qualifiedname>nvblox::timing::NvtxRange::NvtxRange</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>constructed_stopped</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="31" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1ad0ac157763099964561788b64e16c2d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::NvtxRange::NvtxRange</definition>
+        <argsstring>(const std::string &amp;message, bool constructed_stopped=false)</argsstring>
+        <name>NvtxRange</name>
+        <qualifiedname>nvblox::timing::NvtxRange::NvtxRange</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>constructed_stopped</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1a4fe8a1264f857d836019a89183c493aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::NvtxRange::~NvtxRange</definition>
+        <argsstring>()</argsstring>
+        <name>~NvtxRange</name>
+        <qualifiedname>nvblox::timing::NvtxRange::~NvtxRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="34" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1ad357900d90b55f3b7861a4136cb0f253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::NvtxRange::NvtxRange</definition>
+        <argsstring>()=delete</argsstring>
+        <name>NvtxRange</name>
+        <qualifiedname>nvblox::timing::NvtxRange::NvtxRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1ab02f2219e9fa5d931ee1bc3acc83f712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::NvtxRange::NvtxRange</definition>
+        <argsstring>(const NvtxRange &amp;other)=delete</argsstring>
+        <name>NvtxRange</name>
+        <qualifiedname>nvblox::timing::NvtxRange::NvtxRange</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1timing_1_1NvtxRange" kindref="compound">NvtxRange</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="37" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1a1b2421872b874e3cee55664ea39024dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::NvtxRange::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>nvblox::timing::NvtxRange::Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1aea1aeb9358070c56c17f310bfc125d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::NvtxRange::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <qualifiedname>nvblox::timing::NvtxRange::Stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1aa94bb12a977cb249c9c070c21c69077a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::timing::NvtxRange::Started</definition>
+        <argsstring>() const</argsstring>
+        <name>Started</name>
+        <qualifiedname>nvblox::timing::NvtxRange::Started</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="42" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1a4729d14c98df68abd58d68c6ede61f97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::NvtxRange::Init</definition>
+        <argsstring>(const std::string &amp;message, const Color &amp;color)</argsstring>
+        <name>Init</name>
+        <qualifiedname>nvblox::timing::NvtxRange::Init</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1NvtxRange_1aa7ceb9f5a540905dd90ba15feac65e17" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::NvtxRange::Init</definition>
+        <argsstring>(const std::string &amp;message, const uint32_t color)</argsstring>
+        <name>Init</name>
+        <qualifiedname>nvblox::timing::NvtxRange::Init</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="46" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instrument our timers with NvtxRanges, which can be visualized in Nsight Systems to aid with debugging and profiling. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="29" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" bodystart="29" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1a0b2965dc2e101cee2938867ef55f1a96" prot="private" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>event_attributes_</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1a042d14e24bac1ae04d57ae12c8aa0f02" prot="private" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>id_</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1a4729d14c98df68abd58d68c6ede61f97" prot="private" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>Init</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1aa7ceb9f5a540905dd90ba15feac65e17" prot="private" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>Init</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1a3d220d6c742c8cf0e52a9f1ba61f5fbe" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>NvtxRange</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1ad0ac157763099964561788b64e16c2d9" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>NvtxRange</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1ad357900d90b55f3b7861a4136cb0f253" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>NvtxRange</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1ab02f2219e9fa5d931ee1bc3acc83f712" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>NvtxRange</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1a1b2421872b874e3cee55664ea39024dd" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>Start</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1aa94bb12a977cb249c9c070c21c69077a" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>Started</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1a6d42bc73da4f61cf1b8db93370ca27a5" prot="private" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>started_</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1aea1aeb9358070c56c17f310bfc125d45" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>Stop</name></member>
+      <member refid="classnvblox_1_1timing_1_1NvtxRange_1a4fe8a1264f857d836019a89183c493aa" prot="public" virt="non-virtual"><scope>nvblox::timing::NvtxRange</scope><name>~NvtxRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

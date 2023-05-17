@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespacenvblox_1_1io" kind="namespace" language="C++">
+    <compoundname>nvblox::io</compoundname>
+    <innerclass refid="classnvblox_1_1io_1_1PlyWriter" prot="public">nvblox::io::PlyWriter</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacenvblox_1_1io_1ab8a77246a94e8bf808ab95762def81ab" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float nvblox::io::kDefaultUintDepthScaleFactor</definition>
+        <argsstring></argsstring>
+        <name>kDefaultUintDepthScaleFactor</name>
+        <qualifiedname>nvblox::io::kDefaultUintDepthScaleFactor</qualifiedname>
+        <initializer>= 1.0f / 1000.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" line="32" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a6cd76fc2c698b5d753da91e3dbb26d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::io::writeToCsv</definition>
+        <argsstring>(const std::string &amp;filepath, const Eigen::DenseBase&lt; Derived &gt; &amp;eig)</argsstring>
+        <name>writeToCsv</name>
+        <qualifiedname>nvblox::io::writeToCsv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>const Eigen::DenseBase&lt; Derived &gt; &amp;</type>
+          <declname>eig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/csv.h" line="26" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/csv.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1af6eb9bc7f5f9f521c38942c94770b530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::writeToPng</definition>
+        <argsstring>(const std::string &amp;filepath, const DepthImage &amp;frame)</argsstring>
+        <name>writeToPng</name>
+        <qualifiedname>nvblox::io::writeToPng</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" line="34" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1af648bb65a042dff0458eec9e21a9da69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::writeToPng</definition>
+        <argsstring>(const std::string &amp;filepath, const MonoImage &amp;frame)</argsstring>
+        <name>writeToPng</name>
+        <qualifiedname>nvblox::io::writeToPng</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" line="35" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1acfef67087b236a796df333386a282a34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::writeToPng</definition>
+        <argsstring>(const std::string &amp;filepath, const ColorImage &amp;frame)</argsstring>
+        <name>writeToPng</name>
+        <qualifiedname>nvblox::io::writeToPng</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" line="36" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a3b463bcbc56b6960c66ac0d396295254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::readFromPng</definition>
+        <argsstring>(const std::string &amp;filepath, DepthImage *frame_ptr, const MemoryType=MemoryType::kDevice, const float scale_factor=kDefaultUintDepthScaleFactor)</argsstring>
+        <name>readFromPng</name>
+        <qualifiedname>nvblox::io::readFromPng</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>frame_ptr</declname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>MemoryType</declname>
+          <defval><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></defval>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>scale_factor</declname>
+          <defval><ref refid="namespacenvblox_1_1io_1ab8a77246a94e8bf808ab95762def81ab" kindref="member">kDefaultUintDepthScaleFactor</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" line="38" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a4002afff3d22ac3946a3f84d75b75c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::readFromPng</definition>
+        <argsstring>(const std::string &amp;filepath, MonoImage *frame_ptr, const MemoryType=MemoryType::kDevice)</argsstring>
+        <name>readFromPng</name>
+        <qualifiedname>nvblox::io::readFromPng</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> *</type>
+          <declname>frame_ptr</declname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>MemoryType</declname>
+          <defval><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" line="41" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a6f71c47a60b2c5568bbe857cf09225ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::readFromPng</definition>
+        <argsstring>(const std::string &amp;filepath, ColorImage *frame_ptr, const MemoryType=MemoryType::kDevice)</argsstring>
+        <name>readFromPng</name>
+        <qualifiedname>nvblox::io::readFromPng</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>frame_ptr</declname>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>MemoryType</declname>
+          <defval><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" line="43" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/image_io.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1ad1e83a06b5ac56cdb73ddbba66e71ff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::writeLayerCakeToFile</definition>
+        <argsstring>(const std::string &amp;filename, const LayerCake &amp;cake)</argsstring>
+        <name>writeLayerCakeToFile</name>
+        <qualifiedname>nvblox::io::writeLayerCakeToFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+          <declname>cake</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/layer_cake_io.h" line="23" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/layer_cake_io.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1ac670a6eb8cf96969108d4c599b8fac77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref></type>
+        <definition>LayerCake nvblox::io::loadLayerCakeFromFile</definition>
+        <argsstring>(const std::string &amp;filename, MemoryType memory_type)</argsstring>
+        <name>loadLayerCakeFromFile</name>
+        <qualifiedname>nvblox::io::loadLayerCakeFromFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/layer_cake_io.h" line="24" column="11" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/layer_cake_io.h" declline="24" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a31593f4e14078663c84a36811ace839c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::combineMeshBlocks</definition>
+        <argsstring>(const BlockLayer&lt; MeshBlock &gt; &amp;layer, std::vector&lt; Vector3f &gt; *vertices_ptr, std::vector&lt; Vector3f &gt; *normals_ptr, std::vector&lt; int &gt; *triangles_ptr)</argsstring>
+        <name>combineMeshBlocks</name>
+        <qualifiedname>nvblox::io::combineMeshBlocks</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; *</type>
+          <declname>vertices_ptr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; *</type>
+          <declname>normals_ptr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; *</type>
+          <declname>triangles_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/mesh_io.h" line="28" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/mesh_io.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a928b89a3742474419fe87e34d4b81288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::outputMeshLayerToPly</definition>
+        <argsstring>(const BlockLayer&lt; MeshBlock &gt; &amp;layer, const std::string &amp;filename)</argsstring>
+        <name>outputMeshLayerToPly</name>
+        <qualifiedname>nvblox::io::outputMeshLayerToPly</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/mesh_io.h" line="33" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/mesh_io.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a2c64d934821999119e0f94eb749ba728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::outputMeshLayerToPly</definition>
+        <argsstring>(const BlockLayer&lt; MeshBlock &gt; &amp;layer, const char *filename)</argsstring>
+        <name>outputMeshLayerToPly</name>
+        <qualifiedname>nvblox::io::outputMeshLayerToPly</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/mesh_io.h" line="36" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/mesh_io.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a59e0b80b5cb47f4cca1da1c4efe9784a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::io::outputVoxelLayerToPly</definition>
+        <argsstring>(const VoxelBlockLayer&lt; VoxelType &gt; &amp;layer, const std::string &amp;filename, std::function&lt; bool(const VoxelType *voxel, float *intensity)&gt; lambda)</argsstring>
+        <name>outputVoxelLayerToPly</name>
+        <qualifiedname>nvblox::io::outputVoxelLayerToPly</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(const VoxelType *voxel, float *intensity)&gt;</type>
+          <declname>lambda</declname>
+        </param>
+        <briefdescription>
+<para>Outputs a voxel layer as a pointcloud with the lambda function deciding the intensity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The lambda outputs a boolean, saying whether that voxel should be visualized, and an intensity which will be written to the pointcloud. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/pointcloud_io.h" line="33" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/pointcloud_io.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1io_1a57321d79859977a0b56e7e5159803bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::io::outputVoxelLayerToPly</definition>
+        <argsstring>(const VoxelBlockLayer&lt; VoxelType &gt; &amp;layer, const std::string &amp;filename)</argsstring>
+        <name>outputVoxelLayerToPly</name>
+        <qualifiedname>nvblox::io::outputVoxelLayerToPly</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Without specifying a lambda, this outputs the distance as intensity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/pointcloud_io.h" line="39" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/pointcloud_io.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/csv.h" line="23" column="1"/>
+  </compounddef>
+</doxygen>

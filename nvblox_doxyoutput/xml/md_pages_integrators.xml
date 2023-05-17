@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="md_pages_integrators" kind="page">
+    <compoundname>md_pages_integrators</compoundname>
+    <title>Integrators</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An integrator is, very generally, a class that modifies the content of a layers.</para>
+<para>The integrators currently offered can be split into two types:</para>
+<para><itemizedlist>
+<listitem><para>Those which fuse incoming sensor data into a layer. For example, the <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">TsdfIntegrator</ref> and <ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ColorIntegrator</ref> fused depth images and color images into <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> and <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> respectively.</para>
+</listitem><listitem><para>Those which transform the contents of one layer to update the data in another layer. For example the <ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref> transforms an TSDF in a <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> into an ESDF in a <ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref>.</para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="1">API</heading>
+</para>
+<para>The API for the currently available integrators are here:</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">TsdfIntegrator</ref></para>
+</listitem><listitem><para><ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ColorIntegrator</ref></para>
+</listitem><listitem><para><ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref></para>
+</listitem><listitem><para><ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pages/integrators.md"/>
+  </compounddef>
+</doxygen>

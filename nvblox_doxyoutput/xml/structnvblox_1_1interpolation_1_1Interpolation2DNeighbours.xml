@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::interpolation::Interpolation2DNeighbours</compoundname>
+    <includes refid="interpolation__2d_8h" local="no">interpolation_2d.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ElementType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a3530d6031adb099351627bfc012ef8ed" prot="public" static="no" mutable="no">
+        <type>ElementType</type>
+        <definition>ElementType nvblox::interpolation::Interpolation2DNeighbours&lt; ElementType &gt;::p00</definition>
+        <argsstring></argsstring>
+        <name>p00</name>
+        <qualifiedname>nvblox::interpolation::Interpolation2DNeighbours::p00</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="41" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a0bc7fa62754f4a39c4b7d9efcee931fa" prot="public" static="no" mutable="no">
+        <type>ElementType</type>
+        <definition>ElementType nvblox::interpolation::Interpolation2DNeighbours&lt; ElementType &gt;::p01</definition>
+        <argsstring></argsstring>
+        <name>p01</name>
+        <qualifiedname>nvblox::interpolation::Interpolation2DNeighbours::p01</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="42" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a254eeaa3386f02944fd85b659c689f23" prot="public" static="no" mutable="no">
+        <type>ElementType</type>
+        <definition>ElementType nvblox::interpolation::Interpolation2DNeighbours&lt; ElementType &gt;::p10</definition>
+        <argsstring></argsstring>
+        <name>p10</name>
+        <qualifiedname>nvblox::interpolation::Interpolation2DNeighbours::p10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="43" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a49ae464c7f2cd04252360935965b0bb7" prot="public" static="no" mutable="no">
+        <type>ElementType</type>
+        <definition>ElementType nvblox::interpolation::Interpolation2DNeighbours&lt; ElementType &gt;::p11</definition>
+        <argsstring></argsstring>
+        <name>p11</name>
+        <qualifiedname>nvblox::interpolation::Interpolation2DNeighbours::p11</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="44" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1aa0a6e21fe6bf57b9a1bdf011888a8c9e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref></type>
+        <definition>Index2D nvblox::interpolation::Interpolation2DNeighbours&lt; ElementType &gt;::u_low_side_px</definition>
+        <argsstring></argsstring>
+        <name>u_low_side_px</name>
+        <qualifiedname>nvblox::interpolation::Interpolation2DNeighbours::u_low_side_px</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="45" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="40" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" bodystart="40" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a3530d6031adb099351627bfc012ef8ed" prot="public" virt="non-virtual"><scope>nvblox::interpolation::Interpolation2DNeighbours</scope><name>p00</name></member>
+      <member refid="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a0bc7fa62754f4a39c4b7d9efcee931fa" prot="public" virt="non-virtual"><scope>nvblox::interpolation::Interpolation2DNeighbours</scope><name>p01</name></member>
+      <member refid="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a254eeaa3386f02944fd85b659c689f23" prot="public" virt="non-virtual"><scope>nvblox::interpolation::Interpolation2DNeighbours</scope><name>p10</name></member>
+      <member refid="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1a49ae464c7f2cd04252360935965b0bb7" prot="public" virt="non-virtual"><scope>nvblox::interpolation::Interpolation2DNeighbours</scope><name>p11</name></member>
+      <member refid="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours_1aa0a6e21fe6bf57b9a1bdf011888a8c9e" prot="public" virt="non-virtual"><scope>nvblox::interpolation::Interpolation2DNeighbours</scope><name>u_low_side_px</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

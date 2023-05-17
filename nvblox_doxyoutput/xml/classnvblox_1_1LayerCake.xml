@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1LayerCake" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::LayerCake</compoundname>
+    <includes refid="layer__cake_8h" local="no">layer_cake.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1LayerCake_1a10fe56f9fbbe5659513f9702df8bb44b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::LayerCake::voxel_size_</definition>
+        <argsstring></argsstring>
+        <name>voxel_size_</name>
+        <qualifiedname>nvblox::LayerCake::voxel_size_</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="85" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1LayerCake_1a33f00af1c3d841b0ac160ecd540c5ec8" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::type_index, std::unique_ptr&lt; <ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::type_index, std::unique_ptr&lt;BaseLayer&gt; &gt; nvblox::LayerCake::layers_</definition>
+        <argsstring></argsstring>
+        <name>layers_</name>
+        <qualifiedname>nvblox::LayerCake::layers_</qualifiedname>
+        <briefdescription>
+<para>Stored layers Note(alexmillane): Currently we restrict the cake to storing a single layer of each type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="90" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1afc1063656b4484c9249cdf4da40d726d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::LayerCake::LayerCake</definition>
+        <argsstring>()=default</argsstring>
+        <name>LayerCake</name>
+        <qualifiedname>nvblox::LayerCake::LayerCake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a66245d14e7e174de1dc5b4aab2c1204a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::LayerCake::LayerCake</definition>
+        <argsstring>(float voxel_size)</argsstring>
+        <name>LayerCake</name>
+        <qualifiedname>nvblox::LayerCake::LayerCake</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="33" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1afaecbb4efd991cdb88099a3c21fb3302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::LayerCake::LayerCake</definition>
+        <argsstring>(const LayerCake &amp;other)=delete</argsstring>
+        <name>LayerCake</name>
+        <qualifiedname>nvblox::LayerCake::LayerCake</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Deep Copy (disallowed for now) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="36" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1aa833a801333fa8032568b83c02bab20c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+        <definition>LayerCake &amp; nvblox::LayerCake::operator=</definition>
+        <argsstring>(const LayerCake &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::LayerCake::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="37" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1ab619325dac6bd377a03d7cd522cdddf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::LayerCake::LayerCake</definition>
+        <argsstring>(LayerCake &amp;&amp;other)=default</argsstring>
+        <name>LayerCake</name>
+        <qualifiedname>nvblox::LayerCake::LayerCake</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="40" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1ae0aaabad1525c891cecf9bfd333c7839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+        <definition>LayerCake &amp; nvblox::LayerCake::operator=</definition>
+        <argsstring>(LayerCake &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::LayerCake::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="41" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1ac0654b4e385cac8f97ff93bbdde8fb24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>LayerType *</type>
+        <definition>LayerType * nvblox::LayerCake::add</definition>
+        <argsstring>(MemoryType memory_type)</argsstring>
+        <name>add</name>
+        <qualifiedname>nvblox::LayerCake::add</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="44" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a00b7afb6234ee9ef68d314bdc82fd04d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::LayerCake::insert</definition>
+        <argsstring>(const std::type_index &amp;type_index, std::unique_ptr&lt; BaseLayer &gt; &amp;&amp;layer)</argsstring>
+        <name>insert</name>
+        <qualifiedname>nvblox::LayerCake::insert</qualifiedname>
+        <param>
+          <type>const std::type_index &amp;</type>
+          <declname>type_index</declname>
+        </param>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref> &gt; &amp;&amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Moves the ownership of the layer to the <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="47" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1ad9b8151ca8a0d898b72b3dfacb61007b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>LayerType *</type>
+        <definition>LayerType * nvblox::LayerCake::getPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getPtr</name>
+        <qualifiedname>nvblox::LayerCake::getPtr</qualifiedname>
+        <briefdescription>
+<para>Retrieve layers (as pointers) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1af9fa160b5ed9329ee57bd6c6a58a58ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>const LayerType *</type>
+        <definition>const LayerType * nvblox::LayerCake::getConstPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getConstPtr</name>
+        <qualifiedname>nvblox::LayerCake::getConstPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="54" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a180835d3fe2a3816c2f9da6c37e9a335" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>const LayerType &amp;</type>
+        <definition>const LayerType &amp; nvblox::LayerCake::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <qualifiedname>nvblox::LayerCake::get</qualifiedname>
+        <briefdescription>
+<para>Retrieve layers (as reference) (will fail if the layer doesn&apos;t exist) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="58" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a127d429004923697dcb69b16d4078430" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::LayerCake::exists</definition>
+        <argsstring>() const</argsstring>
+        <name>exists</name>
+        <qualifiedname>nvblox::LayerCake::exists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1ab613c48f308f64eaf26306070ee4ba40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::LayerCake::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>nvblox::LayerCake::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="63" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1af29993162b0d5a9720308161367a5b04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::LayerCake::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>nvblox::LayerCake::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="65" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a4d73aa966b2eac2d7aeca6f601d9489e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::unordered_map&lt; std::type_index, std::unique_ptr&lt; <ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref> &gt; &gt; &amp;</type>
+        <definition>const std::unordered_map&lt; std::type_index, std::unique_ptr&lt; BaseLayer &gt; &gt; &amp; nvblox::LayerCake::get_layers</definition>
+        <argsstring>() const</argsstring>
+        <name>get_layers</name>
+        <qualifiedname>nvblox::LayerCake::get_layers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="74" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a6d68e3d4f37d3ce9844f20eee8a5bf42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::LayerCake::voxel_size</definition>
+        <argsstring>() const</argsstring>
+        <name>voxel_size</name>
+        <qualifiedname>nvblox::LayerCake::voxel_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="78" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a1654473d845cebb8aac99fbd4c3318be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::LayerCake::block_size</definition>
+        <argsstring>() const</argsstring>
+        <name>block_size</name>
+        <qualifiedname>nvblox::LayerCake::block_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="79" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1a1fc52582159468b227e668e8bf6115e2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>LayerTypes</declname>
+            <defname>LayerTypes</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref></type>
+        <definition>static LayerCake nvblox::LayerCake::create</definition>
+        <argsstring>(float voxel_size, MemoryType memory_type)</argsstring>
+        <name>create</name>
+        <qualifiedname>nvblox::LayerCake::create</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+<para>Factory accepting a list of LayerTypes (and MemoryTypes) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="69" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerCake_1af813a6e7bcae450d813bad93b1b4ea98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>LayerTypes</declname>
+            <defname>LayerTypes</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>MemoryTypes</declname>
+            <defname>MemoryTypes</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref></type>
+        <definition>static LayerCake nvblox::LayerCake::create</definition>
+        <argsstring>(float voxel_size, MemoryTypes... memory_type)</argsstring>
+        <name>create</name>
+        <qualifiedname>nvblox::LayerCake::create</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <param>
+          <type>MemoryTypes...</type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="71" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds a collection of layers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Currently a restriction that only 1 layer of each type can be stored, and all layers should have the same voxel (or block) size. </para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" line="30" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer_cake.h" bodystart="30" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1LayerCake_1ac0654b4e385cac8f97ff93bbdde8fb24" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>add</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a1654473d845cebb8aac99fbd4c3318be" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>block_size</name></member>
+      <member refid="classnvblox_1_1LayerCake_1af29993162b0d5a9720308161367a5b04" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>clear</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a1fc52582159468b227e668e8bf6115e2" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>create</name></member>
+      <member refid="classnvblox_1_1LayerCake_1af813a6e7bcae450d813bad93b1b4ea98" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>create</name></member>
+      <member refid="classnvblox_1_1LayerCake_1ab613c48f308f64eaf26306070ee4ba40" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>empty</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a127d429004923697dcb69b16d4078430" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>exists</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a180835d3fe2a3816c2f9da6c37e9a335" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>get</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a4d73aa966b2eac2d7aeca6f601d9489e" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>get_layers</name></member>
+      <member refid="classnvblox_1_1LayerCake_1af9fa160b5ed9329ee57bd6c6a58a58ba" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>getConstPtr</name></member>
+      <member refid="classnvblox_1_1LayerCake_1ad9b8151ca8a0d898b72b3dfacb61007b" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>getPtr</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a00b7afb6234ee9ef68d314bdc82fd04d" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>insert</name></member>
+      <member refid="classnvblox_1_1LayerCake_1afc1063656b4484c9249cdf4da40d726d" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>LayerCake</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a66245d14e7e174de1dc5b4aab2c1204a" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>LayerCake</name></member>
+      <member refid="classnvblox_1_1LayerCake_1afaecbb4efd991cdb88099a3c21fb3302" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>LayerCake</name></member>
+      <member refid="classnvblox_1_1LayerCake_1ab619325dac6bd377a03d7cd522cdddf2" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>LayerCake</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a33f00af1c3d841b0ac160ecd540c5ec8" prot="private" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>layers_</name></member>
+      <member refid="classnvblox_1_1LayerCake_1aa833a801333fa8032568b83c02bab20c" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1LayerCake_1ae0aaabad1525c891cecf9bfd333c7839" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a6d68e3d4f37d3ce9844f20eee8a5bf42" prot="public" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>voxel_size</name></member>
+      <member refid="classnvblox_1_1LayerCake_1a10fe56f9fbbe5659513f9702df8bb44b" prot="private" virt="non-virtual"><scope>nvblox::LayerCake</scope><name>voxel_size_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

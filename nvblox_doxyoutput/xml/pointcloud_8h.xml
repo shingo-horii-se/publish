@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="pointcloud_8h" kind="file" language="C++">
+    <compoundname>pointcloud.h</compoundname>
+    <includes refid="types_8h" local="yes">nvblox/core/types.h</includes>
+    <includes refid="unified__vector_8h" local="yes">nvblox/core/unified_vector.h</includes>
+    <includes refid="camera_8h" local="yes">nvblox/sensors/camera.h</includes>
+    <includes refid="image_8h" local="yes">nvblox/sensors/image.h</includes>
+    <includedby refid="image__projector_8h" local="yes">image_projector.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>nvblox/core/iterator.h</label>
+        <link refid="iterator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>nvblox/core/unified_ptr.h</label>
+        <link refid="unified__ptr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>nvblox/core/unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>nvblox/sensors/camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>nvblox/sensors/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pointcloud.h</label>
+        <link refid="pointcloud_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="6">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="23">
+        <label>atomic</label>
+      </node>
+      <node id="21">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>cstddef</label>
+      </node>
+      <node id="4">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="11">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>iterator</label>
+      </node>
+      <node id="24">
+        <label>nvblox/core/internal/impl/unified_ptr_impl.h</label>
+      </node>
+      <node id="15">
+        <label>nvblox/core/internal/impl/unified_vector_impl.h</label>
+      </node>
+      <node id="17">
+        <label>nvblox/sensors/internal/impl/camera_impl.h</label>
+      </node>
+      <node id="25">
+        <label>nvblox/sensors/internal/impl/image_impl.h</label>
+      </node>
+      <node id="20">
+        <label>stdint.h</label>
+      </node>
+      <node id="9">
+        <label>type_traits</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="2">
+        <label>image_projector.h</label>
+        <link refid="image__projector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pointcloud.h</label>
+        <link refid="pointcloud_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1Pointcloud" prot="public">nvblox::Pointcloud</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">nvblox/core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="unified__vector_8h" kindref="compound">nvblox/core/unified_vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="camera_8h" kindref="compound">nvblox/sensors/camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="image_8h" kindref="compound">nvblox/sensors/image.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" kindref="member">kDefaultPointcloudMemoryType</ref><sp/>=<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classnvblox_1_1Pointcloud" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="classnvblox_1_1Pointcloud_1ac86286bbd52b18b994b330b92699bcf5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud_1ac86286bbd52b18b994b330b92699bcf5" kindref="member">Pointcloud</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1ac97f6d0980336c44dab2d64dd033dff0" kindref="member">num_points</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" kindref="member">kDefaultPointcloudMemoryType</ref>);</highlight></codeline>
+<codeline lineno="34" refid="classnvblox_1_1Pointcloud_1a58661ba7488649e6e7a004a823d6c4a2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud_1a58661ba7488649e6e7a004a823d6c4a2" kindref="member">Pointcloud</ref>(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" kindref="member">kDefaultPointcloudMemoryType</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classnvblox_1_1Pointcloud_1a3aa7d0d89728bf7f02f4c4a59166e262" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud_1a3aa7d0d89728bf7f02f4c4a59166e262" kindref="member">Pointcloud</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector3f&gt;&amp;<sp/><ref refid="classnvblox_1_1Pointcloud_1a61695c23ff72ac577df29de18f907f2b" kindref="member">points</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" kindref="member">kDefaultPointcloudMemoryType</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classnvblox_1_1Pointcloud_1a0551b3dd69d3c4da848a520748028692" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud_1a0551b3dd69d3c4da848a520748028692" kindref="member">Pointcloud</ref>(<ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42" refid="classnvblox_1_1Pointcloud_1ae4402fe399de7ddbc4af28dc704065b9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;<sp/><ref refid="classnvblox_1_1Pointcloud_1ae4402fe399de7ddbc4af28dc704065b9" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classnvblox_1_1Pointcloud_1a050cbb89358357d129726960aa00b806" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud_1a050cbb89358357d129726960aa00b806" kindref="member">Pointcloud</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="46" refid="classnvblox_1_1Pointcloud_1a4756781f285a906901cbf7b8f3b9611e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud_1a4756781f285a906901cbf7b8f3b9611e" kindref="member">Pointcloud</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;<sp/>other,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" kindref="member">memory_type</ref>);</highlight></codeline>
+<codeline lineno="47" refid="classnvblox_1_1Pointcloud_1a432a5b0bfd6c42fd12741f98e2345699" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;<sp/><ref refid="classnvblox_1_1Pointcloud_1a432a5b0bfd6c42fd12741f98e2345699" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classnvblox_1_1Pointcloud_1af4a978236c1a10d70eca54b9ebc147bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1af4a978236c1a10d70eca54b9ebc147bc" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1ac97f6d0980336c44dab2d64dd033dff0" kindref="member">num_points</ref>)<sp/>{<sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1a73ee465555917acb6fc75f14a3132819" kindref="member">resize</ref>(<ref refid="classnvblox_1_1Pointcloud_1ac97f6d0980336c44dab2d64dd033dff0" kindref="member">num_points</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classnvblox_1_1Pointcloud_1ac97f6d0980336c44dab2d64dd033dff0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1ac97f6d0980336c44dab2d64dd033dff0" kindref="member">num_points</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="classnvblox_1_1Pointcloud_1a09bf3c1ac8885f2d2d1ace131d1b5f92" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a09bf3c1ac8885f2d2d1ace131d1b5f92" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" kindref="member">size</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="55" refid="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Pointcloud_1a7c93f92d1c95a34a8fa7284e6b65cd4c" kindref="member">memory_type</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" kindref="member">memory_type</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="classnvblox_1_1Pointcloud_1a4eae4c8f89282bb2849605fbeacb4927" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a4eae4c8f89282bb2849605fbeacb4927" kindref="member">empty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1a89a554c5fb921bdc089a63fd18ace5d0" kindref="member">empty</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classnvblox_1_1Pointcloud_1a4738ef5a8241c37aeb9031aa6f5db8f5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/><ref refid="classnvblox_1_1Pointcloud_1a4738ef5a8241c37aeb9031aa6f5db8f5" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>[idx];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65" refid="classnvblox_1_1Pointcloud_1a5480957c36e99a6c5d1d5cbb71952934" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/><ref refid="classnvblox_1_1Pointcloud_1a5480957c36e99a6c5d1d5cbb71952934" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>[idx];<sp/>}</highlight></codeline>
+<codeline lineno="66" refid="classnvblox_1_1Pointcloud_1a61695c23ff72ac577df29de18f907f2b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;Vector3f&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1Pointcloud_1a61695c23ff72ac577df29de18f907f2b" kindref="member">points</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="67" refid="classnvblox_1_1Pointcloud_1ab5c3c285ccfa3605b4f9acfd66d09a8a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;Vector3f&gt;</ref>&amp;<sp/><ref refid="classnvblox_1_1Pointcloud_1ab5c3c285ccfa3605b4f9acfd66d09a8a" kindref="member">points</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classnvblox_1_1Pointcloud_1a0ab5aadeb64813602e9d252391e29575" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a0ab5aadeb64813602e9d252391e29575" kindref="member">push_back</ref>(<ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;&amp;<sp/>point)<sp/>{<sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1aed4c9f981e2fd47e30915f5000e008c3" kindref="member">push_back</ref>(point);<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classnvblox_1_1Pointcloud_1ad507961c09ec157027d583ad7fd9b620" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/><ref refid="classnvblox_1_1Pointcloud_1ad507961c09ec157027d583ad7fd9b620" kindref="member">dataPtr</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1acd9c016cd7694fe5ac79ed18844b38e1" kindref="member">data</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="74" refid="classnvblox_1_1Pointcloud_1a7d45b6545b018cbfb7467826e06990e7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/><ref refid="classnvblox_1_1Pointcloud_1a7d45b6545b018cbfb7467826e06990e7" kindref="member">dataConstPtr</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1acd9c016cd7694fe5ac79ed18844b38e1" kindref="member">data</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classnvblox_1_1Pointcloud_1aa671e6e94ec8e79301be7ebeb8a027ac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud_1aa671e6e94ec8e79301be7ebeb8a027ac" kindref="member">setZero</ref>()<sp/>{<sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>.<ref refid="classnvblox_1_1unified__vector_1a3c13a87c0a4a204a59cb0591977cc18e" kindref="member">setZero</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80" refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;Vector3f&gt;</ref><sp/><ref refid="classnvblox_1_1Pointcloud_1a54ca235f16da7eae18ba68c741eeb672" kindref="member">points_</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="namespacenvblox_1a3f6e3a3efb322790a7a033be6874d5d2" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a3f6e3a3efb322790a7a033be6874d5d2" kindref="member">transformPointcloudOnGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_out_in,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>&amp;<sp/>pointcloud_in,<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref>*<sp/>pointcloud_out_ptr);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h"/>
+  </compounddef>
+</doxygen>

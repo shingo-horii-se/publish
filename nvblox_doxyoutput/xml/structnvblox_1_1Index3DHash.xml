@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1Index3DHash" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::Index3DHash</compoundname>
+    <includes refid="hash_8h" local="no">hash.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1Index3DHash_1a0dc29a251cb1b1eb5bc9ccb183ec70b2" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t nvblox::Index3DHash::sl</definition>
+        <argsstring></argsstring>
+        <name>sl</name>
+        <qualifiedname>nvblox::Index3DHash::sl</qualifiedname>
+        <initializer>= 17191</initializer>
+        <briefdescription>
+<para>number was arbitrarily chosen with no good justification </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="34" column="27" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1Index3DHash_1adb6d4f32a1fac3012ffa23b3d0116d4e" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t nvblox::Index3DHash::sl2</definition>
+        <argsstring></argsstring>
+        <name>sl2</name>
+        <qualifiedname>nvblox::Index3DHash::sl2</qualifiedname>
+        <initializer>= <ref refid="structnvblox_1_1Index3DHash_1a0dc29a251cb1b1eb5bc9ccb183ec70b2" kindref="member">sl</ref> * <ref refid="structnvblox_1_1Index3DHash_1a0dc29a251cb1b1eb5bc9ccb183ec70b2" kindref="member">sl</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="35" column="27" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnvblox_1_1Index3DHash_1a578b42e49e8889ad01e6d21bde4dde58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ std::size_t</type>
+        <definition>__host__ __device__ std::size_t nvblox::Index3DHash::operator()</definition>
+        <argsstring>(const Index3D &amp;index) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::Index3DHash::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="37" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Performs deco hashing on block indexes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Based on recommendations of &quot;Investigating the impact of Suboptimal Hashing Functions&quot; by L. Buckley et al. </para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="32" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="32" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1Index3DHash_1a578b42e49e8889ad01e6d21bde4dde58" prot="public" virt="non-virtual"><scope>nvblox::Index3DHash</scope><name>operator()</name></member>
+      <member refid="structnvblox_1_1Index3DHash_1a0dc29a251cb1b1eb5bc9ccb183ec70b2" prot="public" virt="non-virtual"><scope>nvblox::Index3DHash</scope><name>sl</name></member>
+      <member refid="structnvblox_1_1Index3DHash_1adb6d4f32a1fac3012ffa23b3d0116d4e" prot="public" virt="non-virtual"><scope>nvblox::Index3DHash</scope><name>sl2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_f290e183fd16ef6c595dc28a6812e745" kind="dir">
+    <compoundname>interpolation</compoundname>
+    <innerfile refid="interpolation__2d_8h">interpolation_2d.h</innerfile>
+    <innerfile refid="interpolation__3d_8h">interpolation_3d.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/"/>
+  </compounddef>
+</doxygen>

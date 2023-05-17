@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="primitives_8h" kind="file" language="C++">
+    <compoundname>primitives.h</compoundname>
+    <includes refid="logging_8h" local="yes">nvblox/utils/logging.h</includes>
+    <includes refid="color_8h" local="yes">nvblox/core/color.h</includes>
+    <includes refid="types_8h" local="yes">nvblox/core/types.h</includes>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <includedby refid="scene_8h" local="yes">scene.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>primitives.h</label>
+        <link refid="primitives_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="11">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="3">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="1">
+        <label>primitives.h</label>
+        <link refid="primitives_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1primitives_1_1Primitive" prot="public">nvblox::primitives::Primitive</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Sphere" prot="public">nvblox::primitives::Sphere</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Cube" prot="public">nvblox::primitives::Cube</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Plane" prot="public">nvblox::primitives::Plane</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Cylinder" prot="public">nvblox::primitives::Cylinder</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1primitives">nvblox::primitives</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">----<sp/>Original<sp/>voxblox<sp/>license,<sp/>which<sp/>this<sp/>file<sp/>is<sp/>heavily<sp/>based<sp/>on:<sp/>----</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Copyright<sp/>(c)<sp/>2016,<sp/>ETHZ<sp/>ASL</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>voxblox<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logging_8h" kindref="compound">nvblox/utils/logging.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="color_8h" kindref="compound">nvblox/core/color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">nvblox/core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="namespacenvblox_1_1primitives" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">primitives<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classnvblox_1_1primitives_1_1Primitive" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58" refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref><sp/>{<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346a37188bf1719fccfc5eb8ed366dd075fd" kindref="member">kPlane</ref>,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346af747466ba4a80164ae928b608b02ffa8" kindref="member">kCube</ref>,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346af88bbd242f1721920aa0eb72a18767a4" kindref="member">kSphere</ref>,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346acafcb896846646f8833912fdbfc5318e" kindref="member">kCylinder</ref><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classnvblox_1_1primitives_1_1Primitive_1a3bb169500ef707730a21a347aa72fbc9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a3bb169500ef707730a21a347aa72fbc9" kindref="member">kEpsilon</ref><sp/>=<sp/>1e-4;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classnvblox_1_1primitives_1_1Primitive_1a614e5287faae6e2ed3552ecc8ca9b608" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a614e5287faae6e2ed3552ecc8ca9b608" kindref="member">Primitive</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref><sp/>type)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/>type,<sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>::White())<sp/>{}</highlight></codeline>
+<codeline lineno="65" refid="classnvblox_1_1primitives_1_1Primitive_1a7ea24917d48ae929ab5514c6ca882a56" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a7ea24917d48ae929ab5514c6ca882a56" kindref="member">Primitive</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref><sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a4b208bc445ace9aa510a2738d867236c" kindref="member">center_</ref>(center),<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a7b9f875c5f478300cb0a4354b7b1a4be" kindref="member">type_</ref>(type),<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a88d9d6e6d65d6a0ed18a89a401430db6" kindref="member">color_</ref>(color)<sp/>{}</highlight></codeline>
+<codeline lineno="67" refid="classnvblox_1_1primitives_1_1Primitive_1a5e8237802c0e2852ab43b58250e1fdab" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a5e8237802c0e2852ab43b58250e1fdab" kindref="member">~Primitive</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classnvblox_1_1primitives_1_1Primitive_1a5e492c5045ad4af2d0249a7ef2a30fac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a5e492c5045ad4af2d0249a7ef2a30fac" kindref="member">getDistanceToPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classnvblox_1_1primitives_1_1Primitive_1add1c77720334dd4a21506d16a3b6707a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1add1c77720334dd4a21506d16a3b6707a" kindref="member">getColor</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a88d9d6e6d65d6a0ed18a89a401430db6" kindref="member">color_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="73" refid="classnvblox_1_1primitives_1_1Primitive_1ac696a6386a18119da7ed6c0446348849" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ac696a6386a18119da7ed6c0446348849" kindref="member">getType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a7b9f875c5f478300cb0a4354b7b1a4be" kindref="member">type_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classnvblox_1_1primitives_1_1Primitive_1a77aa4b9e108e1a375842503c5ed26da4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a77aa4b9e108e1a375842503c5ed26da4" kindref="member">getRayIntersection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_origin,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_direction,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_dist,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/>intersect_point,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>intersect_dist)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82" refid="classnvblox_1_1primitives_1_1Primitive_1a4b208bc445ace9aa510a2738d867236c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a4b208bc445ace9aa510a2738d867236c" kindref="member">center_</ref>;</highlight></codeline>
+<codeline lineno="83" refid="classnvblox_1_1primitives_1_1Primitive_1a7b9f875c5f478300cb0a4354b7b1a4be" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a7b9f875c5f478300cb0a4354b7b1a4be" kindref="member">type_</ref>;</highlight></codeline>
+<codeline lineno="84" refid="classnvblox_1_1primitives_1_1Primitive_1a88d9d6e6d65d6a0ed18a89a401430db6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1a88d9d6e6d65d6a0ed18a89a401430db6" kindref="member">color_</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classnvblox_1_1primitives_1_1Sphere" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1primitives_1_1Sphere" kindref="compound">Sphere</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1primitives_1_1Sphere_1ad09501b184425f367f3de12eb0b03dfb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Sphere_1ad09501b184425f367f3de12eb0b03dfb" kindref="member">Sphere</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346af88bbd242f1721920aa0eb72a18767a4" kindref="member">kSphere</ref>),<sp/><ref refid="classnvblox_1_1primitives_1_1Sphere_1a7c4e614c623eb06963ccf4bded195edb" kindref="member">radius_</ref>(radius)<sp/>{}</highlight></codeline>
+<codeline lineno="92" refid="classnvblox_1_1primitives_1_1Sphere_1a57980da3d3cf0032abfb8e3df36503d9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Sphere_1a57980da3d3cf0032abfb8e3df36503d9" kindref="member">Sphere</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346af88bbd242f1721920aa0eb72a18767a4" kindref="member">kSphere</ref>,<sp/>color),<sp/><ref refid="classnvblox_1_1primitives_1_1Sphere_1a7c4e614c623eb06963ccf4bded195edb" kindref="member">radius_</ref>(radius)<sp/>{}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classnvblox_1_1primitives_1_1Sphere_1a4ea5a23354363728cd47c4bb89c73807" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Sphere_1a4ea5a23354363728cd47c4bb89c73807" kindref="member">getDistanceToPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classnvblox_1_1primitives_1_1Sphere_1a7b3ebf2401e2b55d8b96d812d92aaf56" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Sphere_1a7b3ebf2401e2b55d8b96d812d92aaf56" kindref="member">getRayIntersection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_origin,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_direction,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_dist,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/>intersect_point,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>intersect_dist)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103" refid="classnvblox_1_1primitives_1_1Sphere_1a7c4e614c623eb06963ccf4bded195edb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Sphere_1a7c4e614c623eb06963ccf4bded195edb" kindref="member">radius_</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classnvblox_1_1primitives_1_1Cube" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1primitives_1_1Cube" kindref="compound">Cube</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110" refid="classnvblox_1_1primitives_1_1Cube_1a8dadf0760d043777b141d7ed64bf5ca6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Cube_1a8dadf0760d043777b141d7ed64bf5ca6" kindref="member">Cube</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>size)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346af747466ba4a80164ae928b608b02ffa8" kindref="member">kCube</ref>),<sp/><ref refid="classnvblox_1_1primitives_1_1Cube_1ada916a5899e3c4b91615415e5e48f970" kindref="member">size_</ref>(size)<sp/>{}</highlight></codeline>
+<codeline lineno="112" refid="classnvblox_1_1primitives_1_1Cube_1a3ed7744dd34e509e13cbd9ff847d0c5f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Cube_1a3ed7744dd34e509e13cbd9ff847d0c5f" kindref="member">Cube</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346af747466ba4a80164ae928b608b02ffa8" kindref="member">kCube</ref>,<sp/>color),<sp/><ref refid="classnvblox_1_1primitives_1_1Cube_1ada916a5899e3c4b91615415e5e48f970" kindref="member">size_</ref>(size)<sp/>{}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classnvblox_1_1primitives_1_1Cube_1a3f2edc2de530b51b0fafff73cd56ddc4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Cube_1a3f2edc2de530b51b0fafff73cd56ddc4" kindref="member">getDistanceToPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116" refid="classnvblox_1_1primitives_1_1Cube_1a3612d9d58058a980371478242e262147" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Cube_1a3612d9d58058a980371478242e262147" kindref="member">getRayIntersection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_origin,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_direction,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_dist,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/>intersect_point,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>intersect_dist)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="122" refid="classnvblox_1_1primitives_1_1Cube_1ada916a5899e3c4b91615415e5e48f970" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/><ref refid="classnvblox_1_1primitives_1_1Cube_1ada916a5899e3c4b91615415e5e48f970" kindref="member">size_</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classnvblox_1_1primitives_1_1Plane" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1primitives_1_1Plane" kindref="compound">Plane</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="129" refid="classnvblox_1_1primitives_1_1Plane_1a5915282b2d167d9b52f484406cd014ee" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Plane_1a5915282b2d167d9b52f484406cd014ee" kindref="member">Plane</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>normal)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346a37188bf1719fccfc5eb8ed366dd075fd" kindref="member">kPlane</ref>),<sp/><ref refid="classnvblox_1_1primitives_1_1Plane_1af49bcbe6a478b718d8b8adc1bc388f8f" kindref="member">normal_</ref>(normal)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK_NEAR(normal.norm(),<sp/>1.0,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133" refid="classnvblox_1_1primitives_1_1Plane_1a5fdd8493d3d6531432da5382c62f00da" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Plane_1a5fdd8493d3d6531432da5382c62f00da" kindref="member">Plane</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>normal,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346a37188bf1719fccfc5eb8ed366dd075fd" kindref="member">kPlane</ref>,<sp/>color),<sp/><ref refid="classnvblox_1_1primitives_1_1Plane_1af49bcbe6a478b718d8b8adc1bc388f8f" kindref="member">normal_</ref>(normal)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK_NEAR(normal.norm(),<sp/>1.0,<sp/>1e-3);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="classnvblox_1_1primitives_1_1Plane_1a86d5e27a67ae1366a5c5cb2e9cef7cbf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Plane_1a86d5e27a67ae1366a5c5cb2e9cef7cbf" kindref="member">getDistanceToPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classnvblox_1_1primitives_1_1Plane_1aaefd6835fbf3a3bbae3c37ce9988fc87" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Plane_1aaefd6835fbf3a3bbae3c37ce9988fc87" kindref="member">getRayIntersection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_origin,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_direction,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_dist,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/>intersect_point,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>intersect_dist)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146" refid="classnvblox_1_1primitives_1_1Plane_1af49bcbe6a478b718d8b8adc1bc388f8f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/><ref refid="classnvblox_1_1primitives_1_1Plane_1af49bcbe6a478b718d8b8adc1bc388f8f" kindref="member">normal_</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classnvblox_1_1primitives_1_1Cylinder" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1primitives_1_1Cylinder" kindref="compound">Cylinder</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="152" refid="classnvblox_1_1primitives_1_1Cylinder_1aa134f498167cf275917407dfd587aafb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1aa134f498167cf275917407dfd587aafb" kindref="member">Cylinder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346acafcb896846646f8833912fdbfc5318e" kindref="member">kCylinder</ref>),<sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a90ed572da00e88f3424b91cbb117cea7" kindref="member">radius_</ref>(radius),<sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a573e08d617c208be34fa1016545da93e" kindref="member">height_</ref>(height)<sp/>{}</highlight></codeline>
+<codeline lineno="154" refid="classnvblox_1_1primitives_1_1Cylinder_1a9dc05498cbe6b67a9b169b81fc51c928" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a9dc05498cbe6b67a9b169b81fc51c928" kindref="member">Cylinder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref>(center,<sp/><ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" kindref="member">Type</ref>::<ref refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346acafcb896846646f8833912fdbfc5318e" kindref="member">kCylinder</ref>,<sp/>color),</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a90ed572da00e88f3424b91cbb117cea7" kindref="member">radius_</ref>(radius),</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a573e08d617c208be34fa1016545da93e" kindref="member">height_</ref>(height)<sp/>{}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="classnvblox_1_1primitives_1_1Cylinder_1a555ef62c96410e4c26347c37de3fc947" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a555ef62c96410e4c26347c37de3fc947" kindref="member">getDistanceToPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classnvblox_1_1primitives_1_1Cylinder_1a12e8d7c349bbccede05bf5a998576f9f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a12e8d7c349bbccede05bf5a998576f9f" kindref="member">getRayIntersection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_origin,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>ray_direction,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_dist,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/>intersect_point,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>intersect_dist)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168" refid="classnvblox_1_1primitives_1_1Cylinder_1a90ed572da00e88f3424b91cbb117cea7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a90ed572da00e88f3424b91cbb117cea7" kindref="member">radius_</ref>;</highlight></codeline>
+<codeline lineno="169" refid="classnvblox_1_1primitives_1_1Cylinder_1a573e08d617c208be34fa1016545da93e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1primitives_1_1Cylinder_1a573e08d617c208be34fa1016545da93e" kindref="member">height_</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>primitives</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1__Unified__if" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::_Unified_if</compoundname>
+    <includes refid="unified__ptr_8h" local="no">unified_ptr.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structnvblox_1_1__Unified__if_1a238ddda0f8a12827dcddd095a4af741a" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt;</type>
+        <definition>typedef unified_ptr&lt;T&gt; nvblox::_Unified_if&lt; T &gt;::_Single_object</definition>
+        <argsstring></argsstring>
+        <name>_Single_object</name>
+        <qualifiedname>nvblox::_Unified_if::_Single_object</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="159" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="158" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="158" bodyend="160"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1__Unified__if_1a238ddda0f8a12827dcddd095a4af741a" prot="public" virt="non-virtual"><scope>nvblox::_Unified_if</scope><name>_Single_object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

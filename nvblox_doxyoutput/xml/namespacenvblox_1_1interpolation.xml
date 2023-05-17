@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespacenvblox_1_1interpolation" kind="namespace" language="C++">
+    <compoundname>nvblox::interpolation</compoundname>
+    <innerclass refid="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours" prot="public">nvblox::interpolation::Interpolation2DNeighbours</innerclass>
+    <innernamespace refid="namespacenvblox_1_1interpolation_1_1checkers">nvblox::interpolation::checkers</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a4031aa61c40990ce663b8d565bfff01d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+          <param>
+            <type>typename PixelValidityChecker</type>
+            <defval>checkers::PixelAlwaysValid&lt;ElementType&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>__host__ bool</type>
+        <definition>__host__ bool nvblox::interpolation::interpolate2DClosest</definition>
+        <argsstring>(const Image&lt; ElementType &gt; &amp;frame, const Vector2f &amp;u_px, ElementType *value_interpolated_ptr)</argsstring>
+        <name>interpolate2DClosest</name>
+        <qualifiedname>nvblox::interpolation::interpolate2DClosest</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; ElementType &gt; &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_px</declname>
+        </param>
+        <param>
+          <type>ElementType *</type>
+          <declname>value_interpolated_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="51" column="22" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" declline="51" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a28fa002ad344a33a3277ab8bfc94bdab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+          <param>
+            <type>typename PixelValidityChecker</type>
+            <defval>checkers::PixelAlwaysValid&lt;ElementType&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>__host__ bool</type>
+        <definition>__host__ bool nvblox::interpolation::interpolate2DLinear</definition>
+        <argsstring>(const Image&lt; ElementType &gt; &amp;frame, const Vector2f &amp;u_px, ElementType *value_interpolated_ptr)</argsstring>
+        <name>interpolate2DLinear</name>
+        <qualifiedname>nvblox::interpolation::interpolate2DLinear</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; ElementType &gt; &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_px</declname>
+        </param>
+        <param>
+          <type>ElementType *</type>
+          <declname>value_interpolated_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="56" column="22" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" declline="56" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a1607582a092a5a85dbae2c0174af890a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+          <param>
+            <type>typename PixelValidityChecker</type>
+            <defval>checkers::PixelAlwaysValid&lt;ElementType&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>__host__ bool</type>
+        <definition>__host__ bool nvblox::interpolation::interpolate2D</definition>
+        <argsstring>(const Image&lt; ElementType &gt; &amp;frame, const Vector2f &amp;u_px, ElementType *value_interpolated_ptr, const InterpolationType type=InterpolationType::kLinear)</argsstring>
+        <name>interpolate2D</name>
+        <qualifiedname>nvblox::interpolation::interpolate2D</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; ElementType &gt; &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_px</declname>
+        </param>
+        <param>
+          <type>ElementType *</type>
+          <declname>value_interpolated_ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af889acf516061419ed7e4c38cc6434b9" kindref="member">InterpolationType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="namespacenvblox_1af889acf516061419ed7e4c38cc6434b9aac97f0008bcf7c7fe4f2ff94160e1385" kindref="member">InterpolationType::kLinear</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="61" column="15" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" declline="61" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1af71405050ecf911b7cbd4aaa136dbbdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+          <param>
+            <type>typename PixelValidityChecker</type>
+            <defval>checkers::PixelAlwaysValid&lt;ElementType&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::interpolation::interpolate2DClosest</definition>
+        <argsstring>(const ElementType *frame, const Vector2f &amp;u_px, const int rows, const int cols, ElementType *value_interpolated_ptr, Index2D *u_px_closest_ptr=nullptr)</argsstring>
+        <name>interpolate2DClosest</name>
+        <qualifiedname>nvblox::interpolation::interpolate2DClosest</qualifiedname>
+        <param>
+          <type>const ElementType *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_px</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>ElementType *</type>
+          <declname>value_interpolated_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref> *</type>
+          <declname>u_px_closest_ptr</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="72" column="33" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" declline="72" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a6b8e3ee8b5cdaeabb019e246e2469ec6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+          <param>
+            <type>typename PixelValidityChecker</type>
+            <defval>checkers::PixelAlwaysValid&lt;ElementType&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::interpolation::interpolate2DLinear</definition>
+        <argsstring>(const ElementType *frame, const Vector2f &amp;u_px, const int rows, const int cols, ElementType *value_interpolated_ptr, Interpolation2DNeighbours&lt; ElementType &gt; *neighbours_ptr=nullptr)</argsstring>
+        <name>interpolate2DLinear</name>
+        <qualifiedname>nvblox::interpolation::interpolate2DLinear</qualifiedname>
+        <param>
+          <type>const ElementType *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_px</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>ElementType *</type>
+          <declname>value_interpolated_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="structnvblox_1_1interpolation_1_1Interpolation2DNeighbours" kindref="compound">Interpolation2DNeighbours</ref>&lt; ElementType &gt; *</type>
+          <declname>neighbours_ptr</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="79" column="33" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" declline="79" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a88111ebddbc82968c5f68c594fc9f244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::interpolation::interpolateOnCPU</definition>
+        <argsstring>(const Vector3f &amp;p_L, const TsdfLayer &amp;layer, float *distance)</argsstring>
+        <name>interpolateOnCPU</name>
+        <qualifiedname>nvblox::interpolation::interpolateOnCPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+<para>Single points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" line="29" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a7910d7c6e9ede6e5d05e579e9e9f9caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::interpolation::interpolateOnCPU</definition>
+        <argsstring>(const Vector3f &amp;p_L, const EsdfLayer &amp;layer, float *distance)</argsstring>
+        <name>interpolateOnCPU</name>
+        <qualifiedname>nvblox::interpolation::interpolateOnCPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" line="31" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a59f4499b35cfd763af2c7059e26df06f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::interpolation::interpolateOnCPU</definition>
+        <argsstring>(const Vector3f &amp;p_L, const OccupancyLayer &amp;layer, float *distance)</argsstring>
+        <name>interpolateOnCPU</name>
+        <qualifiedname>nvblox::interpolation::interpolateOnCPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" line="33" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1interpolation_1a192fa29c6eaa371891698d5fa26775de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::interpolation::interpolateOnCPU</definition>
+        <argsstring>(const std::vector&lt; Vector3f &gt; &amp;points_L, const VoxelBlockLayer&lt; VoxelType &gt; &amp;layer, std::vector&lt; float &gt; *distances_ptr, std::vector&lt; bool &gt; *success_flags_ptr)</argsstring>
+        <name>interpolateOnCPU</name>
+        <qualifiedname>nvblox::interpolation::interpolateOnCPU</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; &amp;</type>
+          <declname>points_L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; *</type>
+          <declname>distances_ptr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; bool &gt; *</type>
+          <declname>success_flags_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Vectors of points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" line="38" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_3d.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/interpolation/interpolation_2d.h" line="22" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1ProjectiveOccupancyIntegrator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::ProjectiveOccupancyIntegrator</compoundname>
+    <basecompoundref refid="classnvblox_1_1ProjectiveIntegrator" prot="public" virt="non-virtual">nvblox::ProjectiveIntegrator&lt; OccupancyVoxel &gt;</basecompoundref>
+    <includes refid="projective__occupancy__integrator_8h" local="no">projective_occupancy_integrator.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a5d86866329b207dbf46d0eeecb64d3b4" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::free_region_log_odds_</definition>
+        <argsstring></argsstring>
+        <name>free_region_log_odds_</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::free_region_log_odds_</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1ad640ac31fc054c7e04ac95dedab14a46" kindref="member">logOddsFromProbability</ref>(0.3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="114" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a761e4ac32c0ea5302de52ea897f4f189" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::occupied_region_log_odds_</definition>
+        <argsstring></argsstring>
+        <name>occupied_region_log_odds_</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::occupied_region_log_odds_</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1ad640ac31fc054c7e04ac95dedab14a46" kindref="member">logOddsFromProbability</ref>(0.7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="115" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a5abef56a97b52abf8c768eeb09ac45eb" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::unobserved_region_log_odds_</definition>
+        <argsstring></argsstring>
+        <name>unobserved_region_log_odds_</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::unobserved_region_log_odds_</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1ad640ac31fc054c7e04ac95dedab14a46" kindref="member">logOddsFromProbability</ref>(0.5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="116" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a53a2314a4613f6610e0d4aa422d34b2d" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::occupied_region_half_width_m_</definition>
+        <argsstring></argsstring>
+        <name>occupied_region_half_width_m_</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::occupied_region_half_width_m_</qualifiedname>
+        <initializer>= 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="117" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a44f50aada9f09617a54fa013ba18f29d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; UpdateOccupancyVoxelFunctor &gt;</type>
+        <definition>unified_ptr&lt;UpdateOccupancyVoxelFunctor&gt; nvblox::ProjectiveOccupancyIntegrator::update_functor_host_ptr_</definition>
+        <argsstring></argsstring>
+        <name>update_functor_host_ptr_</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::update_functor_host_ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="120" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a82a0f54367cc7b78298c045018982448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ProjectiveOccupancyIntegrator::ProjectiveOccupancyIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>ProjectiveOccupancyIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::ProjectiveOccupancyIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a178264f1b01dcdf1ec7eb60cf00e6b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::ProjectiveOccupancyIntegrator::~ProjectiveOccupancyIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>~ProjectiveOccupancyIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::~ProjectiveOccupancyIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="36" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1ac398a27d13c04bd6e0e14ed23f244f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveOccupancyIntegrator::integrateFrame</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Camera &amp;camera, OccupancyLayer *layer, std::vector&lt; Index3D &gt; *updated_blocks=nullptr)</argsstring>
+        <name>integrateFrame</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::integrateFrame</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Integrates a depth image in to the passed occupancy layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer into which this observation will be intergrated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updated_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to a vector which will contain the 3D indices of blocks affected by the integration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1ab2d76cbb02ec1582a5a7fffe8311d32d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveOccupancyIntegrator::integrateFrame</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Lidar &amp;lidar, OccupancyLayer *layer, std::vector&lt; Index3D &gt; *updated_blocks=nullptr)</argsstring>
+        <name>integrateFrame</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::integrateFrame</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Integrates a depth image in to the passed occupancy layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lidar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the LiDAR model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer into which this observation will be intergrated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updated_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to a vector which will contain the 3D indices of blocks affected by the integration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a0a607bf2f34a73ba97e43810d7d4018e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::free_region_occupancy_probability</definition>
+        <argsstring>() const</argsstring>
+        <name>free_region_occupancy_probability</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::free_region_occupancy_probability</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The occupancy probability (inverse sensor model) of the free region observed on the sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the free region occupancy probability </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="68" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a43a77ab051a315333a2b0685d89c887f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveOccupancyIntegrator::free_region_occupancy_probability</definition>
+        <argsstring>(float value)</argsstring>
+        <name>free_region_occupancy_probability</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::free_region_occupancy_probability</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a0a607bf2f34a73ba97e43810d7d4018e" kindref="member">free_region_occupancy_probability()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the free region occupancy probability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1ad0689cd7682a12bd68ac5c00fa505a90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::occupied_region_occupancy_probability</definition>
+        <argsstring>() const</argsstring>
+        <name>occupied_region_occupancy_probability</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::occupied_region_occupancy_probability</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The occupancy probability (inverse sensor model) of the occupied region observed on the sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the occupied occupancy probability </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="79" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1abe1528b20b440bd35b23b41e797e3792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveOccupancyIntegrator::occupied_region_occupancy_probability</definition>
+        <argsstring>(float value)</argsstring>
+        <name>occupied_region_occupancy_probability</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::occupied_region_occupancy_probability</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1ad0689cd7682a12bd68ac5c00fa505a90" kindref="member">occupied_region_occupancy_probability()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the occupied occupancy probability </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a80d885649c391da6af5abe095a720db1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::unobserved_region_occupancy_probability</definition>
+        <argsstring>() const</argsstring>
+        <name>unobserved_region_occupancy_probability</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::unobserved_region_occupancy_probability</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The occupancy probability (inverse sensor model) of the unobserved region. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the unobserved occupancy probability </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="89" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a2ad3987dc733ccf903887dd4dd741a67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveOccupancyIntegrator::unobserved_region_occupancy_probability</definition>
+        <argsstring>(float value)</argsstring>
+        <name>unobserved_region_occupancy_probability</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::unobserved_region_occupancy_probability</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a80d885649c391da6af5abe095a720db1" kindref="member">unobserved_region_occupancy_probability()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the unobserved occupancy probability </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="94" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a3b404de658fe8a730760a289814c4f0e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveOccupancyIntegrator::occupied_region_half_width_m</definition>
+        <argsstring>() const</argsstring>
+        <name>occupied_region_half_width_m</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::occupied_region_half_width_m</qualifiedname>
+        <briefdescription>
+<para>A parameter getter Half the width of the region which is consided as occupied i.e. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>where occupied_region_log_odds is applied to all voxels on update. The region is centered at the measured surface depth on the integrated frame. <simplesect kind="return"><para>the occupied region half width in meters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="101" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a6e0ca54cfb1b6da55de9aae4797f2800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveOccupancyIntegrator::occupied_region_half_width_m</definition>
+        <argsstring>(float occupied_region_half_width_m)</argsstring>
+        <name>occupied_region_half_width_m</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::occupied_region_half_width_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>occupied_region_half_width_m</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a3b404de658fe8a730760a289814c4f0e" kindref="member">occupied_region_half_width_m()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>occupied_region_half_width_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the occupied region half width in meters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="107" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1a1d8b6c26785eb6a1dd56bfe334f51c2e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveOccupancyIntegrator::setFunctorParameters</definition>
+        <argsstring>(const float block_size)</argsstring>
+        <name>setFunctorParameters</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::setFunctorParameters</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveOccupancyIntegrator_1aaa14a0f49fa646f02a44a6e1d646101a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string nvblox::ProjectiveOccupancyIntegrator::getIntegratorName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getIntegratorName</name>
+        <qualifiedname>nvblox::ProjectiveOccupancyIntegrator::getIntegratorName</qualifiedname>
+        <reimplements refid="classnvblox_1_1ProjectiveIntegrator_1ac0983f4ae5c625f853e94bb8e19b26b3">getIntegratorName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="111" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class performing occupancy intregration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Integrates depth images and lidar scans into occupancy layers. The &quot;projective&quot; describes one type of integration. Namely that voxels in view are projected into the depth image (the alternative being casting rays out from the camera). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>nvblox::ProjectiveIntegrator&lt; OccupancyVoxel &gt;</label>
+        <link refid="classnvblox_1_1ProjectiveIntegrator"/>
+      </node>
+      <node id="1">
+        <label>nvblox::ProjectiveOccupancyIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveOccupancyIntegrator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>nvblox::ProjectiveIntegrator&lt; OccupancyVoxel &gt;</label>
+        <link refid="classnvblox_1_1ProjectiveIntegrator"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>view_calculator_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>block_ptrs_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox::device_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>nvblox::device_vector&lt; nvblox::VoxelBlock&lt; OccupancyVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>nvblox::host_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>nvblox::host_vector&lt; nvblox::VoxelBlock&lt; OccupancyVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nvblox::ProjectiveOccupancyIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveOccupancyIntegrator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>update_functor_host_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nvblox::ViewCalculator</label>
+        <link refid="classnvblox_1_1ViewCalculator"/>
+      </node>
+      <node id="5">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="7">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="10">
+        <label>nvblox::unified_ptr&lt; UpdateOccupancyVoxelFunctor &gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" line="32" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h" bodystart="33" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ac05344feed356684ce3dea241aebdf91" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>block_indices_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a0c0a9d819f5242dbac6d77bcaf68a725" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>block_indices_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a37175688508234a1a692c224fcc6ad0d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>block_ptrs_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab91e95bc2ff75620300e5397c07fa6f9" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>block_ptrs_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a5d86866329b207dbf46d0eeecb64d3b4" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>free_region_log_odds_</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a0a607bf2f34a73ba97e43810d7d4018e" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>free_region_occupancy_probability</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a43a77ab051a315333a2b0685d89c887f" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>free_region_occupancy_probability</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1accb2f21f48358e91ce107a3d6d36d5cc" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>get_truncation_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1aaa14a0f49fa646f02a44a6e1d646101a" prot="protected" virt="virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>getIntegratorName</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5189c1fa826a6add2ad6842edf8b7a9d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1aebd92b43838a659515c01aeb3a98adb6" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1acff287881f0654b8519615e4bc654e6d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateBlocksTemplate</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1ac398a27d13c04bd6e0e14ed23f244f94" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1ab2d76cbb02ec1582a5a7fffe8311d32d" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5a79a82841cf74b1881c2eebb0608c2a" prot="public" virt="non-virtual" ambiguityscope="ProjectiveIntegrator&lt; OccupancyVoxel &gt;::"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1acbdde4a683d85282bea543277dae162d" prot="public" virt="non-virtual" ambiguityscope="ProjectiveIntegrator&lt; OccupancyVoxel &gt;::"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a6002d1b7e08c96c0ddce0cdb807b2a68" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrateFrameTemplate</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab958154f4eb951207d2d38a4f9aecc47" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integration_stream_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ac1732369626a2778e3f7e919b596d952" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrator_name_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a964fc74a99849b9e2fbc6a067dd50664" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>integrator_name_initialized_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5889ffd86c8b7f6de7ca0dda4626941b" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab3521a2f936ec57b5a4200e16ce6bda7" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a20fe96e120d502b6c0e32240ce00a067" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a60822d33ffde1ec1f13f9b4637a4d21b" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a72987163d56ee9e10cdf573ed8d7d4c1" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a92a74e575dfb4ce597aee822ef25b49f" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1af43add6af124e2175b15fcee9852fbb6" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7d7b820b9b32e15b0be6bce986c9bd34" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>max_integration_distance_m_</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a3b404de658fe8a730760a289814c4f0e" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>occupied_region_half_width_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a6e0ca54cfb1b6da55de9aae4797f2800" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>occupied_region_half_width_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a53a2314a4613f6610e0d4aa422d34b2d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>occupied_region_half_width_m_</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a761e4ac32c0ea5302de52ea897f4f189" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>occupied_region_log_odds_</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1ad0689cd7682a12bd68ac5c00fa505a90" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>occupied_region_occupancy_probability</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1abe1528b20b440bd35b23b41e797e3792" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>occupied_region_occupancy_probability</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a11824e66f6f77396315a759c7c946da2" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>ProjectiveIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a82a0f54367cc7b78298c045018982448" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>ProjectiveOccupancyIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a1d8b6c26785eb6a1dd56bfe334f51c2e" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>setFunctorParameters</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a3e7326d7fe420d1ea15dd85e53da5e4f" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a2629577c63dd028ec8668f0b64ef0a04" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>truncation_distance_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a5abef56a97b52abf8c768eeb09ac45eb" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>unobserved_region_log_odds_</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a80d885649c391da6af5abe095a720db1" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>unobserved_region_occupancy_probability</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a2ad3987dc733ccf903887dd4dd741a67" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>unobserved_region_occupancy_probability</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a44f50aada9f09617a54fa013ba18f29d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>update_functor_host_ptr_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7482a8d92355cf239c9f22c694e1b0a2" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a881ffee867c9e61e9b204b8696c1616c" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a4767efff88bc6e7db81d0e11687d0085" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>view_calculator_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a60af0a01dc624076a38f33a38cb7f068" prot="public" virt="virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>~ProjectiveIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1a178264f1b01dcdf1ec7eb60cf00e6b7d" prot="public" virt="virtual"><scope>nvblox::ProjectiveOccupancyIntegrator</scope><name>~ProjectiveOccupancyIntegrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

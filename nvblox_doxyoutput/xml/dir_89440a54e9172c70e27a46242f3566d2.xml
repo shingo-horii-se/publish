@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_89440a54e9172c70e27a46242f3566d2" kind="dir">
+    <compoundname>map</compoundname>
+    <innerfile refid="accessors_8h">accessors.h</innerfile>
+    <innerfile refid="blox_8h">blox.h</innerfile>
+    <innerfile refid="common__names_8h">common_names.h</innerfile>
+    <innerfile refid="layer_8h">layer.h</innerfile>
+    <innerfile refid="layer__cake_8h">layer_cake.h</innerfile>
+    <innerfile refid="voxels_8h">voxels.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespacenvblox_1_1timing" kind="namespace" language="C++">
+    <compoundname>nvblox::timing</compoundname>
+    <innerclass refid="classnvblox_1_1timing_1_1Accumulator" prot="public">nvblox::timing::Accumulator</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1DummyTimer" prot="public">nvblox::timing::DummyTimer</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1NvtxRange" prot="public">nvblox::timing::NvtxRange</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1TimerChrono" prot="public">nvblox::timing::TimerChrono</innerclass>
+    <innerclass refid="structnvblox_1_1timing_1_1TimerMapValue" prot="public">nvblox::timing::TimerMapValue</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1TimerNvtx" prot="public">nvblox::timing::TimerNvtx</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1Timing" prot="public">nvblox::timing::Timing</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacenvblox_1_1timing_1a17e85d7ed366461060ae1880e051a39a" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1timing_1_1TimerNvtx" kindref="compound">TimerNvtx</ref></type>
+        <definition>typedef TimerNvtx nvblox::timing::Timer</definition>
+        <argsstring></argsstring>
+        <name>Timer</name>
+        <qualifiedname>nvblox::timing::Timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="56" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenvblox_1_1timing_1a3dc49dee03754769258fbf03c8166a4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::mark</definition>
+        <argsstring>(const std::string &amp;message, const Color &amp;color)</argsstring>
+        <name>mark</name>
+        <qualifiedname>nvblox::timing::mark</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="53" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1timing_1a1d20f23ece86b7db5264e6700bbfa07e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::mark</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>mark</name>
+        <qualifiedname>nvblox::timing::mark</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="54" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" declline="54" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/nvtx_ranges.h" line="25" column="1"/>
+  </compounddef>
+</doxygen>

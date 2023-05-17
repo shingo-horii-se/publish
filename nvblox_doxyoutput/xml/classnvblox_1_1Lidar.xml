@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1Lidar" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::Lidar</compoundname>
+    <includes refid="lidar_8h" local="no">lidar.h</includes>
+    <innerclass refid="structnvblox_1_1Lidar_1_1Hash" prot="public">nvblox::Lidar::Hash</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a25c7b28b1454eccced77a717cf46f378" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::Lidar::num_azimuth_divisions_</definition>
+        <argsstring></argsstring>
+        <name>num_azimuth_divisions_</name>
+        <qualifiedname>nvblox::Lidar::num_azimuth_divisions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="84" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a0db17d1043fa7d0d508bfa6ad848e5a5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::Lidar::num_elevation_divisions_</definition>
+        <argsstring></argsstring>
+        <name>num_elevation_divisions_</name>
+        <qualifiedname>nvblox::Lidar::num_elevation_divisions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="85" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a7f63e6ea593e0a554c9965f9bdee1e35" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Lidar::vertical_fov_rad_</definition>
+        <argsstring></argsstring>
+        <name>vertical_fov_rad_</name>
+        <qualifiedname>nvblox::Lidar::vertical_fov_rad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="86" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a8e3f7a7beae78918bc3f9082850420e5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Lidar::start_polar_angle_rad_</definition>
+        <argsstring></argsstring>
+        <name>start_polar_angle_rad_</name>
+        <qualifiedname>nvblox::Lidar::start_polar_angle_rad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="89" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1ab388aff91f56b5b92467575b1a7a55c3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Lidar::start_azimuth_angle_rad_</definition>
+        <argsstring></argsstring>
+        <name>start_azimuth_angle_rad_</name>
+        <qualifiedname>nvblox::Lidar::start_azimuth_angle_rad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="90" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a88331005a335019faa1f4bea711e826c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Lidar::elevation_pixels_per_rad_</definition>
+        <argsstring></argsstring>
+        <name>elevation_pixels_per_rad_</name>
+        <qualifiedname>nvblox::Lidar::elevation_pixels_per_rad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="91" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a68573869efab7ce8249f9fa0a72130d6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Lidar::azimuth_pixels_per_rad_</definition>
+        <argsstring></argsstring>
+        <name>azimuth_pixels_per_rad_</name>
+        <qualifiedname>nvblox::Lidar::azimuth_pixels_per_rad_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="92" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a331d1024809958dc5426ae8c0008041b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Lidar::rads_per_pixel_elevation_</definition>
+        <argsstring></argsstring>
+        <name>rads_per_pixel_elevation_</name>
+        <qualifiedname>nvblox::Lidar::rads_per_pixel_elevation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="93" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Lidar_1a9fd7a35aae8e43d4490dcc5623e1c289" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Lidar::rads_per_pixel_azimuth_</definition>
+        <argsstring></argsstring>
+        <name>rads_per_pixel_azimuth_</name>
+        <qualifiedname>nvblox::Lidar::rads_per_pixel_azimuth_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="94" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1af14d8651607ff5e02cc7407736bb8365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Lidar::Lidar</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Lidar</name>
+        <qualifiedname>nvblox::Lidar::Lidar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="26" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1afb9075c9d60cf3b251312915d5c5d3a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Lidar::Lidar</definition>
+        <argsstring>(int num_azimuth_divisions, int num_elevation_divisions, float vertical_fov_rad)</argsstring>
+        <name>Lidar</name>
+        <qualifiedname>nvblox::Lidar::Lidar</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num_azimuth_divisions</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_elevation_divisions</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vertical_fov_rad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="27" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1aa83eb66ee6d0e86555155bc02249d8db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Lidar::~Lidar</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Lidar</name>
+        <qualifiedname>nvblox::Lidar::~Lidar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="30" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a307b54473ede2fc0cb4ae37f8d37c589" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::Lidar::project</definition>
+        <argsstring>(const Vector3f &amp;p_C, Vector2f *u_C) const</argsstring>
+        <name>project</name>
+        <qualifiedname>nvblox::Lidar::project</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_C</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> *</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+<para>Projects a 3D point to the (floating-point) image plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="33" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1ae04ad94fe1f883dcab6439ed51920c7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::Lidar::project</definition>
+        <argsstring>(const Vector3f &amp;p_C, Index2D *u_C) const</argsstring>
+        <name>project</name>
+        <qualifiedname>nvblox::Lidar::project</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_C</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref> *</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+<para>Projects a 3D point to the (index-based) image plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="37" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a595b61ee7c1c7bef393dbbd0831f64db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::Lidar::getDepth</definition>
+        <argsstring>(const Vector3f &amp;p_C) const</argsstring>
+        <name>getDepth</name>
+        <qualifiedname>nvblox::Lidar::getDepth</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_C</declname>
+        </param>
+        <briefdescription>
+<para>Gets the depth of a point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="41" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a0116c04cfea51b9b6aa23d809d36a305" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Lidar::unprojectFromImagePlaneCoordinates</definition>
+        <argsstring>(const Vector2f &amp;u_C, const float depth) const</argsstring>
+        <name>unprojectFromImagePlaneCoordinates</name>
+        <qualifiedname>nvblox::Lidar::unprojectFromImagePlaneCoordinates</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>Back projection (image plane point to 3D point) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="44" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a78c7ca66d53cd49fe2f0639615bfaabd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Lidar::unprojectFromPixelIndices</definition>
+        <argsstring>(const Index2D &amp;u_C, const float depth) const</argsstring>
+        <name>unprojectFromPixelIndices</name>
+        <qualifiedname>nvblox::Lidar::unprojectFromPixelIndices</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="46" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a2df6c0d4420d2fc378084fd49579f36a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Lidar::vectorFromImagePlaneCoordinates</definition>
+        <argsstring>(const Vector2f &amp;u_C) const</argsstring>
+        <name>vectorFromImagePlaneCoordinates</name>
+        <qualifiedname>nvblox::Lidar::vectorFromImagePlaneCoordinates</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+<para>Back projection (image plane point to ray) NOTE(alexmillane): These return normalized vectors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="51" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a39bf97e380bdc4219875c10e377feac2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Lidar::vectorFromPixelIndices</definition>
+        <argsstring>(const Index2D &amp;u_C) const</argsstring>
+        <name>vectorFromPixelIndices</name>
+        <qualifiedname>nvblox::Lidar::vectorFromPixelIndices</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="53" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a614400df4284ed577895acb59b60210b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref></type>
+        <definition>__host__ __device__ Vector2f nvblox::Lidar::pixelIndexToImagePlaneCoordsOfCenter</definition>
+        <argsstring>(const Index2D &amp;u_C) const</argsstring>
+        <name>pixelIndexToImagePlaneCoordsOfCenter</name>
+        <qualifiedname>nvblox::Lidar::pixelIndexToImagePlaneCoordsOfCenter</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+<para>Conversions between pixel indices and image plane coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="57" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a40d7eda041b7468d90f0626a031f45cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref></type>
+        <definition>__host__ __device__ Index2D nvblox::Lidar::imagePlaneCoordsToPixelIndex</definition>
+        <argsstring>(const Vector2f &amp;u_C) const</argsstring>
+        <name>imagePlaneCoordsToPixelIndex</name>
+        <qualifiedname>nvblox::Lidar::imagePlaneCoordsToPixelIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="59" column="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1abc9ad5b40f740fccddfc60dbc009d848" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>__host__ AxisAlignedBoundingBox nvblox::Lidar::getViewAABB</definition>
+        <argsstring>(const Transform &amp;T_L_C, const float min_depth, const float max_depth) const</argsstring>
+        <name>getViewAABB</name>
+        <qualifiedname>nvblox::Lidar::getViewAABB</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>min_depth</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_depth</declname>
+        </param>
+        <briefdescription>
+<para>View. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="63" column="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1acb787830c751234b6e7837b66ed8699c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Lidar::num_azimuth_divisions</definition>
+        <argsstring>() const</argsstring>
+        <name>num_azimuth_divisions</name>
+        <qualifiedname>nvblox::Lidar::num_azimuth_divisions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="67" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1acbfc38ed48d21d282695896c539ff0a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Lidar::num_elevation_divisions</definition>
+        <argsstring>() const</argsstring>
+        <name>num_elevation_divisions</name>
+        <qualifiedname>nvblox::Lidar::num_elevation_divisions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="68" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a86b75bcc6be7badc3c889869a48ff521" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::Lidar::vertical_fov_rad</definition>
+        <argsstring>() const</argsstring>
+        <name>vertical_fov_rad</name>
+        <qualifiedname>nvblox::Lidar::vertical_fov_rad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="69" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a653e1e0bc5d19241f72a3a06ac76ebab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Lidar::numel</definition>
+        <argsstring>() const</argsstring>
+        <name>numel</name>
+        <qualifiedname>nvblox::Lidar::numel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="70" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1ac64bc4e0c201dfed15fde7a6fd2f6763" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Lidar::rows</definition>
+        <argsstring>() const</argsstring>
+        <name>rows</name>
+        <qualifiedname>nvblox::Lidar::rows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="71" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Lidar_1a6817b15baa7a1b5b3114965744461e63" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Lidar::cols</definition>
+        <argsstring>() const</argsstring>
+        <name>cols</name>
+        <qualifiedname>nvblox::Lidar::cols</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="72" column="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnvblox_1_1Lidar_1ae6bf9a4a56627bc49427af8cd821d69f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ friend bool</type>
+        <definition>__host__ friend bool operator==</definition>
+        <argsstring>(const Lidar &amp;lhs, const Lidar &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>nvblox::Lidar::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Equality. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="75" column="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class for handling input LIDAR pointclouds and storing the LIDAR intrinsics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This helps convert a LIDAR pointcloud into a depth image. </para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="24" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="24" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1Lidar_1a68573869efab7ce8249f9fa0a72130d6" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>azimuth_pixels_per_rad_</name></member>
+      <member refid="classnvblox_1_1Lidar_1a6817b15baa7a1b5b3114965744461e63" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>cols</name></member>
+      <member refid="classnvblox_1_1Lidar_1a88331005a335019faa1f4bea711e826c" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>elevation_pixels_per_rad_</name></member>
+      <member refid="classnvblox_1_1Lidar_1a595b61ee7c1c7bef393dbbd0831f64db" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>getDepth</name></member>
+      <member refid="classnvblox_1_1Lidar_1abc9ad5b40f740fccddfc60dbc009d848" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>getViewAABB</name></member>
+      <member refid="classnvblox_1_1Lidar_1a40d7eda041b7468d90f0626a031f45cb" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>imagePlaneCoordsToPixelIndex</name></member>
+      <member refid="classnvblox_1_1Lidar_1af14d8651607ff5e02cc7407736bb8365" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>Lidar</name></member>
+      <member refid="classnvblox_1_1Lidar_1afb9075c9d60cf3b251312915d5c5d3a4" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>Lidar</name></member>
+      <member refid="classnvblox_1_1Lidar_1acb787830c751234b6e7837b66ed8699c" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>num_azimuth_divisions</name></member>
+      <member refid="classnvblox_1_1Lidar_1a25c7b28b1454eccced77a717cf46f378" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>num_azimuth_divisions_</name></member>
+      <member refid="classnvblox_1_1Lidar_1acbfc38ed48d21d282695896c539ff0a8" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>num_elevation_divisions</name></member>
+      <member refid="classnvblox_1_1Lidar_1a0db17d1043fa7d0d508bfa6ad848e5a5" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>num_elevation_divisions_</name></member>
+      <member refid="classnvblox_1_1Lidar_1a653e1e0bc5d19241f72a3a06ac76ebab" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>numel</name></member>
+      <member refid="classnvblox_1_1Lidar_1ae6bf9a4a56627bc49427af8cd821d69f" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>operator==</name></member>
+      <member refid="classnvblox_1_1Lidar_1a614400df4284ed577895acb59b60210b" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>pixelIndexToImagePlaneCoordsOfCenter</name></member>
+      <member refid="classnvblox_1_1Lidar_1a307b54473ede2fc0cb4ae37f8d37c589" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>project</name></member>
+      <member refid="classnvblox_1_1Lidar_1ae04ad94fe1f883dcab6439ed51920c7e" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>project</name></member>
+      <member refid="classnvblox_1_1Lidar_1a9fd7a35aae8e43d4490dcc5623e1c289" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>rads_per_pixel_azimuth_</name></member>
+      <member refid="classnvblox_1_1Lidar_1a331d1024809958dc5426ae8c0008041b" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>rads_per_pixel_elevation_</name></member>
+      <member refid="classnvblox_1_1Lidar_1ac64bc4e0c201dfed15fde7a6fd2f6763" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>rows</name></member>
+      <member refid="classnvblox_1_1Lidar_1ab388aff91f56b5b92467575b1a7a55c3" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>start_azimuth_angle_rad_</name></member>
+      <member refid="classnvblox_1_1Lidar_1a8e3f7a7beae78918bc3f9082850420e5" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>start_polar_angle_rad_</name></member>
+      <member refid="classnvblox_1_1Lidar_1a0116c04cfea51b9b6aa23d809d36a305" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>unprojectFromImagePlaneCoordinates</name></member>
+      <member refid="classnvblox_1_1Lidar_1a78c7ca66d53cd49fe2f0639615bfaabd" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>unprojectFromPixelIndices</name></member>
+      <member refid="classnvblox_1_1Lidar_1a2df6c0d4420d2fc378084fd49579f36a" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>vectorFromImagePlaneCoordinates</name></member>
+      <member refid="classnvblox_1_1Lidar_1a39bf97e380bdc4219875c10e377feac2" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>vectorFromPixelIndices</name></member>
+      <member refid="classnvblox_1_1Lidar_1a86b75bcc6be7badc3c889869a48ff521" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>vertical_fov_rad</name></member>
+      <member refid="classnvblox_1_1Lidar_1a7f63e6ea593e0a554c9965f9bdee1e35" prot="private" virt="non-virtual"><scope>nvblox::Lidar</scope><name>vertical_fov_rad_</name></member>
+      <member refid="classnvblox_1_1Lidar_1aa83eb66ee6d0e86555155bc02249d8db" prot="public" virt="non-virtual"><scope>nvblox::Lidar</scope><name>~Lidar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

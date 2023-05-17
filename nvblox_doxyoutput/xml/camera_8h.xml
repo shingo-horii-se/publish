@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="camera_8h" kind="file" language="C++">
+    <compoundname>camera.h</compoundname>
+    <includes refid="types_8h" local="yes">nvblox/core/types.h</includes>
+    <includes local="yes">nvblox/sensors/internal/impl/camera_impl.h</includes>
+    <includedby refid="image__masker_8h" local="yes">image_masker.h</includedby>
+    <includedby refid="image__projector_8h" local="yes">image_projector.h</includedby>
+    <includedby refid="mapper_8h" local="yes">mapper.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <includedby refid="pointcloud_8h" local="yes">pointcloud.h</includedby>
+    <includedby refid="projective__integrator_8h" local="yes">projective_integrator.h</includedby>
+    <includedby refid="scene_8h" local="yes">scene.h</includedby>
+    <includedby refid="sphere__tracer_8h" local="yes">sphere_tracer.h</includedby>
+    <includedby refid="view__calculator_8h" local="yes">view_calculator.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="6">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="4">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>nvblox/sensors/internal/impl/camera_impl.h</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>projective_color_integrator.h</label>
+        <link refid="projective__color__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>view_calculator.h</label>
+        <link refid="view__calculator_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="11">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sphere_tracer.h</label>
+        <link refid="sphere__tracer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>image_masker.h</label>
+        <link refid="image__masker_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>image_projector.h</label>
+        <link refid="image__projector_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pointcloud.h</label>
+        <link refid="pointcloud_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1Camera" prot="public">nvblox::Camera</innerclass>
+    <innerclass refid="classnvblox_1_1BoundingPlane" prot="public">nvblox::BoundingPlane</innerclass>
+    <innerclass refid="classnvblox_1_1Frustum" prot="public">nvblox::Frustum</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">nvblox/core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Frustum;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BoundingPlane;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classnvblox_1_1Camera" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classnvblox_1_1Camera_1aca50656d0f0c71102127c317ef511688" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1aca50656d0f0c71102127c317ef511688" kindref="member">Camera</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29" refid="classnvblox_1_1Camera_1abf27d7a8455065bf61f0f62e7c745d4d" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1abf27d7a8455065bf61f0f62e7c745d4d" kindref="member">Camera</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1abf86bbdf49bd83c7f6141408f5bea282" kindref="member">fu</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a0b66e9115e4a487495403b8786287583" kindref="member">fv</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1ae40ce52e7d005ede36a0522d61620c47" kindref="member">cu</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a99063ace99361c6787d576f09da19a93" kindref="member">cv</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a83f1a6b145d93cfada3e786bc2507920" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a36249550873efb30dc92d50c5c9638df" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="31" refid="classnvblox_1_1Camera_1a88631c6c9be40bb67f59c25b1829051b" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a88631c6c9be40bb67f59c25b1829051b" kindref="member">Camera</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1abf86bbdf49bd83c7f6141408f5bea282" kindref="member">fu</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a0b66e9115e4a487495403b8786287583" kindref="member">fv</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a83f1a6b145d93cfada3e786bc2507920" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a36249550873efb30dc92d50c5c9638df" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classnvblox_1_1Camera_1aa1c0e67d89491c30a07675a415e1f43d" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1aa1c0e67d89491c30a07675a415e1f43d" kindref="member">project</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>p_C,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref>*<sp/>u_C)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classnvblox_1_1Camera_1ab3f7d3758e6fa2dc0499e9e412a17461" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1ab3f7d3758e6fa2dc0499e9e412a17461" kindref="member">getDepth</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>p_C)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Back<sp/>projection<sp/>(image<sp/>plane<sp/>point<sp/>to<sp/>3D<sp/>point)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classnvblox_1_1Camera_1a199a201236b95470f47a28df66977927" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/><ref refid="classnvblox_1_1Camera_1a199a201236b95470f47a28df66977927" kindref="member">unprojectFromImagePlaneCoordinates</ref>(</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref>&amp;<sp/>u_C,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45" refid="classnvblox_1_1Camera_1aaa1295849e8839be3d15f3cb46e39da9" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/><ref refid="classnvblox_1_1Camera_1aaa1295849e8839be3d15f3cb46e39da9" kindref="member">unprojectFromPixelIndices</ref>(</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref>&amp;<sp/>u_C,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classnvblox_1_1Camera_1adf32bbf90357f772fdb587cfa1131513" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref><sp/><ref refid="classnvblox_1_1Camera_1adf32bbf90357f772fdb587cfa1131513" kindref="member">getViewAABB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_depth,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_depth)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classnvblox_1_1Camera_1a84bd5c7c57d810751c25d78406eb853b" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/><ref refid="classnvblox_1_1Frustum" kindref="compound">Frustum</ref><sp/><ref refid="classnvblox_1_1Camera_1a84bd5c7c57d810751c25d78406eb853b" kindref="member">getViewFrustum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_depth,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_depth)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classnvblox_1_1Camera_1aa24f7e5728babbac8b0fe8bfd00a4e90" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>Eigen::Matrix&lt;float,<sp/>8,<sp/>3&gt;<sp/><ref refid="classnvblox_1_1Camera_1aa24f7e5728babbac8b0fe8bfd00a4e90" kindref="member">getViewCorners</ref>(</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_depth,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_depth)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>an<sp/>unnormalized<sp/>ray<sp/>direction<sp/>in<sp/>the<sp/>camera<sp/>frame<sp/>corresponding<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>passed<sp/>pixel.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Two<sp/>functions,<sp/>one<sp/>for<sp/>(floating<sp/>point)<sp/>image-plane<sp/>coordinates,<sp/>another</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>function<sp/>for<sp/>pixel<sp/>indices.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classnvblox_1_1Camera_1a5c9902489fe8f6b0bb93b9aa2830863e" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/><ref refid="classnvblox_1_1Camera_1a5c9902489fe8f6b0bb93b9aa2830863e" kindref="member">vectorFromImagePlaneCoordinates</ref>(</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref>&amp;<sp/>u_C)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67" refid="classnvblox_1_1Camera_1a9ef40c89b994091201f104a35628d3e0" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/><ref refid="classnvblox_1_1Camera_1a9ef40c89b994091201f104a35628d3e0" kindref="member">vectorFromPixelIndices</ref>(</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref>&amp;<sp/>u_C)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classnvblox_1_1Camera_1abf86bbdf49bd83c7f6141408f5bea282" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1abf86bbdf49bd83c7f6141408f5bea282" kindref="member">fu</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fu_;<sp/>}</highlight></codeline>
+<codeline lineno="72" refid="classnvblox_1_1Camera_1a0b66e9115e4a487495403b8786287583" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a0b66e9115e4a487495403b8786287583" kindref="member">fv</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fv_;<sp/>}</highlight></codeline>
+<codeline lineno="73" refid="classnvblox_1_1Camera_1ae40ce52e7d005ede36a0522d61620c47" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1ae40ce52e7d005ede36a0522d61620c47" kindref="member">cu</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cu_;<sp/>}</highlight></codeline>
+<codeline lineno="74" refid="classnvblox_1_1Camera_1a99063ace99361c6787d576f09da19a93" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a99063ace99361c6787d576f09da19a93" kindref="member">cv</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cv_;<sp/>}</highlight></codeline>
+<codeline lineno="75" refid="classnvblox_1_1Camera_1a83f1a6b145d93cfada3e786bc2507920" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a83f1a6b145d93cfada3e786bc2507920" kindref="member">width</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>width_;<sp/>}</highlight></codeline>
+<codeline lineno="76" refid="classnvblox_1_1Camera_1a36249550873efb30dc92d50c5c9638df" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a36249550873efb30dc92d50c5c9638df" kindref="member">height</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>height_;<sp/>}</highlight></codeline>
+<codeline lineno="77" refid="classnvblox_1_1Camera_1a5f4a1a9863946db20b3de3ad309425da" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a5f4a1a9863946db20b3de3ad309425da" kindref="member">cols</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>width_;<sp/>}</highlight></codeline>
+<codeline lineno="78" refid="classnvblox_1_1Camera_1aa9292068247c53137fc9132d9330500d" refkind="member"><highlight class="normal"><sp/><sp/>__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1aa9292068247c53137fc9132d9330500d" kindref="member">rows</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>height_;<sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Factories</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classnvblox_1_1Camera_1ac0c3a17dd0be72611c232155ccdbad6d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref><sp/><ref refid="classnvblox_1_1Camera_1ac0c3a17dd0be72611c232155ccdbad6d" kindref="member">fromIntrinsicsMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Eigen::Matrix3f&amp;<sp/>mat,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a83f1a6b145d93cfada3e786bc2507920" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera_1a36249550873efb30dc92d50c5c9638df" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fu_;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fv_;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cu_;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cv_;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width_;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height_;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Stream<sp/>Camera<sp/>as<sp/>text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="namespacenvblox_1a1693c36a85f8b6f0f993ee6391188eb0" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespacenvblox_1a1134fae2a499abdb031e39a5b534643a" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>two<sp/>cameras<sp/>have<sp/>the<sp/>same<sp/>intrinsics/extrinsics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="namespacenvblox_1ae75b710e0da73064821f31e9baf821c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1ae75b710e0da73064821f31e9baf821c1" kindref="member">camerasAreEquivalent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera_1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera_2,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C2);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classnvblox_1_1BoundingPlane" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1BoundingPlane" kindref="compound">BoundingPlane</ref><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105" refid="classnvblox_1_1BoundingPlane_1a6d30b105692a5a5120c433e5676373fa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1BoundingPlane_1a6d30b105692a5a5120c433e5676373fa" kindref="member">BoundingPlane</ref>()<sp/>:<sp/>normal_(<ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>::Identity()),<sp/>distance_(0.0f)<sp/>{}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classnvblox_1_1BoundingPlane_1a92b9296b6397d628052a79e0755bca7a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BoundingPlane_1a92b9296b6397d628052a79e0755bca7a" kindref="member">setFromPoints</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>p2,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>p3);</highlight></codeline>
+<codeline lineno="109" refid="classnvblox_1_1BoundingPlane_1a74b6ee6a4280360c2c1fa49d4cd2fb2d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BoundingPlane_1a74b6ee6a4280360c2c1fa49d4cd2fb2d" kindref="member">setFromDistanceNormal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/><ref refid="classnvblox_1_1BoundingPlane_1af7716a4a7a2b84165d48400f27d24a85" kindref="member">normal</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BoundingPlane_1ab9b97cd43bf06467af0b7a4bc12714a6" kindref="member">distance</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classnvblox_1_1BoundingPlane_1a0717252ded4488d34ffc30c02cdbe49e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BoundingPlane_1a0717252ded4488d34ffc30c02cdbe49e" kindref="member">isPointInside</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classnvblox_1_1BoundingPlane_1af7716a4a7a2b84165d48400f27d24a85" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/><ref refid="classnvblox_1_1BoundingPlane_1af7716a4a7a2b84165d48400f27d24a85" kindref="member">normal</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>normal_;<sp/>}</highlight></codeline>
+<codeline lineno="115" refid="classnvblox_1_1BoundingPlane_1ab9b97cd43bf06467af0b7a4bc12714a6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BoundingPlane_1ab9b97cd43bf06467af0b7a4bc12714a6" kindref="member">distance</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>distance_;<sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/>normal_;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance_;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="classnvblox_1_1Frustum" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Frustum" kindref="compound">Frustum</ref><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Frustum<sp/>must<sp/>be<sp/>initialized<sp/>with<sp/>a<sp/>camera<sp/>and<sp/>min<sp/>and<sp/>max<sp/>depth<sp/>and<sp/>pose.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classnvblox_1_1Frustum_1a026fbd6b337f6569593b5793c9d9f260" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Frustum_1a026fbd6b337f6569593b5793c9d9f260" kindref="member">Frustum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_depth,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_depth);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classnvblox_1_1Frustum_1af73195f9108487778a6f53fa169f7ddb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref><sp/><ref refid="classnvblox_1_1Frustum_1af73195f9108487778a6f53fa169f7ddb" kindref="member">getAABB</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>aabb_;<sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classnvblox_1_1Frustum_1a0a2417b09419f2dcbe43532d8ad80bfa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Frustum_1a0a2417b09419f2dcbe43532d8ad80bfa" kindref="member">isPointInView</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133" refid="classnvblox_1_1Frustum_1a55646589206d2420d6513c24044edb9e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Frustum_1a55646589206d2420d6513c24044edb9e" kindref="member">isAABBInView</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref>&amp;<sp/>aabb)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>functions<sp/>to<sp/>do<sp/>the<sp/>actual<sp/>computations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>computeBoundingPlanes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Eigen::Matrix&lt;float,<sp/>8,<sp/>3&gt;&amp;<sp/>corners_C,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>std::array&lt;BoundingPlane,<sp/>6&gt;<sp/>bounding_planes_L_;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref><sp/>aabb_;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nvblox/sensors/internal/impl/camera_impl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h"/>
+  </compounddef>
+</doxygen>

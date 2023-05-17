@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1host__vector" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::host_vector</compoundname>
+    <basecompoundref refid="classnvblox_1_1unified__vector" prot="public" virt="non-virtual">nvblox::unified_vector&lt; T &gt;</basecompoundref>
+    <includes refid="unified__vector_8h" local="no">unified_vector.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a38cdf643fd5c142ee71f761cb3e2d423" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::host_vector&lt; T &gt;::host_vector</definition>
+        <argsstring>()</argsstring>
+        <name>host_vector</name>
+        <qualifiedname>nvblox::host_vector::host_vector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="148" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a1cfeb7941bfc10b1e0557219dd6c0465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::host_vector&lt; T &gt;::host_vector</definition>
+        <argsstring>(MemoryType memory_type)=delete</argsstring>
+        <name>host_vector</name>
+        <qualifiedname>nvblox::host_vector::host_vector</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="149" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a1d77facc2f4602631ef13843d35ee182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::host_vector&lt; T &gt;::host_vector</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>host_vector</name>
+        <qualifiedname>nvblox::host_vector::host_vector</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="150" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a00f27b2563ff28a857abee7ac6a764ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::host_vector&lt; T &gt;::host_vector</definition>
+        <argsstring>(size_t size, const T &amp;initial)</argsstring>
+        <name>host_vector</name>
+        <qualifiedname>nvblox::host_vector::host_vector</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>initial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="151" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="151" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a6b17a0fd77d9211ca183f591a34efee0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::host_vector&lt; T &gt;::host_vector</definition>
+        <argsstring>(const unified_vector&lt; T &gt; &amp;other)</argsstring>
+        <name>host_vector</name>
+        <qualifiedname>nvblox::host_vector::host_vector</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="155" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="155" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a4470eabb89f49bfd4ad704eb9510aca2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::host_vector&lt; T &gt;::host_vector</definition>
+        <argsstring>(unified_vector&lt; T &gt; &amp;&amp;other)</argsstring>
+        <name>host_vector</name>
+        <qualifiedname>nvblox::host_vector::host_vector</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="157" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="157" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a53af24ac7005bc64ff95d44b85ca3d5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref> &amp;</type>
+        <definition>host_vector &amp; nvblox::host_vector&lt; T &gt;::operator=</definition>
+        <argsstring>(const unified_vector&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::host_vector::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="159" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1ae5da0bec2f79479949e180af5a635c9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref> &amp;</type>
+        <definition>host_vector &amp; nvblox::host_vector&lt; T &gt;::operator=</definition>
+        <argsstring>(unified_vector&lt; T &gt; &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::host_vector::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="163" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1ac6a4b1071f663f2f92bffe003fee7084" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::host_vector&lt; T &gt;::host_vector</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;other)</argsstring>
+        <name>host_vector</name>
+        <qualifiedname>nvblox::host_vector::host_vector</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="169" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="169" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1host__vector_1a66bb7e04b735a6d1cdb345933c6debdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; T &gt; &amp;</type>
+        <definition>host_vector&lt; T &gt; &amp; nvblox::host_vector&lt; T &gt;::operator=</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::host_vector::operator=</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="171" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="171" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialization for <ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector</ref> on host memory only. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>nvblox::host_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>nvblox::host_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" line="146" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_vector.h" bodystart="146" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1unified__vector_1a91bb5b7efe81837c68a1ed8cfe99d859" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>begin</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a95bdf73a5e109d5815f09396061fad37" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>begin</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a6ae91632a69939ae80bd7666ecf5beca" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>capacity</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a38223d699514cc33684fcd7c60044995" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>cbegin</name></member>
+      <member refid="classnvblox_1_1unified__vector_1aca7cd87509a08e54afb0b6cd199de5ca" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>cend</name></member>
+      <member refid="classnvblox_1_1unified__vector_1ad07c8f0316f0823ee6fca1759f1c32a2" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>clear</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a124ce13d9abe85a83925b34695581401" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>const_iterator</name></member>
+      <member refid="classnvblox_1_1unified__vector_1acd9c016cd7694fe5ac79ed18844b38e1" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>data</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a2826d03fbfac13804bb2b6e688e7ba72" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>data</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a89a554c5fb921bdc089a63fd18ace5d0" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>empty</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a04b34f02f2ec54f242fd3b6cc50a808d" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>end</name></member>
+      <member refid="classnvblox_1_1unified__vector_1ad5859fa8169c23b4c98bec9df1d67896" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>end</name></member>
+      <member refid="classnvblox_1_1host__vector_1a38cdf643fd5c142ee71f761cb3e2d423" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>host_vector</name></member>
+      <member refid="classnvblox_1_1host__vector_1a1cfeb7941bfc10b1e0557219dd6c0465" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>host_vector</name></member>
+      <member refid="classnvblox_1_1host__vector_1a1d77facc2f4602631ef13843d35ee182" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>host_vector</name></member>
+      <member refid="classnvblox_1_1host__vector_1a00f27b2563ff28a857abee7ac6a764ae" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>host_vector</name></member>
+      <member refid="classnvblox_1_1host__vector_1a6b17a0fd77d9211ca183f591a34efee0" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>host_vector</name></member>
+      <member refid="classnvblox_1_1host__vector_1a4470eabb89f49bfd4ad704eb9510aca2" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>host_vector</name></member>
+      <member refid="classnvblox_1_1host__vector_1ac6a4b1071f663f2f92bffe003fee7084" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>host_vector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a4f15ef2fa9eb257167b0fb509ef6ad41" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>iterator</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a8850d11e4e62b71fd16429cc4b6df8b4" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>kDefaultMemoryType</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a71cfe00acf9481425152ec28c8b7366b" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>memory_type</name></member>
+      <member refid="classnvblox_1_1host__vector_1a53af24ac7005bc64ff95d44b85ca3d5d" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1host__vector_1ae5da0bec2f79479949e180af5a635c9b" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1host__vector_1a66bb7e04b735a6d1cdb345933c6debdd" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1unified__vector_1ae26720c8545d906f7ce94207cf30f635" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>operator[]</name></member>
+      <member refid="classnvblox_1_1unified__vector_1ad8791a05305931166144516e8d62e8f8" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>operator[]</name></member>
+      <member refid="classnvblox_1_1unified__vector_1aed4c9f981e2fd47e30915f5000e008c3" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>push_back</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a4dfcb7dcf7f3e454d084f9aaf2fe4c87" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>reserve</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a73ee465555917acb6fc75f14a3132819" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>resize</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a3c13a87c0a4a204a59cb0591977cc18e" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>setZero</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a89375f5e82c9dd601c1cf6961aa837ee" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>size</name></member>
+      <member refid="classnvblox_1_1unified__vector_1afae625c833546347da34d5e8cc23a90e" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>toCPU</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a8458a4b71dd738480bfd45ddcc80010a" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>toGPU</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a8dd1edb6632ab950058d9e6cf4faa77a" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>toVector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a244143cd9f9e3101bb5f892f1afe0533" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>unified_vector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a47e9ab4246124cd1726c17efa031ea5d" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>unified_vector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a5613b939a32cc02d3db195695a8257b3" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>unified_vector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a5dfe14221901366a7d8d7c42f79843a9" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>unified_vector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a387523fda871ffc6518dad5467c887d5" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>unified_vector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a0b75be155fd4bfb7754c4759409766bc" prot="public" virt="non-virtual"><scope>nvblox::host_vector</scope><name>unified_vector</name></member>
+      <member refid="classnvblox_1_1unified__vector_1a2f1c1676a5454f161453accb162121e4" prot="public" virt="virtual"><scope>nvblox::host_vector</scope><name>~unified_vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

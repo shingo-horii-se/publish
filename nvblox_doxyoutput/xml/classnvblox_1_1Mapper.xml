@@ -1,0 +1,1870 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1Mapper" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::Mapper</compoundname>
+    <basecompoundref refid="classnvblox_1_1MapperBase" prot="public" virt="non-virtual">nvblox::MapperBase</basecompoundref>
+    <includes refid="mapper_8h" local="no">mapper.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>EsdfMode</name>
+        <qualifiedname>nvblox::Mapper::EsdfMode</qualifiedname>
+        <enumvalue id="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33a03258330d79e4655139390922b06895c" prot="public">
+          <name>k3D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33aab924aabe336b61d678b10cac8f1371a" prot="public">
+          <name>k2D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33ac69d34d47bfd5244204004878441d53f" prot="public">
+          <name>kUnset</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The ESDF mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum indicates if an <ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref> is configured for 3D or 2D Esdf production, or that this has not yet been determined (kUnset). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="70" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a88dce6cd70d308174c853278001f52f3" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Mapper::voxel_size_m_</definition>
+        <argsstring></argsstring>
+        <name>voxel_size_m_</name>
+        <qualifiedname>nvblox::Mapper::voxel_size_m_</qualifiedname>
+        <briefdescription>
+<para>The size of the voxels to be used in the TSDF, ESDF, <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> layers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="324" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a39f35b50f41257dce6c717dc298375a5" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>MemoryType nvblox::Mapper::memory_type_</definition>
+        <argsstring></argsstring>
+        <name>memory_type_</name>
+        <qualifiedname>nvblox::Mapper::memory_type_</qualifiedname>
+        <briefdescription>
+<para>The storage location for the TSDF, ESDF, <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>, and <ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref> Layers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="326" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a38f8a4a8093059726f40cf07de1c516b" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" kindref="member">ProjectiveLayerType</ref></type>
+        <definition>ProjectiveLayerType nvblox::Mapper::projective_layer_type_</definition>
+        <argsstring></argsstring>
+        <name>projective_layer_type_</name>
+        <qualifiedname>nvblox::Mapper::projective_layer_type_</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa50ef3837f3af039a7563f851682eab91" kindref="member">ProjectiveLayerType::kTsdf</ref></initializer>
+        <briefdescription>
+<para>The layer type to which the projective data is integrated (either tsdf or occupancy). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="329" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a6344f1be25d8d379cfb34e5aba75e4d6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33" kindref="member">EsdfMode</ref></type>
+        <definition>EsdfMode nvblox::Mapper::esdf_mode_</definition>
+        <argsstring></argsstring>
+        <name>esdf_mode_</name>
+        <qualifiedname>nvblox::Mapper::esdf_mode_</qualifiedname>
+        <initializer>= <ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33ac69d34d47bfd5244204004878441d53f" kindref="member">EsdfMode::kUnset</ref></initializer>
+        <briefdescription>
+<para>This class can be used to generate <emphasis>either</emphasis> (not both) the 2D or 3D ESDF. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The mode used is determined by the first call to either <ref refid="classnvblox_1_1Mapper_1a49506babbcaf7a5df02025b46b96c9f5" kindref="member">updateEsdf()</ref> or <ref refid="classnvblox_1_1Mapper_1a9705f1786eb66aeb0f9190fb04d92d19" kindref="member">updateEsdfSlice()</ref>. This member tracks which mode we&apos;re in. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="334" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a7e15ca7786977a76e02af4b046adb07a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref></type>
+        <definition>ProjectiveTsdfIntegrator nvblox::Mapper::tsdf_integrator_</definition>
+        <argsstring></argsstring>
+        <name>tsdf_integrator_</name>
+        <qualifiedname>nvblox::Mapper::tsdf_integrator_</qualifiedname>
+        <briefdescription>
+<para>Integrators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="337" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a3042a5709b8b4e0076811a99463362a0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref></type>
+        <definition>ProjectiveTsdfIntegrator nvblox::Mapper::lidar_tsdf_integrator_</definition>
+        <argsstring></argsstring>
+        <name>lidar_tsdf_integrator_</name>
+        <qualifiedname>nvblox::Mapper::lidar_tsdf_integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="338" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1ae00f90ecd686cd32280c345d30352e91" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref></type>
+        <definition>ProjectiveOccupancyIntegrator nvblox::Mapper::occupancy_integrator_</definition>
+        <argsstring></argsstring>
+        <name>occupancy_integrator_</name>
+        <qualifiedname>nvblox::Mapper::occupancy_integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="339" column="33" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1ac5292a75b93acbd5fd362c11f1af6124" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref></type>
+        <definition>ProjectiveOccupancyIntegrator nvblox::Mapper::lidar_occupancy_integrator_</definition>
+        <argsstring></argsstring>
+        <name>lidar_occupancy_integrator_</name>
+        <qualifiedname>nvblox::Mapper::lidar_occupancy_integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="340" column="33" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1ad7160cac09eef3ab0aaa71af69ed865b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref></type>
+        <definition>OccupancyDecayIntegrator nvblox::Mapper::occupancy_decay_integrator_</definition>
+        <argsstring></argsstring>
+        <name>occupancy_decay_integrator_</name>
+        <qualifiedname>nvblox::Mapper::occupancy_decay_integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="341" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a8daec58bd998da4eb8088765a0910a2c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref></type>
+        <definition>ProjectiveColorIntegrator nvblox::Mapper::color_integrator_</definition>
+        <argsstring></argsstring>
+        <name>color_integrator_</name>
+        <qualifiedname>nvblox::Mapper::color_integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="342" column="29" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a28efd9479f0d56d55786781fa192fe16" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref></type>
+        <definition>MeshIntegrator nvblox::Mapper::mesh_integrator_</definition>
+        <argsstring></argsstring>
+        <name>mesh_integrator_</name>
+        <qualifiedname>nvblox::Mapper::mesh_integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="343" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1a23a52add7ff5d796f4f8793a15944ad5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref></type>
+        <definition>EsdfIntegrator nvblox::Mapper::esdf_integrator_</definition>
+        <argsstring></argsstring>
+        <name>esdf_integrator_</name>
+        <qualifiedname>nvblox::Mapper::esdf_integrator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="344" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1adc9d8b9b29e5366ae22974ab00d20902" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a0c56e5b887ead34e544a1cda691275d3" kindref="member">Index3DSet</ref></type>
+        <definition>Index3DSet nvblox::Mapper::mesh_blocks_to_update_</definition>
+        <argsstring></argsstring>
+        <name>mesh_blocks_to_update_</name>
+        <qualifiedname>nvblox::Mapper::mesh_blocks_to_update_</qualifiedname>
+        <briefdescription>
+<para>These collections keep track of the blocks which need to be updated on the next calls to updateMeshLayer() and updateEsdfLayer() respectively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>They are updated when new frames are integrated into the reconstruction by calls to <ref refid="classnvblox_1_1Mapper_1a544632ddecd99db185960a3f86bef5cf" kindref="member">integrateDepth()</ref> and <ref refid="classnvblox_1_1Mapper_1a5491f4648e1db0f054660204931732e0" kindref="member">integrateLidarDepth()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="350" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Mapper_1aec9055230fbc2a396429397652c69513" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a0c56e5b887ead34e544a1cda691275d3" kindref="member">Index3DSet</ref></type>
+        <definition>Index3DSet nvblox::Mapper::esdf_blocks_to_update_</definition>
+        <argsstring></argsstring>
+        <name>esdf_blocks_to_update_</name>
+        <qualifiedname>nvblox::Mapper::esdf_blocks_to_update_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="351" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a8a2fadadfffafec2a793fca8b5d36c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Mapper::Mapper</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Mapper</name>
+        <qualifiedname>nvblox::Mapper::Mapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="72" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a565ab6e40c3676f733837ba6c60bb612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Mapper::Mapper</definition>
+        <argsstring>(float voxel_size_m, MemoryType memory_type=MemoryType::kDevice, ProjectiveLayerType projective_layer_type=ProjectiveLayerType::kTsdf)</argsstring>
+        <name>Mapper</name>
+        <qualifiedname>nvblox::Mapper::Mapper</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size_m</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+          <defval><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" kindref="member">ProjectiveLayerType</ref></type>
+          <declname>projective_layer_type</declname>
+          <defval><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa50ef3837f3af039a7563f851682eab91" kindref="member">ProjectiveLayerType::kTsdf</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voxel_size_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The voxel size in meters for the contained layers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>projective_layer_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer type to which the projective data is integrated (either tsdf or occupancy). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>In which type of memory the layers should be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="78" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a44a4ffa8ba13892034243712005329c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::Mapper::~Mapper</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Mapper</name>
+        <qualifiedname>nvblox::Mapper::~Mapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="81" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1adea6ec3d5039f3d495b6556c8632cdc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Mapper::Mapper</definition>
+        <argsstring>(const std::string &amp;map_filepath, MemoryType memory_type=MemoryType::kDevice)</argsstring>
+        <name>Mapper</name>
+        <qualifiedname>nvblox::Mapper::Mapper</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>map_filepath</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+          <defval><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor which initializes from a saved map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map_filepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the serialized map to be loaded. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>In which type of memory the layers should be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="86" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a5db367b13767cdf00c4283493423cd81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Mapper::Mapper</definition>
+        <argsstring>(Mapper &amp;&amp;other)=default</argsstring>
+        <name>Mapper</name>
+        <qualifiedname>nvblox::Mapper::Mapper</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="90" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1af40c7b24b7c31cd0142e2581aed7ca18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref> &amp;</type>
+        <definition>Mapper &amp; nvblox::Mapper::operator=</definition>
+        <argsstring>(Mapper &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::Mapper::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a544632ddecd99db185960a3f86bef5cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Mapper::integrateDepth</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Camera &amp;camera)</argsstring>
+        <name>integrateDepth</name>
+        <qualifiedname>nvblox::Mapper::integrateDepth</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Integrates a depth frame into the tsdf reconstruction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth frame to integrate. Depth in the image is specified as a float representing meters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pose of the camera, specified as a transform from Camera-frame to Layer-frame transform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Intrinsics model of the camera. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="99" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1af1fb2e19844b561ba217d6f962db0eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Mapper::integrateColor</definition>
+        <argsstring>(const ColorImage &amp;color_frame, const Transform &amp;T_L_C, const Camera &amp;camera)</argsstring>
+        <name>integrateColor</name>
+        <qualifiedname>nvblox::Mapper::integrateColor</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> &amp;</type>
+          <declname>color_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Integrates a color frame into the reconstruction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> image to integrate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pose of the camera, specified as a transform from Camera-frame to Layer-frame transform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Intrinsics model of the camera. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="107" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a5491f4648e1db0f054660204931732e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Mapper::integrateLidarDepth</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Lidar &amp;lidar)</argsstring>
+        <name>integrateLidarDepth</name>
+        <qualifiedname>nvblox::Mapper::integrateLidarDepth</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <briefdescription>
+<para>Integrates a 3D LiDAR scan into the reconstruction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth image representing the LiDAR scan. To convert a lidar scan to a DepthImage see TODOOO. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pose of the LiDAR, specified as a transform from LiDAR-frame to Layer-frame transform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lidar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Intrinsics model of the LiDAR. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="116" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a96a461f283753893f5bcf84420e9963c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Mapper::decayOccupancy</definition>
+        <argsstring>()</argsstring>
+        <name>decayOccupancy</name>
+        <qualifiedname>nvblox::Mapper::decayOccupancy</qualifiedname>
+        <briefdescription>
+<para>Decay the occupancy layer (approach 0.5 occupancy probability). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="120" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a288bdb12d222c774fd55b4ceeba3763f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::Mapper::updateMesh</definition>
+        <argsstring>()</argsstring>
+        <name>updateMesh</name>
+        <qualifiedname>nvblox::Mapper::updateMesh</qualifiedname>
+        <briefdescription>
+<para>Updates the mesh blocks which require an update. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The indices of the blocks that were updated in this call. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="124" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a1f2a1d9486b1b166983ebbbace8a28ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Mapper::generateMesh</definition>
+        <argsstring>()</argsstring>
+        <name>generateMesh</name>
+        <qualifiedname>nvblox::Mapper::generateMesh</qualifiedname>
+        <briefdescription>
+<para>Generate (or re-generate) a mesh for the entire map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Useful if loading a layer cake without a mesh layer, for example. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="128" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a49506babbcaf7a5df02025b46b96c9f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::Mapper::updateEsdf</definition>
+        <argsstring>()</argsstring>
+        <name>updateEsdf</name>
+        <qualifiedname>nvblox::Mapper::updateEsdf</qualifiedname>
+        <briefdescription>
+<para>Updates the ESDF blocks which require an update. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that currently we limit the <ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref> class to calculating <emphasis>either</emphasis> the 2D or 3D ESDF, not both. Which is to be calculated is determined by the first call to <ref refid="classnvblox_1_1Mapper_1a49506babbcaf7a5df02025b46b96c9f5" kindref="member">updateEsdf()</ref>. <simplesect kind="return"><para>std::vector&lt;Index3D&gt; The indices of the blocks that were updated in this call. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="136" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a717f744cde7106387800efb750d84af1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Mapper::generateEsdf</definition>
+        <argsstring>()</argsstring>
+        <name>generateEsdf</name>
+        <qualifiedname>nvblox::Mapper::generateEsdf</qualifiedname>
+        <briefdescription>
+<para>Generate an ESDF on <emphasis>all</emphasis> allocated blocks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will replace whatever has been done before. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="140" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a9705f1786eb66aeb0f9190fb04d92d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::Mapper::updateEsdfSlice</definition>
+        <argsstring>(float slice_input_z_min, float slice_input_z_max, float slice_output_z)</argsstring>
+        <name>updateEsdfSlice</name>
+        <qualifiedname>nvblox::Mapper::updateEsdfSlice</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>slice_input_z_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>slice_input_z_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>slice_output_z</declname>
+        </param>
+        <briefdescription>
+<para>Updates the ESDF blocks which require an update. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that currently we limit the <ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref> class to calculating <emphasis>either</emphasis> the 2D or 3D ESDF, not both. Which is to be calculated is determined by the first call to <ref refid="classnvblox_1_1Mapper_1a49506babbcaf7a5df02025b46b96c9f5" kindref="member">updateEsdf()</ref>. This function operates by collapsing a finite thickness slice of the 3D TSDF into a binary obstacle map, and then generating the 2D ESDF. The input parameters define the limits of the 3D slice that are considered. Note that the resultant 2D ESDF is stored in a single voxel thick layer in ESDF layer. <simplesect kind="return"><para>The indices of the blocks that were updated in this call. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slice_input_z_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum height of the 3D TSDF slice used to generate the 2D binary obstacle map. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_input_z_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum height of the 3D TSDF slice used to generate the 2D binary obstacle map. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_output_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height at which the 2D ESDF is stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;Index3D&gt; The indices of the blocks that were updated in this call. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="159" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a4020ea75b0f9f562b9c6e1b432709260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::Mapper::clearOutsideRadius</definition>
+        <argsstring>(const Vector3f &amp;center, float radius)</argsstring>
+        <name>clearOutsideRadius</name>
+        <qualifiedname>nvblox::Mapper::clearOutsideRadius</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Clears the reconstruction outside a radius around a center point, deallocating the memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the keep-sphere. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of the keep-sphere. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;Index3D&gt; The block indices removed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="168" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a5ed24b8493a26de3cc4568e5fd9ea0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Mapper::markUnobservedTsdfFreeInsideRadius</definition>
+        <argsstring>(const Vector3f &amp;center, float radius)</argsstring>
+        <name>markUnobservedTsdfFreeInsideRadius</name>
+        <qualifiedname>nvblox::Mapper::markUnobservedTsdfFreeInsideRadius</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Allocates blocks touched by radius and gives their voxels some small positive weight. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of allocation-sphere </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of allocation-sphere </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="174" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a154075c7e8abb49b095cc49e158cfac9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+        <definition>const LayerCake &amp; nvblox::Mapper::layers</definition>
+        <argsstring>() const</argsstring>
+        <name>layers</name>
+        <qualifiedname>nvblox::Mapper::layers</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref>&amp; The collection of layers mapped. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="178" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1af3efa81c8d4fab1ace473298f22d6ade" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+        <definition>const TsdfLayer &amp; nvblox::Mapper::tsdf_layer</definition>
+        <argsstring>() const</argsstring>
+        <name>tsdf_layer</name>
+        <qualifiedname>nvblox::Mapper::tsdf_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const TsdfLayer&amp; TSDF layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="181" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1af6da6ba63f12f936ebcb953d11b2005f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> &amp;</type>
+        <definition>const OccupancyLayer &amp; nvblox::Mapper::occupancy_layer</definition>
+        <argsstring>() const</argsstring>
+        <name>occupancy_layer</name>
+        <qualifiedname>nvblox::Mapper::occupancy_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const OccupancyLayer&amp; occupancy layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="184" column="24" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1ac078776652fa52177d0747ece9bb523c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+        <definition>const ColorLayer &amp; nvblox::Mapper::color_layer</definition>
+        <argsstring>() const</argsstring>
+        <name>color_layer</name>
+        <qualifiedname>nvblox::Mapper::color_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const ColorLayer&amp; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="189" column="20" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a4867497b05b3063edfc32a8476162762" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> &amp;</type>
+        <definition>const EsdfLayer &amp; nvblox::Mapper::esdf_layer</definition>
+        <argsstring>() const</argsstring>
+        <name>esdf_layer</name>
+        <qualifiedname>nvblox::Mapper::esdf_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const EsdfLayer&amp; ESDF layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="192" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a32b283b06a62685854124b36b251ff6c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> &amp;</type>
+        <definition>const MeshLayer &amp; nvblox::Mapper::mesh_layer</definition>
+        <argsstring>() const</argsstring>
+        <name>mesh_layer</name>
+        <qualifiedname>nvblox::Mapper::mesh_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const MeshLayer&amp; <ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref> layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="195" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="195" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1ad2a02bdf426e362e1780b74bd3962679" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> &amp;</type>
+        <definition>LayerCake &amp; nvblox::Mapper::layers</definition>
+        <argsstring>()</argsstring>
+        <name>layers</name>
+        <qualifiedname>nvblox::Mapper::layers</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref>&amp; The collection of layers mapped. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="199" column="13" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a78aeabfcfd6db51d1dc1be71ced9870f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+        <definition>TsdfLayer &amp; nvblox::Mapper::tsdf_layer</definition>
+        <argsstring>()</argsstring>
+        <name>tsdf_layer</name>
+        <qualifiedname>nvblox::Mapper::tsdf_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TsdfLayer&amp; TSDF layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="202" column="13" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1ab79bad4b070892c61c41bbbf9abc2303" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> &amp;</type>
+        <definition>OccupancyLayer &amp; nvblox::Mapper::occupancy_layer</definition>
+        <argsstring>()</argsstring>
+        <name>occupancy_layer</name>
+        <qualifiedname>nvblox::Mapper::occupancy_layer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>OccupancyLayer&amp; occupancy layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="204" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="204" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a7453452c942b3ef47bdba11931adfb3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+        <definition>ColorLayer &amp; nvblox::Mapper::color_layer</definition>
+        <argsstring>()</argsstring>
+        <name>color_layer</name>
+        <qualifiedname>nvblox::Mapper::color_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ColorLayer&amp; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="209" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1aef96d2bb98587979b8485937d04eca6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> &amp;</type>
+        <definition>EsdfLayer &amp; nvblox::Mapper::esdf_layer</definition>
+        <argsstring>()</argsstring>
+        <name>esdf_layer</name>
+        <qualifiedname>nvblox::Mapper::esdf_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>EsdfLayer&amp; ESDF layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="212" column="13" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a3522228178d8895943be09c37a28e680" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> &amp;</type>
+        <definition>MeshLayer &amp; nvblox::Mapper::mesh_layer</definition>
+        <argsstring>()</argsstring>
+        <name>mesh_layer</name>
+        <qualifiedname>nvblox::Mapper::mesh_layer</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>MeshLayer&amp; <ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref> layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="215" column="13" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="215" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1ae857a498b45f91782ea58d18b38eea2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref> &amp;</type>
+        <definition>const ProjectiveTsdfIntegrator &amp; nvblox::Mapper::tsdf_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>tsdf_integrator</name>
+        <qualifiedname>nvblox::Mapper::tsdf_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp; TSDF integrator used for depth/rgbd frame integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="220" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a309798b782e26dd4210f0e37b8486f23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref> &amp;</type>
+        <definition>const ProjectiveOccupancyIntegrator &amp; nvblox::Mapper::occupancy_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>occupancy_integrator</name>
+        <qualifiedname>nvblox::Mapper::occupancy_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp; occupancy integrator used for depth/rgbd frame integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="226" column="39" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="226" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1afffe3a520fb55e6d3f354892f67a8a70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref> &amp;</type>
+        <definition>const ProjectiveTsdfIntegrator &amp; nvblox::Mapper::lidar_tsdf_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>lidar_tsdf_integrator</name>
+        <qualifiedname>nvblox::Mapper::lidar_tsdf_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp; TSDF integrator used for 3D LiDAR scan integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="232" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a43741cdb5b048a986c4dde4e0baae2f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref> &amp;</type>
+        <definition>const ProjectiveOccupancyIntegrator &amp; nvblox::Mapper::lidar_occupancy_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>lidar_occupancy_integrator</name>
+        <qualifiedname>nvblox::Mapper::lidar_occupancy_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp; occupancy integrator used for 3D LiDAR scan integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="238" column="39" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a0147e1e0b7592b1c1ce8b39ed8173f62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref> &amp;</type>
+        <definition>const OccupancyDecayIntegrator &amp; nvblox::Mapper::occupancy_decay_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>occupancy_decay_integrator</name>
+        <qualifiedname>nvblox::Mapper::occupancy_decay_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref>&amp; occupancy integrator used for decaying an occupancy layer towards 0.5 occupancy probability. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="244" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="244" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1aad6832f09bd04cb02294e695b413a737" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref> &amp;</type>
+        <definition>const ProjectiveColorIntegrator &amp; nvblox::Mapper::color_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>color_integrator</name>
+        <qualifiedname>nvblox::Mapper::color_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref>&amp; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> integrator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="249" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a0c15723ba2fcbaf3d7d7bb60c58a3d46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref> &amp;</type>
+        <definition>const MeshIntegrator &amp; nvblox::Mapper::mesh_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>mesh_integrator</name>
+        <qualifiedname>nvblox::Mapper::mesh_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref>&amp; <ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref> integrator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="254" column="24" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="254" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a581c9039f51add2f2b7060a3cad8650d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref> &amp;</type>
+        <definition>const EsdfIntegrator &amp; nvblox::Mapper::esdf_integrator</definition>
+        <argsstring>() const</argsstring>
+        <name>esdf_integrator</name>
+        <qualifiedname>nvblox::Mapper::esdf_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref>&amp; ESDF integrator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="257" column="24" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="257" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1aa892d19c1aacc7997016eede53f9480c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref> &amp;</type>
+        <definition>ProjectiveTsdfIntegrator &amp; nvblox::Mapper::tsdf_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>tsdf_integrator</name>
+        <qualifiedname>nvblox::Mapper::tsdf_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp; TSDF integrator used for depth/rgbd frame integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="262" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="262" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a90370075efaf0d689dd744611d0f04d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref> &amp;</type>
+        <definition>ProjectiveOccupancyIntegrator &amp; nvblox::Mapper::occupancy_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>occupancy_integrator</name>
+        <qualifiedname>nvblox::Mapper::occupancy_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp; occupancy integrator used for depth/rgbd frame integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="266" column="33" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="266" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a2a15370da009a96a9d2622b3e673e86a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref> &amp;</type>
+        <definition>ProjectiveTsdfIntegrator &amp; nvblox::Mapper::lidar_tsdf_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>lidar_tsdf_integrator</name>
+        <qualifiedname>nvblox::Mapper::lidar_tsdf_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp; TSDF integrator used for 3D LiDAR scan integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="272" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="272" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1ab4d14909b636dee941395a16220986a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref> &amp;</type>
+        <definition>ProjectiveOccupancyIntegrator &amp; nvblox::Mapper::lidar_occupancy_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>lidar_occupancy_integrator</name>
+        <qualifiedname>nvblox::Mapper::lidar_occupancy_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp; occupancy integrator used for 3D LiDAR scan integration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="278" column="33" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a2958f788ca3fe23105127597ece29d0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref> &amp;</type>
+        <definition>OccupancyDecayIntegrator &amp; nvblox::Mapper::occupancy_decay_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>occupancy_decay_integrator</name>
+        <qualifiedname>nvblox::Mapper::occupancy_decay_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref>&amp; occupancy integrator used for decaying an occupancy layer towards 0.5 occupancy probability. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="284" column="28" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="284" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a100b465829622223c8cb491ecec35364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref> &amp;</type>
+        <definition>ProjectiveColorIntegrator &amp; nvblox::Mapper::color_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>color_integrator</name>
+        <qualifiedname>nvblox::Mapper::color_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref>&amp; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> integrator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="289" column="29" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="289" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a0c30ca8757d7d40cb1b321b73fde97b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref> &amp;</type>
+        <definition>MeshIntegrator &amp; nvblox::Mapper::mesh_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>mesh_integrator</name>
+        <qualifiedname>nvblox::Mapper::mesh_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref>&amp; <ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref> integrator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="292" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="292" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a99727e155353bfbd114a802a6a619a9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref> &amp;</type>
+        <definition>EsdfIntegrator &amp; nvblox::Mapper::esdf_integrator</definition>
+        <argsstring>()</argsstring>
+        <name>esdf_integrator</name>
+        <qualifiedname>nvblox::Mapper::esdf_integrator</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref>&amp; ESDF integrator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="295" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="295" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a9e5545891bd26620cb9b89de0d592893" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::Mapper::voxel_size_m</definition>
+        <argsstring>() const</argsstring>
+        <name>voxel_size_m</name>
+        <qualifiedname>nvblox::Mapper::voxel_size_m</qualifiedname>
+        <briefdescription>
+<para>Getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The voxel size in meters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="298" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="298" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a2bd8b9aa8cabc3500001889f36e19d91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Mapper::saveMap</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>saveMap</name>
+        <qualifiedname>nvblox::Mapper::saveMap</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Saving and loading functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Saving a map will serialize the TSDF and ESDF layers to a file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="305" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1acd53ca51db96f0966be0ce93dfbba626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Mapper::saveMap</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>saveMap</name>
+        <qualifiedname>nvblox::Mapper::saveMap</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="306" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1adf3b1b8152b0fa4ca590babe59d2134b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Mapper::loadMap</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>loadMap</name>
+        <qualifiedname>nvblox::Mapper::loadMap</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Loading the map will load a the TSDF and ESDF layers from a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will clear anything in the map already. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="309" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a5cefba42ff24c129ef821646d54a8dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Mapper::loadMap</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>loadMap</name>
+        <qualifiedname>nvblox::Mapper::loadMap</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="310" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1ad22d53ee0244fc53a1c68a2104134824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Mapper::saveMeshAsPly</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>saveMeshAsPly</name>
+        <qualifiedname>nvblox::Mapper::saveMeshAsPly</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Updates and writes the mesh to file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to output PLY file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Flag indicating if write was successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="315" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Mapper_1a774e7b4e739c7ba0205478dd37c17724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Mapper::saveEsdfAsPly</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>saveEsdfAsPly</name>
+        <qualifiedname>nvblox::Mapper::saveEsdfAsPly</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Updates and writes the Esdf as a PLY. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the output PLY file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool Flag indicating if the write was successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="320" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref> class is what we consider the default mapping behaviour in nvblox. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains:<itemizedlist>
+<listitem><para>TsdfLayer, OccupancyLayer, ColorLayer, EsdfLayer, MeshLayer</para>
+</listitem><listitem><para>Integrators associated with these layer types.</para>
+</listitem></itemizedlist>
+</para>
+<para>Exposes functions for:<itemizedlist>
+<listitem><para>Integrating depth/rgbd images, 3D LiDAR scans, and color images.</para>
+</listitem><listitem><para>Functions for generating Meshes, ESDF, and ESDF-slices. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>nvblox::Mapper</label>
+        <link refid="classnvblox_1_1Mapper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::MapperBase</label>
+        <link refid="classnvblox_1_1MapperBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>nvblox::Image&lt; float &gt;</label>
+        <link refid="classnvblox_1_1Image"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>owned_data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>nvblox::ProjectiveIntegrator&lt; OccupancyVoxel &gt;</label>
+        <link refid="classnvblox_1_1ProjectiveIntegrator"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>view_calculator_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>block_ptrs_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox::ProjectiveIntegrator&lt; TsdfVoxel &gt;</label>
+        <link refid="classnvblox_1_1ProjectiveIntegrator"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>view_calculator_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>block_ptrs_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>nvblox::device_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>nvblox::device_vector&lt; bool &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>nvblox::device_vector&lt; const VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>nvblox::device_vector&lt; nvblox::VoxelBlock * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>nvblox::device_vector&lt; nvblox::VoxelBlock&lt; OccupancyVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>nvblox::device_vector&lt; nvblox::VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>nvblox::host_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>nvblox::host_vector&lt; bool &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>nvblox::host_vector&lt; const VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>nvblox::host_vector&lt; nvblox::VoxelBlock * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>nvblox::host_vector&lt; nvblox::VoxelBlock&lt; OccupancyVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>nvblox::host_vector&lt; nvblox::VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>nvblox::EsdfIntegrator</label>
+        <link refid="classnvblox_1_1EsdfIntegrator"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+          <edgelabel>cleared_block_indices_device_</edgelabel>
+          <edgelabel>temp_indices_device_</edgelabel>
+          <edgelabel>to_clear_indices_device_</edgelabel>
+          <edgelabel>updated_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+          <edgelabel>temp_indices_host_</edgelabel>
+          <edgelabel>to_clear_indices_host_</edgelabel>
+          <edgelabel>updated_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>cleared_counter_device_</edgelabel>
+          <edgelabel>cleared_counter_host_</edgelabel>
+          <edgelabel>updated_counter_device_</edgelabel>
+          <edgelabel>updated_counter_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>nvblox::ImageBase&lt; _ElementType &gt;</label>
+        <link refid="classnvblox_1_1ImageBase"/>
+      </node>
+      <node id="3">
+        <label>nvblox::LayerCake</label>
+        <link refid="classnvblox_1_1LayerCake"/>
+      </node>
+      <node id="1">
+        <label>nvblox::Mapper</label>
+        <link refid="classnvblox_1_1Mapper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lidar_tsdf_integrator_</edgelabel>
+          <edgelabel>tsdf_integrator_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>lidar_occupancy_integrator_</edgelabel>
+          <edgelabel>occupancy_integrator_</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>occupancy_decay_integrator_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>color_integrator_</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mesh_integrator_</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>esdf_integrator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::MapperBase</label>
+        <link refid="classnvblox_1_1MapperBase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>layers_</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>nvblox::MeshIntegrator</label>
+        <link refid="classnvblox_1_1MeshIntegrator"/>
+      </node>
+      <node id="20">
+        <label>nvblox::OccupancyDecayIntegrator</label>
+        <link refid="classnvblox_1_1OccupancyDecayIntegrator"/>
+      </node>
+      <node id="21">
+        <label>nvblox::ProjectiveColorIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveColorIntegrator"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>view_calculator_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>sphere_tracer_</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>synthetic_depth_image_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>block_ptrs_host_</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>truncation_band_block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>truncation_band_block_ptrs_host_</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>block_in_truncation_band_device_</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>block_in_truncation_band_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>nvblox::ProjectiveOccupancyIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveOccupancyIntegrator"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>update_functor_host_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox::ProjectiveTsdfIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveTsdfIntegrator"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>update_functor_host_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>nvblox::SphereTracer</label>
+        <link refid="classnvblox_1_1SphereTracer"/>
+      </node>
+      <node id="6">
+        <label>nvblox::ViewCalculator</label>
+        <link refid="classnvblox_1_1ViewCalculator"/>
+      </node>
+      <node id="8">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="33">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="30">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="27">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="17">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="10">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="25">
+        <label>nvblox::unified_ptr&lt; ElementType[]&gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+      <node id="19">
+        <label>nvblox::unified_ptr&lt; UpdateOccupancyVoxelFunctor &gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+      <node id="13">
+        <label>nvblox::unified_ptr&lt; UpdateTsdfVoxelFunctor &gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+      <node id="37">
+        <label>nvblox::unified_ptr&lt; int &gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="66" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="66" bodyend="352"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1Mapper_1a4020ea75b0f9f562b9c6e1b432709260" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>clearOutsideRadius</name></member>
+      <member refid="classnvblox_1_1Mapper_1aad6832f09bd04cb02294e695b413a737" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>color_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a100b465829622223c8cb491ecec35364" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>color_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a8daec58bd998da4eb8088765a0910a2c" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>color_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1ac078776652fa52177d0747ece9bb523c" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>color_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1a7453452c942b3ef47bdba11931adfb3d" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>color_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1a96a461f283753893f5bcf84420e9963c" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>decayOccupancy</name></member>
+      <member refid="classnvblox_1_1Mapper_1aec9055230fbc2a396429397652c69513" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>esdf_blocks_to_update_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a581c9039f51add2f2b7060a3cad8650d" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>esdf_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a99727e155353bfbd114a802a6a619a9c" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>esdf_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a23a52add7ff5d796f4f8793a15944ad5" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>esdf_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a4867497b05b3063edfc32a8476162762" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>esdf_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1aef96d2bb98587979b8485937d04eca6e" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>esdf_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1a6344f1be25d8d379cfb34e5aba75e4d6" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>esdf_mode_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>EsdfMode</name></member>
+      <member refid="classnvblox_1_1Mapper_1a717f744cde7106387800efb750d84af1" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>generateEsdf</name></member>
+      <member refid="classnvblox_1_1Mapper_1a1f2a1d9486b1b166983ebbbace8a28ea" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>generateMesh</name></member>
+      <member refid="classnvblox_1_1Mapper_1af1fb2e19844b561ba217d6f962db0eaf" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>integrateColor</name></member>
+      <member refid="classnvblox_1_1Mapper_1a544632ddecd99db185960a3f86bef5cf" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>integrateDepth</name></member>
+      <member refid="classnvblox_1_1Mapper_1a5491f4648e1db0f054660204931732e0" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>integrateLidarDepth</name></member>
+      <member refid="classnvblox_1_1Mapper_1a154075c7e8abb49b095cc49e158cfac9" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>layers</name></member>
+      <member refid="classnvblox_1_1Mapper_1ad2a02bdf426e362e1780b74bd3962679" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>layers</name></member>
+      <member refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>layers_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a43741cdb5b048a986c4dde4e0baae2f1" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>lidar_occupancy_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1ab4d14909b636dee941395a16220986a5" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>lidar_occupancy_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1ac5292a75b93acbd5fd362c11f1af6124" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>lidar_occupancy_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1afffe3a520fb55e6d3f354892f67a8a70" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>lidar_tsdf_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a2a15370da009a96a9d2622b3e673e86a" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>lidar_tsdf_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a3042a5709b8b4e0076811a99463362a0" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>lidar_tsdf_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1adf3b1b8152b0fa4ca590babe59d2134b" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>loadMap</name></member>
+      <member refid="classnvblox_1_1Mapper_1a5cefba42ff24c129ef821646d54a8dd6" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>loadMap</name></member>
+      <member refid="classnvblox_1_1Mapper_1a8a2fadadfffafec2a793fca8b5d36c51" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>Mapper</name></member>
+      <member refid="classnvblox_1_1Mapper_1a565ab6e40c3676f733837ba6c60bb612" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>Mapper</name></member>
+      <member refid="classnvblox_1_1Mapper_1adea6ec3d5039f3d495b6556c8632cdc4" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>Mapper</name></member>
+      <member refid="classnvblox_1_1Mapper_1a5db367b13767cdf00c4283493423cd81" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>Mapper</name></member>
+      <member refid="classnvblox_1_1MapperBase_1a1193cdd4888db0580fd359c0e9aa5637" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>MapperBase</name></member>
+      <member refid="classnvblox_1_1MapperBase_1a078171621053d268d3bf5e7f87d960df" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>MapperBase</name></member>
+      <member refid="classnvblox_1_1Mapper_1a5ed24b8493a26de3cc4568e5fd9ea0a7" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>markUnobservedTsdfFreeInsideRadius</name></member>
+      <member refid="classnvblox_1_1Mapper_1a39f35b50f41257dce6c717dc298375a5" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>memory_type_</name></member>
+      <member refid="classnvblox_1_1Mapper_1adc9d8b9b29e5366ae22974ab00d20902" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>mesh_blocks_to_update_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a0c15723ba2fcbaf3d7d7bb60c58a3d46" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>mesh_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a0c30ca8757d7d40cb1b321b73fde97b6" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>mesh_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a28efd9479f0d56d55786781fa192fe16" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>mesh_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a32b283b06a62685854124b36b251ff6c" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>mesh_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1a3522228178d8895943be09c37a28e680" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>mesh_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1a0147e1e0b7592b1c1ce8b39ed8173f62" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_decay_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a2958f788ca3fe23105127597ece29d0c" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_decay_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1ad7160cac09eef3ab0aaa71af69ed865b" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_decay_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a309798b782e26dd4210f0e37b8486f23" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a90370075efaf0d689dd744611d0f04d7" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1ae00f90ecd686cd32280c345d30352e91" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1af6da6ba63f12f936ebcb953d11b2005f" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1ab79bad4b070892c61c41bbbf9abc2303" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>occupancy_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1af40c7b24b7c31cd0142e2581aed7ca18" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1MapperBase_1ad1df7d3c28174cd0b2911e606e769984" prot="public" virt="non-virtual" ambiguityscope="nvblox::MapperBase::"><scope>nvblox::Mapper</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1Mapper_1a38f8a4a8093059726f40cf07de1c516b" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>projective_layer_type_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a774e7b4e739c7ba0205478dd37c17724" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>saveEsdfAsPly</name></member>
+      <member refid="classnvblox_1_1Mapper_1a2bd8b9aa8cabc3500001889f36e19d91" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>saveMap</name></member>
+      <member refid="classnvblox_1_1Mapper_1acd53ca51db96f0966be0ce93dfbba626" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>saveMap</name></member>
+      <member refid="classnvblox_1_1Mapper_1ad22d53ee0244fc53a1c68a2104134824" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>saveMeshAsPly</name></member>
+      <member refid="classnvblox_1_1Mapper_1ae857a498b45f91782ea58d18b38eea2c" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>tsdf_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1aa892d19c1aacc7997016eede53f9480c" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>tsdf_integrator</name></member>
+      <member refid="classnvblox_1_1Mapper_1a7e15ca7786977a76e02af4b046adb07a" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>tsdf_integrator_</name></member>
+      <member refid="classnvblox_1_1Mapper_1af3efa81c8d4fab1ace473298f22d6ade" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>tsdf_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1a78aeabfcfd6db51d1dc1be71ced9870f" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>tsdf_layer</name></member>
+      <member refid="classnvblox_1_1Mapper_1a49506babbcaf7a5df02025b46b96c9f5" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>updateEsdf</name></member>
+      <member refid="classnvblox_1_1Mapper_1a9705f1786eb66aeb0f9190fb04d92d19" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>updateEsdfSlice</name></member>
+      <member refid="classnvblox_1_1Mapper_1a288bdb12d222c774fd55b4ceeba3763f" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>updateMesh</name></member>
+      <member refid="classnvblox_1_1Mapper_1a9e5545891bd26620cb9b89de0d592893" prot="public" virt="non-virtual"><scope>nvblox::Mapper</scope><name>voxel_size_m</name></member>
+      <member refid="classnvblox_1_1Mapper_1a88dce6cd70d308174c853278001f52f3" prot="protected" virt="non-virtual"><scope>nvblox::Mapper</scope><name>voxel_size_m_</name></member>
+      <member refid="classnvblox_1_1Mapper_1a44a4ffa8ba13892034243712005329c7" prot="public" virt="virtual"><scope>nvblox::Mapper</scope><name>~Mapper</name></member>
+      <member refid="classnvblox_1_1MapperBase_1a33c9a3be6b1ac58e9eaf4de52fb2aa1c" prot="public" virt="virtual"><scope>nvblox::Mapper</scope><name>~MapperBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

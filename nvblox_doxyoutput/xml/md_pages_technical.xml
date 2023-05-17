@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="md_pages_technical" kind="page">
+    <compoundname>md_pages_technical</compoundname>
+    <title>Technical Details</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><heading level="1">Input/Outputs</heading>
+</para>
+<para>Here we discuss the inputs you have to provide to nvblox, and the outputs it produces for downstream tasks. This is the default setup within ROS 2 for 2D navigation, but note that other outputs are possible (such as the full 3D distance map).</para>
+<para><emphasis>Inputs</emphasis>:<itemizedlist>
+<listitem><para><bold>Depth Images</bold>: (<ref refid="classnvblox_1_1Image" kindref="compound">nvblox::Image</ref>) We require input from a sensor supplying depth per pixel. Examples of such sensors are the Intel Realsense series and Kinect cameras.</para>
+</listitem><listitem><para><bold>Camera Intrinsics</bold>: (<ref refid="classnvblox_1_1Camera" kindref="compound">nvblox::Camera</ref>) The intrinsics associated with the camera that generated the depth (or color) image.</para>
+</listitem><listitem><para><bold>Sensor Pose</bold>: (<ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">nvblox::Transform</ref>) We require localization of the depth sensor as input to nvblox</para>
+</listitem><listitem><para>[Optional] <bold>Color Images</bold>: (<ref refid="classnvblox_1_1Image" kindref="compound">nvblox::Image</ref>) These can be used to color the reconstruction for visualization.</para>
+</listitem><listitem><para>[Optional] <bold>LIDAR</bold>: (<ref refid="classnvblox_1_1Lidar" kindref="compound">nvblox::Lidar</ref>) Optionally or instead of Depth images, we can also consume LIDAR pointclouds which are reprojected to a cylindrical depth image based on the LIDAR intrinsics specified in this datatype.</para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis>Outputs</emphasis>:<itemizedlist>
+<listitem><para><bold>Distance map slice</bold>: (<ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">nvblox::EsdfLayer</ref>) A 2D map that expresses the distance at each point from objects reconstructed in the environment. This is typically used by a planner to compute a collision cost map.</para>
+</listitem><listitem><para><bold>Mesh</bold>: (<ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">nvblox::MeshLayer</ref>) We output a mesh for visualization in RVIZ.</para>
+</listitem></itemizedlist>
+</para>
+<para>The figure below shows a simple system utilizing nvblox for path planning.</para>
+<para><image type="html" name="system_diagram.png">System Diagram</image>
+ <image type="latex" name="system_diagram.png">System Diagram</image>
+ <image type="rtf" name="system_diagram.png">System Diagram</image>
+ <image type="docbook" name="system_diagram.png">System Diagram</image>
+ <image type="xml" name="system_diagram.png">System Diagram</image>
+</para>
+<para><heading level="1">(Brief) Technical Details</heading>
+</para>
+<para>Nvblox builds the reconstructed map in the form of a Truncated Signed Distance Function (TSDF) stored in a 3D voxel grid. This approach is similar to 3D occupancy grid mapping approaches in which occupancy probabilities are stored at each voxel. In contrast however, TSDF-based approaches (like nvblox) store the (signed) distance to the closest surface at each voxel. The surface of the environment can then be extracted as the zero-level set of this voxelized function. Typically TSDF-based reconstructions provide higher quality surface reconstructions.</para>
+<para>In addition to their use in reconstruction, distance fields are also useful for path planning because they provide an immediate means of checking whether potential future robot positions are in collision. This fact, the utility of distance functions for both reconstruction and planning, motivates their use in nvblox (a reconstruction library for path planning). </para>
+    </detaileddescription>
+    <location file="pages/technical.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespacenvblox_1_1primitives" kind="namespace" language="C++">
+    <compoundname>nvblox::primitives</compoundname>
+    <innerclass refid="classnvblox_1_1primitives_1_1Cube" prot="public">nvblox::primitives::Cube</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Cylinder" prot="public">nvblox::primitives::Cylinder</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Plane" prot="public">nvblox::primitives::Plane</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Primitive" prot="public">nvblox::primitives::Primitive</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Scene" prot="public">nvblox::primitives::Scene</innerclass>
+    <innerclass refid="classnvblox_1_1primitives_1_1Sphere" prot="public">nvblox::primitives::Sphere</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" line="53" column="1"/>
+  </compounddef>
+</doxygen>

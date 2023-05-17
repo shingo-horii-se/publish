@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1io_1_1PlyWriter" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::io::PlyWriter</compoundname>
+    <includes refid="ply__writer_8h" local="no">ply_writer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1io_1_1PlyWriter_1aa753da93ec04f89d6113d85d9e18615d" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; *</type>
+        <definition>const std::vector&lt;Vector3f&gt;* nvblox::io::PlyWriter::points_</definition>
+        <argsstring></argsstring>
+        <name>points_</name>
+        <qualifiedname>nvblox::io::PlyWriter::points_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="56" column="21" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1io_1_1PlyWriter_1a05b7ede786862e4d56c9bca966abd66e" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; *</type>
+        <definition>const std::vector&lt;Vector3f&gt;* nvblox::io::PlyWriter::normals_</definition>
+        <argsstring></argsstring>
+        <name>normals_</name>
+        <qualifiedname>nvblox::io::PlyWriter::normals_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="57" column="21" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1io_1_1PlyWriter_1a6667da76f3de12f298bdfaec4c432467" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; float &gt; *</type>
+        <definition>const std::vector&lt;float&gt;* nvblox::io::PlyWriter::intensities_</definition>
+        <argsstring></argsstring>
+        <name>intensities_</name>
+        <qualifiedname>nvblox::io::PlyWriter::intensities_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="58" column="21" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1io_1_1PlyWriter_1ab77bef512cad47b30deb48eb940a4eda" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &gt; *</type>
+        <definition>const std::vector&lt;Color&gt;* nvblox::io::PlyWriter::colors_</definition>
+        <argsstring></argsstring>
+        <name>colors_</name>
+        <qualifiedname>nvblox::io::PlyWriter::colors_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="59" column="21" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1io_1_1PlyWriter_1a0c649e90079919706bc0b9e048909203" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; int &gt; *</type>
+        <definition>const std::vector&lt;int&gt;* nvblox::io::PlyWriter::triangles_</definition>
+        <argsstring></argsstring>
+        <name>triangles_</name>
+        <qualifiedname>nvblox::io::PlyWriter::triangles_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="60" column="21" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1io_1_1PlyWriter_1a9da073bbc9fe7f1f6c501ced434139a6" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream nvblox::io::PlyWriter::file_</definition>
+        <argsstring></argsstring>
+        <name>file_</name>
+        <qualifiedname>nvblox::io::PlyWriter::file_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="62" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a02fd9a4b8bcbcc0c37fbced4c9ec206e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::io::PlyWriter::PlyWriter</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>PlyWriter</name>
+        <qualifiedname>nvblox::io::PlyWriter::PlyWriter</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="32" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a3841883a4dbf6d3cda5e145de930ee38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::io::PlyWriter::~PlyWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~PlyWriter</name>
+        <qualifiedname>nvblox::io::PlyWriter::~PlyWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="34" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a84ea3afc0817b3e94c8d8603f679a39b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::setPoints</definition>
+        <argsstring>(const std::vector&lt; Vector3f &gt; *points)</argsstring>
+        <name>setPoints</name>
+        <qualifiedname>nvblox::io::PlyWriter::setPoints</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; *</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="37" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1aa743c8ba621f018da93cc5816105a823" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::setColors</definition>
+        <argsstring>(const std::vector&lt; Color &gt; *colors)</argsstring>
+        <name>setColors</name>
+        <qualifiedname>nvblox::io::PlyWriter::setColors</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &gt; *</type>
+          <declname>colors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="38" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a65562a7e2ae16d9c81e63ddee598c088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::setIntensities</definition>
+        <argsstring>(const std::vector&lt; float &gt; *intensities)</argsstring>
+        <name>setIntensities</name>
+        <qualifiedname>nvblox::io::PlyWriter::setIntensities</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float &gt; *</type>
+          <declname>intensities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="39" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a12ea681d89937ebaee18bdaae9f31249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::setNormals</definition>
+        <argsstring>(const std::vector&lt; Vector3f &gt; *normals)</argsstring>
+        <name>setNormals</name>
+        <qualifiedname>nvblox::io::PlyWriter::setNormals</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt; *</type>
+          <declname>normals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="42" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1aca7253414f6d124b9685494ed75a9c09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::setTriangles</definition>
+        <argsstring>(const std::vector&lt; int &gt; *triangles)</argsstring>
+        <name>setTriangles</name>
+        <qualifiedname>nvblox::io::PlyWriter::setTriangles</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; *</type>
+          <declname>triangles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="43" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a5101d26ad625c0fcd06818713a0e848a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::io::PlyWriter::write</definition>
+        <argsstring>()</argsstring>
+        <name>write</name>
+        <qualifiedname>nvblox::io::PlyWriter::write</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="49" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a4ede4b10aba20ff4a68bf23eb4f8cb26" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::writeHeader</definition>
+        <argsstring>()</argsstring>
+        <name>writeHeader</name>
+        <qualifiedname>nvblox::io::PlyWriter::writeHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a498e217bbd3d95410b095a357c8d586d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::writePoints</definition>
+        <argsstring>()</argsstring>
+        <name>writePoints</name>
+        <qualifiedname>nvblox::io::PlyWriter::writePoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1io_1_1PlyWriter_1a45147bcd40d4f228c151499ca904827c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::io::PlyWriter::writeTriangles</definition>
+        <argsstring>()</argsstring>
+        <name>writeTriangles</name>
+        <qualifiedname>nvblox::io::PlyWriter::writeTriangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="54" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Writes a mesh to a .ply file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For reference on the format, see: <ulink url="http://paulbourke.net/dataformats/ply/">http://paulbourke.net/dataformats/ply/</ulink> </para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" line="30" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/ply_writer.h" bodystart="30" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1ab77bef512cad47b30deb48eb940a4eda" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>colors_</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a9da073bbc9fe7f1f6c501ced434139a6" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>file_</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a6667da76f3de12f298bdfaec4c432467" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>intensities_</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a05b7ede786862e4d56c9bca966abd66e" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>normals_</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a02fd9a4b8bcbcc0c37fbced4c9ec206e" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>PlyWriter</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1aa753da93ec04f89d6113d85d9e18615d" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>points_</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1aa743c8ba621f018da93cc5816105a823" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>setColors</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a65562a7e2ae16d9c81e63ddee598c088" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>setIntensities</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a12ea681d89937ebaee18bdaae9f31249" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>setNormals</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a84ea3afc0817b3e94c8d8603f679a39b" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>setPoints</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1aca7253414f6d124b9685494ed75a9c09" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>setTriangles</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a0c649e90079919706bc0b9e048909203" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>triangles_</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a5101d26ad625c0fcd06818713a0e848a" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>write</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a4ede4b10aba20ff4a68bf23eb4f8cb26" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>writeHeader</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a498e217bbd3d95410b095a357c8d586d" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>writePoints</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a45147bcd40d4f228c151499ca904827c" prot="private" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>writeTriangles</name></member>
+      <member refid="classnvblox_1_1io_1_1PlyWriter_1a3841883a4dbf6d3cda5e145de930ee38" prot="public" virt="non-virtual"><scope>nvblox::io::PlyWriter</scope><name>~PlyWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,696 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1BlockLayer" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::BlockLayer</compoundname>
+    <basecompoundref refid="classnvblox_1_1BaseLayer" prot="public" virt="non-virtual">nvblox::BaseLayer</basecompoundref>
+    <includes refid="layer_8h" local="no">layer.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename _BlockType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classnvblox_1_1BlockLayer_1afb28e11e229fd092760f2fffd8158370" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;BlockLayer&gt; nvblox::BlockLayer&lt; _BlockType &gt;::Ptr</definition>
+        <argsstring></argsstring>
+        <name>Ptr</name>
+        <qualifiedname>nvblox::BlockLayer::Ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="46" column="27" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnvblox_1_1BlockLayer_1a66e96df8e465b28a622a47f8d39b73d4" prot="public" static="no">
+        <type>std::shared_ptr&lt; const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;const BlockLayer&gt; nvblox::BlockLayer&lt; _BlockType &gt;::ConstPtr</definition>
+        <argsstring></argsstring>
+        <name>ConstPtr</name>
+        <qualifiedname>nvblox::BlockLayer::ConstPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="47" column="27" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnvblox_1_1BlockLayer_1a4b25d4f82f7dac1a1d23e13088b3a5c1" prot="public" static="no">
+        <type>_BlockType</type>
+        <definition>typedef _BlockType nvblox::BlockLayer&lt; _BlockType &gt;::BlockType</definition>
+        <argsstring></argsstring>
+        <name>BlockType</name>
+        <qualifiedname>nvblox::BlockLayer::BlockType</qualifiedname>
+        <briefdescription>
+<para>Check that custom block types implement allocate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows inspection of the contained BlockType through <ref refid="classnvblox_1_1BlockLayer_1a4b25d4f82f7dac1a1d23e13088b3a5c1" kindref="member">LayerType::BlockType</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="54" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnvblox_1_1BlockLayer_1a8cf054a81f1ba64f5e019e182a807caa" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="classnvblox_1_1BlockLayer_1a4b25d4f82f7dac1a1d23e13088b3a5c1" kindref="member">BlockType</ref> &gt;</type>
+        <definition>typedef BlockLayer&lt;BlockType&gt; nvblox::BlockLayer&lt; _BlockType &gt;::LayerType</definition>
+        <argsstring></argsstring>
+        <name>LayerType</name>
+        <qualifiedname>nvblox::BlockLayer::LayerType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="55" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnvblox_1_1BlockLayer_1af6dda24ad81fba9c5a9413ba9a3b3a07" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref>&lt; <ref refid="classnvblox_1_1BlockLayer_1a4b25d4f82f7dac1a1d23e13088b3a5c1" kindref="member">BlockType</ref> &gt;</type>
+        <definition>typedef GPULayerView&lt;BlockType&gt; nvblox::BlockLayer&lt; _BlockType &gt;::GPULayerViewType</definition>
+        <argsstring></argsstring>
+        <name>GPULayerViewType</name>
+        <qualifiedname>nvblox::BlockLayer::GPULayerViewType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="56" column="24" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnvblox_1_1BlockLayer_1aa70fdd80865f95284da96e9c885ed465" prot="public" static="no">
+        <type><ref refid="structnvblox_1_1Index3DHashMapType" kindref="compound">Index3DHashMapType</ref>&lt; typenameBlockType::Ptr &gt;::type</type>
+        <definition>typedef Index3DHashMapType&lt;typenameBlockType::Ptr&gt;::type nvblox::BlockLayer&lt; _BlockType &gt;::BlockHash</definition>
+        <argsstring></argsstring>
+        <name>BlockHash</name>
+        <qualifiedname>nvblox::BlockLayer::BlockHash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="58" column="46" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1BlockLayer_1afdf887edd08f42da949ea3ff09fc6521" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::BlockLayer&lt; _BlockType &gt;::block_size_</definition>
+        <argsstring></argsstring>
+        <name>block_size_</name>
+        <qualifiedname>nvblox::BlockLayer::block_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="116" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1BlockLayer_1aeadbc261ee6b0b47d9475862462dce9d" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>MemoryType nvblox::BlockLayer&lt; _BlockType &gt;::memory_type_</definition>
+        <argsstring></argsstring>
+        <name>memory_type_</name>
+        <qualifiedname>nvblox::BlockLayer::memory_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="117" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1BlockLayer_1a5813d390fa87d1776ad78afcd1829e73" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1BlockLayer_1aa70fdd80865f95284da96e9c885ed465" kindref="member">BlockHash</ref></type>
+        <definition>BlockHash nvblox::BlockLayer&lt; _BlockType &gt;::blocks_</definition>
+        <argsstring></argsstring>
+        <name>blocks_</name>
+        <qualifiedname>nvblox::BlockLayer::blocks_</qualifiedname>
+        <briefdescription>
+<para>CPU Hash (Index3D -&gt; BlockType::Ptr) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="120" column="13" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1BlockLayer_1a641f794a170b8a426d025d7c584d2d85" prot="protected" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool nvblox::BlockLayer&lt; _BlockType &gt;::gpu_layer_view_up_to_date_</definition>
+        <argsstring></argsstring>
+        <name>gpu_layer_view_up_to_date_</name>
+        <qualifiedname>nvblox::BlockLayer::gpu_layer_view_up_to_date_</qualifiedname>
+        <briefdescription>
+<para>GPU Hash NOTE(alexmillane): </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>This has is subservient to the CPU version. The layer has to copy the hash to GPU when it is requested.</para>
+</listitem><listitem><para>Cached such that if no blocks are allocated between requests, the <ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref> is not recopied.</para>
+</listitem><listitem><para>Lazily allocated (space allocated on the GPU first request)</para>
+</listitem><listitem><para>The &quot;mutable&quot; here is to enable caching in const member functions. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="130" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1BlockLayer_1a0079d43d3aff9f34de34b7de4339bda6" prot="protected" static="no" mutable="yes">
+        <type>std::unique_ptr&lt; <ref refid="classnvblox_1_1BlockLayer_1af6dda24ad81fba9c5a9413ba9a3b3a07" kindref="member">GPULayerViewType</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;GPULayerViewType&gt; nvblox::BlockLayer&lt; _BlockType &gt;::gpu_layer_view_</definition>
+        <argsstring></argsstring>
+        <name>gpu_layer_view_</name>
+        <qualifiedname>nvblox::BlockLayer::gpu_layer_view_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="131" column="27" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a920f3bedcc7a6a79c6f7a25562e31a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::BlockLayer&lt; _BlockType &gt;::BlockLayer</definition>
+        <argsstring>()=delete</argsstring>
+        <name>BlockLayer</name>
+        <qualifiedname>nvblox::BlockLayer::BlockLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="60" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a29abd83311c596ed013d9011e7944817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::BlockLayer&lt; _BlockType &gt;::BlockLayer</definition>
+        <argsstring>(float block_size, MemoryType memory_type)</argsstring>
+        <name>BlockLayer</name>
+        <qualifiedname>nvblox::BlockLayer::BlockLayer</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="61" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a7b6526290f7e2ff7be7a449036e2e12a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::BlockLayer&lt; _BlockType &gt;::~BlockLayer</definition>
+        <argsstring>()</argsstring>
+        <name>~BlockLayer</name>
+        <qualifiedname>nvblox::BlockLayer::~BlockLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="65" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a665f518399a1c366be84a78e9cd694f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::BlockLayer&lt; _BlockType &gt;::BlockLayer</definition>
+        <argsstring>(const BlockLayer &amp;other)</argsstring>
+        <name>BlockLayer</name>
+        <qualifiedname>nvblox::BlockLayer::BlockLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Deep copies, with optionally changing the memory type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="68" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1ad72da12539f7c2391bcd4f06bc1db545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::BlockLayer&lt; _BlockType &gt;::BlockLayer</definition>
+        <argsstring>(const BlockLayer &amp;other, MemoryType memory_type)</argsstring>
+        <name>BlockLayer</name>
+        <qualifiedname>nvblox::BlockLayer::BlockLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="69" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a3f5bcc21cea94d88740704cc937ba644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;</type>
+        <definition>BlockLayer &amp; nvblox::BlockLayer&lt; _BlockType &gt;::operator=</definition>
+        <argsstring>(const BlockLayer &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::BlockLayer::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="70" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a75166389b6c380e595930f975eac62b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::BlockLayer&lt; _BlockType &gt;::BlockLayer</definition>
+        <argsstring>(BlockLayer &amp;&amp;other)=default</argsstring>
+        <name>BlockLayer</name>
+        <qualifiedname>nvblox::BlockLayer::BlockLayer</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="73" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1ab5ef23fa0273726bf6d53280d26fb88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;</type>
+        <definition>BlockLayer &amp; nvblox::BlockLayer&lt; _BlockType &gt;::operator=</definition>
+        <argsstring>(BlockLayer &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::BlockLayer::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="74" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a4da5e5b6ed0212d2776eb2938f3d076b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BlockType::Ptr</type>
+        <definition>BlockType::Ptr nvblox::BlockLayer&lt; _BlockType &gt;::getBlockAtIndex</definition>
+        <argsstring>(const Index3D &amp;index)</argsstring>
+        <name>getBlockAtIndex</name>
+        <qualifiedname>nvblox::BlockLayer::getBlockAtIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Block accessors by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="77" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a099031ff9a1728843b680feb420fd90c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>BlockType::ConstPtr</type>
+        <definition>BlockType::ConstPtr nvblox::BlockLayer&lt; _BlockType &gt;::getBlockAtIndex</definition>
+        <argsstring>(const Index3D &amp;index) const</argsstring>
+        <name>getBlockAtIndex</name>
+        <qualifiedname>nvblox::BlockLayer::getBlockAtIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="78" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a0690b85b1f3ffe5f3f68cba6473a29e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BlockType::Ptr</type>
+        <definition>BlockType::Ptr nvblox::BlockLayer&lt; _BlockType &gt;::allocateBlockAtIndex</definition>
+        <argsstring>(const Index3D &amp;index)</argsstring>
+        <name>allocateBlockAtIndex</name>
+        <qualifiedname>nvblox::BlockLayer::allocateBlockAtIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="79" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a811bce823aa8ad903b679b5ecd362223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BlockType::Ptr</type>
+        <definition>BlockType::Ptr nvblox::BlockLayer&lt; _BlockType &gt;::getBlockAtPosition</definition>
+        <argsstring>(const Vector3f &amp;position)</argsstring>
+        <name>getBlockAtPosition</name>
+        <qualifiedname>nvblox::BlockLayer::getBlockAtPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Block accessors by position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="82" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a6818ba255ec3991aaffc52e1e577805f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>BlockType::ConstPtr</type>
+        <definition>BlockType::ConstPtr nvblox::BlockLayer&lt; _BlockType &gt;::getBlockAtPosition</definition>
+        <argsstring>(const Vector3f &amp;position) const</argsstring>
+        <name>getBlockAtPosition</name>
+        <qualifiedname>nvblox::BlockLayer::getBlockAtPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="83" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1ae5a0027567ddba3f16b349ef0919101c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BlockType::Ptr</type>
+        <definition>BlockType::Ptr nvblox::BlockLayer&lt; _BlockType &gt;::allocateBlockAtPosition</definition>
+        <argsstring>(const Vector3f &amp;position)</argsstring>
+        <name>allocateBlockAtPosition</name>
+        <qualifiedname>nvblox::BlockLayer::allocateBlockAtPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="85" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1ac246abd9fe341b2b6f933d8be88f6d3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::BlockLayer&lt; _BlockType &gt;::getAllBlockIndices</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllBlockIndices</name>
+        <qualifiedname>nvblox::BlockLayer::getAllBlockIndices</qualifiedname>
+        <briefdescription>
+<para>Get all blocks indices or pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="88" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a3fc3c95cfc4bccee4fb9b80fdfadf5b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classnvblox_1_1BlockLayer_1a4b25d4f82f7dac1a1d23e13088b3a5c1" kindref="member">BlockType</ref> * &gt;</type>
+        <definition>std::vector&lt; BlockType * &gt; nvblox::BlockLayer&lt; _BlockType &gt;::getAllBlockPointers</definition>
+        <argsstring>()</argsstring>
+        <name>getAllBlockPointers</name>
+        <qualifiedname>nvblox::BlockLayer::getAllBlockPointers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="89" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a6bc60fa0c3557d4e53bf019f216d1004" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::BlockLayer&lt; _BlockType &gt;::isBlockAllocated</definition>
+        <argsstring>(const Index3D &amp;index) const</argsstring>
+        <name>isBlockAllocated</name>
+        <qualifiedname>nvblox::BlockLayer::isBlockAllocated</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check if allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="92" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a5fedc345c43cc27f4c0dcbf7a17a4992" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::BlockLayer&lt; _BlockType &gt;::block_size</definition>
+        <argsstring>() const</argsstring>
+        <name>block_size</name>
+        <qualifiedname>nvblox::BlockLayer::block_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="94" column="29" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a577ce86554097b58eb61d9aa9a9f17f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::BlockLayer&lt; _BlockType &gt;::numAllocatedBlocks</definition>
+        <argsstring>() const</argsstring>
+        <name>numAllocatedBlocks</name>
+        <qualifiedname>nvblox::BlockLayer::numAllocatedBlocks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="95" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a4802b57f134d73560e45d580aaa0c6a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::BlockLayer&lt; _BlockType &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>nvblox::BlockLayer::clear</qualifiedname>
+        <briefdescription>
+<para>Clear the layer of all data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="98" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a7b8c8f30bdb1ba6530c1414755805214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::BlockLayer&lt; _BlockType &gt;::clearBlock</definition>
+        <argsstring>(const Index3D &amp;index)</argsstring>
+        <name>clearBlock</name>
+        <qualifiedname>nvblox::BlockLayer::clearBlock</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a4ac3bcb889db1ebdc009fab6eed4c9a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::BlockLayer&lt; _BlockType &gt;::clearBlocks</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;indices)</argsstring>
+        <name>clearBlocks</name>
+        <qualifiedname>nvblox::BlockLayer::clearBlocks</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Clear (deallocate) blocks passed in Note if a block does not exist, this function just (silently) continues trying the rest of the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="106" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a8b7cf35aa658d40da629226562cb796f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>MemoryType nvblox::BlockLayer&lt; _BlockType &gt;::memory_type</definition>
+        <argsstring>() const</argsstring>
+        <name>memory_type</name>
+        <qualifiedname>nvblox::BlockLayer::memory_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="108" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1a0b354287afc7fd211e70590a7e2da378" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1BlockLayer_1af6dda24ad81fba9c5a9413ba9a3b3a07" kindref="member">GPULayerViewType</ref></type>
+        <definition>GPULayerViewType nvblox::BlockLayer&lt; _BlockType &gt;::getGpuLayerView</definition>
+        <argsstring>() const</argsstring>
+        <name>getGpuLayerView</name>
+        <qualifiedname>nvblox::BlockLayer::getGpuLayerView</qualifiedname>
+        <briefdescription>
+<para>GPU Hash Note(alexmillane): The hash returned here is invalidated by calls to allocateBlock. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="113" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BlockLayer_1afb0b32224f368a98b17057c196501dd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::BlockLayer&lt; MeshBlock &gt;::BlockLayer</definition>
+        <argsstring>(const BlockLayer &amp;other, MemoryType memory_type)</argsstring>
+        <name>BlockLayer</name>
+        <qualifiedname>nvblox::BlockLayer::BlockLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+<para>Specialization of <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref> clone just for MeshBlocks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" line="98" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h" bodystart="98" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A layer that contains blocks, which are stored in a hash map. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>nvblox::BaseLayer</label>
+        <link refid="classnvblox_1_1BaseLayer"/>
+      </node>
+      <node id="1">
+        <label>nvblox::BlockLayer&lt; _BlockType &gt;</label>
+        <link refid="classnvblox_1_1BlockLayer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>nvblox::Index3DHashMapType&lt; typenameBlockType::Ptr &gt;</label>
+        <link refid="structnvblox_1_1Index3DHashMapType"/>
+      </node>
+      <node id="2">
+        <label>nvblox::BaseLayer</label>
+        <link refid="classnvblox_1_1BaseLayer"/>
+      </node>
+      <node id="1">
+        <label>nvblox::BlockLayer&lt; _BlockType &gt;</label>
+        <link refid="classnvblox_1_1BlockLayer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>blocks_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="44" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" bodystart="44" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1BlockLayer_1a0690b85b1f3ffe5f3f68cba6473a29e4" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>allocateBlockAtIndex</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1ae5a0027567ddba3f16b349ef0919101c" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>allocateBlockAtPosition</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a5fedc345c43cc27f4c0dcbf7a17a4992" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>block_size</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1afdf887edd08f42da949ea3ff09fc6521" prot="protected" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>block_size_</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1aa70fdd80865f95284da96e9c885ed465" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockHash</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a920f3bedcc7a6a79c6f7a25562e31a7d" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockLayer</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a29abd83311c596ed013d9011e7944817" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockLayer</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a665f518399a1c366be84a78e9cd694f5" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockLayer</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1ad72da12539f7c2391bcd4f06bc1db545" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockLayer</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a75166389b6c380e595930f975eac62b5" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockLayer</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1afb0b32224f368a98b17057c196501dd7" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockLayer</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a5813d390fa87d1776ad78afcd1829e73" prot="protected" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>blocks_</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a4b25d4f82f7dac1a1d23e13088b3a5c1" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>BlockType</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a4802b57f134d73560e45d580aaa0c6a5" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>clear</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a7b8c8f30bdb1ba6530c1414755805214" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>clearBlock</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a4ac3bcb889db1ebdc009fab6eed4c9a5" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>clearBlocks</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a66e96df8e465b28a622a47f8d39b73d4" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>ConstPtr</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1ac246abd9fe341b2b6f933d8be88f6d3a" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>getAllBlockIndices</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a3fc3c95cfc4bccee4fb9b80fdfadf5b1" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>getAllBlockPointers</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a4da5e5b6ed0212d2776eb2938f3d076b" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>getBlockAtIndex</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a099031ff9a1728843b680feb420fd90c" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>getBlockAtIndex</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a811bce823aa8ad903b679b5ecd362223" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>getBlockAtPosition</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a6818ba255ec3991aaffc52e1e577805f" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>getBlockAtPosition</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a0b354287afc7fd211e70590a7e2da378" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>getGpuLayerView</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a0079d43d3aff9f34de34b7de4339bda6" prot="protected" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>gpu_layer_view_</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a641f794a170b8a426d025d7c584d2d85" prot="protected" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>gpu_layer_view_up_to_date_</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1af6dda24ad81fba9c5a9413ba9a3b3a07" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>GPULayerViewType</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a6bc60fa0c3557d4e53bf019f216d1004" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>isBlockAllocated</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a8cf054a81f1ba64f5e019e182a807caa" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>LayerType</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a8b7cf35aa658d40da629226562cb796f" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>memory_type</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1aeadbc261ee6b0b47d9475862462dce9d" prot="protected" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>memory_type_</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a577ce86554097b58eb61d9aa9a9f17f9" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>numAllocatedBlocks</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a3f5bcc21cea94d88740704cc937ba644" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1ab5ef23fa0273726bf6d53280d26fb88c" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1afb28e11e229fd092760f2fffd8158370" prot="public" virt="non-virtual"><scope>nvblox::BlockLayer</scope><name>Ptr</name></member>
+      <member refid="classnvblox_1_1BaseLayer_1afb25011eb3e08946109e60532377e206" prot="public" virt="virtual"><scope>nvblox::BlockLayer</scope><name>~BaseLayer</name></member>
+      <member refid="classnvblox_1_1BlockLayer_1a7b6526290f7e2ff7be7a449036e2e12a" prot="public" virt="virtual"><scope>nvblox::BlockLayer</scope><name>~BlockLayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

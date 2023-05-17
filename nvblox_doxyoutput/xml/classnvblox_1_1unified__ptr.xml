@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1unified__ptr" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::unified_ptr</compoundname>
+    <includes refid="unified__ptr_8h" local="no">unified_ptr.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" prot="public" static="no">
+        <type>std::remove_extent&lt; T &gt;::type</type>
+        <definition>typedef std::remove_extent&lt;T&gt;::type nvblox::unified_ptr&lt; T &gt;::T_noextent</definition>
+        <argsstring></argsstring>
+        <name>T_noextent</name>
+        <qualifiedname>nvblox::unified_ptr::T_noextent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="43" column="46" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnvblox_1_1unified__ptr_1afe3098fb6f1975238306554256901b96" prot="public" static="no">
+        <type>std::remove_cv&lt; T &gt;::type</type>
+        <definition>typedef std::remove_cv&lt;T&gt;::type nvblox::unified_ptr&lt; T &gt;::T_nonconst</definition>
+        <argsstring></argsstring>
+        <name>T_nonconst</name>
+        <qualifiedname>nvblox::unified_ptr::T_nonconst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="44" column="42" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1unified__ptr_1a6a94275ded86341f4b53caf6bd17e2f9" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>constexpr MemoryType nvblox::unified_ptr&lt; T &gt;::kDefaultMemoryType</definition>
+        <argsstring></argsstring>
+        <name>kDefaultMemoryType</name>
+        <qualifiedname>nvblox::unified_ptr::kDefaultMemoryType</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a6cfafb52f266dacc4afe9ad59914fcd6" kindref="member">MemoryType::kUnified</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="46" column="31" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnvblox_1_1unified__ptr_1ab82605a4b3f70e44bbe4ef5b088e2d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class unified_ptr&lt; T_nonconst &gt;</definition>
+        <argsstring></argsstring>
+        <name>unified_ptr&lt; T_nonconst &gt;</name>
+        <qualifiedname>nvblox::unified_ptr::unified_ptr&lt; T_nonconst &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; <ref refid="classnvblox_1_1unified__ptr_1afe3098fb6f1975238306554256901b96" kindref="member">T_nonconst</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="119" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnvblox_1_1unified__ptr_1a83a3add28fb333d8052f08b8044638f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class unified_ptr&lt; const T &gt;</definition>
+        <argsstring></argsstring>
+        <name>unified_ptr&lt; const T &gt;</name>
+        <qualifiedname>nvblox::unified_ptr::unified_ptr&lt; const T &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; const T &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="119" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnvblox_1_1unified__ptr_1aaf3cf1fb8e29b150259789d5fe923caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class unified_ptr</definition>
+        <argsstring></argsstring>
+        <name>unified_ptr</name>
+        <qualifiedname>nvblox::unified_ptr::unified_ptr</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="125" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1unified__ptr_1a8a9450cdb73541a73a3e4fe8cebf373e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>MemoryType nvblox::unified_ptr&lt; T &gt;::memory_type_</definition>
+        <argsstring></argsstring>
+        <name>memory_type_</name>
+        <qualifiedname>nvblox::unified_ptr::memory_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="128" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1unified__ptr_1aaf1c74f30635ac6bc512c7ac6d4df145" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t nvblox::unified_ptr&lt; T &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>nvblox::unified_ptr::size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="129" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1unified__ptr_1aa6c0dade913a326b5e82d80805c16833" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> *</type>
+        <definition>T_noextent* nvblox::unified_ptr&lt; T &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <qualifiedname>nvblox::unified_ptr::ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="131" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1unified__ptr_1a67f6e325cc33c1c3fc9a43dc0e3833e9" prot="private" static="no" mutable="yes">
+        <type>std::atomic&lt; int &gt; *</type>
+        <definition>std::atomic&lt;int&gt;* nvblox::unified_ptr&lt; T &gt;::ref_counter_</definition>
+        <argsstring></argsstring>
+        <name>ref_counter_</name>
+        <qualifiedname>nvblox::unified_ptr::ref_counter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="133" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a051306b28ab9d56a2b67b163fdfaece9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::unified_ptr</definition>
+        <argsstring>()</argsstring>
+        <name>unified_ptr</name>
+        <qualifiedname>nvblox::unified_ptr::unified_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="48" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a6ae90c3ed60b423816b78af78713a0d4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::unified_ptr</definition>
+        <argsstring>(T_noextent *ptr, MemoryType memory_type, size_t size=1)</argsstring>
+        <name>unified_ptr</name>
+        <qualifiedname>nvblox::unified_ptr::unified_ptr</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="49" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1acd3e9a3ca76b8b8875557669abac5c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::unified_ptr</definition>
+        <argsstring>(const unified_ptr&lt; T &gt; &amp;other)</argsstring>
+        <name>unified_ptr</name>
+        <qualifiedname>nvblox::unified_ptr::unified_ptr</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="51" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a6fbd891a08bbcc14c40c4db3c85a31fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::unified_ptr</definition>
+        <argsstring>(unified_ptr&lt; T &gt; &amp;&amp;other)</argsstring>
+        <name>unified_ptr</name>
+        <qualifiedname>nvblox::unified_ptr::unified_ptr</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="52" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a91ead6a9016fddf99e451a2483b9317d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::~unified_ptr</definition>
+        <argsstring>()</argsstring>
+        <name>~unified_ptr</name>
+        <qualifiedname>nvblox::unified_ptr::~unified_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="53" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a280b1e72606f0a6621963c43d632121e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+        <definition>unified_ptr&lt; T &gt; &amp; nvblox::unified_ptr&lt; T &gt;::operator=</definition>
+        <argsstring>(const unified_ptr&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::unified_ptr::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Operator =. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="56" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a08b7e7f42e3b674870a653c7a3cb8671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+        <definition>unified_ptr&lt; T &gt; &amp; nvblox::unified_ptr&lt; T &gt;::operator=</definition>
+        <argsstring>(unified_ptr&lt; T &gt; &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::unified_ptr::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="57" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a3337b2b161af934efc4017631f7ff372" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <qualifiedname>nvblox::unified_ptr::operator bool</qualifiedname>
+        <briefdescription>
+<para>Operator bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="60" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1affcdc187951a64af1da1ce570c204ba1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::unified_ptr&lt; T &gt;::operator==</definition>
+        <argsstring>(const unified_ptr&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>nvblox::unified_ptr::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Operator comparison. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="62" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1af110df058ed190c70b2a52bf76a2ee3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::unified_ptr&lt; T &gt;::operator!=</definition>
+        <argsstring>(const unified_ptr&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>nvblox::unified_ptr::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1ad8525f650626fd95e31494e859f10f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> *</type>
+        <definition>T_noextent * nvblox::unified_ptr&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>nvblox::unified_ptr::operator-&gt;</qualifiedname>
+        <briefdescription>
+<para>Operator dereference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="66" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a483ea02f375173444828246b1af4dad5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> *</type>
+        <definition>const T_noextent * nvblox::unified_ptr&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>nvblox::unified_ptr::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="67" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a5080fff1079601fbddf80a8b79c48343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; nvblox::unified_ptr&lt; T &gt;::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <qualifiedname>nvblox::unified_ptr::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="68" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a8c700986d92020c34d919d969b1bb82d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; nvblox::unified_ptr&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>nvblox::unified_ptr::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="69" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a686bfd65fe56badf8aef804327c6f82b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+            <defval>T</defval>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_array&lt; T1 &gt;::value, bool &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> &amp;</type>
+        <definition>T_noextent &amp; nvblox::unified_ptr&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>nvblox::unified_ptr::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Operator array access Only enabled if the underlying type is an array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="75" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a2c0a2d0270bccb5799bc5c711bba96e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+            <defval>T</defval>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_array&lt; T1 &gt;::value, bool &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>const <ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> &amp;</type>
+        <definition>const T_noextent &amp; nvblox::unified_ptr&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>nvblox::unified_ptr::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="81" column="20" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a3edf40e2ce32d62950bfcdaf5b0ce6ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt;!std::is_const&lt; T2 &gt;::value, bool &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::operator unified_ptr&lt; const T2 &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator unified_ptr&lt; const T2 &gt;</name>
+        <qualifiedname>nvblox::unified_ptr::operator unified_ptr&lt; const T2 &gt;</qualifiedname>
+        <briefdescription>
+<para>Operator convert Only enabled if the base type is NOT const, otherwise adds a second trivial converter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="91" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1ad6dde396a99e359a0047c977d0ed8cbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_base_of&lt; T2, T &gt;{} &amp;&amp;!std::is_const&lt; T2 &gt;{} &amp;&amp;!std::is_const&lt; T &gt;{}, bool &gt;::type</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>nvblox::unified_ptr&lt; T &gt;::operator unified_ptr&lt; T2 &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator unified_ptr&lt; T2 &gt;</name>
+        <qualifiedname>nvblox::unified_ptr::operator unified_ptr&lt; T2 &gt;</qualifiedname>
+        <briefdescription>
+<para>Operator convert to base class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="98" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1ada6eb2524f3ecf5958bf3f1d47af1710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> *</type>
+        <definition>T_noextent * nvblox::unified_ptr&lt; T &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <qualifiedname>nvblox::unified_ptr::get</qualifiedname>
+        <briefdescription>
+<para>Get the raw pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="101" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a848bbfd140c8019fa262ebd31f542288" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" kindref="member">T_noextent</ref> *</type>
+        <definition>const T_noextent * nvblox::unified_ptr&lt; T &gt;::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <qualifiedname>nvblox::unified_ptr::get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="102" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a5a847035587957938a5ecb86687c7c52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::unified_ptr&lt; T &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>nvblox::unified_ptr::reset</qualifiedname>
+        <briefdescription>
+<para>Reset the pointer to point to nothing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="105" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a60a7bc9848523dd470b485f3cf5afe5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; <ref refid="classnvblox_1_1unified__ptr_1afe3098fb6f1975238306554256901b96" kindref="member">T_nonconst</ref> &gt;</type>
+        <definition>unified_ptr&lt; T_nonconst &gt; nvblox::unified_ptr&lt; T &gt;::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <qualifiedname>nvblox::unified_ptr::clone</qualifiedname>
+        <briefdescription>
+<para>Copy the underlying object (potentially to another memory location) NOTE: This is implemented as a memcpy at the pointed to location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="109" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1ae2ee3b5b3c87eb618b18421c295805aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; <ref refid="classnvblox_1_1unified__ptr_1afe3098fb6f1975238306554256901b96" kindref="member">T_nonconst</ref> &gt;</type>
+        <definition>unified_ptr&lt; T_nonconst &gt; nvblox::unified_ptr&lt; T &gt;::clone</definition>
+        <argsstring>(MemoryType memory_type) const</argsstring>
+        <name>clone</name>
+        <qualifiedname>nvblox::unified_ptr::clone</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="110" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1aa0aa56b752fab3dccc47c402ae6d2f89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::unified_ptr&lt; T &gt;::copyTo</definition>
+        <argsstring>(unified_ptr&lt; T_nonconst &gt; &amp;ptr) const</argsstring>
+        <name>copyTo</name>
+        <qualifiedname>nvblox::unified_ptr::copyTo</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; <ref refid="classnvblox_1_1unified__ptr_1afe3098fb6f1975238306554256901b96" kindref="member">T_nonconst</ref> &gt; &amp;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Copy memory between two unified ptrs, potentially of different memory locations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="114" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1ac01fb546b9ebf47fb7139f7a697abef5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>MemoryType nvblox::unified_ptr&lt; T &gt;::memory_type</definition>
+        <argsstring>() const</argsstring>
+        <name>memory_type</name>
+        <qualifiedname>nvblox::unified_ptr::memory_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="116" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1unified__ptr_1a8d40671a588442ae821a29bac98e0362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::unified_ptr&lt; T &gt;::setZero</definition>
+        <argsstring>()</argsstring>
+        <name>setZero</name>
+        <qualifiedname>nvblox::unified_ptr::setZero</qualifiedname>
+        <briefdescription>
+<para>Helper function to memset all the memory to 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="119" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>shared_ptr for device, unified memory, and pinned host memory Things to be aware of </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Single objects<itemizedlist>
+<listitem><para>Constructor and Destructor are not called when memory_type==kDevice (these are CPU functions). Therefore <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref> generates an error if used in device mode with non-trivially destructible types.</para>
+</listitem><listitem><para>Both Constructor and Destructor are called when memory_type==kUnified || kHost.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Arrays<itemizedlist>
+<listitem><para>Default Constructor called when storing arrays in kUnified || kHost.</para>
+</listitem><listitem><para>No Constructor called in kDevice mode.</para>
+</listitem><listitem><para>No destructor called for ANY memory setting so we make a static check that objects are trivially destructable. </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="41" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="41" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1unified__ptr_1a60a7bc9848523dd470b485f3cf5afe5d" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>clone</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1ae2ee3b5b3c87eb618b18421c295805aa" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>clone</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1aa0aa56b752fab3dccc47c402ae6d2f89" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>copyTo</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1ada6eb2524f3ecf5958bf3f1d47af1710" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>get</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a848bbfd140c8019fa262ebd31f542288" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>get</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a6a94275ded86341f4b53caf6bd17e2f9" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>kDefaultMemoryType</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1ac01fb546b9ebf47fb7139f7a697abef5" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>memory_type</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a8a9450cdb73541a73a3e4fe8cebf373e" prot="private" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>memory_type_</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a3337b2b161af934efc4017631f7ff372" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator bool</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a3edf40e2ce32d62950bfcdaf5b0ce6ac" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator unified_ptr&lt; const T2 &gt;</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1ad6dde396a99e359a0047c977d0ed8cbf" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator unified_ptr&lt; T2 &gt;</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1af110df058ed190c70b2a52bf76a2ee3a" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator!=</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a5080fff1079601fbddf80a8b79c48343" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator*</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a8c700986d92020c34d919d969b1bb82d" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator*</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1ad8525f650626fd95e31494e859f10f3e" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator-&gt;</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a483ea02f375173444828246b1af4dad5" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator-&gt;</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a280b1e72606f0a6621963c43d632121e" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a08b7e7f42e3b674870a653c7a3cb8671" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1affcdc187951a64af1da1ce570c204ba1" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator==</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a686bfd65fe56badf8aef804327c6f82b" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator[]</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a2c0a2d0270bccb5799bc5c711bba96e7" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>operator[]</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1aa6c0dade913a326b5e82d80805c16833" prot="private" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>ptr_</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a67f6e325cc33c1c3fc9a43dc0e3833e9" prot="private" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>ref_counter_</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a5a847035587957938a5ecb86687c7c52" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>reset</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a8d40671a588442ae821a29bac98e0362" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>setZero</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1aaf1c74f30635ac6bc512c7ac6d4df145" prot="private" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>size_</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1afe9cfa90b1196027873e0d8dafafbb14" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>T_noextent</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1afe3098fb6f1975238306554256901b96" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>T_nonconst</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1aaf3cf1fb8e29b150259789d5fe923caa" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>unified_ptr</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a051306b28ab9d56a2b67b163fdfaece9" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>unified_ptr</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a6ae90c3ed60b423816b78af78713a0d4" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>unified_ptr</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1acd3e9a3ca76b8b8875557669abac5c1d" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>unified_ptr</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a6fbd891a08bbcc14c40c4db3c85a31fa" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>unified_ptr</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a83a3add28fb333d8052f08b8044638f6" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>unified_ptr&lt; const T &gt;</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1ab82605a4b3f70e44bbe4ef5b088e2d57" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>unified_ptr&lt; T_nonconst &gt;</name></member>
+      <member refid="classnvblox_1_1unified__ptr_1a91ead6a9016fddf99e451a2483b9317d" prot="public" virt="non-virtual"><scope>nvblox::unified_ptr</scope><name>~unified_ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

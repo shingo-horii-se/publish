@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1GetLayerType_3_01VoxelBlockLayer_3_01VoxelType_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::GetLayerType&lt; VoxelBlockLayer&lt; VoxelType &gt; &gt;</compoundname>
+    <includes refid="layer__serialization_8h" local="no">layer_serialization.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename VoxelType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structnvblox_1_1GetLayerType_3_01VoxelBlockLayer_3_01VoxelType_01_4_01_4_1ab60b4bb2fafc91607c50ab4c430cbbe6" prot="public" static="no">
+        <type>VoxelType</type>
+        <definition>using nvblox::GetLayerType&lt; VoxelBlockLayer&lt; VoxelType &gt; &gt;::type =  VoxelType</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>nvblox::GetLayerType&lt; VoxelBlockLayer&lt; VoxelType &gt; &gt;::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="64" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="63" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" bodystart="63" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1GetLayerType_3_01VoxelBlockLayer_3_01VoxelType_01_4_01_4_1ab60b4bb2fafc91607c50ab4c430cbbe6" prot="public" virt="non-virtual"><scope>nvblox::GetLayerType&lt; VoxelBlockLayer&lt; VoxelType &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_6255b930b824865cb95f5fc6b0bec593" kind="dir">
+    <compoundname>internal</compoundname>
+    <innerdir refid="dir_396a17663681bce0efab8e45ad14dc11">thirdparty</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/io/internal/"/>
+  </compounddef>
+</doxygen>

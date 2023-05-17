@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1RayCaster" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::RayCaster</compoundname>
+    <includes refid="ray__caster_8h" local="no">ray_caster.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1RayCaster_1a8bf9ecb5959c1c6cf335fb6021d2bf4d" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float nvblox::RayCaster::scale_</definition>
+        <argsstring></argsstring>
+        <name>scale_</name>
+        <qualifiedname>nvblox::RayCaster::scale_</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="38" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1RayCaster_1a5b61149c11ef370c45ac4a7e5a65b582" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nvblox::RayCaster::ray_length_in_steps_</definition>
+        <argsstring></argsstring>
+        <name>ray_length_in_steps_</name>
+        <qualifiedname>nvblox::RayCaster::ray_length_in_steps_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="40" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1RayCaster_1aaab48cd6120ec9c48058690b31a801ce" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nvblox::RayCaster::current_step_</definition>
+        <argsstring></argsstring>
+        <name>current_step_</name>
+        <qualifiedname>nvblox::RayCaster::current_step_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="41" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1RayCaster_1a29664a7ebde768722d6f11e263cc1958" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>Vector3f nvblox::RayCaster::t_to_next_boundary_</definition>
+        <argsstring></argsstring>
+        <name>t_to_next_boundary_</name>
+        <qualifiedname>nvblox::RayCaster::t_to_next_boundary_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="43" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1RayCaster_1a813fce22e0aff31860b8c524094fa034" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref></type>
+        <definition>Index3D nvblox::RayCaster::current_index_</definition>
+        <argsstring></argsstring>
+        <name>current_index_</name>
+        <qualifiedname>nvblox::RayCaster::current_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="44" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1RayCaster_1afb722c68092aff34914df0c7467138a6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref></type>
+        <definition>Index3D nvblox::RayCaster::ray_step_signs_</definition>
+        <argsstring></argsstring>
+        <name>ray_step_signs_</name>
+        <qualifiedname>nvblox::RayCaster::ray_step_signs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="45" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1RayCaster_1af195575c8b2e1d5399e424337b206d2d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>Vector3f nvblox::RayCaster::t_step_size_</definition>
+        <argsstring></argsstring>
+        <name>t_step_size_</name>
+        <qualifiedname>nvblox::RayCaster::t_step_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="46" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1RayCaster_1a64c2effeb8031da2552fa29aa377a81a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::RayCaster::RayCaster</definition>
+        <argsstring>(const Vector3f &amp;origin, const Vector3f &amp;destination, float scale=1.0f)</argsstring>
+        <name>RayCaster</name>
+        <qualifiedname>nvblox::RayCaster::RayCaster</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="25" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1RayCaster_1aae1706b2bc499a1fb8e332f83bfe1fef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::RayCaster::nextRayIndex</definition>
+        <argsstring>(Index3D *ray_index)</argsstring>
+        <name>nextRayIndex</name>
+        <qualifiedname>nvblox::RayCaster::nextRayIndex</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> *</type>
+          <declname>ray_index</declname>
+        </param>
+        <briefdescription>
+<para>Returns the index, so in &quot;unscaled&quot; coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="30" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1RayCaster_1a523314a703e4cfa93ed5501d9e0a0ae6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::RayCaster::nextRayPositionScaled</definition>
+        <argsstring>(Vector3f *ray_position)</argsstring>
+        <name>nextRayPositionScaled</name>
+        <qualifiedname>nvblox::RayCaster::nextRayPositionScaled</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> *</type>
+          <declname>ray_position</declname>
+        </param>
+        <briefdescription>
+<para>Returns scaled coordinates. Just the above multiplied by the scale factor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="32" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1RayCaster_1ae7f26a07ae5eaf596971b509be138918" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ void</type>
+        <definition>__host__ void nvblox::RayCaster::getAllIndices</definition>
+        <argsstring>(std::vector&lt; Index3D &gt; *indices)</argsstring>
+        <name>getAllIndices</name>
+        <qualifiedname>nvblox::RayCaster::getAllIndices</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Just raycasts over the whole thing and puts them in a vector for you. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="35" column="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for casting rays through a voxelized space from origin to destination. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" line="23" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/ray_caster.h" bodystart="23" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1RayCaster_1a813fce22e0aff31860b8c524094fa034" prot="private" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>current_index_</name></member>
+      <member refid="classnvblox_1_1RayCaster_1aaab48cd6120ec9c48058690b31a801ce" prot="private" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>current_step_</name></member>
+      <member refid="classnvblox_1_1RayCaster_1ae7f26a07ae5eaf596971b509be138918" prot="public" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>getAllIndices</name></member>
+      <member refid="classnvblox_1_1RayCaster_1aae1706b2bc499a1fb8e332f83bfe1fef" prot="public" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>nextRayIndex</name></member>
+      <member refid="classnvblox_1_1RayCaster_1a523314a703e4cfa93ed5501d9e0a0ae6" prot="public" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>nextRayPositionScaled</name></member>
+      <member refid="classnvblox_1_1RayCaster_1a5b61149c11ef370c45ac4a7e5a65b582" prot="private" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>ray_length_in_steps_</name></member>
+      <member refid="classnvblox_1_1RayCaster_1afb722c68092aff34914df0c7467138a6" prot="private" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>ray_step_signs_</name></member>
+      <member refid="classnvblox_1_1RayCaster_1a64c2effeb8031da2552fa29aa377a81a" prot="public" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>RayCaster</name></member>
+      <member refid="classnvblox_1_1RayCaster_1a8bf9ecb5959c1c6cf335fb6021d2bf4d" prot="private" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>scale_</name></member>
+      <member refid="classnvblox_1_1RayCaster_1af195575c8b2e1d5399e424337b206d2d" prot="private" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>t_step_size_</name></member>
+      <member refid="classnvblox_1_1RayCaster_1a29664a7ebde768722d6f11e263cc1958" prot="private" virt="non-virtual"><scope>nvblox::RayCaster</scope><name>t_to_next_boundary_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

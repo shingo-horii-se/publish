@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1RawIterator" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::RawIterator</compoundname>
+    <includes refid="iterator_8h" local="no">iterator.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structnvblox_1_1RawIterator_1a1880d1c9df7aad335a3d9c6973ea396f" prot="public" static="no">
+        <type>std::forward_iterator_tag</type>
+        <definition>using nvblox::RawIterator&lt; T &gt;::iterator_category =  std::forward_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <qualifiedname>nvblox::RawIterator::iterator_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="28" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structnvblox_1_1RawIterator_1a52601d05935adb98ec8be93dd1e67acf" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>using nvblox::RawIterator&lt; T &gt;::difference_type =  std::ptrdiff_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <qualifiedname>nvblox::RawIterator::difference_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="29" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structnvblox_1_1RawIterator_1a70117ae6ee1ef4ad3855bccc9308aa95" prot="public" static="no">
+        <type>T</type>
+        <definition>using nvblox::RawIterator&lt; T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>nvblox::RawIterator::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="30" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structnvblox_1_1RawIterator_1abd218cf60af8ebff6459718344ba30b2" prot="public" static="no">
+        <type>T *</type>
+        <definition>using nvblox::RawIterator&lt; T &gt;::pointer =  T*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>nvblox::RawIterator::pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="31" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structnvblox_1_1RawIterator_1ab12bd2dd9efaa9a6b1349bed44909185" prot="public" static="no">
+        <type>T &amp;</type>
+        <definition>using nvblox::RawIterator&lt; T &gt;::reference =  T&amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>nvblox::RawIterator::reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="32" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1RawIterator_1af66cdcf60de0b0db17f5f7d4c4b3c634" prot="private" static="no" mutable="no">
+        <type><ref refid="structnvblox_1_1RawIterator_1abd218cf60af8ebff6459718344ba30b2" kindref="member">pointer</ref></type>
+        <definition>pointer nvblox::RawIterator&lt; T &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <qualifiedname>nvblox::RawIterator::ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="96" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1aaf85ca8802eb15aad3fd26a013f5fd4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::RawIterator&lt; T &gt;::RawIterator</definition>
+        <argsstring>(pointer ptr)</argsstring>
+        <name>RawIterator</name>
+        <qualifiedname>nvblox::RawIterator::RawIterator</qualifiedname>
+        <param>
+          <type><ref refid="structnvblox_1_1RawIterator_1abd218cf60af8ebff6459718344ba30b2" kindref="member">pointer</ref></type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="34" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a2c45a8e4a24d3c3420cb7a5269f23458" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator_1ab12bd2dd9efaa9a6b1349bed44909185" kindref="member">reference</ref></type>
+        <definition>__host__ __device__ reference nvblox::RawIterator&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>nvblox::RawIterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="36" column="33" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a0cec175d297fdf98210fe9d620e9d575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator_1abd218cf60af8ebff6459718344ba30b2" kindref="member">pointer</ref></type>
+        <definition>__host__ __device__ pointer nvblox::RawIterator&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>nvblox::RawIterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="37" column="31" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a5cd6ef4661b9a33a0292011a58269973" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+        <definition>__host__ __device__ RawIterator &amp; nvblox::RawIterator&lt; T &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>nvblox::RawIterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="38" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a23443e028af085d3adb0dffd16648406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+        <definition>__host__ __device__ RawIterator &amp; nvblox::RawIterator&lt; T &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <qualifiedname>nvblox::RawIterator::operator--</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="42" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a37f171d2d5347755bfb70e19d80bfb37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+        <definition>__host__ __device__ RawIterator &amp; nvblox::RawIterator&lt; T &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>nvblox::RawIterator::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="46" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1ab21e14a7aa1b195c4f2b2040766a0a34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+        <definition>__host__ __device__ RawIterator &amp; nvblox::RawIterator&lt; T &gt;::operator+=</definition>
+        <argsstring>(const difference_type &amp;movement)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>nvblox::RawIterator::operator+=</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator_1a52601d05935adb98ec8be93dd1e67acf" kindref="member">difference_type</ref> &amp;</type>
+          <declname>movement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="51" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a73b8e48d49929d78010ae687a405aec0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+        <definition>__host__ __device__ RawIterator &amp; nvblox::RawIterator&lt; T &gt;::operator=</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::RawIterator::operator=</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="57" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1aaa36fc5f8cb7ca769a3f5d30dec09a9d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref></type>
+        <definition>__host__ __device__ RawIterator nvblox::RawIterator&lt; T &gt;::operator+</definition>
+        <argsstring>(const difference_type &amp;movement) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>nvblox::RawIterator::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator_1a52601d05935adb98ec8be93dd1e67acf" kindref="member">difference_type</ref> &amp;</type>
+          <declname>movement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="63" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1ab011f315db663d026bfc0335001852ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref></type>
+        <definition>__host__ __device__ RawIterator nvblox::RawIterator&lt; T &gt;::operator-</definition>
+        <argsstring>(const difference_type &amp;movement) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>nvblox::RawIterator::operator-</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator_1a52601d05935adb98ec8be93dd1e67acf" kindref="member">difference_type</ref> &amp;</type>
+          <declname>movement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="69" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a8200d86b598110f9753be7dfe695a1e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref></type>
+        <definition>__host__ __device__ RawIterator nvblox::RawIterator&lt; T &gt;::operator[]</definition>
+        <argsstring>(const difference_type &amp;movement) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>nvblox::RawIterator::operator[]</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator_1a52601d05935adb98ec8be93dd1e67acf" kindref="member">difference_type</ref> &amp;</type>
+          <declname>movement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="76" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1a8681f4b5d22c10cd512e1a65832f0fc4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::RawIterator&lt; T &gt;::operator T*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T*</name>
+        <qualifiedname>nvblox::RawIterator::operator T*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="83" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1RawIterator_1ad32275f3e20103ec813d47e16f204828" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::RawIterator&lt; T &gt;::operator T</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T</name>
+        <qualifiedname>nvblox::RawIterator::operator T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="84" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structnvblox_1_1RawIterator_1a36b9301ddbb82a88fb063c4fc975b381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ friend bool</type>
+        <definition>__host__ __device__ friend bool operator==</definition>
+        <argsstring>(const RawIterator &amp;a, const RawIterator &amp;b)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>nvblox::RawIterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="86" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="friend" id="structnvblox_1_1RawIterator_1a882bfc22a38d166247ba4ed4a8d59366" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ friend bool</type>
+        <definition>__host__ __device__ friend bool operator!=</definition>
+        <argsstring>(const RawIterator &amp;a, const RawIterator &amp;b)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>nvblox::RawIterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1RawIterator" kindref="compound">RawIterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="90" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Iterator class for unified_vectors that enables us to use thrust and STL operators on our own vectors. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" line="27" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/iterator.h" bodystart="27" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1RawIterator_1a52601d05935adb98ec8be93dd1e67acf" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>difference_type</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a1880d1c9df7aad335a3d9c6973ea396f" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>iterator_category</name></member>
+      <member refid="structnvblox_1_1RawIterator_1ad32275f3e20103ec813d47e16f204828" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator T</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a8681f4b5d22c10cd512e1a65832f0fc4" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator T*</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a882bfc22a38d166247ba4ed4a8d59366" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator!=</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a2c45a8e4a24d3c3420cb7a5269f23458" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator*</name></member>
+      <member refid="structnvblox_1_1RawIterator_1aaa36fc5f8cb7ca769a3f5d30dec09a9d" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator+</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a5cd6ef4661b9a33a0292011a58269973" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator++</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a37f171d2d5347755bfb70e19d80bfb37" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator++</name></member>
+      <member refid="structnvblox_1_1RawIterator_1ab21e14a7aa1b195c4f2b2040766a0a34" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator+=</name></member>
+      <member refid="structnvblox_1_1RawIterator_1ab011f315db663d026bfc0335001852ae" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator-</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a23443e028af085d3adb0dffd16648406" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator--</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a0cec175d297fdf98210fe9d620e9d575" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator-&gt;</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a73b8e48d49929d78010ae687a405aec0" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator=</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a36b9301ddbb82a88fb063c4fc975b381" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator==</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a8200d86b598110f9753be7dfe695a1e4" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>operator[]</name></member>
+      <member refid="structnvblox_1_1RawIterator_1abd218cf60af8ebff6459718344ba30b2" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>pointer</name></member>
+      <member refid="structnvblox_1_1RawIterator_1af66cdcf60de0b0db17f5f7d4c4b3c634" prot="private" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>ptr_</name></member>
+      <member refid="structnvblox_1_1RawIterator_1aaf85ca8802eb15aad3fd26a013f5fd4a" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>RawIterator</name></member>
+      <member refid="structnvblox_1_1RawIterator_1ab12bd2dd9efaa9a6b1349bed44909185" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>reference</name></member>
+      <member refid="structnvblox_1_1RawIterator_1a70117ae6ee1ef4ad3855bccc9308aa95" prot="public" virt="non-virtual"><scope>nvblox::RawIterator</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

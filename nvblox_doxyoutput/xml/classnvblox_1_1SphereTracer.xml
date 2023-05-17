@@ -1,0 +1,782 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1SphereTracer" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::SphereTracer</compoundname>
+    <includes refid="sphere__tracer_8h" local="no">sphere_tracer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1SphereTracer_1a994d65608e23f52bc05fe5c039ae90de" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::SphereTracer::maximum_steps_</definition>
+        <argsstring></argsstring>
+        <name>maximum_steps_</name>
+        <qualifiedname>nvblox::SphereTracer::maximum_steps_</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="199" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1SphereTracer_1aabbc2f2a93f82f98daa5b56bf1c9b16e" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::SphereTracer::maximum_ray_length_m_</definition>
+        <argsstring></argsstring>
+        <name>maximum_ray_length_m_</name>
+        <qualifiedname>nvblox::SphereTracer::maximum_ray_length_m_</qualifiedname>
+        <initializer>= 15.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="200" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1SphereTracer_1a42454a672a598fcce8f52a101a4ea89b" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::SphereTracer::surface_distance_epsilon_vox_</definition>
+        <argsstring></argsstring>
+        <name>surface_distance_epsilon_vox_</name>
+        <qualifiedname>nvblox::SphereTracer::surface_distance_epsilon_vox_</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="201" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1SphereTracer_1a561b39bf9ea3214c4c4354e53e2abdde" prot="protected" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::SphereTracer::tracing_stream_</definition>
+        <argsstring></argsstring>
+        <name>tracing_stream_</name>
+        <qualifiedname>nvblox::SphereTracer::tracing_stream_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="204" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a9030f207d2c6bb100300629121e1edcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::SphereTracer::SphereTracer</definition>
+        <argsstring>()</argsstring>
+        <name>SphereTracer</name>
+        <qualifiedname>nvblox::SphereTracer::SphereTracer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="31" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a348dc5c9cf7e5ac414c9f87645b0e956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::SphereTracer::~SphereTracer</definition>
+        <argsstring>()</argsstring>
+        <name>~SphereTracer</name>
+        <qualifiedname>nvblox::SphereTracer::~SphereTracer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a28202c06a32fd97acf30c6fde51fd35a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::SphereTracer::renderImageOnGPU</definition>
+        <argsstring>(const Camera &amp;camera, const Transform &amp;T_L_C, const TsdfLayer &amp;tsdf_layer, const float truncation_distance_m, DepthImage *depth_ptr, const MemoryType output_image_memory_type=MemoryType::kDevice, const int ray_subsampling_factor=1)</argsstring>
+        <name>renderImageOnGPU</name>
+        <qualifiedname>nvblox::SphereTracer::renderImageOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>depth_ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>output_image_memory_type</declname>
+          <defval><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ray_subsampling_factor</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Render an image on the GPU Rendering occurs by sphere tracing the passed TsdfLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allocates if the passed output image does not have the right size. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tsdf layer to be sphere traced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>truncation_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The (metric) truncation distance used during the construction of tsdf_layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the output image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_image_memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The memory type that the image should be stored in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ray_subsampling_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subsampling rate applied to the number of traced rays. If this parameter is 2 for example and the image is 100x100 pixels, we trace 50x50 pixels and return a syntheric depth image of that size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="50" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1aad6701e4bff3c36780b0165496cea924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::SphereTracer::renderImageOnGPU</definition>
+        <argsstring>(const Camera &amp;camera, const Transform &amp;T_L_C, const TsdfLayer &amp;tsdf_layer, const float truncation_distance_m, DepthImageView *depth_ptr, const MemoryType output_image_memory_type, const int ray_subsampling_factor=1)</argsstring>
+        <name>renderImageOnGPU</name>
+        <qualifiedname>nvblox::SphereTracer::renderImageOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a58edbb2cb638a043bede84fdf0f48b90" kindref="member">DepthImageView</ref> *</type>
+          <declname>depth_ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>output_image_memory_type</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ray_subsampling_factor</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Render an image on the GPU into an image view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The memory buffer must have enough space to fit a depth image of size (camera.height() / ray_subsampling_factor) x (camera.width() / ray_subsampling_factor) in a float32 format. Rendering occurs by sphere tracing the passed TsdfLayer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tsdf layer to be sphere traced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the output image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>truncation_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The (metric) truncation distance used during the construction of tsdf_layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_image_memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The memory type that the image should be stored in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ray_subsampling_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subsampling rate applied to the number of traced rays. If this parameter is 2 for example and the image is 100x100 pixels, we trace 50x50 pixels and return a syntheric depth image of that size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="75" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1ad8263283e138d6fda77919108616ebea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::SphereTracer::renderRgbdImageOnGPU</definition>
+        <argsstring>(const Camera &amp;camera, const Transform &amp;T_L_C, const TsdfLayer &amp;tsdf_layer, const ColorLayer &amp;color_layer, const float truncation_distance_m, DepthImage *depth_ptr, ColorImage *color_ptr, const MemoryType output_image_memory_type, const int ray_subsampling_factor=1)</argsstring>
+        <name>renderRgbdImageOnGPU</name>
+        <qualifiedname>nvblox::SphereTracer::renderRgbdImageOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>depth_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>color_ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>output_image_memory_type</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ray_subsampling_factor</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Render a depth and color image on the GPU Rendering occurs by sphere tracing the passed TsdfLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Colors are decided by looking up the <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> voxel corresponding to ray depth. We return two pointers to internal GPU buffers where the images are rendered. Note that additional calls to this function will change the contents of the internal image buffers and therefore invalidate the returned images. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tsdf layer to be sphere traced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color layer to look up the color from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>truncation_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The (metric) truncation distance used during the construction of tsdf_layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the output depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the output color image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_image_memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The memory type that the image should be stored in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ray_subsampling_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subsampling rate applied to the number of traced rays. If this parameter is 2 for example and the image is 100x100 pixels, we trace 50x50 pixels and return a syntheric depth image of that size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pair of pointers to internal (GPU) buffers where the depth and color image respectively are stored. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="106" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1aa76ea99571090a201e4f4302c32323d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::SphereTracer::renderRgbdImageOnGPU</definition>
+        <argsstring>(const Camera &amp;camera, const Transform &amp;T_L_C, const TsdfLayer &amp;tsdf_layer, const ColorLayer &amp;color_layer, const float truncation_distance_m, DepthImageView *depth_ptr, ColorImageView *color_ptr, const MemoryType output_image_memory_type, const int ray_subsampling_factor=1)</argsstring>
+        <name>renderRgbdImageOnGPU</name>
+        <qualifiedname>nvblox::SphereTracer::renderRgbdImageOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a58edbb2cb638a043bede84fdf0f48b90" kindref="member">DepthImageView</ref> *</type>
+          <declname>depth_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1af74360011cc0e25c4af88580f5b0f507" kindref="member">ColorImageView</ref> *</type>
+          <declname>color_ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>output_image_memory_type</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ray_subsampling_factor</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Render a depth and color image on the GPU Rendering occurs by sphere tracing the passed TsdfLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Colors are decided by looking up the <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> voxel corresponding to ray depth. We render directly onto the externally allocated memory buffers. The depth memory buffer must have enough space to fit a depth image of size (camera.height() / ray_subsampling_factor) x (camera.width() / ray_subsampling_factor) in a float32 format. The color memory buffer must have enough space to fit an image of same size in RGB UInt8 format (i.e. 24 bits per pixel). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tsdf layer to be sphere traced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color layer to look up the color from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>truncation_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The (metric) truncation distance used during the construction of tsdf_layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the output depth image view. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the output color image view. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_image_memory_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The memory type that the image should be stored in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ray_subsampling_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subsampling rate applied to the number of traced rays. If this parameter is 2 for example and the image is 100x100 pixels, we trace 50x50 pixels and return a syntheric depth image of that size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="139" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a3bf725bbfe4dbbe0544c4e2f238b18a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::SphereTracer::maximum_steps</definition>
+        <argsstring>() const</argsstring>
+        <name>maximum_steps</name>
+        <qualifiedname>nvblox::SphereTracer::maximum_steps</qualifiedname>
+        <briefdescription>
+<para>A parameter getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum number of steps along a ray allowed before ray casting fails. <simplesect kind="return"><para>the maximum number of steps </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="151" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1ae88a0170d2ada3035ac473fb6bc3926a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::SphereTracer::maximum_ray_length_m</definition>
+        <argsstring>() const</argsstring>
+        <name>maximum_ray_length_m</name>
+        <qualifiedname>nvblox::SphereTracer::maximum_ray_length_m</qualifiedname>
+        <briefdescription>
+<para>A parameter getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum distance along a ray allowed before ray casting fails. <simplesect kind="return"><para>the maximum length </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="156" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1ac2b5b8cb5e404063b41b67a05ca98f0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::SphereTracer::surface_distance_epsilon_vox</definition>
+        <argsstring>() const</argsstring>
+        <name>surface_distance_epsilon_vox</name>
+        <qualifiedname>nvblox::SphereTracer::surface_distance_epsilon_vox</qualifiedname>
+        <briefdescription>
+<para>A parameter getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance in voxels, sampled from the underlying distance field, at which under which sphere casting determines that it has successfully found a surface. <simplesect kind="return"><para>the distance to the surface. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="163" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a4f8a2de512728b96879d93d306875372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::SphereTracer::maximum_steps</definition>
+        <argsstring>(int maximum_steps)</argsstring>
+        <name>maximum_steps</name>
+        <qualifiedname>nvblox::SphereTracer::maximum_steps</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maximum_steps</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="classnvblox_1_1SphereTracer_1a3bf725bbfe4dbbe0544c4e2f238b18a6" kindref="member">maximum_steps()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maximum_steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum number of steps along the ray. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="168" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1aa0043e69e51c58e7cbf7d050e9ce0b3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::SphereTracer::maximum_ray_length_m</definition>
+        <argsstring>(float maximum_ray_length_m)</argsstring>
+        <name>maximum_ray_length_m</name>
+        <qualifiedname>nvblox::SphereTracer::maximum_ray_length_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>maximum_ray_length_m</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="classnvblox_1_1SphereTracer_1ae88a0170d2ada3035ac473fb6bc3926a" kindref="member">maximum_ray_length_m()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maximum_ray_length_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum distance along the ray. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="173" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a70adc37f25d4460a1b019255f3800211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::SphereTracer::surface_distance_epsilon_vox</definition>
+        <argsstring>(float surface_distance_epsilon_vox)</argsstring>
+        <name>surface_distance_epsilon_vox</name>
+        <qualifiedname>nvblox::SphereTracer::surface_distance_epsilon_vox</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>surface_distance_epsilon_vox</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="classnvblox_1_1SphereTracer_1ac2b5b8cb5e404063b41b67a05ca98f0a" kindref="member">surface_distance_epsilon_vox()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>surface_distance_epsilon_vox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the distance to the surface. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="178" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a5eb1281e15fc2a97d72eae5e77d3aed1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;, <ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; bool &gt; &gt;</type>
+        <definition>std::pair&lt; device_vector&lt; Vector3f &gt;, device_vector&lt; bool &gt; &gt; nvblox::SphereTracer::castOnGPU</definition>
+        <argsstring>(std::vector&lt; Ray &gt; &amp;rays_L, const TsdfLayer &amp;tsdf_layer, const float truncation_distance_m)</argsstring>
+        <name>castOnGPU</name>
+        <qualifiedname>nvblox::SphereTracer::castOnGPU</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1af996b9675338d0ae7263ebe5a663a8e1" kindref="member">Ray</ref> &gt; &amp;</type>
+          <declname>rays_L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="189" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SphereTracer_1a24315ee3920b98ca3deb3061fccdde43" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SphereTracer::castOnGPU</definition>
+        <argsstring>(const Ray &amp;ray, const TsdfLayer &amp;tsdf_layer, const float truncation_distance_m, float *t) const</argsstring>
+        <name>castOnGPU</name>
+        <qualifiedname>nvblox::SphereTracer::castOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af996b9675338d0ae7263ebe5a663a8e1" kindref="member">Ray</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="195" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class for rendering synthetic depth images using sphere tracing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" line="29" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/sphere_tracer.h" bodystart="29" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1SphereTracer_1a5eb1281e15fc2a97d72eae5e77d3aed1" prot="protected" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>castOnGPU</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a24315ee3920b98ca3deb3061fccdde43" prot="protected" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>castOnGPU</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1ae88a0170d2ada3035ac473fb6bc3926a" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>maximum_ray_length_m</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1aa0043e69e51c58e7cbf7d050e9ce0b3a" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>maximum_ray_length_m</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1aabbc2f2a93f82f98daa5b56bf1c9b16e" prot="protected" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>maximum_ray_length_m_</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a3bf725bbfe4dbbe0544c4e2f238b18a6" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>maximum_steps</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a4f8a2de512728b96879d93d306875372" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>maximum_steps</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a994d65608e23f52bc05fe5c039ae90de" prot="protected" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>maximum_steps_</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a28202c06a32fd97acf30c6fde51fd35a" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>renderImageOnGPU</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1aad6701e4bff3c36780b0165496cea924" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>renderImageOnGPU</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1ad8263283e138d6fda77919108616ebea" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>renderRgbdImageOnGPU</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1aa76ea99571090a201e4f4302c32323d9" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>renderRgbdImageOnGPU</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a9030f207d2c6bb100300629121e1edcb" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>SphereTracer</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1ac2b5b8cb5e404063b41b67a05ca98f0a" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>surface_distance_epsilon_vox</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a70adc37f25d4460a1b019255f3800211" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>surface_distance_epsilon_vox</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a42454a672a598fcce8f52a101a4ea89b" prot="protected" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>surface_distance_epsilon_vox_</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a561b39bf9ea3214c4c4354e53e2abdde" prot="protected" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>tracing_stream_</name></member>
+      <member refid="classnvblox_1_1SphereTracer_1a348dc5c9cf7e5ac414c9f87645b0e956" prot="public" virt="non-virtual"><scope>nvblox::SphereTracer</scope><name>~SphereTracer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

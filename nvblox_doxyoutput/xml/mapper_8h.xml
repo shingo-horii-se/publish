@@ -1,0 +1,789 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="mapper_8h" kind="file" language="C++">
+    <compoundname>mapper.h</compoundname>
+    <includes local="no">unordered_set</includes>
+    <includes refid="hash_8h" local="yes">nvblox/core/hash.h</includes>
+    <includes refid="esdf__integrator_8h" local="yes">nvblox/integrators/esdf_integrator.h</includes>
+    <includes refid="occupancy__decay__integrator_8h" local="yes">nvblox/integrators/occupancy_decay_integrator.h</includes>
+    <includes refid="projective__color__integrator_8h" local="yes">nvblox/integrators/projective_color_integrator.h</includes>
+    <includes refid="projective__occupancy__integrator_8h" local="yes">nvblox/integrators/projective_occupancy_integrator.h</includes>
+    <includes refid="projective__tsdf__integrator_8h" local="yes">nvblox/integrators/projective_tsdf_integrator.h</includes>
+    <includes refid="blox_8h" local="yes">nvblox/map/blox.h</includes>
+    <includes refid="common__names_8h" local="yes">nvblox/map/common_names.h</includes>
+    <includes refid="layer_8h" local="yes">nvblox/map/layer.h</includes>
+    <includes refid="layer__cake_8h" local="yes">nvblox/map/layer_cake.h</includes>
+    <includes refid="voxels_8h" local="yes">nvblox/map/voxels.h</includes>
+    <includes refid="mesh__integrator_8h" local="yes">nvblox/mesh/mesh_integrator.h</includes>
+    <includes refid="image__masker_8h" local="yes">nvblox/semantics/image_masker.h</includes>
+    <includes refid="camera_8h" local="yes">nvblox/sensors/camera.h</includes>
+    <includes refid="lidar_8h" local="yes">nvblox/sensors/lidar.h</includes>
+    <includedby refid="multi__mapper_8h" local="yes">multi_mapper.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <incdepgraph>
+      <node id="30">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nvblox/core/hash.h</label>
+        <link refid="hash_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>nvblox/core/iterator.h</label>
+        <link refid="iterator_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>nvblox/core/log_odds.h</label>
+        <link refid="log__odds_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>nvblox/core/unified_ptr.h</label>
+        <link refid="unified__ptr_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>nvblox/core/unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>nvblox/gpu_hash/gpu_layer_view.h</label>
+        <link refid="gpu__layer__view_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>nvblox/integrators/esdf_integrator.h</label>
+        <link refid="esdf__integrator_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>nvblox/integrators/internal/projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>nvblox/integrators/occupancy_decay_integrator.h</label>
+        <link refid="occupancy__decay__integrator_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>nvblox/integrators/projective_color_integrator.h</label>
+        <link refid="projective__color__integrator_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>nvblox/integrators/projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>nvblox/integrators/projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>nvblox/integrators/view_calculator.h</label>
+        <link refid="view__calculator_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>nvblox/integrators/weighting_function.h</label>
+        <link refid="weighting__function_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>nvblox/map/blox.h</label>
+        <link refid="blox_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>nvblox/map/common_names.h</label>
+        <link refid="common__names_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>nvblox/map/layer.h</label>
+        <link refid="layer_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>nvblox/map/layer_cake.h</label>
+        <link refid="layer__cake_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>nvblox/map/voxels.h</label>
+        <link refid="voxels_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>nvblox/mesh/internal/marching_cubes.h</label>
+        <link refid="marching__cubes_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>nvblox/mesh/mesh_block.h</label>
+        <link refid="mesh__block_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>nvblox/mesh/mesh_integrator.h</label>
+        <link refid="mesh__integrator_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>nvblox/rays/sphere_tracer.h</label>
+        <link refid="sphere__tracer_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>nvblox/semantics/image_masker.h</label>
+        <link refid="image__masker_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>nvblox/sensors/camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>nvblox/sensors/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>nvblox/sensors/lidar.h</label>
+        <link refid="lidar_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>nvblox/utils/nvtx_ranges.h</label>
+        <link refid="nvtx__ranges_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>nvblox/utils/timing.h</label>
+        <link refid="timing_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="11">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="62">
+        <label>algorithm</label>
+      </node>
+      <node id="27">
+        <label>atomic</label>
+      </node>
+      <node id="63">
+        <label>chrono</label>
+      </node>
+      <node id="15">
+        <label>cmath</label>
+      </node>
+      <node id="21">
+        <label>cstddef</label>
+      </node>
+      <node id="9">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="19">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="22">
+        <label>iterator</label>
+      </node>
+      <node id="64">
+        <label>limits</label>
+      </node>
+      <node id="65">
+        <label>map</label>
+      </node>
+      <node id="25">
+        <label>memory</label>
+      </node>
+      <node id="66">
+        <label>mutex</label>
+      </node>
+      <node id="69">
+        <label>nvToolsExt.h</label>
+      </node>
+      <node id="28">
+        <label>nvblox/core/internal/impl/unified_ptr_impl.h</label>
+      </node>
+      <node id="23">
+        <label>nvblox/core/internal/impl/unified_vector_impl.h</label>
+      </node>
+      <node id="35">
+        <label>nvblox/core/traits.h</label>
+      </node>
+      <node id="53">
+        <label>nvblox/integrators/internal/impl/projective_integrator_impl.h</label>
+      </node>
+      <node id="49">
+        <label>nvblox/integrators/internal/impl/weighting_function_impl.h</label>
+      </node>
+      <node id="32">
+        <label>nvblox/map/internal/impl/blox_impl.h</label>
+      </node>
+      <node id="57">
+        <label>nvblox/map/internal/impl/layer_cake_impl.h</label>
+      </node>
+      <node id="37">
+        <label>nvblox/map/internal/impl/layer_impl.h</label>
+      </node>
+      <node id="45">
+        <label>nvblox/sensors/internal/impl/camera_impl.h</label>
+      </node>
+      <node id="40">
+        <label>nvblox/sensors/internal/impl/image_impl.h</label>
+      </node>
+      <node id="47">
+        <label>nvblox/sensors/internal/impl/lidar_impl.h</label>
+      </node>
+      <node id="31">
+        <label>stdint.h</label>
+      </node>
+      <node id="67">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>type_traits</label>
+      </node>
+      <node id="56">
+        <label>typeindex</label>
+      </node>
+      <node id="5">
+        <label>unordered_map</label>
+      </node>
+      <node id="2">
+        <label>unordered_set</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1MapperBase" prot="public">nvblox::MapperBase</innerclass>
+    <innerclass refid="classnvblox_1_1Mapper" prot="public">nvblox::Mapper</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="hash_8h" kindref="compound">nvblox/core/hash.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="esdf__integrator_8h" kindref="compound">nvblox/integrators/esdf_integrator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="occupancy__decay__integrator_8h" kindref="compound">nvblox/integrators/occupancy_decay_integrator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projective__color__integrator_8h" kindref="compound">nvblox/integrators/projective_color_integrator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projective__occupancy__integrator_8h" kindref="compound">nvblox/integrators/projective_occupancy_integrator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projective__tsdf__integrator_8h" kindref="compound">nvblox/integrators/projective_tsdf_integrator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="blox_8h" kindref="compound">nvblox/map/blox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="common__names_8h" kindref="compound">nvblox/map/common_names.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="layer_8h" kindref="compound">nvblox/map/layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="layer__cake_8h" kindref="compound">nvblox/map/layer_cake.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="voxels_8h" kindref="compound">nvblox/map/voxels.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mesh__integrator_8h" kindref="compound">nvblox/mesh/mesh_integrator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="image__masker_8h" kindref="compound">nvblox/semantics/image_masker.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="camera_8h" kindref="compound">nvblox/sensors/camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lidar_8h" kindref="compound">nvblox/sensors/lidar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classnvblox_1_1MapperBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="classnvblox_1_1MapperBase_1a1193cdd4888db0580fd359c0e9aa5637" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1MapperBase_1a1193cdd4888db0580fd359c0e9aa5637" kindref="member">MapperBase</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="classnvblox_1_1MapperBase_1a33c9a3be6b1ac58e9eaf4de52fb2aa1c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a33c9a3be6b1ac58e9eaf4de52fb2aa1c" kindref="member">~MapperBase</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classnvblox_1_1MapperBase_1a078171621053d268d3bf5e7f87d960df" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1MapperBase_1a078171621053d268d3bf5e7f87d960df" kindref="member">MapperBase</ref>(<ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48" refid="classnvblox_1_1MapperBase_1ad1df7d3c28174cd0b2911e606e769984" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref>&amp;<sp/><ref refid="classnvblox_1_1MapperBase_1ad1df7d3c28174cd0b2911e606e769984" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52" refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" kindref="member">ProjectiveLayerType</ref><sp/>{<sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa50ef3837f3af039a7563f851682eab91" kindref="member">kTsdf</ref>,<sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa421dc33c3f07425cb36e9fdea3492b21" kindref="member">kOccupancy</ref><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classnvblox_1_1Mapper" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase" kindref="compound">MapperBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70" refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33" kindref="member">EsdfMode</ref><sp/>{<sp/><ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33a03258330d79e4655139390922b06895c" kindref="member">k3D</ref>,<sp/><ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33aab924aabe336b61d678b10cac8f1371a" kindref="member">k2D</ref>,<sp/><ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33ac69d34d47bfd5244204004878441d53f" kindref="member">kUnset</ref><sp/>};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classnvblox_1_1Mapper_1a8a2fadadfffafec2a793fca8b5d36c51" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Mapper_1a8a2fadadfffafec2a793fca8b5d36c51" kindref="member">Mapper</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78" refid="classnvblox_1_1Mapper_1a565ab6e40c3676f733837ba6c60bb612" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Mapper_1a565ab6e40c3676f733837ba6c60bb612" kindref="member">Mapper</ref>(</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a9e5545891bd26620cb9b89de0d592893" kindref="member">voxel_size_m</ref>,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type<sp/>=<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref>,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" kindref="member">ProjectiveLayerType</ref><sp/>projective_layer_type<sp/>=<sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa50ef3837f3af039a7563f851682eab91" kindref="member">ProjectiveLayerType::kTsdf</ref>);</highlight></codeline>
+<codeline lineno="81" refid="classnvblox_1_1Mapper_1a44a4ffa8ba13892034243712005329c7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a44a4ffa8ba13892034243712005329c7" kindref="member">~Mapper</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classnvblox_1_1Mapper_1adea6ec3d5039f3d495b6556c8632cdc4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Mapper_1adea6ec3d5039f3d495b6556c8632cdc4" kindref="member">Mapper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>map_filepath,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type<sp/>=<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1Mapper_1a5db367b13767cdf00c4283493423cd81" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Mapper_1a5db367b13767cdf00c4283493423cd81" kindref="member">Mapper</ref>(<ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91" refid="classnvblox_1_1Mapper_1af40c7b24b7c31cd0142e2581aed7ca18" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1af40c7b24b7c31cd0142e2581aed7ca18" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1Mapper" kindref="compound">Mapper</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classnvblox_1_1Mapper_1a544632ddecd99db185960a3f86bef5cf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a544632ddecd99db185960a3f86bef5cf" kindref="member">integrateDepth</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classnvblox_1_1Mapper_1af1fb2e19844b561ba217d6f962db0eaf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1af1fb2e19844b561ba217d6f962db0eaf" kindref="member">integrateColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/>color_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="classnvblox_1_1Mapper_1a5491f4648e1db0f054660204931732e0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a5491f4648e1db0f054660204931732e0" kindref="member">integrateLidarDepth</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref>&amp;<sp/>lidar);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classnvblox_1_1Mapper_1a96a461f283753893f5bcf84420e9963c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a96a461f283753893f5bcf84420e9963c" kindref="member">decayOccupancy</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="classnvblox_1_1Mapper_1a288bdb12d222c774fd55b4ceeba3763f" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Index3D&gt;<sp/><ref refid="classnvblox_1_1Mapper_1a288bdb12d222c774fd55b4ceeba3763f" kindref="member">updateMesh</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="classnvblox_1_1Mapper_1a1f2a1d9486b1b166983ebbbace8a28ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a1f2a1d9486b1b166983ebbbace8a28ea" kindref="member">generateMesh</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classnvblox_1_1Mapper_1a49506babbcaf7a5df02025b46b96c9f5" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Index3D&gt;<sp/><ref refid="classnvblox_1_1Mapper_1a49506babbcaf7a5df02025b46b96c9f5" kindref="member">updateEsdf</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classnvblox_1_1Mapper_1a717f744cde7106387800efb750d84af1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a717f744cde7106387800efb750d84af1" kindref="member">generateEsdf</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="classnvblox_1_1Mapper_1a9705f1786eb66aeb0f9190fb04d92d19" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Index3D&gt;<sp/><ref refid="classnvblox_1_1Mapper_1a9705f1786eb66aeb0f9190fb04d92d19" kindref="member">updateEsdfSlice</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slice_input_z_min,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slice_input_z_max,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slice_output_z);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classnvblox_1_1Mapper_1a4020ea75b0f9f562b9c6e1b432709260" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Index3D&gt;<sp/><ref refid="classnvblox_1_1Mapper_1a4020ea75b0f9f562b9c6e1b432709260" kindref="member">clearOutsideRadius</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="classnvblox_1_1Mapper_1a5ed24b8493a26de3cc4568e5fd9ea0a7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a5ed24b8493a26de3cc4568e5fd9ea0a7" kindref="member">markUnobservedTsdfFreeInsideRadius</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classnvblox_1_1Mapper_1a154075c7e8abb49b095cc49e158cfac9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a154075c7e8abb49b095cc49e158cfac9" kindref="member">layers</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="181" refid="classnvblox_1_1Mapper_1af3efa81c8d4fab1ace473298f22d6ade" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">TsdfLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1af3efa81c8d4fab1ace473298f22d6ade" kindref="member">tsdf_layer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1a180835d3fe2a3816c2f9da6c37e9a335" kindref="member">get</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">TsdfLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="184" refid="classnvblox_1_1Mapper_1af6da6ba63f12f936ebcb953d11b2005f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">OccupancyLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1af6da6ba63f12f936ebcb953d11b2005f" kindref="member">occupancy_layer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1a180835d3fe2a3816c2f9da6c37e9a335" kindref="member">get</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">OccupancyLayer</ref>&gt;();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189" refid="classnvblox_1_1Mapper_1ac078776652fa52177d0747ece9bb523c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">ColorLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1ac078776652fa52177d0747ece9bb523c" kindref="member">color_layer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1a180835d3fe2a3816c2f9da6c37e9a335" kindref="member">get</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">ColorLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="192" refid="classnvblox_1_1Mapper_1a4867497b05b3063edfc32a8476162762" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">EsdfLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a4867497b05b3063edfc32a8476162762" kindref="member">esdf_layer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1a180835d3fe2a3816c2f9da6c37e9a335" kindref="member">get</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">EsdfLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="195" refid="classnvblox_1_1Mapper_1a32b283b06a62685854124b36b251ff6c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BlockLayer" kindref="compound">MeshLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a32b283b06a62685854124b36b251ff6c" kindref="member">mesh_layer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1a180835d3fe2a3816c2f9da6c37e9a335" kindref="member">get</ref>&lt;<ref refid="classnvblox_1_1BlockLayer" kindref="compound">MeshLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classnvblox_1_1Mapper_1ad2a02bdf426e362e1780b74bd3962679" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1ad2a02bdf426e362e1780b74bd3962679" kindref="member">layers</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="202" refid="classnvblox_1_1Mapper_1a78aeabfcfd6db51d1dc1be71ced9870f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">TsdfLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a78aeabfcfd6db51d1dc1be71ced9870f" kindref="member">tsdf_layer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1ad9b8151ca8a0d898b72b3dfacb61007b" kindref="member">getPtr</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">TsdfLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="204" refid="classnvblox_1_1Mapper_1ab79bad4b070892c61c41bbbf9abc2303" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">OccupancyLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1ab79bad4b070892c61c41bbbf9abc2303" kindref="member">occupancy_layer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1ad9b8151ca8a0d898b72b3dfacb61007b" kindref="member">getPtr</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">OccupancyLayer</ref>&gt;();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209" refid="classnvblox_1_1Mapper_1a7453452c942b3ef47bdba11931adfb3d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">ColorLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a7453452c942b3ef47bdba11931adfb3d" kindref="member">color_layer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1ad9b8151ca8a0d898b72b3dfacb61007b" kindref="member">getPtr</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">ColorLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="212" refid="classnvblox_1_1Mapper_1aef96d2bb98587979b8485937d04eca6e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">EsdfLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1aef96d2bb98587979b8485937d04eca6e" kindref="member">esdf_layer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1ad9b8151ca8a0d898b72b3dfacb61007b" kindref="member">getPtr</ref>&lt;<ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">EsdfLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="215" refid="classnvblox_1_1Mapper_1a3522228178d8895943be09c37a28e680" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1BlockLayer" kindref="compound">MeshLayer</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a3522228178d8895943be09c37a28e680" kindref="member">mesh_layer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="classnvblox_1_1MapperBase_1a48665a9f5c2d4e64960cb0270a712c3c" kindref="member">layers_</ref>.<ref refid="classnvblox_1_1LayerCake_1ad9b8151ca8a0d898b72b3dfacb61007b" kindref="member">getPtr</ref>&lt;<ref refid="classnvblox_1_1BlockLayer" kindref="compound">MeshLayer</ref>&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="classnvblox_1_1Mapper_1ae857a498b45f91782ea58d18b38eea2c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1ae857a498b45f91782ea58d18b38eea2c" kindref="member">tsdf_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a7e15ca7786977a76e02af4b046adb07a" kindref="member">tsdf_integrator_</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226" refid="classnvblox_1_1Mapper_1a309798b782e26dd4210f0e37b8486f23" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a309798b782e26dd4210f0e37b8486f23" kindref="member">occupancy_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1ae00f90ecd686cd32280c345d30352e91" kindref="member">occupancy_integrator_</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232" refid="classnvblox_1_1Mapper_1afffe3a520fb55e6d3f354892f67a8a70" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1afffe3a520fb55e6d3f354892f67a8a70" kindref="member">lidar_tsdf_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a3042a5709b8b4e0076811a99463362a0" kindref="member">lidar_tsdf_integrator_</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238" refid="classnvblox_1_1Mapper_1a43741cdb5b048a986c4dde4e0baae2f1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a43741cdb5b048a986c4dde4e0baae2f1" kindref="member">lidar_occupancy_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1ac5292a75b93acbd5fd362c11f1af6124" kindref="member">lidar_occupancy_integrator_</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244" refid="classnvblox_1_1Mapper_1a0147e1e0b7592b1c1ce8b39ed8173f62" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a0147e1e0b7592b1c1ce8b39ed8173f62" kindref="member">occupancy_decay_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1ad7160cac09eef3ab0aaa71af69ed865b" kindref="member">occupancy_decay_integrator_</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249" refid="classnvblox_1_1Mapper_1aad6832f09bd04cb02294e695b413a737" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1aad6832f09bd04cb02294e695b413a737" kindref="member">color_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a8daec58bd998da4eb8088765a0910a2c" kindref="member">color_integrator_</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254" refid="classnvblox_1_1Mapper_1a0c15723ba2fcbaf3d7d7bb60c58a3d46" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a0c15723ba2fcbaf3d7d7bb60c58a3d46" kindref="member">mesh_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a28efd9479f0d56d55786781fa192fe16" kindref="member">mesh_integrator_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="257" refid="classnvblox_1_1Mapper_1a581c9039f51add2f2b7060a3cad8650d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a581c9039f51add2f2b7060a3cad8650d" kindref="member">esdf_integrator</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a23a52add7ff5d796f4f8793a15944ad5" kindref="member">esdf_integrator_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="classnvblox_1_1Mapper_1aa892d19c1aacc7997016eede53f9480c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1aa892d19c1aacc7997016eede53f9480c" kindref="member">tsdf_integrator</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a7e15ca7786977a76e02af4b046adb07a" kindref="member">tsdf_integrator_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="266" refid="classnvblox_1_1Mapper_1a90370075efaf0d689dd744611d0f04d7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a90370075efaf0d689dd744611d0f04d7" kindref="member">occupancy_integrator</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1ae00f90ecd686cd32280c345d30352e91" kindref="member">occupancy_integrator_</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272" refid="classnvblox_1_1Mapper_1a2a15370da009a96a9d2622b3e673e86a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a2a15370da009a96a9d2622b3e673e86a" kindref="member">lidar_tsdf_integrator</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a3042a5709b8b4e0076811a99463362a0" kindref="member">lidar_tsdf_integrator_</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278" refid="classnvblox_1_1Mapper_1ab4d14909b636dee941395a16220986a5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1ab4d14909b636dee941395a16220986a5" kindref="member">lidar_occupancy_integrator</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1ac5292a75b93acbd5fd362c11f1af6124" kindref="member">lidar_occupancy_integrator_</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284" refid="classnvblox_1_1Mapper_1a2958f788ca3fe23105127597ece29d0c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a2958f788ca3fe23105127597ece29d0c" kindref="member">occupancy_decay_integrator</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1ad7160cac09eef3ab0aaa71af69ed865b" kindref="member">occupancy_decay_integrator_</ref>;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289" refid="classnvblox_1_1Mapper_1a100b465829622223c8cb491ecec35364" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a100b465829622223c8cb491ecec35364" kindref="member">color_integrator</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a8daec58bd998da4eb8088765a0910a2c" kindref="member">color_integrator_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="292" refid="classnvblox_1_1Mapper_1a0c30ca8757d7d40cb1b321b73fde97b6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a0c30ca8757d7d40cb1b321b73fde97b6" kindref="member">mesh_integrator</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a28efd9479f0d56d55786781fa192fe16" kindref="member">mesh_integrator_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="295" refid="classnvblox_1_1Mapper_1a99727e155353bfbd114a802a6a619a9c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref>&amp;<sp/><ref refid="classnvblox_1_1Mapper_1a99727e155353bfbd114a802a6a619a9c" kindref="member">esdf_integrator</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a23a52add7ff5d796f4f8793a15944ad5" kindref="member">esdf_integrator_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="298" refid="classnvblox_1_1Mapper_1a9e5545891bd26620cb9b89de0d592893" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a9e5545891bd26620cb9b89de0d592893" kindref="member">voxel_size_m</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a88dce6cd70d308174c853278001f52f3" kindref="member">voxel_size_m_</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="classnvblox_1_1Mapper_1a2bd8b9aa8cabc3500001889f36e19d91" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a2bd8b9aa8cabc3500001889f36e19d91" kindref="member">saveMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
+<codeline lineno="306" refid="classnvblox_1_1Mapper_1acd53ca51db96f0966be0ce93dfbba626" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1acd53ca51db96f0966be0ce93dfbba626" kindref="member">saveMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename);</highlight></codeline>
+<codeline lineno="309" refid="classnvblox_1_1Mapper_1adf3b1b8152b0fa4ca590babe59d2134b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1adf3b1b8152b0fa4ca590babe59d2134b" kindref="member">loadMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
+<codeline lineno="310" refid="classnvblox_1_1Mapper_1a5cefba42ff24c129ef821646d54a8dd6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a5cefba42ff24c129ef821646d54a8dd6" kindref="member">loadMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="classnvblox_1_1Mapper_1ad22d53ee0244fc53a1c68a2104134824" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1ad22d53ee0244fc53a1c68a2104134824" kindref="member">saveMeshAsPly</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="classnvblox_1_1Mapper_1a774e7b4e739c7ba0205478dd37c17724" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a774e7b4e739c7ba0205478dd37c17724" kindref="member">saveEsdfAsPly</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="324" refid="classnvblox_1_1Mapper_1a88dce6cd70d308174c853278001f52f3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Mapper_1a88dce6cd70d308174c853278001f52f3" kindref="member">voxel_size_m_</ref>;</highlight></codeline>
+<codeline lineno="326" refid="classnvblox_1_1Mapper_1a39f35b50f41257dce6c717dc298375a5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Mapper_1a39f35b50f41257dce6c717dc298375a5" kindref="member">memory_type_</ref>;</highlight></codeline>
+<codeline lineno="329" refid="classnvblox_1_1Mapper_1a38f8a4a8093059726f40cf07de1c516b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" kindref="member">ProjectiveLayerType</ref><sp/><ref refid="classnvblox_1_1Mapper_1a38f8a4a8093059726f40cf07de1c516b" kindref="member">projective_layer_type_</ref><sp/>=<sp/><ref refid="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa50ef3837f3af039a7563f851682eab91" kindref="member">ProjectiveLayerType::kTsdf</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="classnvblox_1_1Mapper_1a6344f1be25d8d379cfb34e5aba75e4d6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33" kindref="member">EsdfMode</ref><sp/><ref refid="classnvblox_1_1Mapper_1a6344f1be25d8d379cfb34e5aba75e4d6" kindref="member">esdf_mode_</ref><sp/>=<sp/><ref refid="classnvblox_1_1Mapper_1a801d4a2603f63396c8e23ba408e7be33ac69d34d47bfd5244204004878441d53f" kindref="member">EsdfMode::kUnset</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="classnvblox_1_1Mapper_1a7e15ca7786977a76e02af4b046adb07a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1a7e15ca7786977a76e02af4b046adb07a" kindref="member">tsdf_integrator_</ref>;</highlight></codeline>
+<codeline lineno="338" refid="classnvblox_1_1Mapper_1a3042a5709b8b4e0076811a99463362a0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveTsdfIntegrator" kindref="compound">ProjectiveTsdfIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1a3042a5709b8b4e0076811a99463362a0" kindref="member">lidar_tsdf_integrator_</ref>;</highlight></codeline>
+<codeline lineno="339" refid="classnvblox_1_1Mapper_1ae00f90ecd686cd32280c345d30352e91" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1ae00f90ecd686cd32280c345d30352e91" kindref="member">occupancy_integrator_</ref>;</highlight></codeline>
+<codeline lineno="340" refid="classnvblox_1_1Mapper_1ac5292a75b93acbd5fd362c11f1af6124" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveOccupancyIntegrator" kindref="compound">ProjectiveOccupancyIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1ac5292a75b93acbd5fd362c11f1af6124" kindref="member">lidar_occupancy_integrator_</ref>;</highlight></codeline>
+<codeline lineno="341" refid="classnvblox_1_1Mapper_1ad7160cac09eef3ab0aaa71af69ed865b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1ad7160cac09eef3ab0aaa71af69ed865b" kindref="member">occupancy_decay_integrator_</ref>;</highlight></codeline>
+<codeline lineno="342" refid="classnvblox_1_1Mapper_1a8daec58bd998da4eb8088765a0910a2c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveColorIntegrator" kindref="compound">ProjectiveColorIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1a8daec58bd998da4eb8088765a0910a2c" kindref="member">color_integrator_</ref>;</highlight></codeline>
+<codeline lineno="343" refid="classnvblox_1_1Mapper_1a28efd9479f0d56d55786781fa192fe16" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1MeshIntegrator" kindref="compound">MeshIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1a28efd9479f0d56d55786781fa192fe16" kindref="member">mesh_integrator_</ref>;</highlight></codeline>
+<codeline lineno="344" refid="classnvblox_1_1Mapper_1a23a52add7ff5d796f4f8793a15944ad5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1EsdfIntegrator" kindref="compound">EsdfIntegrator</ref><sp/><ref refid="classnvblox_1_1Mapper_1a23a52add7ff5d796f4f8793a15944ad5" kindref="member">esdf_integrator_</ref>;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="classnvblox_1_1Mapper_1adc9d8b9b29e5366ae22974ab00d20902" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a0c56e5b887ead34e544a1cda691275d3" kindref="member">Index3DSet</ref><sp/><ref refid="classnvblox_1_1Mapper_1adc9d8b9b29e5366ae22974ab00d20902" kindref="member">mesh_blocks_to_update_</ref>;</highlight></codeline>
+<codeline lineno="351" refid="classnvblox_1_1Mapper_1aec9055230fbc2a396429397652c69513" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a0c56e5b887ead34e544a1cda691275d3" kindref="member">Index3DSet</ref><sp/><ref refid="classnvblox_1_1Mapper_1aec9055230fbc2a396429397652c69513" kindref="member">esdf_blocks_to_update_</ref>;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h"/>
+  </compounddef>
+</doxygen>

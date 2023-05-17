@@ -1,0 +1,5 @@
+<map id="nvblox::primitives::Plane" name="nvblox::primitives::Plane">
+<area shape="rect" id="node1" title="Primitive plane, given a center and a normal." alt="" coords="5,188,125,231"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1primitives_1_1Primitive.html" title="Base class for primitive objects." alt="" coords="5,96,125,139"/>
+<area shape="rect" id="node3" href="$structnvblox_1_1Color.html" title="Color, stored as 8&#45;bit RGBA, with helper functions for commonly&#45;used colors." alt="" coords="17,5,113,32"/>
+</map>

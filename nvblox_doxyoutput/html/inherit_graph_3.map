@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classnvblox_1_1BaseLayer.html" title="Base class for all layer objects." alt="" coords="5,47,133,73"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1BlockLayer.html" title=" " alt="" coords="181,5,377,48"/>
+<area shape="rect" id="node4" href="$classnvblox_1_1BlockLayer.html" title="A layer that contains blocks, which are stored in a hash map." alt="" coords="214,72,344,115"/>
+<area shape="rect" id="node3" href="$classnvblox_1_1VoxelBlockLayer.html" title="Specialization for BlockLayer that exclusively contains VoxelBlocks to make access easier." alt="" coords="425,5,588,48"/>
+</map>

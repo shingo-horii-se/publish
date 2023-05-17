@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1DepthImageBackProjector" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::DepthImageBackProjector</compoundname>
+    <includes refid="image__projector_8h" local="no">image_projector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1DepthImageBackProjector_1a50742d468d229b3506fef7ecb4de7fc9" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::DepthImageBackProjector::cuda_stream_</definition>
+        <argsstring></argsstring>
+        <name>cuda_stream_</name>
+        <qualifiedname>nvblox::DepthImageBackProjector::cuda_stream_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="57" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1DepthImageBackProjector_1a35074e6540a95068530312101d4e422a" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; int &gt;</type>
+        <definition>unified_ptr&lt;int&gt; nvblox::DepthImageBackProjector::pointcloud_size_device_</definition>
+        <argsstring></argsstring>
+        <name>pointcloud_size_device_</name>
+        <qualifiedname>nvblox::DepthImageBackProjector::pointcloud_size_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="59" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1DepthImageBackProjector_1a5affc0847a1cb866ee8dbdb2f662bb56" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; int &gt;</type>
+        <definition>unified_ptr&lt;int&gt; nvblox::DepthImageBackProjector::pointcloud_size_host_</definition>
+        <argsstring></argsstring>
+        <name>pointcloud_size_host_</name>
+        <qualifiedname>nvblox::DepthImageBackProjector::pointcloud_size_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="60" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1DepthImageBackProjector_1a4ce36daf02791e6d86a3c183d2c742bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::DepthImageBackProjector::DepthImageBackProjector</definition>
+        <argsstring>()</argsstring>
+        <name>DepthImageBackProjector</name>
+        <qualifiedname>nvblox::DepthImageBackProjector::DepthImageBackProjector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1DepthImageBackProjector_1a541191a8088ac4412c71c00f70b47217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::DepthImageBackProjector::~DepthImageBackProjector</definition>
+        <argsstring>()</argsstring>
+        <name>~DepthImageBackProjector</name>
+        <qualifiedname>nvblox::DepthImageBackProjector::~DepthImageBackProjector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="31" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1DepthImageBackProjector_1a5864f65df0fe29cfb2809af9b116bdb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::DepthImageBackProjector::backProjectOnGPU</definition>
+        <argsstring>(const DepthImage &amp;image, const Camera &amp;camera, Pointcloud *pointcloud_C_ptr, const float max_back_projection_distance_m=std::numeric_limits&lt; float &gt;::max())</argsstring>
+        <name>backProjectOnGPU</name>
+        <qualifiedname>nvblox::DepthImageBackProjector::backProjectOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> *</type>
+          <declname>pointcloud_C_ptr</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_back_projection_distance_m</declname>
+          <defval>std::numeric_limits&lt; float &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>Back projects a depth image to a pointcloud in the camera frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DepthImage to be back projected </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pinhole camera intrinsics model </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointcloud_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the output pointcloud. Must be in either device or unified memory. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_back_projection_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum depth that is allowed for back projection. Pixel with bigger depth are not included in the outptut pointcloud. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1DepthImageBackProjector_1aa5437b1fbb506f39b05ee63d4d78f7b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::DepthImageBackProjector::pointcloudToVoxelCentersOnGPU</definition>
+        <argsstring>(const Pointcloud &amp;pointcloud_L, float voxel_size, Pointcloud *voxel_center_pointcloud_L)</argsstring>
+        <name>pointcloudToVoxelCentersOnGPU</name>
+        <qualifiedname>nvblox::DepthImageBackProjector::pointcloudToVoxelCentersOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;</type>
+          <declname>pointcloud_L</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> *</type>
+          <declname>voxel_center_pointcloud_L</declname>
+        </param>
+        <briefdescription>
+<para>Takes a collection of points, and returns the center of the voxels that contain the points. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this function deletes duplicates, that is that the output pointcloud may have less points than the input pointcloud. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pointcloud_L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A collection of points in the Layer frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>voxel_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The side length of the voxels in the layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>voxel_center_pointcloud_L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Voxel centers stored as a pointcloud. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="52" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class which takes care of back projecting images on the GPU. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" line="28" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_projector.h" bodystart="28" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1DepthImageBackProjector_1a5864f65df0fe29cfb2809af9b116bdb0" prot="public" virt="non-virtual"><scope>nvblox::DepthImageBackProjector</scope><name>backProjectOnGPU</name></member>
+      <member refid="classnvblox_1_1DepthImageBackProjector_1a50742d468d229b3506fef7ecb4de7fc9" prot="private" virt="non-virtual"><scope>nvblox::DepthImageBackProjector</scope><name>cuda_stream_</name></member>
+      <member refid="classnvblox_1_1DepthImageBackProjector_1a4ce36daf02791e6d86a3c183d2c742bd" prot="public" virt="non-virtual"><scope>nvblox::DepthImageBackProjector</scope><name>DepthImageBackProjector</name></member>
+      <member refid="classnvblox_1_1DepthImageBackProjector_1a35074e6540a95068530312101d4e422a" prot="private" virt="non-virtual"><scope>nvblox::DepthImageBackProjector</scope><name>pointcloud_size_device_</name></member>
+      <member refid="classnvblox_1_1DepthImageBackProjector_1a5affc0847a1cb866ee8dbdb2f662bb56" prot="private" virt="non-virtual"><scope>nvblox::DepthImageBackProjector</scope><name>pointcloud_size_host_</name></member>
+      <member refid="classnvblox_1_1DepthImageBackProjector_1aa5437b1fbb506f39b05ee63d4d78f7b8" prot="public" virt="non-virtual"><scope>nvblox::DepthImageBackProjector</scope><name>pointcloudToVoxelCentersOnGPU</name></member>
+      <member refid="classnvblox_1_1DepthImageBackProjector_1a541191a8088ac4412c71c00f70b47217" prot="public" virt="non-virtual"><scope>nvblox::DepthImageBackProjector</scope><name>~DepthImageBackProjector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

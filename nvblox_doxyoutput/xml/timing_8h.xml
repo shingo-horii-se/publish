@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="timing_8h" kind="file" language="C++">
+    <compoundname>timing.h</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">map</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="nvtx__ranges_8h" local="yes">nvblox/utils/nvtx_ranges.h</includes>
+    <includedby refid="image__masker_8h" local="yes">image_masker.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>nvblox/utils/nvtx_ranges.h</label>
+        <link refid="nvtx__ranges_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>timing.h</label>
+        <link refid="timing_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>algorithm</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="14">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="4">
+        <label>limits</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>mutex</label>
+      </node>
+      <node id="10">
+        <label>nvToolsExt.h</label>
+      </node>
+      <node id="13">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="2">
+        <label>image_masker.h</label>
+        <link refid="image__masker_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>timing.h</label>
+        <link refid="timing_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1timing_1_1Accumulator" prot="public">nvblox::timing::Accumulator</innerclass>
+    <innerclass refid="structnvblox_1_1timing_1_1TimerMapValue" prot="public">nvblox::timing::TimerMapValue</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1DummyTimer" prot="public">nvblox::timing::DummyTimer</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1TimerChrono" prot="public">nvblox::timing::TimerChrono</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1TimerNvtx" prot="public">nvblox::timing::TimerNvtx</innerclass>
+    <innerclass refid="classnvblox_1_1timing_1_1Timing" prot="public">nvblox::timing::Timing</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1timing">nvblox::timing</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">----<sp/>Original<sp/>license<sp/>for<sp/>this<sp/>file:<sp/>----</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2012-2013<sp/>Simon<sp/>Lynen,<sp/>ASL,<sp/>ETH<sp/>Zurich,<sp/>Switzerland</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>You<sp/>can<sp/>contact<sp/>the<sp/>author<sp/>at<sp/>&lt;slynen<sp/>at<sp/>ethz<sp/>dot<sp/>ch&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Adapted<sp/>from<sp/>Paul<sp/>Furgale<sp/>Schweizer<sp/>Messer<sp/>sm_timing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvtx__ranges_8h" kindref="compound">nvblox/utils/nvtx_ranges.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">timing<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TimerChrono;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TimerNvtx;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DummyTimer;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>project<sp/>wide<sp/>typedef<sp/>defining<sp/>the<sp/>type<sp/>of<sp/>timer<sp/>to<sp/>be<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespacenvblox_1_1timing_1a17e85d7ed366461060ae1880e051a39a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerNvtx" kindref="compound">TimerNvtx</ref><sp/><ref refid="namespacenvblox_1_1timing_1a17e85d7ed366461060ae1880e051a39a" kindref="member">Timer</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Total,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="59" refid="classnvblox_1_1timing_1_1Accumulator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1timing_1_1Accumulator" kindref="compound">Accumulator</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61" refid="classnvblox_1_1timing_1_1Accumulator_1a20cb389c9500edcf2f108fa8ed151b7d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1a20cb389c9500edcf2f108fa8ed151b7d" kindref="member">Accumulator</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>window_samples_(0),</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalsamples_(0),</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window_sum_(0),</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum_(0),</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_(std::numeric_limits&lt;T&gt;::max()),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_(std::numeric_limits&lt;T&gt;::min())<sp/>{}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classnvblox_1_1timing_1_1Accumulator_1aae6eef2c552aaf67d8f5b9226522b5ac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1aae6eef2c552aaf67d8f5b9226522b5ac" kindref="member">Add</ref>(T<sp/>sample)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(window_samples_<sp/>&lt;<sp/>N)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>samples_[window_samples_++]<sp/>=<sp/>sample;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>window_sum_<sp/>+=<sp/>sample;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>T&amp;<sp/>oldest<sp/>=<sp/>samples_[window_samples_++<sp/>%<sp/>N];</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>window_sum_<sp/>+=<sp/>sample<sp/>-<sp/>oldest;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>oldest<sp/>=<sp/>sample;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>sum_<sp/>+=<sp/>sample;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>++totalsamples_;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sample<sp/>&gt;<sp/>max_)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>max_<sp/>=<sp/>sample;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sample<sp/>&lt;<sp/>min_)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>min_<sp/>=<sp/>sample;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classnvblox_1_1timing_1_1Accumulator_1ac99633030d9e35974739f6695c4594ed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1ac99633030d9e35974739f6695c4594ed" kindref="member">TotalSamples</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>totalsamples_;<sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1timing_1_1Accumulator_1a9d2a38c6dd40c2108d281e058631bb03" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1a9d2a38c6dd40c2108d281e058631bb03" kindref="member">Sum</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum_;<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classnvblox_1_1timing_1_1Accumulator_1a3b6e543c2a9d8244cb70184c7706462b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1a3b6e543c2a9d8244cb70184c7706462b" kindref="member">Mean</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum_<sp/>/<sp/>totalsamples_;<sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classnvblox_1_1timing_1_1Accumulator_1af589bb5932b5c9221650918b087af425" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1af589bb5932b5c9221650918b087af425" kindref="member">RollingMean</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>window_sum_<sp/>/<sp/>std::min(window_samples_,<sp/>N);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classnvblox_1_1timing_1_1Accumulator_1a81d353942ee1fbe40d476ea343b66dc6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1a81d353942ee1fbe40d476ea343b66dc6" kindref="member">Max</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max_;<sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classnvblox_1_1timing_1_1Accumulator_1af4b918ee12a40b75a5bede21fbedd4c3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1af4b918ee12a40b75a5bede21fbedd4c3" kindref="member">Min</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>min_;<sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classnvblox_1_1timing_1_1Accumulator_1add53828b757526c31361f3f32a6770c0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1add53828b757526c31361f3f32a6770c0" kindref="member">LazyVariance</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(window_samples_<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>var<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mean<sp/>=<sp/><ref refid="classnvblox_1_1timing_1_1Accumulator_1af589bb5932b5c9221650918b087af425" kindref="member">RollingMean</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>std::min(window_samples_,<sp/>N);<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>+=<sp/>(samples_[i]<sp/>-<sp/>mean)<sp/>*<sp/>(samples_[i]<sp/>-<sp/>mean);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>/=<sp/>std::min(window_samples_,<sp/>N);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>var;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window_samples_;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalsamples_;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>Total<sp/>window_sum_;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>Total<sp/>sum_;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>T<sp/>min_;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>T<sp/>max_;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>T<sp/>samples_[N];</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="structnvblox_1_1timing_1_1TimerMapValue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvblox_1_1timing_1_1TimerMapValue" kindref="compound">TimerMapValue</ref><sp/>{</highlight></codeline>
+<codeline lineno="126" refid="structnvblox_1_1timing_1_1TimerMapValue_1ad946642e41ace7e28ca9beea6d142313" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1timing_1_1TimerMapValue_1ad946642e41ace7e28ca9beea6d142313" kindref="member">TimerMapValue</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="structnvblox_1_1timing_1_1TimerMapValue_1ac0157a640242e7b8aad2b7589aa0aeda" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1Accumulator" kindref="compound">Accumulator&lt;double, double, 50&gt;</ref><sp/><ref refid="structnvblox_1_1timing_1_1TimerMapValue_1ac0157a640242e7b8aad2b7589aa0aeda" kindref="member">acc_</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classnvblox_1_1timing_1_1DummyTimer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1timing_1_1DummyTimer" kindref="compound">DummyTimer</ref><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139" refid="classnvblox_1_1timing_1_1DummyTimer_1a86016c96f11f24039296c81eabd223a3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1DummyTimer_1a86016c96f11f24039296c81eabd223a3" kindref="member">DummyTimer</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*handle*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*constructStopped*/</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="140" refid="classnvblox_1_1timing_1_1DummyTimer_1a054f6f077d4e40bec1c532bb67af8144" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1DummyTimer_1a054f6f077d4e40bec1c532bb67af8144" kindref="member">DummyTimer</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/></highlight><highlight class="comment">/*tag*/</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*constructStopped*/</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="142" refid="classnvblox_1_1timing_1_1DummyTimer_1ac151e7162a5723381aff8d5982819d9f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1DummyTimer_1ac151e7162a5723381aff8d5982819d9f" kindref="member">~DummyTimer</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classnvblox_1_1timing_1_1DummyTimer_1ab3c574b0924397c22e00b5f044d0a1ac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1DummyTimer_1ab3c574b0924397c22e00b5f044d0a1ac" kindref="member">Start</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="145" refid="classnvblox_1_1timing_1_1DummyTimer_1aa7bd2851e560255e778db86dd713e803" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1DummyTimer_1aa7bd2851e560255e778db86dd713e803" kindref="member">Stop</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="146" refid="classnvblox_1_1timing_1_1DummyTimer_1a9d33eab95d8eefad2b3581b86facf3e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1DummyTimer_1a9d33eab95d8eefad2b3581b86facf3e4" kindref="member">IsTiming</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classnvblox_1_1timing_1_1TimerChrono" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1timing_1_1TimerChrono" kindref="compound">TimerChrono</ref><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="151" refid="classnvblox_1_1timing_1_1TimerChrono_1aa1acf8a747a12a2d4d54ac8e5e493200" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerChrono_1aa1acf8a747a12a2d4d54ac8e5e493200" kindref="member">TimerChrono</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>constructStopped<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152" refid="classnvblox_1_1timing_1_1TimerChrono_1a8ec5f678bd603fcfc19709183bd7d58e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerChrono_1a8ec5f678bd603fcfc19709183bd7d58e" kindref="member">TimerChrono</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>constructStopped<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153" refid="classnvblox_1_1timing_1_1TimerChrono_1adfcecd4ed546bffdc896f8482652aa8a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1TimerChrono_1adfcecd4ed546bffdc896f8482652aa8a" kindref="member">~TimerChrono</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classnvblox_1_1timing_1_1TimerChrono_1a6464377cc1e622361088a302a7ef05e3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerChrono_1a6464377cc1e622361088a302a7ef05e3" kindref="member">Start</ref>();</highlight></codeline>
+<codeline lineno="156" refid="classnvblox_1_1timing_1_1TimerChrono_1aabffa76a23be222f53df7184408aa854" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerChrono_1aabffa76a23be222f53df7184408aa854" kindref="member">Stop</ref>();</highlight></codeline>
+<codeline lineno="157" refid="classnvblox_1_1timing_1_1TimerChrono_1ab34a33a6f4921db38f8dcdaaa40034ec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerChrono_1ab34a33a6f4921db38f8dcdaaa40034ec" kindref="member">IsTiming</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>std::chrono::time_point&lt;std::chrono::system_clock&gt;<sp/>time_;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>timing_;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle_;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classnvblox_1_1timing_1_1TimerNvtx" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1timing_1_1TimerNvtx" kindref="compound">TimerNvtx</ref><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168" refid="classnvblox_1_1timing_1_1TimerNvtx_1ad9eca1cd9a067baf1c0bb198962b07a3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerNvtx_1ad9eca1cd9a067baf1c0bb198962b07a3" kindref="member">TimerNvtx</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>constructStopped<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170" refid="classnvblox_1_1timing_1_1TimerNvtx_1a5513d05aec833a01fd54e231a7f90b33" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerNvtx_1a5513d05aec833a01fd54e231a7f90b33" kindref="member">TimerNvtx</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>constructStopped<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="classnvblox_1_1timing_1_1TimerNvtx_1accbc238f2a67d16bae5a73e782060371" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerNvtx_1accbc238f2a67d16bae5a73e782060371" kindref="member">Start</ref>();</highlight></codeline>
+<codeline lineno="173" refid="classnvblox_1_1timing_1_1TimerNvtx_1acd462efbdcb685b40600be48f0b14a69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerNvtx_1acd462efbdcb685b40600be48f0b14a69" kindref="member">Stop</ref>();</highlight></codeline>
+<codeline lineno="174" refid="classnvblox_1_1timing_1_1TimerNvtx_1ae577704e8b47a0832246780ac590d51a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1TimerNvtx_1ae577704e8b47a0832246780ac590d51a" kindref="member">IsTiming</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1NvtxRange" kindref="compound">NvtxRange</ref><sp/>nvtx_range_;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1TimerChrono" kindref="compound">TimerChrono</ref><sp/>timer_;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classnvblox_1_1timing_1_1Timing" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1timing_1_1Timing" kindref="compound">Timing</ref><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="183" refid="classnvblox_1_1timing_1_1Timing_1a1e3311bcf722efdfda9562969637d76c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>size_t&gt;<sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a1e3311bcf722efdfda9562969637d76c" kindref="member">map_t</ref>;</highlight></codeline>
+<codeline lineno="184" refid="classnvblox_1_1timing_1_1Timing_1a4a1afa96bac81e7430b7c4b5bbe09d93" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1timing_1_1TimerChrono" kindref="compound">TimerChrono</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Definition<sp/>of<sp/>static<sp/>functions<sp/>to<sp/>query<sp/>the<sp/>timers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classnvblox_1_1timing_1_1Timing_1a982027b3f916761f9e04a4e40aca94af" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a982027b3f916761f9e04a4e40aca94af" kindref="member">GetHandle</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="187" refid="classnvblox_1_1timing_1_1Timing_1aceabdf69013de6cd22698eb86f5c54ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classnvblox_1_1timing_1_1Timing_1aceabdf69013de6cd22698eb86f5c54ca" kindref="member">GetTag</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="188" refid="classnvblox_1_1timing_1_1Timing_1a7bcb1edee1db02facd119c6eb9ff8a0a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a7bcb1edee1db02facd119c6eb9ff8a0a" kindref="member">GetTotalSeconds</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="189" refid="classnvblox_1_1timing_1_1Timing_1a721be001d19595885435455e4a513199" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a721be001d19595885435455e4a513199" kindref="member">GetTotalSeconds</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="190" refid="classnvblox_1_1timing_1_1Timing_1a73dddbcd39077b1a69716cefd53fcf6b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a73dddbcd39077b1a69716cefd53fcf6b" kindref="member">GetMeanSeconds</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="191" refid="classnvblox_1_1timing_1_1Timing_1a5e067f79a285a9b39926fad14a40ef45" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a5e067f79a285a9b39926fad14a40ef45" kindref="member">GetMeanSeconds</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="192" refid="classnvblox_1_1timing_1_1Timing_1a766ec0d15c20b5bc12fd0968977d0c53" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a766ec0d15c20b5bc12fd0968977d0c53" kindref="member">GetNumSamples</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="193" refid="classnvblox_1_1timing_1_1Timing_1a8fc347d5731457824488c2f7400595e7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a8fc347d5731457824488c2f7400595e7" kindref="member">GetNumSamples</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="194" refid="classnvblox_1_1timing_1_1Timing_1a38cbdf32567dbec06ec7262903726e98" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a38cbdf32567dbec06ec7262903726e98" kindref="member">GetVarianceSeconds</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="195" refid="classnvblox_1_1timing_1_1Timing_1acae30b2afc5f28ae86d53e87846b2f3e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1acae30b2afc5f28ae86d53e87846b2f3e" kindref="member">GetVarianceSeconds</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="196" refid="classnvblox_1_1timing_1_1Timing_1ae1b1532abdd3fe9afc163a159c8e2b7f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1ae1b1532abdd3fe9afc163a159c8e2b7f" kindref="member">GetMinSeconds</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="197" refid="classnvblox_1_1timing_1_1Timing_1a7b85d997a0a3f1893520ff3eb3268fd3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a7b85d997a0a3f1893520ff3eb3268fd3" kindref="member">GetMinSeconds</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="198" refid="classnvblox_1_1timing_1_1Timing_1af114f8d0465481226904cc72282c18c5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1af114f8d0465481226904cc72282c18c5" kindref="member">GetMaxSeconds</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="199" refid="classnvblox_1_1timing_1_1Timing_1a78f21522cf6f20c8fd7532c05eae22dd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a78f21522cf6f20c8fd7532c05eae22dd" kindref="member">GetMaxSeconds</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="200" refid="classnvblox_1_1timing_1_1Timing_1a2323f9ba87a602127a6c40b502b50e3f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a2323f9ba87a602127a6c40b502b50e3f" kindref="member">GetHz</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle);</highlight></codeline>
+<codeline lineno="201" refid="classnvblox_1_1timing_1_1Timing_1a468e0be9d44ed04c301cb2b84ce02542" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a468e0be9d44ed04c301cb2b84ce02542" kindref="member">GetHz</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="202" refid="classnvblox_1_1timing_1_1Timing_1a4070501b1233e7e9b96c7d25ce5bff4f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a4070501b1233e7e9b96c7d25ce5bff4f" kindref="member">Print</ref>(std::ostream&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="203" refid="classnvblox_1_1timing_1_1Timing_1acb0770968c62cf2c28a2a12b1160279c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classnvblox_1_1timing_1_1Timing_1acb0770968c62cf2c28a2a12b1160279c" kindref="member">Print</ref>();</highlight></codeline>
+<codeline lineno="204" refid="classnvblox_1_1timing_1_1Timing_1a6e0262f132e1c57955e595a411be94c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a6e0262f132e1c57955e595a411be94c1" kindref="member">SecondsToTimeString</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>seconds);</highlight></codeline>
+<codeline lineno="205" refid="classnvblox_1_1timing_1_1Timing_1a4b0905276cb1511892a3d865168d85c0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a4b0905276cb1511892a3d865168d85c0" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="206" refid="classnvblox_1_1timing_1_1Timing_1aed0f02919a67d3ba87ab59ca4a2b44d9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a1e3311bcf722efdfda9562969637d76c" kindref="member">map_t</ref>&amp;<sp/><ref refid="classnvblox_1_1timing_1_1Timing_1aed0f02919a67d3ba87ab59ca4a2b44d9" kindref="member">GetTimers</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Instance().tagMap_;<sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddTime(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>handle,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>seconds);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1timing_1_1Timing" kindref="compound">Timing</ref>&amp;<sp/>Instance();</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1Timing" kindref="compound">Timing</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1Timing" kindref="compound">~Timing</ref>();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;TimerMapValue&gt;<sp/>list_t;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>list_t<sp/>timers_;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1timing_1_1Timing_1a1e3311bcf722efdfda9562969637d76c" kindref="member">map_t</ref><sp/>tagMap_;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>maxTagLength_;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>std::mutex<sp/>mutex_;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>timing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h"/>
+  </compounddef>
+</doxygen>

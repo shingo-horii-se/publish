@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespacenvblox_1_1image" kind="namespace" language="C++">
+    <compoundname>nvblox::image</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+        </templateparamlist>
+        <type>__host__ __device__ const ElementType &amp;</type>
+        <definition>__host__ __device__ const ElementType &amp; nvblox::image::access</definition>
+        <argsstring>(int row_idx, int col_idx, int cols, const ElementType *data)</argsstring>
+        <name>access</name>
+        <qualifiedname>nvblox::image::access</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>const ElementType *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="30" column="46" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1acb9e675ada3eb698de7860acaeffd266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+        </templateparamlist>
+        <type>__host__ __device__ ElementType &amp;</type>
+        <definition>__host__ __device__ ElementType &amp; nvblox::image::access</definition>
+        <argsstring>(int row_idx, int col_idx, int cols, ElementType *data)</argsstring>
+        <name>access</name>
+        <qualifiedname>nvblox::image::access</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>ElementType *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="36" column="40" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1abcbdda20bf866807f0f212c299ebc04f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+        </templateparamlist>
+        <type>__host__ __device__ const ElementType &amp;</type>
+        <definition>__host__ __device__ const ElementType &amp; nvblox::image::access</definition>
+        <argsstring>(int linear_idx, const ElementType *data)</argsstring>
+        <name>access</name>
+        <qualifiedname>nvblox::image::access</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>linear_idx</declname>
+        </param>
+        <param>
+          <type>const ElementType *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="41" column="46" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a37f3f899dc5530cfc85a735502b9de78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ElementType</type>
+          </param>
+        </templateparamlist>
+        <type>__host__ __device__ ElementType &amp;</type>
+        <definition>__host__ __device__ ElementType &amp; nvblox::image::access</definition>
+        <argsstring>(int linear_idx, ElementType *data)</argsstring>
+        <name>access</name>
+        <qualifiedname>nvblox::image::access</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>linear_idx</declname>
+        </param>
+        <param>
+          <type>ElementType *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="46" column="40" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1ab7160574c3a4157b3ecf27b613d825b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::image::maxGPU</definition>
+        <argsstring>(const DepthImage &amp;image)</argsstring>
+        <name>maxGPU</name>
+        <qualifiedname>nvblox::image::maxGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="218" column="7" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="218" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1aff3b0a87e56ae62762660c89f33abaca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::image::minGPU</definition>
+        <argsstring>(const DepthImage &amp;image)</argsstring>
+        <name>minGPU</name>
+        <qualifiedname>nvblox::image::minGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="219" column="7" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="219" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1aad82160765c41eff67ef16565ccf7759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t nvblox::image::maxGPU</definition>
+        <argsstring>(const MonoImage &amp;image)</argsstring>
+        <name>maxGPU</name>
+        <qualifiedname>nvblox::image::maxGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="220" column="9" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="220" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a7e9481b36247ca84bb48bf9f3a3b07e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t nvblox::image::minGPU</definition>
+        <argsstring>(const MonoImage &amp;image)</argsstring>
+        <name>minGPU</name>
+        <qualifiedname>nvblox::image::minGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="221" column="9" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="221" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a12437f588a0c5908bb7fc6c309db2b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; float, float &gt;</type>
+        <definition>std::pair&lt; float, float &gt; nvblox::image::minmaxGPU</definition>
+        <argsstring>(const DepthImage &amp;image)</argsstring>
+        <name>minmaxGPU</name>
+        <qualifiedname>nvblox::image::minmaxGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="222" column="11" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="222" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a391c87ce0f903ef39e704c7e005ad728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::elementWiseMinInPlaceGPU</definition>
+        <argsstring>(const float constant, DepthImage *image)</argsstring>
+        <name>elementWiseMinInPlaceGPU</name>
+        <qualifiedname>nvblox::image::elementWiseMinInPlaceGPU</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>constant</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="224" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="224" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1ad1fc3a3a6720e6d93ba2ed114a717b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::elementWiseMaxInPlaceGPU</definition>
+        <argsstring>(const float constant, DepthImage *image)</argsstring>
+        <name>elementWiseMaxInPlaceGPU</name>
+        <qualifiedname>nvblox::image::elementWiseMaxInPlaceGPU</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>constant</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="225" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="225" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1aeea282b62aac19dfa69d8cfe8555d592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::elementWiseMaxInPlaceGPU</definition>
+        <argsstring>(const DepthImage &amp;image_1, DepthImage *image_2)</argsstring>
+        <name>elementWiseMaxInPlaceGPU</name>
+        <qualifiedname>nvblox::image::elementWiseMaxInPlaceGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image_1</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>image_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="227" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="227" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a109844bc9847b9b6c9c266624cec9572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::elementWiseMaxInPlaceGPU</definition>
+        <argsstring>(const MonoImage &amp;image_1, MonoImage *image_2)</argsstring>
+        <name>elementWiseMaxInPlaceGPU</name>
+        <qualifiedname>nvblox::image::elementWiseMaxInPlaceGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>image_1</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> *</type>
+          <declname>image_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="228" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="228" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a17122dcaf0197be284bf10ed1e2127a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::elementWiseMinInPlaceGPU</definition>
+        <argsstring>(const DepthImage &amp;image_1, DepthImage *image_2)</argsstring>
+        <name>elementWiseMinInPlaceGPU</name>
+        <qualifiedname>nvblox::image::elementWiseMinInPlaceGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image_1</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>image_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="229" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="229" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a1e518c0e6fa77e0c5c04e93de44099e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::elementWiseMinInPlaceGPU</definition>
+        <argsstring>(const MonoImage &amp;image_1, MonoImage *image_2)</argsstring>
+        <name>elementWiseMinInPlaceGPU</name>
+        <qualifiedname>nvblox::image::elementWiseMinInPlaceGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>image_1</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> *</type>
+          <declname>image_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="230" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="230" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1aa874bb790d8e002f78bc9fa94f79e428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::elementWiseMultiplicationInPlaceGPU</definition>
+        <argsstring>(const float constant, DepthImage *image)</argsstring>
+        <name>elementWiseMultiplicationInPlaceGPU</name>
+        <qualifiedname>nvblox::image::elementWiseMultiplicationInPlaceGPU</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>constant</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="232" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="232" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1ab0bc1ede273f4bbcf973f2c1e4241d50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::getDifferenceImageGPU</definition>
+        <argsstring>(const DepthImage &amp;image_1, const DepthImage &amp;image_2, DepthImage *diff_image_ptr)</argsstring>
+        <name>getDifferenceImageGPU</name>
+        <qualifiedname>nvblox::image::getDifferenceImageGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image_1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image_2</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>diff_image_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="235" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="235" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1ad3290d1a2c091cb8c3ed90cddbccfe5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::getDifferenceImageGPU</definition>
+        <argsstring>(const ColorImage &amp;image_1, const ColorImage &amp;image_2, ColorImage *diff_image_ptr)</argsstring>
+        <name>getDifferenceImageGPU</name>
+        <qualifiedname>nvblox::image::getDifferenceImageGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> &amp;</type>
+          <declname>image_1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> &amp;</type>
+          <declname>image_2</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>diff_image_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="237" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="237" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1af945c907c59d5e15b039d2920ba543cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::getDifferenceImageGPU</definition>
+        <argsstring>(const MonoImage &amp;image_1, const MonoImage &amp;image_2, MonoImage *diff_image_ptr)</argsstring>
+        <name>getDifferenceImageGPU</name>
+        <qualifiedname>nvblox::image::getDifferenceImageGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>image_1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>image_2</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> *</type>
+          <declname>diff_image_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="239" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="239" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1_1image_1a7e578140ad57506aadfe29099e648861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::image::castGPU</definition>
+        <argsstring>(const DepthImage &amp;image_in, MonoImage *image_out_ptr)</argsstring>
+        <name>castGPU</name>
+        <qualifiedname>nvblox::image::castGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>image_in</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> *</type>
+          <declname>image_out_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="242" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" declline="242" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Row-major access to images (on host and device) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="27" column="1"/>
+  </compounddef>
+</doxygen>

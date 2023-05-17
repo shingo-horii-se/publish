@@ -1,0 +1,12 @@
+<map id="nvblox::ProjectiveOccupancyIntegrator" name="nvblox::ProjectiveOccupancyIntegrator">
+<area shape="rect" id="node1" title="A class performing occupancy intregration." alt="" coords="1003,172,1190,215"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1ProjectiveIntegrator.html" title=" " alt="" coords="602,123,778,165"/>
+<area shape="rect" id="node3" href="$classnvblox_1_1ViewCalculator.html" title="A class that calculates the blocks in the camera view, given intrinsic and extrinsic parameters." alt="" coords="236,5,387,32"/>
+<area shape="rect" id="node4" href="$classnvblox_1_1device__vector.html" title=" " alt="" coords="241,56,383,99"/>
+<area shape="rect" id="node5" href="$classnvblox_1_1unified__vector.html" title="Unified&#45;memory CUDA vector that should only be used on trivial types as the constructors and destruct..." alt="" coords="5,99,180,125"/>
+<area shape="rect" id="node8" href="$classnvblox_1_1host__vector.html" title=" " alt="" coords="246,123,377,165"/>
+<area shape="rect" id="node6" href="$classnvblox_1_1device__vector.html" title=" " alt="" coords="229,189,394,248"/>
+<area shape="rect" id="node7" href="$classnvblox_1_1unified__vector.html" title="Unified&#45;memory CUDA vector that should only be used on trivial types as the constructors and destruct..." alt="" coords="5,252,180,279"/>
+<area shape="rect" id="node9" href="$classnvblox_1_1host__vector.html" title=" " alt="" coords="229,272,394,331"/>
+<area shape="rect" id="node10" href="$classnvblox_1_1unified__ptr.html" title=" " alt="" coords="575,189,805,232"/>
+</map>

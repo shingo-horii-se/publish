@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1timing_1_1TimerMapValue" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::timing::TimerMapValue</compoundname>
+    <includes refid="timing_8h" local="no">timing.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1timing_1_1TimerMapValue_1ac0157a640242e7b8aad2b7589aa0aeda" prot="public" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1timing_1_1Accumulator" kindref="compound">Accumulator</ref>&lt; double, double, 50 &gt;</type>
+        <definition>Accumulator&lt;double, double, 50&gt; nvblox::timing::TimerMapValue::acc_</definition>
+        <argsstring></argsstring>
+        <name>acc_</name>
+        <qualifiedname>nvblox::timing::TimerMapValue::acc_</qualifiedname>
+        <briefdescription>
+<para>Create an accumulator with specified window size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="129" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnvblox_1_1timing_1_1TimerMapValue_1ad946642e41ace7e28ca9beea6d142313" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::TimerMapValue::TimerMapValue</definition>
+        <argsstring>()</argsstring>
+        <name>TimerMapValue</name>
+        <qualifiedname>nvblox::timing::TimerMapValue::TimerMapValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="126" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>nvblox::timing::Accumulator&lt; double, double, 50 &gt;</label>
+        <link refid="classnvblox_1_1timing_1_1Accumulator"/>
+      </node>
+      <node id="1">
+        <label>nvblox::timing::TimerMapValue</label>
+        <link refid="structnvblox_1_1timing_1_1TimerMapValue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>acc_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="125" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="125" bodyend="130"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1timing_1_1TimerMapValue_1ac0157a640242e7b8aad2b7589aa0aeda" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerMapValue</scope><name>acc_</name></member>
+      <member refid="structnvblox_1_1timing_1_1TimerMapValue_1ad946642e41ace7e28ca9beea6d142313" prot="public" virt="non-virtual"><scope>nvblox::timing::TimerMapValue</scope><name>TimerMapValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

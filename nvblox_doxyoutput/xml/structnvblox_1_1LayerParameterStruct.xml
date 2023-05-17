@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1LayerParameterStruct" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::LayerParameterStruct</compoundname>
+    <includes refid="layer__type__register_8h" local="no">layer_type_register.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1LayerParameterStruct_1af29cefd450c88992a1b450810b84a13e" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; nvblox::LayerParameterStruct::string_params</definition>
+        <argsstring></argsstring>
+        <name>string_params</name>
+        <qualifiedname>nvblox::LayerParameterStruct::string_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="31" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1LayerParameterStruct_1aeda22c14d05be3ea302d6302c4c0b1e1" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, int &gt;</type>
+        <definition>std::map&lt;std::string, int&gt; nvblox::LayerParameterStruct::int_params</definition>
+        <argsstring></argsstring>
+        <name>int_params</name>
+        <qualifiedname>nvblox::LayerParameterStruct::int_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="32" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1LayerParameterStruct_1a2a2791abc284b197ee5d5f03cc223d80" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, float &gt;</type>
+        <definition>std::map&lt;std::string, float&gt; nvblox::LayerParameterStruct::float_params</definition>
+        <argsstring></argsstring>
+        <name>float_params</name>
+        <qualifiedname>nvblox::LayerParameterStruct::float_params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="33" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct of various layer parameters of different types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="30" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" bodystart="30" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1LayerParameterStruct_1a2a2791abc284b197ee5d5f03cc223d80" prot="public" virt="non-virtual"><scope>nvblox::LayerParameterStruct</scope><name>float_params</name></member>
+      <member refid="structnvblox_1_1LayerParameterStruct_1aeda22c14d05be3ea302d6302c4c0b1e1" prot="public" virt="non-virtual"><scope>nvblox::LayerParameterStruct</scope><name>int_params</name></member>
+      <member refid="structnvblox_1_1LayerParameterStruct_1af29cefd450c88992a1b450810b84a13e" prot="public" virt="non-virtual"><scope>nvblox::LayerParameterStruct</scope><name>string_params</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="nvblox::MapperBase" name="nvblox::MapperBase">
+<area shape="rect" id="node1" title="The mapper classes wraps layers and integrators together." alt="" coords="5,96,144,123"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1LayerCake.html" title="Holds a collection of layers." alt="" coords="11,5,138,32"/>
+</map>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1ColorVoxel" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::ColorVoxel</compoundname>
+    <includes refid="voxels_8h" local="no">voxels.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1ColorVoxel_1a2765c0ad483bd6e45e0593399c656726" prot="public" static="no" mutable="no">
+        <type><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color nvblox::ColorVoxel::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>nvblox::ColorVoxel::color</qualifiedname>
+        <initializer>= <ref refid="structnvblox_1_1Color_1a5ff3434954f4092a68ebb2b610651862" kindref="member">Color::Gray</ref>()</initializer>
+        <briefdescription>
+<para>The color! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="51" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1ColorVoxel_1a066e17540c2b0ffa21e5d64ca8b296d6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ColorVoxel::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>nvblox::ColorVoxel::weight</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>How many observations/how confident we are in this observation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="53" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Voxel that stores the color near the surface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>nvblox::Color</label>
+        <link refid="structnvblox_1_1Color"/>
+      </node>
+      <node id="1">
+        <label>nvblox::ColorVoxel</label>
+        <link refid="structnvblox_1_1ColorVoxel"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="49" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="49" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1ColorVoxel_1a2765c0ad483bd6e45e0593399c656726" prot="public" virt="non-virtual"><scope>nvblox::ColorVoxel</scope><name>color</name></member>
+      <member refid="structnvblox_1_1ColorVoxel_1a066e17540c2b0ffa21e5d64ca8b296d6" prot="public" virt="non-virtual"><scope>nvblox::ColorVoxel</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

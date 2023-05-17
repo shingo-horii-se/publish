@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_9100ed345a5641a2e3994fa984560cc8" kind="dir">
+    <compoundname>internal</compoundname>
+    <innerfile refid="error__check_8h">error_check.h</innerfile>
+    <innerfile refid="warmup__cuda_8h">warmup_cuda.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/internal/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1primitives_1_1Cube" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::primitives::Cube</compoundname>
+    <basecompoundref refid="classnvblox_1_1primitives_1_1Primitive" prot="public" virt="non-virtual">nvblox::primitives::Primitive</basecompoundref>
+    <includes refid="primitives_8h" local="no">primitives.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1primitives_1_1Cube_1ada916a5899e3c4b91615415e5e48f970" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>Vector3f nvblox::primitives::Cube::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>nvblox::primitives::Cube::size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" line="122" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Cube_1a8dadf0760d043777b141d7ed64bf5ca6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::primitives::Cube::Cube</definition>
+        <argsstring>(const Vector3f &amp;center, const Vector3f &amp;size)</argsstring>
+        <name>Cube</name>
+        <qualifiedname>nvblox::primitives::Cube::Cube</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" line="110" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" bodystart="110" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Cube_1a3ed7744dd34e509e13cbd9ff847d0c5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::primitives::Cube::Cube</definition>
+        <argsstring>(const Vector3f &amp;center, const Vector3f &amp;size, const Color &amp;color)</argsstring>
+        <name>Cube</name>
+        <qualifiedname>nvblox::primitives::Cube::Cube</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" line="112" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" bodystart="112" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Cube_1a3f2edc2de530b51b0fafff73cd56ddc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>virtual float nvblox::primitives::Cube::getDistanceToPoint</definition>
+        <argsstring>(const Vector3f &amp;point) const override</argsstring>
+        <name>getDistanceToPoint</name>
+        <qualifiedname>nvblox::primitives::Cube::getDistanceToPoint</qualifiedname>
+        <reimplements refid="classnvblox_1_1primitives_1_1Primitive_1a5e492c5045ad4af2d0249a7ef2a30fac">getDistanceToPoint</reimplements>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Map-building accessors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" line="115" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Cube_1a3612d9d58058a980371478242e262147" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool nvblox::primitives::Cube::getRayIntersection</definition>
+        <argsstring>(const Vector3f &amp;ray_origin, const Vector3f &amp;ray_direction, float max_dist, Vector3f *intersect_point, float *intersect_dist) const override</argsstring>
+        <name>getRayIntersection</name>
+        <qualifiedname>nvblox::primitives::Cube::getRayIntersection</qualifiedname>
+        <reimplements refid="classnvblox_1_1primitives_1_1Primitive_1a77aa4b9e108e1a375842503c5ed26da4">getRayIntersection</reimplements>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>ray_origin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>ray_direction</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_dist</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> *</type>
+          <declname>intersect_point</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>intersect_dist</declname>
+        </param>
+        <briefdescription>
+<para>Raycasting accessors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" line="116" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref> cube, given a center and an X,Y,Z size (can be a rectangular prism). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>nvblox::primitives::Cube</label>
+        <link refid="classnvblox_1_1primitives_1_1Cube"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::primitives::Primitive</label>
+        <link refid="classnvblox_1_1primitives_1_1Primitive"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>nvblox::Color</label>
+        <link refid="structnvblox_1_1Color"/>
+      </node>
+      <node id="1">
+        <label>nvblox::primitives::Cube</label>
+        <link refid="classnvblox_1_1primitives_1_1Cube"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::primitives::Primitive</label>
+        <link refid="classnvblox_1_1primitives_1_1Primitive"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>color_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" line="108" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/primitives.h" bodystart="108" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1a4b208bc445ace9aa510a2738d867236c" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>center_</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1a88d9d6e6d65d6a0ed18a89a401430db6" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>color_</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Cube_1a8dadf0760d043777b141d7ed64bf5ca6" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>Cube</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Cube_1a3ed7744dd34e509e13cbd9ff847d0c5f" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>Cube</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1add1c77720334dd4a21506d16a3b6707a" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>getColor</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Cube_1a3f2edc2de530b51b0fafff73cd56ddc4" prot="public" virt="virtual"><scope>nvblox::primitives::Cube</scope><name>getDistanceToPoint</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Cube_1a3612d9d58058a980371478242e262147" prot="public" virt="virtual"><scope>nvblox::primitives::Cube</scope><name>getRayIntersection</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1ac696a6386a18119da7ed6c0446348849" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>getType</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1a3bb169500ef707730a21a347aa72fbc9" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>kEpsilon</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1a614e5287faae6e2ed3552ecc8ca9b608" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>Primitive</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1a7ea24917d48ae929ab5514c6ca882a56" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>Primitive</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Cube_1ada916a5899e3c4b91615415e5e48f970" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>size_</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1ace9c5fe0e0d5cd2ad10e9ba63cab3346" prot="public" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>Type</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1a7b9f875c5f478300cb0a4354b7b1a4be" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Cube</scope><name>type_</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Primitive_1a5e8237802c0e2852ab43b58250e1fdab" prot="public" virt="virtual"><scope>nvblox::primitives::Cube</scope><name>~Primitive</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

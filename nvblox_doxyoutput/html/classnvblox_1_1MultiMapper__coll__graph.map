@@ -1,0 +1,9 @@
+<map id="nvblox::MultiMapper" name="nvblox::MultiMapper">
+<area shape="rect" id="node1" title="The MultiMapper class is composed of two standard Mappers." alt="" coords="619,84,755,111"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1ImageMasker.html" title="A class to mask images based on a binary mask." alt="" coords="277,5,421,32"/>
+<area shape="rect" id="node3" href="$classnvblox_1_1Image.html" title=" " alt="" coords="275,88,423,115"/>
+<area shape="rect" id="node4" href="$classnvblox_1_1ImageBase.html" title=" " alt="" coords="5,80,144,123"/>
+<area shape="rect" id="node5" href="$classnvblox_1_1unified__ptr.html" title=" " alt="" coords="12,149,137,192"/>
+<area shape="rect" id="node6" href="$classnvblox_1_1Image.html" title=" " alt="" coords="272,225,426,252"/>
+<area shape="rect" id="node7" href="$classnvblox_1_1ImageBase.html" title=" " alt="" coords="5,217,144,260"/>
+</map>

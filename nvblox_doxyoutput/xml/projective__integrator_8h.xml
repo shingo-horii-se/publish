@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="projective__integrator_8h" kind="file" language="C++">
+    <compoundname>projective_integrator.h</compoundname>
+    <includes refid="gpu__layer__view_8h" local="yes">nvblox/gpu_hash/gpu_layer_view.h</includes>
+    <includes refid="view__calculator_8h" local="yes">nvblox/integrators/view_calculator.h</includes>
+    <includes refid="common__names_8h" local="yes">nvblox/map/common_names.h</includes>
+    <includes refid="camera_8h" local="yes">nvblox/sensors/camera.h</includes>
+    <includes refid="image_8h" local="yes">nvblox/sensors/image.h</includes>
+    <includes refid="lidar_8h" local="yes">nvblox/sensors/lidar.h</includes>
+    <includes local="yes">nvblox/integrators/internal/impl/projective_integrator_impl.h</includes>
+    <includedby refid="projective__occupancy__integrator_8h" local="yes">projective_occupancy_integrator.h</includedby>
+    <includedby refid="projective__tsdf__integrator_8h" local="yes">projective_tsdf_integrator.h</includedby>
+    <incdepgraph>
+      <node id="22">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>nvblox/core/hash.h</label>
+        <link refid="hash_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>nvblox/core/iterator.h</label>
+        <link refid="iterator_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>nvblox/core/unified_ptr.h</label>
+        <link refid="unified__ptr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>nvblox/core/unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox/gpu_hash/gpu_layer_view.h</label>
+        <link refid="gpu__layer__view_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox/integrators/view_calculator.h</label>
+        <link refid="view__calculator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>nvblox/map/blox.h</label>
+        <link refid="blox_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>nvblox/map/common_names.h</label>
+        <link refid="common__names_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>nvblox/map/layer.h</label>
+        <link refid="layer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>nvblox/map/voxels.h</label>
+        <link refid="voxels_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>nvblox/mesh/mesh_block.h</label>
+        <link refid="mesh__block_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>nvblox/sensors/camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>nvblox/sensors/image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>nvblox/sensors/lidar.h</label>
+        <link refid="lidar_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="9">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="26">
+        <label>atomic</label>
+      </node>
+      <node id="24">
+        <label>cmath</label>
+      </node>
+      <node id="16">
+        <label>cstddef</label>
+      </node>
+      <node id="7">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="37">
+        <label>functional</label>
+      </node>
+      <node id="14">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="17">
+        <label>iterator</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="27">
+        <label>nvblox/core/internal/impl/unified_ptr_impl.h</label>
+      </node>
+      <node id="18">
+        <label>nvblox/core/internal/impl/unified_vector_impl.h</label>
+      </node>
+      <node id="41">
+        <label>nvblox/core/traits.h</label>
+      </node>
+      <node id="44">
+        <label>nvblox/integrators/internal/impl/projective_integrator_impl.h</label>
+      </node>
+      <node id="34">
+        <label>nvblox/map/internal/impl/blox_impl.h</label>
+      </node>
+      <node id="42">
+        <label>nvblox/map/internal/impl/layer_impl.h</label>
+      </node>
+      <node id="20">
+        <label>nvblox/sensors/internal/impl/camera_impl.h</label>
+      </node>
+      <node id="28">
+        <label>nvblox/sensors/internal/impl/image_impl.h</label>
+      </node>
+      <node id="30">
+        <label>nvblox/sensors/internal/impl/lidar_impl.h</label>
+      </node>
+      <node id="23">
+        <label>stdint.h</label>
+      </node>
+      <node id="12">
+        <label>type_traits</label>
+      </node>
+      <node id="38">
+        <label>unordered_map</label>
+      </node>
+      <node id="39">
+        <label>unordered_set</label>
+      </node>
+      <node id="40">
+        <label>utility</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1ProjectiveIntegrator" prot="public">nvblox::ProjectiveIntegrator</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpu__layer__view_8h" kindref="compound">nvblox/gpu_hash/gpu_layer_view.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="view__calculator_8h" kindref="compound">nvblox/integrators/view_calculator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="common__names_8h" kindref="compound">nvblox/map/common_names.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="camera_8h" kindref="compound">nvblox/sensors/camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="image_8h" kindref="compound">nvblox/sensors/image.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lidar_8h" kindref="compound">nvblox/sensors/lidar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>VoxelType&gt;</highlight></codeline>
+<codeline lineno="35" refid="classnvblox_1_1ProjectiveIntegrator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ProjectiveIntegrator" kindref="compound">ProjectiveIntegrator</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="classnvblox_1_1ProjectiveIntegrator_1a11824e66f6f77396315a759c7c946da2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a11824e66f6f77396315a759c7c946da2" kindref="member">ProjectiveIntegrator</ref>(){};</highlight></codeline>
+<codeline lineno="38" refid="classnvblox_1_1ProjectiveIntegrator_1a60af0a01dc624076a38f33a38cb7f068" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a60af0a01dc624076a38f33a38cb7f068" kindref="member">~ProjectiveIntegrator</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UpdateFunctor&gt;</highlight></codeline>
+<codeline lineno="41" refid="classnvblox_1_1ProjectiveIntegrator_1a5a79a82841cf74b1881c2eebb0608c2a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a5a79a82841cf74b1881c2eebb0608c2a" kindref="member">integrateFrame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>lidar,<sp/>UpdateFunctor*<sp/>op,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer&lt;VoxelType&gt;</ref>*<sp/>layer,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Index3D&gt;*<sp/>updated_blocks);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UpdateFunctor&gt;</highlight></codeline>
+<codeline lineno="47" refid="classnvblox_1_1ProjectiveIntegrator_1acbdde4a683d85282bea543277dae162d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1acbdde4a683d85282bea543277dae162d" kindref="member">integrateFrame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref>&amp;<sp/>lidar,<sp/>UpdateFunctor*<sp/>op,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer&lt;VoxelType&gt;</ref>*<sp/>layer,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Index3D&gt;*<sp/>updated_blocks);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classnvblox_1_1ProjectiveIntegrator_1a5889ffd86c8b7f6de7ca0dda4626941b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a5889ffd86c8b7f6de7ca0dda4626941b" kindref="member">lidar_linear_interpolation_max_allowable_difference_vox</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classnvblox_1_1ProjectiveIntegrator_1a60822d33ffde1ec1f13f9b4637a4d21b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a60822d33ffde1ec1f13f9b4637a4d21b" kindref="member">lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classnvblox_1_1ProjectiveIntegrator_1ab3521a2f936ec57b5a4200e16ce6bda7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1ab3521a2f936ec57b5a4200e16ce6bda7" kindref="member">lidar_linear_interpolation_max_allowable_difference_vox</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classnvblox_1_1ProjectiveIntegrator_1a72987163d56ee9e10cdf573ed8d7d4c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a72987163d56ee9e10cdf573ed8d7d4c1" kindref="member">lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" kindref="member">truncation_distance_vox</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1ProjectiveIntegrator_1accb2f21f48358e91ce107a3d6d36d5cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1accb2f21f48358e91ce107a3d6d36d5cc" kindref="member">get_truncation_distance_m</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>voxel_size)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" kindref="member">max_integration_distance_m</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classnvblox_1_1ProjectiveIntegrator_1a3e7326d7fe420d1ea15dd85e53da5e4f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a3e7326d7fe420d1ea15dd85e53da5e4f" kindref="member">truncation_distance_vox</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" kindref="member">truncation_distance_vox</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classnvblox_1_1ProjectiveIntegrator_1af43add6af124e2175b15fcee9852fbb6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1af43add6af124e2175b15fcee9852fbb6" kindref="member">max_integration_distance_m</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" kindref="member">max_integration_distance_m</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classnvblox_1_1ProjectiveIntegrator_1a7482a8d92355cf239c9f22c694e1b0a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref>&amp;<sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a7482a8d92355cf239c9f22c694e1b0a2" kindref="member">view_calculator</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112" refid="classnvblox_1_1ProjectiveIntegrator_1a881ffee867c9e61e9b204b8696c1616c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref>&amp;<sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a881ffee867c9e61e9b204b8696c1616c" kindref="member">view_calculator</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Given<sp/>a<sp/>set<sp/>of<sp/>blocks<sp/>in<sp/>view<sp/>(block_indices)<sp/>perform<sp/>TSDF<sp/>updates<sp/>on<sp/>all</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>voxels<sp/>within<sp/>these<sp/>blocks<sp/>on<sp/>the<sp/>GPU.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UpdateFunctor&gt;</highlight></codeline>
+<codeline lineno="118" refid="classnvblox_1_1ProjectiveIntegrator_1a5189c1fa826a6add2ad6842edf8b7a9d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a5189c1fa826a6add2ad6842edf8b7a9d" kindref="member">integrateBlocks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_C_L,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref>&amp;<sp/>camera,<sp/>UpdateFunctor*<sp/>op,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer&lt;VoxelType&gt;</ref>*<sp/>layer_ptr);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UpdateFunctor&gt;</highlight></codeline>
+<codeline lineno="122" refid="classnvblox_1_1ProjectiveIntegrator_1aebd92b43838a659515c01aeb3a98adb6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1aebd92b43838a659515c01aeb3a98adb6" kindref="member">integrateBlocks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_C_L,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref>&amp;<sp/>lidar,<sp/>UpdateFunctor*<sp/>op,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer&lt;VoxelType&gt;</ref>*<sp/>layer_ptr);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SensorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UpdateFunctor&gt;</highlight></codeline>
+<codeline lineno="127" refid="classnvblox_1_1ProjectiveIntegrator_1acff287881f0654b8519615e4bc654e6d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1acff287881f0654b8519615e4bc654e6d" kindref="member">integrateBlocksTemplate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Index3D&gt;&amp;<sp/>block_indices,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SensorType&amp;<sp/>sensor,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateFunctor*<sp/>op,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer&lt;VoxelType&gt;</ref>*<sp/>layer_ptr);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SensorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UpdateFunctor&gt;</highlight></codeline>
+<codeline lineno="134" refid="classnvblox_1_1ProjectiveIntegrator_1a6002d1b7e08c96c0ddce0cdb807b2a68" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a6002d1b7e08c96c0ddce0cdb807b2a68" kindref="member">integrateFrameTemplate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>depth_frame,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref>&amp;<sp/>T_L_C,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SensorType&amp;<sp/>sensor,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateFunctor*<sp/>op,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer&lt;VoxelType&gt;</ref>*<sp/>layer,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Index3D&gt;*<sp/>updated_blocks<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>child<sp/>integrator<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classnvblox_1_1ProjectiveIntegrator_1ac0983f4ae5c625f853e94bb8e19b26b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1ac0983f4ae5c625f853e94bb8e19b26b3" kindref="member">getIntegratorName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="142" refid="classnvblox_1_1ProjectiveIntegrator_1a964fc74a99849b9e2fbc6a067dd50664" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a964fc74a99849b9e2fbc6a067dd50664" kindref="member">integrator_name_initialized_</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143" refid="classnvblox_1_1ProjectiveIntegrator_1ac1732369626a2778e3f7e919b596d952" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1ac1732369626a2778e3f7e919b596d952" kindref="member">integrator_name_</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Params</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE(alexmillane):<sp/>See<sp/>the<sp/>getters<sp/>above<sp/>for<sp/>a<sp/>description.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="classnvblox_1_1ProjectiveIntegrator_1a20fe96e120d502b6c0e32240ce00a067" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a20fe96e120d502b6c0e32240ce00a067" kindref="member">lidar_linear_interpolation_max_allowable_difference_vox_</ref><sp/>=<sp/>2.0f;</highlight></codeline>
+<codeline lineno="148" refid="classnvblox_1_1ProjectiveIntegrator_1a92a74e575dfb4ce597aee822ef25b49f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a92a74e575dfb4ce597aee822ef25b49f" kindref="member">lidar_nearest_interpolation_max_allowable_dist_to_ray_vox_</ref><sp/>=<sp/>0.5f;</highlight></codeline>
+<codeline lineno="149" refid="classnvblox_1_1ProjectiveIntegrator_1a2629577c63dd028ec8668f0b64ef0a04" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a2629577c63dd028ec8668f0b64ef0a04" kindref="member">truncation_distance_vox_</ref><sp/>=<sp/>4.0f;</highlight></codeline>
+<codeline lineno="150" refid="classnvblox_1_1ProjectiveIntegrator_1a7d7b820b9b32e15b0be6bce986c9bd34" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a7d7b820b9b32e15b0be6bce986c9bd34" kindref="member">max_integration_distance_m_</ref><sp/>=<sp/>7.0f;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Frustum<sp/>calculation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classnvblox_1_1ProjectiveIntegrator_1a4767efff88bc6e7db81d0e11687d0085" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a4767efff88bc6e7db81d0e11687d0085" kindref="member">view_calculator_</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Blocks<sp/>to<sp/>integrate<sp/>on<sp/>the<sp/>current<sp/>call<sp/>(indices<sp/>and<sp/>pointers)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE(alexmillane):<sp/>We<sp/>have<sp/>one<sp/>pinned<sp/>host<sp/>and<sp/>one<sp/>device<sp/>vector<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>transfer<sp/>between<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="classnvblox_1_1ProjectiveIntegrator_1ac05344feed356684ce3dea241aebdf91" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector&lt;Index3D&gt;</ref><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1ac05344feed356684ce3dea241aebdf91" kindref="member">block_indices_device_</ref>;</highlight></codeline>
+<codeline lineno="159" refid="classnvblox_1_1ProjectiveIntegrator_1a37175688508234a1a692c224fcc6ad0d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector&lt;VoxelBlock&lt;VoxelType&gt;</ref>*&gt;<sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a37175688508234a1a692c224fcc6ad0d" kindref="member">block_ptrs_device_</ref>;</highlight></codeline>
+<codeline lineno="160" refid="classnvblox_1_1ProjectiveIntegrator_1a0c0a9d819f5242dbac6d77bcaf68a725" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector&lt;Index3D&gt;</ref><sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1a0c0a9d819f5242dbac6d77bcaf68a725" kindref="member">block_indices_host_</ref>;</highlight></codeline>
+<codeline lineno="161" refid="classnvblox_1_1ProjectiveIntegrator_1ab91e95bc2ff75620300e5397c07fa6f9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector&lt;VoxelBlock&lt;VoxelType&gt;</ref>*&gt;<sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1ab91e95bc2ff75620300e5397c07fa6f9" kindref="member">block_ptrs_host_</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CUDA<sp/>stream<sp/>to<sp/>process<sp/>ingration<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classnvblox_1_1ProjectiveIntegrator_1ab958154f4eb951207d2d38a4f9aecc47" refkind="member"><highlight class="normal"><sp/><sp/>cudaStream_t<sp/><ref refid="classnvblox_1_1ProjectiveIntegrator_1ab958154f4eb951207d2d38a4f9aecc47" kindref="member">integration_stream_</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nvblox/integrators/internal/impl/projective_integrator_impl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h"/>
+  </compounddef>
+</doxygen>

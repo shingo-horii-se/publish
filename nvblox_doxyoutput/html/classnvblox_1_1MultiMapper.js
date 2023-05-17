@@ -1,0 +1,28 @@
+var classnvblox_1_1MultiMapper =
+[
+    [ "MultiMapper", "classnvblox_1_1MultiMapper.html#af48c197947de9a00298e89340244b2d5", null ],
+    [ "~MultiMapper", "classnvblox_1_1MultiMapper.html#ad608056fd34250684df1bd8b2a9b55c0", null ],
+    [ "getLastColorFrameMasked", "classnvblox_1_1MultiMapper.html#aa84b3e55eb307d16bdfc81b2f3d219ea", null ],
+    [ "getLastColorFrameMaskOverlay", "classnvblox_1_1MultiMapper.html#aa42ee2432a1913ecc499c2044eb91fb2", null ],
+    [ "getLastColorFrameUnmasked", "classnvblox_1_1MultiMapper.html#ae088c707c3d437b58d7627513703c5bb", null ],
+    [ "getLastDepthFrameMasked", "classnvblox_1_1MultiMapper.html#a224b4781bbf329794ec49f1d49455b0a", null ],
+    [ "getLastDepthFrameMaskOverlay", "classnvblox_1_1MultiMapper.html#a25504604996c275cef9ba7b5f28d8cd2", null ],
+    [ "getLastDepthFrameUnmasked", "classnvblox_1_1MultiMapper.html#a50d95486c91529fbcb4d9a1b29fff08e", null ],
+    [ "integrateColor", "classnvblox_1_1MultiMapper.html#a99068f07edc808219d301c73f82aa399", null ],
+    [ "integrateDepth", "classnvblox_1_1MultiMapper.html#ac0c8fa53b5bd34a7bf022caae3e6b3d2", null ],
+    [ "masked_mapper", "classnvblox_1_1MultiMapper.html#a5e76b84bc24f39a0694eebadfac90961", null ],
+    [ "masked_mapper", "classnvblox_1_1MultiMapper.html#a4fc7f709117a0d8fd58e76b8da57513e", null ],
+    [ "setDepthMaskedImageInvalidPixel", "classnvblox_1_1MultiMapper.html#a8f0a61cfa2d78a915a0cd862a9a952a9", null ],
+    [ "setDepthUnmaskedImageInvalidPixel", "classnvblox_1_1MultiMapper.html#a52a17d6e87c0b178db6be3500210fe40", null ],
+    [ "unmasked_mapper", "classnvblox_1_1MultiMapper.html#a3e86460d83a4c6ac142c3e25e72ac53f", null ],
+    [ "unmasked_mapper", "classnvblox_1_1MultiMapper.html#a8668b72dabf818f9b862a040aaa533ba", null ],
+    [ "color_frame_masked_", "classnvblox_1_1MultiMapper.html#a540e90800f9a279003a08caf50ef76d2", null ],
+    [ "color_frame_unmasked_", "classnvblox_1_1MultiMapper.html#a456e3eef8cf952e6e4b24cbc86ce9398", null ],
+    [ "depth_frame_masked_", "classnvblox_1_1MultiMapper.html#a8858f50725c6b3ede6f646e3987a7eeb", null ],
+    [ "depth_frame_unmasked_", "classnvblox_1_1MultiMapper.html#a04b056d2d7b7c87a14039c9c12635d79", null ],
+    [ "image_masker_", "classnvblox_1_1MultiMapper.html#ad67e25ac350f64a8a29a499a81852783", null ],
+    [ "masked_color_overlay_", "classnvblox_1_1MultiMapper.html#a0e0813390faefe073e0a319eb8f3e40b", null ],
+    [ "masked_depth_overlay_", "classnvblox_1_1MultiMapper.html#a45ab40dc576651dcf1be531dda334f84", null ],
+    [ "masked_mapper_", "classnvblox_1_1MultiMapper.html#aed608139fbe0ecd70ad1bf4e726e342d", null ],
+    [ "unmasked_mapper_", "classnvblox_1_1MultiMapper.html#ac01429dcd04bafdf8116c14d51e10bac", null ]
+];

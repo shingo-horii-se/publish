@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_620942b2a7536891b701ea4332b7be72" kind="dir">
+    <compoundname>internal</compoundname>
+    <innerfile refid="block__serialization_8h">block_serialization.h</innerfile>
+    <innerfile refid="common__types_8h">common_types.h</innerfile>
+    <innerfile refid="layer__serialization_8h">layer_serialization.h</innerfile>
+    <innerfile refid="layer__type__register_8h">layer_type_register.h</innerfile>
+    <innerfile refid="serializer_8h">serializer.h</innerfile>
+    <innerfile refid="sqlite__database_8h">sqlite_database.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/"/>
+  </compounddef>
+</doxygen>

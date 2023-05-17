@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_719c839cb060cd8d4e986e679a39d5d8" kind="dir">
+    <compoundname>rays</compoundname>
+    <innerfile refid="ray__caster_8h">ray_caster.h</innerfile>
+    <innerfile refid="sphere__tracer_8h">sphere_tracer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/rays/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1BoundingPlane" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::BoundingPlane</compoundname>
+    <includes refid="camera_8h" local="no">camera.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1BoundingPlane_1ac4d4d42a475d45abf7120526e288f6fc" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>Vector3f nvblox::BoundingPlane::normal_</definition>
+        <argsstring></argsstring>
+        <name>normal_</name>
+        <qualifiedname>nvblox::BoundingPlane::normal_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="118" column="12" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1BoundingPlane_1a0838b3f77d3b60ec34fc0ee5ba25e872" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::BoundingPlane::distance_</definition>
+        <argsstring></argsstring>
+        <name>distance_</name>
+        <qualifiedname>nvblox::BoundingPlane::distance_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="119" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1BoundingPlane_1a6d30b105692a5a5120c433e5676373fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::BoundingPlane::BoundingPlane</definition>
+        <argsstring>()</argsstring>
+        <name>BoundingPlane</name>
+        <qualifiedname>nvblox::BoundingPlane::BoundingPlane</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="105" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BoundingPlane_1a92b9296b6397d628052a79e0755bca7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::BoundingPlane::setFromPoints</definition>
+        <argsstring>(const Vector3f &amp;p1, const Vector3f &amp;p2, const Vector3f &amp;p3)</argsstring>
+        <name>setFromPoints</name>
+        <qualifiedname>nvblox::BoundingPlane::setFromPoints</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="107" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BoundingPlane_1a74b6ee6a4280360c2c1fa49d4cd2fb2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::BoundingPlane::setFromDistanceNormal</definition>
+        <argsstring>(const Vector3f &amp;normal, float distance)</argsstring>
+        <name>setFromDistanceNormal</name>
+        <qualifiedname>nvblox::BoundingPlane::setFromDistanceNormal</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>normal</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="109" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BoundingPlane_1a0717252ded4488d34ffc30c02cdbe49e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::BoundingPlane::isPointInside</definition>
+        <argsstring>(const Vector3f &amp;point) const</argsstring>
+        <name>isPointInside</name>
+        <qualifiedname>nvblox::BoundingPlane::isPointInside</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Is the point on the correct side of the bounding plane? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="112" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BoundingPlane_1af7716a4a7a2b84165d48400f27d24a85" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+        <definition>const Vector3f &amp; nvblox::BoundingPlane::normal</definition>
+        <argsstring>() const</argsstring>
+        <name>normal</name>
+        <qualifiedname>nvblox::BoundingPlane::normal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="114" column="18" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1BoundingPlane_1ab9b97cd43bf06467af0b7a4bc12714a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::BoundingPlane::distance</definition>
+        <argsstring>() const</argsstring>
+        <name>distance</name>
+        <qualifiedname>nvblox::BoundingPlane::distance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="115" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A bounding plane which has one &quot;inside&quot; direction and the other direction is &quot;outside.&quot; Quick tests for which side of the plane you are on. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="103" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="103" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1BoundingPlane_1a6d30b105692a5a5120c433e5676373fa" prot="public" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>BoundingPlane</name></member>
+      <member refid="classnvblox_1_1BoundingPlane_1ab9b97cd43bf06467af0b7a4bc12714a6" prot="public" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>distance</name></member>
+      <member refid="classnvblox_1_1BoundingPlane_1a0838b3f77d3b60ec34fc0ee5ba25e872" prot="private" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>distance_</name></member>
+      <member refid="classnvblox_1_1BoundingPlane_1a0717252ded4488d34ffc30c02cdbe49e" prot="public" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>isPointInside</name></member>
+      <member refid="classnvblox_1_1BoundingPlane_1af7716a4a7a2b84165d48400f27d24a85" prot="public" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>normal</name></member>
+      <member refid="classnvblox_1_1BoundingPlane_1ac4d4d42a475d45abf7120526e288f6fc" prot="private" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>normal_</name></member>
+      <member refid="classnvblox_1_1BoundingPlane_1a74b6ee6a4280360c2c1fa49d4cd2fb2d" prot="public" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>setFromDistanceNormal</name></member>
+      <member refid="classnvblox_1_1BoundingPlane_1a92b9296b6397d628052a79e0755bca7a" prot="public" virt="non-virtual"><scope>nvblox::BoundingPlane</scope><name>setFromPoints</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

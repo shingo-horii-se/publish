@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="md_pages_map" kind="page">
+    <compoundname>md_pages_map</compoundname>
+    <title>Map Overview</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>We implement a hierarchical sparse voxel grid for storing data. At the top level we have the <computeroutput>LayerCake</computeroutput>, which contains several layers, each of which contains a different type of mapped quantity (eg TSDF and ESDF). A layer is a collection of sparsely allocated blocks. Each block is in charge of mapping a cubular small region of space. Most blocks are composed of many voxels, each of which captures a single value of the mapped quantity (eg the TSDF).</para>
+<para><image type="html" name="map_structure.png">Map Structure</image>
+ <image type="latex" name="map_structure.png">Map Structure</image>
+ <image type="rtf" name="map_structure.png">Map Structure</image>
+ <image type="docbook" name="map_structure.png">Map Structure</image>
+ <image type="xml" name="map_structure.png">Map Structure</image>
+</para>
+<para>The API for the various classes implementing a map nvblox map:</para>
+<para><heading level="1">Voxels</heading>
+</para>
+<para><itemizedlist>
+<listitem><para><ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref></para>
+</listitem><listitem><para><ref refid="structnvblox_1_1EsdfVoxel" kindref="compound">EsdfVoxel</ref></para>
+</listitem><listitem><para><ref refid="structnvblox_1_1ColorVoxel" kindref="compound">ColorVoxel</ref></para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="1">Blocks</heading>
+</para>
+<para>A template for a block containing voxels.</para>
+<para><itemizedlist>
+<listitem><para><ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>Blocks containing specific voxel types. These are just typedefs of the above voxel blocks.</para>
+<para><itemizedlist>
+<listitem><para><ref refid="namespacenvblox_1a462b1313d22665a2fc7d42ed4dd2fca9" kindref="member">TsdfBlock</ref></para>
+</listitem><listitem><para><ref refid="namespacenvblox_1a462b1313d22665a2fc7d42ed4dd2fca9" kindref="member">Esdflock</ref></para>
+</listitem><listitem><para><ref refid="namespacenvblox_1a462b1313d22665a2fc7d42ed4dd2fca9" kindref="member">ColorBlock</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>We store the mesh of the environment as a collection of smaller meshes. In particular, a <computeroutput>MeshLayer</computeroutput> contains <computeroutput>MeshBlocks</computeroutput>, each of which contains a mesh of the surfaces in that region contained within that block. Note that we store a mesh per <emphasis>block</emphasis>, there are no mesh <emphasis>voxels</emphasis>. Storage of the mesh in this way allows us to perform incremental updates (we only update the mesh in blocks where the underlying TSDF has changed).</para>
+<para><itemizedlist>
+<listitem><para><ref refid="structnvblox_1_1MeshBlock" kindref="compound">nvblox::MeshBlock</ref>&gt; &quot;MeshBlock&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="1">Layers</heading>
+</para>
+<para>Template classes for layers containing blocks, and the child class for layers containing <computeroutput>VoxelBlock</computeroutput> s.</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref></para>
+</listitem><listitem><para><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref></para>
+</listitem></itemizedlist>
+</para>
+<para>Typedefs for layers containing specific block types and voxel block types.</para>
+<para><itemizedlist>
+<listitem><para><ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref></para>
+</listitem><listitem><para><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref></para>
+</listitem><listitem><para><ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref></para>
+</listitem><listitem><para><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref></para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="1">Layer Cake</heading>
+</para>
+<para>The <computeroutput>LayerCake</computeroutput> combines several layers into a single object.</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="pages/map.md"/>
+  </compounddef>
+</doxygen>

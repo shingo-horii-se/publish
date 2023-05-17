@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1WeightingFunction" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::WeightingFunction</compoundname>
+    <includes refid="weighting__function_8h" local="no">weighting_function.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1WeightingFunction_1afd1e8dfca0c50b2a061fef4f0963094f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+        <definition>WeightingFunctionType nvblox::WeightingFunction::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <qualifiedname>nvblox::WeightingFunction::type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="62" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1WeightingFunction_1a43c5498b1470b814cff290f8a0b16c46" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr float</type>
+        <definition>constexpr float nvblox::WeightingFunction::constant_weight</definition>
+        <argsstring></argsstring>
+        <name>constant_weight</name>
+        <qualifiedname>nvblox::WeightingFunction::constant_weight</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="64" column="26" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1WeightingFunction_1a38d63d9aaea1cff2b8947ac1348e1028" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::WeightingFunction::WeightingFunction</definition>
+        <argsstring>(WeightingFunctionType type=kDefaultWeightingFunctionType)</argsstring>
+        <name>WeightingFunction</name>
+        <qualifiedname>nvblox::WeightingFunction::WeightingFunction</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="namespacenvblox_1aca11bf4da09302e5daa400017eb6092b" kindref="member">kDefaultWeightingFunctionType</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="29" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1WeightingFunction_1a0eb63627496104dc1e1b68fa071314bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::WeightingFunction::~WeightingFunction</definition>
+        <argsstring>()=default</argsstring>
+        <name>~WeightingFunction</name>
+        <qualifiedname>nvblox::WeightingFunction::~WeightingFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="31" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1WeightingFunction_1a96ed266048fba8f6e7108fc82b2797f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::WeightingFunction::operator()</definition>
+        <argsstring>(float measured_depth, float voxel_depth, float truncation_distance) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::WeightingFunction::operator()</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>measured_depth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>voxel_depth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>truncation_distance</declname>
+        </param>
+        <briefdescription>
+<para>Returns the weight of the given voxel, depending on the type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the weight of this observation, depending on the selected sensor model. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measured_depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The depth measured by the depth sensor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>voxel_depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The depth of the voxel being updated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>truncation_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The truncation distance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The weight that this observation should get. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="41" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1WeightingFunction_1a9bc3d94153459d69211102c31902da3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ const <ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref> &amp;</type>
+        <definition>__host__ __device__ const WeightingFunctionType &amp; nvblox::WeightingFunction::type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <qualifiedname>nvblox::WeightingFunction::type</qualifiedname>
+        <briefdescription>
+<para>A getter The type of the weighting to be used when the operator() is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the weighting function </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="48" column="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1WeightingFunction_1ab60b2de2c4a58d21a0806486dc05eaaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ void</type>
+        <definition>__host__ __device__ void nvblox::WeightingFunction::type</definition>
+        <argsstring>(const WeightingFunctionType type)</argsstring>
+        <name>type</name>
+        <qualifiedname>nvblox::WeightingFunction::type</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>A setter See <ref refid="classnvblox_1_1WeightingFunction_1a9bc3d94153459d69211102c31902da3a" kindref="member">type()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of weighting to be used </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="53" column="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1WeightingFunction_1affd3f7a3eb49a5f143856e564bcf15d8" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::WeightingFunction::computeDropoff</definition>
+        <argsstring>(float measured_depth, float voxel_depth, float truncation_distance) const</argsstring>
+        <name>computeDropoff</name>
+        <qualifiedname>nvblox::WeightingFunction::computeDropoff</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>measured_depth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>voxel_depth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>truncation_distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="56" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1WeightingFunction_1a28dd7844e290df18b7fab204386c83fa" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::WeightingFunction::computeInverseSquare</definition>
+        <argsstring>(float measured_depth, float voxel_depth, float truncation_distance) const</argsstring>
+        <name>computeInverseSquare</name>
+        <qualifiedname>nvblox::WeightingFunction::computeInverseSquare</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>measured_depth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>voxel_depth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>truncation_distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="59" column="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class encapsulating the supported weighting types. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Unfortunately CUDA does not support polymorphism/inheritance in any way that&apos;s usable in this context, so we have to go with a monolithic class. </para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="27" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" bodystart="27" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1WeightingFunction_1affd3f7a3eb49a5f143856e564bcf15d8" prot="private" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>computeDropoff</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1a28dd7844e290df18b7fab204386c83fa" prot="private" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>computeInverseSquare</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1a43c5498b1470b814cff290f8a0b16c46" prot="private" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>constant_weight</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1a96ed266048fba8f6e7108fc82b2797f8" prot="public" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>operator()</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1a9bc3d94153459d69211102c31902da3a" prot="public" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>type</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1ab60b2de2c4a58d21a0806486dc05eaaf" prot="public" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>type</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1afd1e8dfca0c50b2a061fef4f0963094f" prot="private" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>type_</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1a38d63d9aaea1cff2b8947ac1348e1028" prot="public" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>WeightingFunction</name></member>
+      <member refid="classnvblox_1_1WeightingFunction_1a0eb63627496104dc1e1b68fa071314bf" prot="public" virt="non-virtual"><scope>nvblox::WeightingFunction</scope><name>~WeightingFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

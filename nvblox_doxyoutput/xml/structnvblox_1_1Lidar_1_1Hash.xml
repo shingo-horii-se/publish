@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1Lidar_1_1Hash" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::Lidar::Hash</compoundname>
+    <includes refid="lidar_8h" local="no">lidar.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnvblox_1_1Lidar_1_1Hash_1a7a4c118ebf70fe11a3a48da53f727cad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ size_t</type>
+        <definition>__host__ size_t nvblox::Lidar::Hash::operator()</definition>
+        <argsstring>(const Lidar &amp;lidar) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::Lidar::Hash::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="79" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="structnvblox_1_1Lidar_1_1Hash" kindref="compound">Hash</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="78" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" bodystart="78" bodyend="80"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1Lidar_1_1Hash_1a7a4c118ebf70fe11a3a48da53f727cad" prot="public" virt="non-virtual"><scope>nvblox::Lidar::Hash</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

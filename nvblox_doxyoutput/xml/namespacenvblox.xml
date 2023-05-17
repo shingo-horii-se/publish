@@ -1,0 +1,2610 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespacenvblox" kind="namespace" language="C++">
+    <compoundname>nvblox</compoundname>
+    <innerclass refid="structnvblox_1_1__Unified__if" prot="public">nvblox::_Unified_if</innerclass>
+    <innerclass refid="structnvblox_1_1__Unified__if_3_01T_0f_0e_4" prot="public">nvblox::_Unified_if&lt; T[]&gt;</innerclass>
+    <innerclass refid="structnvblox_1_1__Unified__if_3_01T_0fN_0e_4" prot="public">nvblox::_Unified_if&lt; T[N]&gt;</innerclass>
+    <innerclass refid="classnvblox_1_1BaseLayer" prot="public">nvblox::BaseLayer</innerclass>
+    <innerclass refid="classnvblox_1_1BlockLayer" prot="public">nvblox::BlockLayer</innerclass>
+    <innerclass refid="classnvblox_1_1BoundingPlane" prot="public">nvblox::BoundingPlane</innerclass>
+    <innerclass refid="classnvblox_1_1Camera" prot="public">nvblox::Camera</innerclass>
+    <innerclass refid="structnvblox_1_1Color" prot="public">nvblox::Color</innerclass>
+    <innerclass refid="structnvblox_1_1ColorVoxel" prot="public">nvblox::ColorVoxel</innerclass>
+    <innerclass refid="structnvblox_1_1CudaMeshBlock" prot="public">nvblox::CudaMeshBlock</innerclass>
+    <innerclass refid="classnvblox_1_1DepthImageBackProjector" prot="public">nvblox::DepthImageBackProjector</innerclass>
+    <innerclass refid="classnvblox_1_1device__vector" prot="public">nvblox::device_vector</innerclass>
+    <innerclass refid="classnvblox_1_1EsdfIntegrator" prot="public">nvblox::EsdfIntegrator</innerclass>
+    <innerclass refid="structnvblox_1_1EsdfVoxel" prot="public">nvblox::EsdfVoxel</innerclass>
+    <innerclass refid="classnvblox_1_1Frustum" prot="public">nvblox::Frustum</innerclass>
+    <innerclass refid="structnvblox_1_1GetLayerType" prot="public">nvblox::GetLayerType</innerclass>
+    <innerclass refid="structnvblox_1_1GetLayerType_3_01VoxelBlockLayer_3_01VoxelType_01_4_01_4" prot="public">nvblox::GetLayerType&lt; VoxelBlockLayer&lt; VoxelType &gt; &gt;</innerclass>
+    <innerclass refid="classnvblox_1_1GPUHashImpl" prot="public">nvblox::GPUHashImpl</innerclass>
+    <innerclass refid="classnvblox_1_1GPULayerView" prot="public">nvblox::GPULayerView</innerclass>
+    <innerclass refid="classnvblox_1_1host__vector" prot="public">nvblox::host_vector</innerclass>
+    <innerclass refid="classnvblox_1_1Image" prot="public">nvblox::Image</innerclass>
+    <innerclass refid="classnvblox_1_1ImageBase" prot="public">nvblox::ImageBase</innerclass>
+    <innerclass refid="classnvblox_1_1ImageMasker" prot="public">nvblox::ImageMasker</innerclass>
+    <innerclass refid="classnvblox_1_1ImageView" prot="public">nvblox::ImageView</innerclass>
+    <innerclass refid="structnvblox_1_1Index3DHash" prot="public">nvblox::Index3DHash</innerclass>
+    <innerclass refid="structnvblox_1_1Index3DHashMapType" prot="public">nvblox::Index3DHashMapType</innerclass>
+    <innerclass refid="classnvblox_1_1LayerCake" prot="public">nvblox::LayerCake</innerclass>
+    <innerclass refid="structnvblox_1_1LayerParameterStruct" prot="public">nvblox::LayerParameterStruct</innerclass>
+    <innerclass refid="structnvblox_1_1LayerSerializationFunctions" prot="public">nvblox::LayerSerializationFunctions</innerclass>
+    <innerclass refid="classnvblox_1_1LayerTypeRegister" prot="public">nvblox::LayerTypeRegister</innerclass>
+    <innerclass refid="classnvblox_1_1Lidar" prot="public">nvblox::Lidar</innerclass>
+    <innerclass refid="classnvblox_1_1Mapper" prot="public">nvblox::Mapper</innerclass>
+    <innerclass refid="classnvblox_1_1MapperBase" prot="public">nvblox::MapperBase</innerclass>
+    <innerclass refid="structnvblox_1_1Mesh" prot="public">nvblox::Mesh</innerclass>
+    <innerclass refid="structnvblox_1_1MeshBlock" prot="public">nvblox::MeshBlock</innerclass>
+    <innerclass refid="classnvblox_1_1MeshIntegrator" prot="public">nvblox::MeshIntegrator</innerclass>
+    <innerclass refid="classnvblox_1_1MultiMapper" prot="public">nvblox::MultiMapper</innerclass>
+    <innerclass refid="classnvblox_1_1OccupancyDecayIntegrator" prot="public">nvblox::OccupancyDecayIntegrator</innerclass>
+    <innerclass refid="structnvblox_1_1OccupancyVoxel" prot="public">nvblox::OccupancyVoxel</innerclass>
+    <innerclass refid="classnvblox_1_1Pointcloud" prot="public">nvblox::Pointcloud</innerclass>
+    <innerclass refid="classnvblox_1_1ProjectiveColorIntegrator" prot="public">nvblox::ProjectiveColorIntegrator</innerclass>
+    <innerclass refid="classnvblox_1_1ProjectiveIntegrator" prot="public">nvblox::ProjectiveIntegrator</innerclass>
+    <innerclass refid="classnvblox_1_1ProjectiveOccupancyIntegrator" prot="public">nvblox::ProjectiveOccupancyIntegrator</innerclass>
+    <innerclass refid="classnvblox_1_1ProjectiveTsdfIntegrator" prot="public">nvblox::ProjectiveTsdfIntegrator</innerclass>
+    <innerclass refid="structnvblox_1_1RawIterator" prot="public">nvblox::RawIterator</innerclass>
+    <innerclass refid="classnvblox_1_1RayCaster" prot="public">nvblox::RayCaster</innerclass>
+    <innerclass refid="classnvblox_1_1Serializer" prot="public">nvblox::Serializer</innerclass>
+    <innerclass refid="classnvblox_1_1SphereTracer" prot="public">nvblox::SphereTracer</innerclass>
+    <innerclass refid="classnvblox_1_1SqliteDatabase" prot="public">nvblox::SqliteDatabase</innerclass>
+    <innerclass refid="structnvblox_1_1TsdfVoxel" prot="public">nvblox::TsdfVoxel</innerclass>
+    <innerclass refid="classnvblox_1_1unified__ptr" prot="public">nvblox::unified_ptr</innerclass>
+    <innerclass refid="classnvblox_1_1unified__vector" prot="public">nvblox::unified_vector</innerclass>
+    <innerclass refid="structnvblox_1_1unique__types" prot="public">nvblox::unique_types</innerclass>
+    <innerclass refid="structnvblox_1_1VectorCompare" prot="public">nvblox::VectorCompare</innerclass>
+    <innerclass refid="classnvblox_1_1ViewCalculator" prot="public">nvblox::ViewCalculator</innerclass>
+    <innerclass refid="structnvblox_1_1VoxelBlock" prot="public">nvblox::VoxelBlock</innerclass>
+    <innerclass refid="classnvblox_1_1VoxelBlockLayer" prot="public">nvblox::VoxelBlockLayer</innerclass>
+    <innerclass refid="classnvblox_1_1WeightingFunction" prot="public">nvblox::WeightingFunction</innerclass>
+    <innernamespace refid="namespacenvblox_1_1image">nvblox::image</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1interpolation">nvblox::interpolation</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1io">nvblox::io</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1marching__cubes">nvblox::marching_cubes</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1primitives">nvblox::primitives</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1timing">nvblox::timing</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1traits">nvblox::traits</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacenvblox_1a18eed59ca95a61c942eeaedc3f8ac835" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>DeviceType</name>
+        <qualifiedname>nvblox::DeviceType</qualifiedname>
+        <enumvalue id="namespacenvblox_1a18eed59ca95a61c942eeaedc3f8ac835a2ce310327f474afc9f6774faa2f57903" prot="public">
+          <name>kCPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1a18eed59ca95a61c942eeaedc3f8ac835a37ae524b76587efa776affdc5cdf2ac1" prot="public">
+          <name>kGPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Whether the storage or processing is happening on CPU, GPU, or any future amazing hardware- accelerated platform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="30" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MemoryType</name>
+        <qualifiedname>nvblox::MemoryType</qualifiedname>
+        <enumvalue id="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" prot="public">
+          <name>kDevice</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a6cfafb52f266dacc4afe9ad59914fcd6" prot="public">
+          <name>kUnified</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223aab2568040d6d4e966d109b5adf7f5175" prot="public">
+          <name>kHost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>How GPU data is stored, either in Device-only or unified (both) memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NOTE(alexmillane): tag: c++17, switch to constexpr when we move to c++17. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="34" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacenvblox_1af889acf516061419ed7e4c38cc6434b9" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>InterpolationType</name>
+        <qualifiedname>nvblox::InterpolationType</qualifiedname>
+        <enumvalue id="namespacenvblox_1af889acf516061419ed7e4c38cc6434b9ad58c1cd4b17132689b2e3df64fb5b1af" prot="public">
+          <name>kNearestNeighbor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1af889acf516061419ed7e4c38cc6434b9aac97f0008bcf7c7fe4f2ff94160e1385" prot="public">
+          <name>kLinear</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="66" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>WeightingFunctionType</name>
+        <qualifiedname>nvblox::WeightingFunctionType</qualifiedname>
+        <enumvalue id="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5af7d5bee02c257960661c1f7530bb46bc" prot="public">
+          <name>kConstantWeight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5aed584a8afea436ac3925c2f336f97207" prot="public">
+          <name>kConstantDropoffWeight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5ac8b55513c819c16a81464269132564c8" prot="public">
+          <name>kInverseSquareWeight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5a8ea123f70b9ed91f4c5ef97fa2cd4b64" prot="public">
+          <name>kInverseSquareDropoffWeight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="11" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7fa" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ProjectiveLayerType</name>
+        <qualifiedname>nvblox::ProjectiveLayerType</qualifiedname>
+        <enumvalue id="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa50ef3837f3af039a7563f851682eab91" prot="public">
+          <name>kTsdf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacenvblox_1abf5fd4006b998459fe93c33d59a6f7faa421dc33c3f07425cb36e9fdea3492b21" prot="public">
+          <name>kOccupancy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" line="55" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/mapper.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacenvblox_1a0c56e5b887ead34e544a1cda691275d3" prot="public" static="no">
+        <type>std::unordered_set&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref>, <ref refid="structnvblox_1_1Index3DHash" kindref="compound">Index3DHash</ref>, std::equal_to&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;, Eigen::aligned_allocator&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &gt;</type>
+        <definition>typedef std::unordered_set&lt;Index3D, Index3DHash, std::equal_to&lt;Index3D&gt;, Eigen::aligned_allocator&lt;Index3D&gt; &gt; nvblox::Index3DSet</definition>
+        <argsstring></argsstring>
+        <name>Index3DSet</name>
+        <qualifiedname>nvblox::Index3DSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="66" column="5" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" prot="public" static="no">
+        <type>Eigen::Vector3i</type>
+        <definition>typedef Eigen::Vector3i nvblox::Index3D</definition>
+        <argsstring></argsstring>
+        <name>Index3D</name>
+        <qualifiedname>nvblox::Index3D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="49" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" prot="public" static="no">
+        <type>Eigen::Vector2i</type>
+        <definition>typedef Eigen::Vector2i nvblox::Index2D</definition>
+        <argsstring></argsstring>
+        <name>Index2D</name>
+        <qualifiedname>nvblox::Index2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="50" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" prot="public" static="no">
+        <type>Eigen::Vector3f</type>
+        <definition>typedef Eigen::Vector3f nvblox::Vector3f</definition>
+        <argsstring></argsstring>
+        <name>Vector3f</name>
+        <qualifiedname>nvblox::Vector3f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="52" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" prot="public" static="no">
+        <type>Eigen::Vector2f</type>
+        <definition>typedef Eigen::Vector2f nvblox::Vector2f</definition>
+        <argsstring></argsstring>
+        <name>Vector2f</name>
+        <qualifiedname>nvblox::Vector2f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="53" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1acc1a2583960d9c101856c61101b56739" prot="public" static="no">
+        <type>Eigen::AlignedBox3f</type>
+        <definition>typedef Eigen::AlignedBox3f nvblox::AxisAlignedBoundingBox</definition>
+        <argsstring></argsstring>
+        <name>AxisAlignedBoundingBox</name>
+        <qualifiedname>nvblox::AxisAlignedBoundingBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="55" column="29" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" prot="public" static="no">
+        <type>Eigen::Isometry3f</type>
+        <definition>typedef Eigen::Isometry3f nvblox::Transform</definition>
+        <argsstring></argsstring>
+        <name>Transform</name>
+        <qualifiedname>nvblox::Transform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="57" column="27" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t nvblox::Byte</definition>
+        <argsstring></argsstring>
+        <name>Byte</name>
+        <qualifiedname>nvblox::Byte</qualifiedname>
+        <briefdescription>
+<para>This can be replaced with std::byte once we go to C++17. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="60" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a0188823a3393cae629221394e53ef165" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename Type</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; Type, Eigen::aligned_allocator&lt; Type &gt; &gt;</type>
+        <definition>using nvblox::AlignedVector = typedef std::vector&lt;Type, Eigen::aligned_allocator&lt;Type&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>AlignedVector</name>
+        <qualifiedname>nvblox::AlignedVector</qualifiedname>
+        <briefdescription>
+<para>Aligned Eigen containers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="64" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1af996b9675338d0ae7263ebe5a663a8e1" prot="public" static="no">
+        <type>Eigen::ParametrizedLine&lt; float, 3 &gt;</type>
+        <definition>typedef Eigen::ParametrizedLine&lt;float, 3&gt; nvblox::Ray</definition>
+        <argsstring></argsstring>
+        <name>Ray</name>
+        <qualifiedname>nvblox::Ray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="68" column="33" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1ad1737bc6ae4c9df772db7f4990c533c9" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::function&lt; void(const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;block_index, const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;voxel_index, const VoxelType *voxel)&gt;</type>
+        <definition>using nvblox::ConstVoxelCallbackFunction = typedef std::function&lt;void(const Index3D&amp; block_index, const Index3D&amp; voxel_index, const VoxelType* voxel)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstVoxelCallbackFunction</name>
+        <qualifiedname>nvblox::ConstVoxelCallbackFunction</qualifiedname>
+        <briefdescription>
+<para>Accessors for calling a function on all voxels in a layer (const). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="47" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a388c9e787748f6b4f6a6b1a040ba514e" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::function&lt; void(const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;block_index, const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;voxel_index, VoxelType *voxel)&gt;</type>
+        <definition>using nvblox::VoxelCallbackFunction = typedef std::function&lt;void( const Index3D&amp; block_index, const Index3D&amp; voxel_index, VoxelType* voxel)&gt;</definition>
+        <argsstring></argsstring>
+        <name>VoxelCallbackFunction</name>
+        <qualifiedname>nvblox::VoxelCallbackFunction</qualifiedname>
+        <briefdescription>
+<para>Accessors for calling a function on all voxels in a layer (non-const). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="53" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1afab6370e27f6f8631a1364c0d2976db7" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::function&lt; void(const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;voxel_index, const VoxelType *voxel)&gt;</type>
+        <definition>using nvblox::ConstBlockCallbackFunction = typedef std::function&lt;void(const Index3D&amp; block_index, const BlockType* block)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstBlockCallbackFunction</name>
+        <qualifiedname>nvblox::ConstBlockCallbackFunction</qualifiedname>
+        <briefdescription>
+<para>Accessors for calling a function on all voxels in a block (const). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accessors for calling a function on all blocks in a layer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="68" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1aab3b444884b9c0b9caae730c62b5beec" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::function&lt; void(const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;voxel_index, VoxelType *voxel)&gt;</type>
+        <definition>using nvblox::BlockCallbackFunction = typedef std::function&lt;void(const Index3D&amp; block_index, BlockType* block)&gt;</definition>
+        <argsstring></argsstring>
+        <name>BlockCallbackFunction</name>
+        <qualifiedname>nvblox::BlockCallbackFunction</qualifiedname>
+        <briefdescription>
+<para>Accessors for calling a function on all voxels in a block (non-const). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="73" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a462b1313d22665a2fc7d42ed4dd2fca9" prot="public" static="no">
+        <type><ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt;</type>
+        <definition>using nvblox::TsdfBlock = typedef VoxelBlock&lt;TsdfVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>TsdfBlock</name>
+        <qualifiedname>nvblox::TsdfBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="26" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt;</type>
+        <definition>using nvblox::TsdfLayer = typedef VoxelBlockLayer&lt;TsdfVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>TsdfLayer</name>
+        <qualifiedname>nvblox::TsdfLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="27" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1ae51ca953e59e57aeefcf8721fab9d42b" prot="public" static="no">
+        <type><ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1OccupancyVoxel" kindref="compound">OccupancyVoxel</ref> &gt;</type>
+        <definition>using nvblox::OccupancyBlock = typedef VoxelBlock&lt;OccupancyVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>OccupancyBlock</name>
+        <qualifiedname>nvblox::OccupancyBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="28" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; <ref refid="structnvblox_1_1OccupancyVoxel" kindref="compound">OccupancyVoxel</ref> &gt;</type>
+        <definition>using nvblox::OccupancyLayer = typedef VoxelBlockLayer&lt;OccupancyVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>OccupancyLayer</name>
+        <qualifiedname>nvblox::OccupancyLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="29" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1aa8c18b789b5f62cc90b9463f5b150a30" prot="public" static="no">
+        <type><ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1EsdfVoxel" kindref="compound">EsdfVoxel</ref> &gt;</type>
+        <definition>using nvblox::EsdfBlock = typedef VoxelBlock&lt;EsdfVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>EsdfBlock</name>
+        <qualifiedname>nvblox::EsdfBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="30" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; <ref refid="structnvblox_1_1EsdfVoxel" kindref="compound">EsdfVoxel</ref> &gt;</type>
+        <definition>using nvblox::EsdfLayer = typedef VoxelBlockLayer&lt;EsdfVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>EsdfLayer</name>
+        <qualifiedname>nvblox::EsdfLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="31" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1ac1052bfb4962ba790bf76307816f8f3d" prot="public" static="no">
+        <type><ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1ColorVoxel" kindref="compound">ColorVoxel</ref> &gt;</type>
+        <definition>using nvblox::ColorBlock = typedef VoxelBlock&lt;ColorVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>ColorBlock</name>
+        <qualifiedname>nvblox::ColorBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="32" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; <ref refid="structnvblox_1_1ColorVoxel" kindref="compound">ColorVoxel</ref> &gt;</type>
+        <definition>using nvblox::ColorLayer = typedef VoxelBlockLayer&lt;ColorVoxel&gt;</definition>
+        <argsstring></argsstring>
+        <name>ColorLayer</name>
+        <qualifiedname>nvblox::ColorLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="33" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt;</type>
+        <definition>using nvblox::MeshLayer = typedef BlockLayer&lt;MeshBlock&gt;</definition>
+        <argsstring></argsstring>
+        <name>MeshLayer</name>
+        <qualifiedname>nvblox::MeshLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" line="34" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/common_names.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; float &gt;</type>
+        <definition>using nvblox::DepthImage = typedef Image&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>DepthImage</name>
+        <qualifiedname>nvblox::DepthImage</qualifiedname>
+        <briefdescription>
+<para>Common Names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="205" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &gt;</type>
+        <definition>using nvblox::ColorImage = typedef Image&lt;Color&gt;</definition>
+        <argsstring></argsstring>
+        <name>ColorImage</name>
+        <qualifiedname>nvblox::ColorImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="206" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; uint8_t &gt;</type>
+        <definition>using nvblox::MonoImage = typedef Image&lt;uint8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>MonoImage</name>
+        <qualifiedname>nvblox::MonoImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="207" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a58edbb2cb638a043bede84fdf0f48b90" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&lt; float &gt;</type>
+        <definition>using nvblox::DepthImageView = typedef ImageView&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>DepthImageView</name>
+        <qualifiedname>nvblox::DepthImageView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="208" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1af74360011cc0e25c4af88580f5b0f507" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&lt; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &gt;</type>
+        <definition>using nvblox::ColorImageView = typedef ImageView&lt;Color&gt;</definition>
+        <argsstring></argsstring>
+        <name>ColorImageView</name>
+        <qualifiedname>nvblox::ColorImageView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="209" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1afa716f2a712d2e5f625d791fcce26a7d" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&lt; uint8_t &gt;</type>
+        <definition>using nvblox::MonoImageView = typedef ImageView&lt;uint8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>MonoImageView</name>
+        <qualifiedname>nvblox::MonoImageView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="210" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1aa45a16e028be0f73bb142ba2c3f8b6ed" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&lt; const float &gt;</type>
+        <definition>using nvblox::DepthImageConstView = typedef ImageView&lt;const float&gt;</definition>
+        <argsstring></argsstring>
+        <name>DepthImageConstView</name>
+        <qualifiedname>nvblox::DepthImageConstView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="211" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a06e69539aa4b41b975f7f595593d83cc" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&lt; const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &gt;</type>
+        <definition>using nvblox::ColorImageConstView = typedef ImageView&lt;const Color&gt;</definition>
+        <argsstring></argsstring>
+        <name>ColorImageConstView</name>
+        <qualifiedname>nvblox::ColorImageConstView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="212" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacenvblox_1a75900255cfdab1120a95489e43268814" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&lt; const uint8_t &gt;</type>
+        <definition>using nvblox::MonoImageConstView = typedef ImageView&lt;const uint8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>MonoImageConstView</name>
+        <qualifiedname>nvblox::MonoImageConstView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="213" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacenvblox_1aca11bf4da09302e5daa400017eb6092b" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+        <definition>constexpr WeightingFunctionType nvblox::kDefaultWeightingFunctionType</definition>
+        <argsstring></argsstring>
+        <name>kDefaultWeightingFunctionType</name>
+        <qualifiedname>nvblox::kDefaultWeightingFunctionType</qualifiedname>
+        <initializer>=
+    <ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5ac8b55513c819c16a81464269132564c8" kindref="member">WeightingFunctionType::kInverseSquareWeight</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="21" column="33" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacenvblox_1ab715cffa6ff1964ebcd0a536fd2f2fd1" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>constexpr MemoryType nvblox::kDefaultImageMemoryType</definition>
+        <argsstring></argsstring>
+        <name>kDefaultImageMemoryType</name>
+        <qualifiedname>nvblox::kDefaultImageMemoryType</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" line="53" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacenvblox_1a4fccc8c7879835b1e30a86ac96f9a0f9" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+        <definition>constexpr MemoryType nvblox::kDefaultPointcloudMemoryType</definition>
+        <argsstring></argsstring>
+        <name>kDefaultPointcloudMemoryType</name>
+        <qualifiedname>nvblox::kDefaultPointcloudMemoryType</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="25" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenvblox_1acc0d1280b92ffbb4c9f1aa143e38768c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::voxelSizeToBlockSize</definition>
+        <argsstring>(const float voxel_size)</argsstring>
+        <name>voxelSizeToBlockSize</name>
+        <qualifiedname>nvblox::voxelSizeToBlockSize</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="22" column="34" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="22" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1affdb7ee2056af83bce6f82d8fc109a7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::blockSizeToVoxelSize</definition>
+        <argsstring>(const float block_size)</argsstring>
+        <name>blockSizeToVoxelSize</name>
+        <qualifiedname>nvblox::blockSizeToVoxelSize</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="23" column="34" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="23" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a4fb7cb25a9de0333a9f174033c2e3332" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref></type>
+        <definition>__host__ __device__ Index3D nvblox::getVoxelIndexFromPositionInLayer</definition>
+        <argsstring>(const float block_size, const Vector3f &amp;position)</argsstring>
+        <name>getVoxelIndexFromPositionInLayer</name>
+        <qualifiedname>nvblox::getVoxelIndexFromPositionInLayer</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Assuming a fixed-size voxel block, get the voxel index of a voxel at that position within a block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="27" column="36" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="27" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1adec09652af0b568f766bdf8f5ac73091" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref></type>
+        <definition>__host__ __device__ Index3D nvblox::getBlockIndexFromPositionInLayer</definition>
+        <argsstring>(const float block_size, const Vector3f &amp;position)</argsstring>
+        <name>getBlockIndexFromPositionInLayer</name>
+        <qualifiedname>nvblox::getBlockIndexFromPositionInLayer</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="30" column="36" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="30" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a2e9cc929b1b05fdd42bb8b111797b385" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ void</type>
+        <definition>__host__ __device__ void nvblox::getBlockAndVoxelIndexFromPositionInLayer</definition>
+        <argsstring>(const float block_size, const Vector3f &amp;position, Index3D *block_idx, Index3D *voxel_idx)</argsstring>
+        <name>getBlockAndVoxelIndexFromPositionInLayer</name>
+        <qualifiedname>nvblox::getBlockAndVoxelIndexFromPositionInLayer</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> *</type>
+          <declname>block_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> *</type>
+          <declname>voxel_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="33" column="33" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="33" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a2da77dcb972ccd5958b566245ab02046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::getPositionFromBlockIndexAndVoxelIndex</definition>
+        <argsstring>(const float block_size, const Index3D &amp;block_index, const Index3D &amp;voxel_index)</argsstring>
+        <name>getPositionFromBlockIndexAndVoxelIndex</name>
+        <qualifiedname>nvblox::getPositionFromBlockIndexAndVoxelIndex</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>block_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>voxel_index</declname>
+        </param>
+        <briefdescription>
+<para>Gets the position of the minimum corner (i.e., the smallest towards negative infinity of each axis). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="39" column="37" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="39" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1aae651726a7fe422df90b521536bb69ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::getPositionFromBlockIndex</definition>
+        <argsstring>(const float block_size, const Index3D &amp;block_index)</argsstring>
+        <name>getPositionFromBlockIndex</name>
+        <qualifiedname>nvblox::getPositionFromBlockIndex</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>block_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="43" column="37" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="43" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a46d7479c2dabf9b664db883e40aec0b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::getCenterPostionFromBlockIndexAndVoxelIndex</definition>
+        <argsstring>(const float block_size, const Index3D &amp;block_index, const Index3D &amp;voxel_index)</argsstring>
+        <name>getCenterPostionFromBlockIndexAndVoxelIndex</name>
+        <qualifiedname>nvblox::getCenterPostionFromBlockIndexAndVoxelIndex</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>block_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>voxel_index</declname>
+        </param>
+        <briefdescription>
+<para>Gets the CENTER of the voxel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" line="47" column="37" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/indexing.h" declline="47" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a04b9f32c0da2867c8c8ff876bcef6a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::check_cuda</definition>
+        <argsstring>(cudaError_t result, char const *const func, const char *const file, int const line)</argsstring>
+        <name>check_cuda</name>
+        <qualifiedname>nvblox::check_cuda</qualifiedname>
+        <param>
+          <type>cudaError_t</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>char const *const</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const char *const</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/internal/error_check.h" line="22" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/internal/error_check.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a7b35a6b08cd5433ab6230cf002c759fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::warmupCuda</definition>
+        <argsstring>()</argsstring>
+        <name>warmupCuda</name>
+        <qualifiedname>nvblox::warmupCuda</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/internal/warmup_cuda.h" line="21" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/internal/warmup_cuda.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ad640ac31fc054c7e04ac95dedab14a46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::logOddsFromProbability</definition>
+        <argsstring>(float probability)</argsstring>
+        <name>logOddsFromProbability</name>
+        <qualifiedname>nvblox::logOddsFromProbability</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>probability</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/log_odds.h" line="23" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/log_odds.h" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a522a0eb0ae8183bf931a23f02c83f942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::probabilityFromLogOdds</definition>
+        <argsstring>(float log_odds)</argsstring>
+        <name>probabilityFromLogOdds</name>
+        <qualifiedname>nvblox::probabilityFromLogOdds</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>log_odds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/log_odds.h" line="32" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/log_odds.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a7ad5347793b864b8030ae1c34b37eace" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string nvblox::toString</definition>
+        <argsstring>(MemoryType memory_type)</argsstring>
+        <name>toString</name>
+        <qualifiedname>nvblox::toString</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" line="35" column="20" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/types.h" bodystart="35" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ad86e3c49ecef5c11577d200abd4a5d02" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::operator==</definition>
+        <argsstring>(const unified_ptr&lt; T &gt; &amp;lhs, std::nullptr_t) noexcept</argsstring>
+        <name>operator==</name>
+        <qualifiedname>nvblox::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="138" column="6" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a41acf15abdacfa53e513ebbee32ca1a2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::operator==</definition>
+        <argsstring>(std::nullptr_t, const unified_ptr&lt; T &gt; &amp;rhs) noexcept</argsstring>
+        <name>operator==</name>
+        <qualifiedname>nvblox::operator==</qualifiedname>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="142" column="6" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a540b39e6117ea84fe5d88ff931fd891b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::operator!=</definition>
+        <argsstring>(const unified_ptr&lt; T &gt; &amp;lhs, std::nullptr_t) noexcept</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>nvblox::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="146" column="6" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a8055b1f1a067efa3636ab31a9281fc3f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::operator!=</definition>
+        <argsstring>(std::nullptr_t, const unified_ptr&lt; T &gt; &amp;rhs) noexcept</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>nvblox::operator!=</qualifiedname>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="150" column="6" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a03307af848ae5080f2fa1e4fbdcf5534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1__Unified__if" kindref="compound">_Unified_if</ref>&lt; T &gt;::_Single_object</type>
+        <definition>_Unified_if&lt; T &gt;::_Single_object nvblox::make_unified</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>make_unified</name>
+        <qualifiedname>nvblox::make_unified</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="174" column="39" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" declline="174" declcolumn="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a9b185611dd35d8e9369adb059df6afea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1__Unified__if" kindref="compound">_Unified_if</ref>&lt; T &gt;::_Single_object</type>
+        <definition>_Unified_if&lt; T &gt;::_Single_object nvblox::make_unified</definition>
+        <argsstring>(MemoryType memory_type, Args &amp;&amp;... args)</argsstring>
+        <name>make_unified</name>
+        <qualifiedname>nvblox::make_unified</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="178" column="39" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" declline="178" declcolumn="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1aed54c98a201dc1c1599ee03f8f35fa70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1__Unified__if" kindref="compound">_Unified_if</ref>&lt; T &gt;::_Unknown_bound</type>
+        <definition>_Unified_if&lt; T &gt;::_Unknown_bound nvblox::make_unified</definition>
+        <argsstring>(std::size_t size)</argsstring>
+        <name>make_unified</name>
+        <qualifiedname>nvblox::make_unified</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="183" column="39" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" declline="183" declcolumn="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a7f91565d8f9966d8f21c020c65ddbb7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1__Unified__if" kindref="compound">_Unified_if</ref>&lt; T &gt;::_Unknown_bound</type>
+        <definition>_Unified_if&lt; T &gt;::_Unknown_bound nvblox::make_unified</definition>
+        <argsstring>(std::size_t size, MemoryType memory_type)</argsstring>
+        <name>make_unified</name>
+        <qualifiedname>nvblox::make_unified</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="187" column="39" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" declline="187" declcolumn="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ac346f7eb93e2d599cc34b5a410d3796b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1__Unified__if" kindref="compound">_Unified_if</ref>&lt; T &gt;::_Known_bound</type>
+        <definition>_Unified_if&lt; T &gt;::_Known_bound nvblox::make_unified</definition>
+        <argsstring>(Args &amp;&amp;... args)=delete</argsstring>
+        <name>make_unified</name>
+        <qualifiedname>nvblox::make_unified</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" line="191" column="37" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/unified_ptr.h" declline="191" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ac921e530b1b004c388b36225fdf46ce8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::getBlockIndicesTouchedByBoundingBox</definition>
+        <argsstring>(const float block_size, const AxisAlignedBoundingBox &amp;aabb)</argsstring>
+        <name>getBlockIndicesTouchedByBoundingBox</name>
+        <qualifiedname>nvblox::getBlockIndicesTouchedByBoundingBox</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+          <declname>aabb</declname>
+        </param>
+        <briefdescription>
+<para>Get all of the blocks that are touched by an AABB, no matter how little. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Metric size of the block. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aabb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Axis-Aligned Bounding Box that does the touching. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of all the touched block indices. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="27" column="20" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="27" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a8f7550f88d899cddf1fe0065c6cb1bc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::getAABBOfBlock</definition>
+        <argsstring>(const float block_size, const Index3D &amp;block_index)</argsstring>
+        <name>getAABBOfBlock</name>
+        <qualifiedname>nvblox::getAABBOfBlock</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>block_index</declname>
+        </param>
+        <briefdescription>
+<para>Gets the Axis-Aligned Bounding Box of a block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Metric size of the block. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the block. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The AABB. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="34" column="31" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="34" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ab3fece148d48fdbf2616cf975115cfaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::getAABBOfBlocks</definition>
+        <argsstring>(const float block_size, const std::vector&lt; Index3D &gt; &amp;blocks)</argsstring>
+        <name>getAABBOfBlocks</name>
+        <qualifiedname>nvblox::getAABBOfBlocks</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>blocks</declname>
+        </param>
+        <briefdescription>
+<para>Get AABB that covers ALL blocks in the block index list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="38" column="24" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="38" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1af160e691719a214cb89aef11604a012b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::getAABBOfAllocatedBlocks</definition>
+        <argsstring>(const BlockLayer&lt; BlockType &gt; &amp;layer)</argsstring>
+        <name>getAABBOfAllocatedBlocks</name>
+        <qualifiedname>nvblox::getAABBOfAllocatedBlocks</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Get the outer AABB of all of the allocated blocks in the layer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="43" column="24" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="43" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a8fb9863dc9e75130239b9931e713aaa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::getAllocatedBlocksWithinAABB</definition>
+        <argsstring>(const BlockLayer&lt; BlockType &gt; &amp;layer, const AxisAlignedBoundingBox &amp;aabb)</argsstring>
+        <name>getAllocatedBlocksWithinAABB</name>
+        <qualifiedname>nvblox::getAllocatedBlocksWithinAABB</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+          <declname>aabb</declname>
+        </param>
+        <briefdescription>
+<para>Get all of the allocated blocks that are within a given AABB. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="48" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="48" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ad3ec28f37483058ef2883ea873ea3f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::getAABBOfObservedVoxels</definition>
+        <argsstring>(const EsdfLayer &amp;layer)</argsstring>
+        <name>getAABBOfObservedVoxels</name>
+        <qualifiedname>nvblox::getAABBOfObservedVoxels</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Get the outer AABB of all of the blocks that contain observed voxels in an ESDF layer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="53" column="24" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="53" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a9d5b7e63075bc1119b0edbe58f8e99b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::getAABBOfObservedVoxels</definition>
+        <argsstring>(const TsdfLayer &amp;layer, const float min_weight=1e-4)</argsstring>
+        <name>getAABBOfObservedVoxels</name>
+        <qualifiedname>nvblox::getAABBOfObservedVoxels</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>min_weight</declname>
+          <defval>1e-4</defval>
+        </param>
+        <briefdescription>
+<para>Get the outer AABB of all of the blocks that contain observed voxels in an TSDF layer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="56" column="24" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="56" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ad939d259752408dc069ec818acd9a949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::getAABBOfObservedVoxels</definition>
+        <argsstring>(const ColorLayer &amp;layer, const float min_weight=1e-4)</argsstring>
+        <name>getAABBOfObservedVoxels</name>
+        <qualifiedname>nvblox::getAABBOfObservedVoxels</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>min_weight</declname>
+          <defval>1e-4</defval>
+        </param>
+        <briefdescription>
+<para>Get the outer AABB of all of the blocks that contain observed voxels in an <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> layer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" line="60" column="24" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_boxes.h" declline="60" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1aeea96648dace1f0db185c0932733594f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::getBlocksWithinRadius</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;input_blocks, float block_size, const Vector3f &amp;center, float radius)</argsstring>
+        <name>getBlocksWithinRadius</name>
+        <qualifiedname>nvblox::getBlocksWithinRadius</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>input_blocks</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_spheres.h" line="22" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_spheres.h" declline="22" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1adf1df1b500c275abd3552c74a01658e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::getBlocksOutsideRadius</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;input_blocks, float block_size, const Vector3f &amp;center, float radius)</argsstring>
+        <name>getBlocksOutsideRadius</name>
+        <qualifiedname>nvblox::getBlocksOutsideRadius</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>input_blocks</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_spheres.h" line="26" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_spheres.h" declline="26" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a36db94b92cfb98fd29ece567c172c7e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::getBlocksWithinRadiusOfAABB</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;input_blocks, float block_size, const AxisAlignedBoundingBox &amp;aabb, float radius)</argsstring>
+        <name>getBlocksWithinRadiusOfAABB</name>
+        <qualifiedname>nvblox::getBlocksWithinRadiusOfAABB</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>input_blocks</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+          <declname>aabb</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_spheres.h" line="30" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/geometry/bounding_spheres.h" declline="30" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ada0f5a2c479618906828b62e82690732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>__host__ std::vector&lt; BlockType * &gt;</type>
+        <definition>__host__ std::vector&lt; BlockType * &gt; nvblox::getBlockPtrsFromIndices</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;block_indices, BlockLayer&lt; BlockType &gt; *layer_ptr)</argsstring>
+        <name>getBlockPtrsFromIndices</name>
+        <qualifiedname>nvblox::getBlockPtrsFromIndices</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt; *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Convert a list of BlockIndices on host, to a list of (non-const) device pointers on host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this function will check fail if one passed BlockIndices indices is not allocated. The function is intended for use in specific parts of the code where blocks in the camera view have already been allocated. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of the 3D indices of blocks who&apos;s pointers we want </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer containing the blocks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of block pointers. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/integrators_common.h" line="34" column="22" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/integrators_common.h" declline="34" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a76bbaae47fb1f678138db31fa3a7bad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>__host__ std::vector&lt; const BlockType * &gt;</type>
+        <definition>__host__ std::vector&lt; const BlockType * &gt; nvblox::getBlockPtrsFromIndices</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;block_indices, const BlockLayer&lt; BlockType &gt; &amp;layer_ptr)</argsstring>
+        <name>getBlockPtrsFromIndices</name>
+        <qualifiedname>nvblox::getBlockPtrsFromIndices</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt; &amp;</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Convert a list of BlockIndices on host, to a list of (const) device pointers on host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this function will check fail if one passed BlockIndices indices is not allocated. The function is intended for use in specific parts of the code where blocks in the camera view have already been allocated. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of the 3D indices of blocks who&apos;s pointers we want </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer containing the blocks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of block pointers. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/integrators_common.h" line="49" column="22" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/integrators_common.h" declline="49" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a5c7858b23f9966e9d530bf999c6d9dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::allocateBlocksWhereRequired</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;block_indices, BlockLayer&lt; VoxelBlock&lt; VoxelType &gt; &gt; *layer)</argsstring>
+        <name>allocateBlocksWhereRequired</name>
+        <qualifiedname>nvblox::allocateBlocksWhereRequired</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Allocates blocks in the block_indices list which are not already allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of the 3D indices of blocks we wanna allocate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer where we wanna allocate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/integrators_common.h" line="57" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/integrators_common.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a1134fae2a499abdb031e39a5b534643a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; nvblox::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const WeightingFunctionType &amp;weighting_function_type)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>nvblox::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref> &amp;</type>
+          <declname>weighting_function_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" line="18" column="8" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/weighting_function.h" declline="18" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ab2ae3aa42c62ddb96209361fef3babcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::getBlockAtPosition</definition>
+        <argsstring>(const BlockLayer&lt; BlockType &gt; &amp;layer, const Eigen::Vector3f &amp;position, const BlockType **data)</argsstring>
+        <name>getBlockAtPosition</name>
+        <qualifiedname>nvblox::getBlockAtPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector3f &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const BlockType **</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Get Block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="29" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a923cd9f93e5934518e22f7a5f33d8d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool nvblox::getVoxelAtPosition</definition>
+        <argsstring>(const BlockLayer&lt; VoxelBlock&lt; VoxelType &gt; &gt; &amp;layer, const Eigen::Vector3f &amp;position, const VoxelType **data)</argsstring>
+        <name>getVoxelAtPosition</name>
+        <qualifiedname>nvblox::getVoxelAtPosition</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector3f &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const VoxelType **</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Get Voxel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="35" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a1cd778ad4b5a410398362558151736b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>const VoxelType *</type>
+        <definition>const VoxelType * nvblox::getVoxelAtBlockAndVoxelIndex</definition>
+        <argsstring>(const BlockLayer&lt; VoxelBlock&lt; VoxelType &gt; &gt; &amp;layer, const Index3D &amp;block_index, const Index3D &amp;voxel_index)</argsstring>
+        <name>getVoxelAtBlockAndVoxelIndex</name>
+        <qualifiedname>nvblox::getVoxelAtBlockAndVoxelIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>block_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>voxel_index</declname>
+        </param>
+        <briefdescription>
+<para>Accessors for voxelized types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="41" column="17" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="41" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ac17f851e9d9f630b069291e2582d4744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::callFunctionOnAllVoxels</definition>
+        <argsstring>(const BlockLayer&lt; VoxelBlock&lt; VoxelType &gt; &gt; &amp;layer, ConstVoxelCallbackFunction&lt; VoxelType &gt; callback)</argsstring>
+        <name>callFunctionOnAllVoxels</name>
+        <qualifiedname>nvblox::callFunctionOnAllVoxels</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ad1737bc6ae4c9df772db7f4990c533c9" kindref="member">ConstVoxelCallbackFunction</ref>&lt; VoxelType &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Call function on all voxels in a layer (const). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="58" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a6284af341feff2614afbe0a62e8b17f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::callFunctionOnAllVoxels</definition>
+        <argsstring>(BlockLayer&lt; VoxelBlock&lt; VoxelType &gt; &gt; *layer, VoxelCallbackFunction&lt; VoxelType &gt; callback)</argsstring>
+        <name>callFunctionOnAllVoxels</name>
+        <qualifiedname>nvblox::callFunctionOnAllVoxels</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a388c9e787748f6b4f6a6b1a040ba514e" kindref="member">VoxelCallbackFunction</ref>&lt; VoxelType &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Call function on all voxels in a layer (non-const). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="63" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a61c9416b53472314d8dfa30e886d6616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::callFunctionOnAllVoxels</definition>
+        <argsstring>(const VoxelBlock&lt; VoxelType &gt; &amp;block, ConstBlockCallbackFunction&lt; VoxelType &gt; callback)</argsstring>
+        <name>callFunctionOnAllVoxels</name>
+        <qualifiedname>nvblox::callFunctionOnAllVoxels</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &amp;</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1afab6370e27f6f8631a1364c0d2976db7" kindref="member">ConstBlockCallbackFunction</ref>&lt; VoxelType &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="77" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="77" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ab8804a7406d60e6a2ab265f36bb30ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::callFunctionOnAllVoxels</definition>
+        <argsstring>(VoxelBlock&lt; VoxelType &gt; *block, BlockCallbackFunction&lt; VoxelType &gt; callback)</argsstring>
+        <name>callFunctionOnAllVoxels</name>
+        <qualifiedname>nvblox::callFunctionOnAllVoxels</qualifiedname>
+        <param>
+          <type><ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1aab3b444884b9c0b9caae730c62b5beec" kindref="member">BlockCallbackFunction</ref>&lt; VoxelType &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="81" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a5c5dd1c630c4d9f195fc5129f9a91c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::callFunctionOnAllBlocks</definition>
+        <argsstring>(const BlockLayer&lt; BlockType &gt; &amp;layer, ConstBlockCallbackFunction&lt; BlockType &gt; callback)</argsstring>
+        <name>callFunctionOnAllBlocks</name>
+        <qualifiedname>nvblox::callFunctionOnAllBlocks</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1afab6370e27f6f8631a1364c0d2976db7" kindref="member">ConstBlockCallbackFunction</ref>&lt; BlockType &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="94" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="94" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a8aefb02650fdf067d9b1ca5ef3dcde47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::callFunctionOnAllBlocks</definition>
+        <argsstring>(BlockLayer&lt; BlockType &gt; *layer, BlockCallbackFunction&lt; BlockType &gt; callback)</argsstring>
+        <name>callFunctionOnAllBlocks</name>
+        <qualifiedname>nvblox::callFunctionOnAllBlocks</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1aab3b444884b9c0b9caae730c62b5beec" kindref="member">BlockCallbackFunction</ref>&lt; BlockType &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" line="98" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/accessors.h" declline="98" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a8d06424d9c839e12bd1d548dfd795a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::setBlockBytesZeroOnGPU</definition>
+        <argsstring>(BlockType *block_device_ptr)</argsstring>
+        <name>setBlockBytesZeroOnGPU</name>
+        <qualifiedname>nvblox::setBlockBytesZeroOnGPU</qualifiedname>
+        <param>
+          <type>BlockType *</type>
+          <declname>block_device_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set all the memory of the block to 0 on the GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/blox.h" line="47" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/blox.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ab77c97b5cf7abe06613cdbd8bbf6f443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::setColorBlockGrayOnGPU</definition>
+        <argsstring>(VoxelBlock&lt; ColorVoxel &gt; *block_device_ptr)</argsstring>
+        <name>setColorBlockGrayOnGPU</name>
+        <qualifiedname>nvblox::setColorBlockGrayOnGPU</qualifiedname>
+        <param>
+          <type><ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1ColorVoxel" kindref="compound">ColorVoxel</ref> &gt; *</type>
+          <declname>block_device_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set all of the default colors to gray on a GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/blox.h" line="49" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/blox.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a9cae54124801d270d0a29985d0ad2145" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr float</type>
+        <definition>constexpr float nvblox::sizeArgumentFromVoxelSize</definition>
+        <argsstring>(float voxel_size)</argsstring>
+        <name>sizeArgumentFromVoxelSize</name>
+        <qualifiedname>nvblox::sizeArgumentFromVoxelSize</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" line="221" column="17" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/layer.h" declline="221" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a1693c36a85f8b6f0f993ee6391188eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; nvblox::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Camera &amp;camera)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>nvblox::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="95" column="1" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" declline="95" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ae75b710e0da73064821f31e9baf821c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::camerasAreEquivalent</definition>
+        <argsstring>(const Camera &amp;camera_1, const Camera &amp;camera_2, const Transform &amp;T_L_C1, const Transform &amp;T_L_C2)</argsstring>
+        <name>camerasAreEquivalent</name>
+        <qualifiedname>nvblox::camerasAreEquivalent</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera_1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera_2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="98" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" declline="98" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a5943b902513096b8979a4493ca55d75c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ bool</type>
+        <definition>__host__ bool nvblox::operator==</definition>
+        <argsstring>(const Lidar &amp;lhs, const Lidar &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>nvblox::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" line="98" column="22" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/lidar.h" declline="98" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a3f6e3a3efb322790a7a033be6874d5d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::transformPointcloudOnGPU</definition>
+        <argsstring>(const Transform &amp;T_out_in, const Pointcloud &amp;pointcloud_in, Pointcloud *pointcloud_out_ptr)</argsstring>
+        <name>transformPointcloudOnGPU</name>
+        <qualifiedname>nvblox::transformPointcloudOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_out_in</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> &amp;</type>
+          <declname>pointcloud_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> *</type>
+          <declname>pointcloud_out_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Transforms the points in a pointcloud into another frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T_out_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transform that takes a point in frame &quot;in&quot; to frame &quot;out&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointcloud_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classnvblox_1_1Pointcloud" kindref="compound">Pointcloud</ref> in frame &quot;in&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pointcloud_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointcloud in frame &quot;out&quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" line="87" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/pointcloud.h" declline="87" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a4a5b5a3a002bf96d85d9f518551649ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt;</type>
+        <definition>std::vector&lt; Byte &gt; nvblox::serializeBlock</definition>
+        <argsstring>(const unified_ptr&lt; BlockType &gt; &amp;block)</argsstring>
+        <name>serializeBlock</name>
+        <qualifiedname>nvblox::serializeBlock</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; BlockType &gt; &amp;</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" line="29" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" declline="29" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a90ef5974444b610c02404d45eb926161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt;</type>
+        <definition>std::vector&lt; Byte &gt; nvblox::serializeBlock</definition>
+        <argsstring>(const unified_ptr&lt; const VoxelBlock&lt; VoxelType &gt; &gt; &amp;block)</argsstring>
+        <name>serializeBlock</name>
+        <qualifiedname>nvblox::serializeBlock</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; const <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &gt; &amp;</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" line="33" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" declline="33" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1aa302f8bddb39d26891618146393d24ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BlockType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::deserializeBlock</definition>
+        <argsstring>(const std::vector&lt; Byte &gt; &amp;bytes, unified_ptr&lt; BlockType &gt; &amp;block)</argsstring>
+        <name>deserializeBlock</name>
+        <qualifiedname>nvblox::deserializeBlock</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; &amp;</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; BlockType &gt; &amp;</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" line="38" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a2d4b773d5dc129c91a64fcb2cfec2a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::deserializeBlock</definition>
+        <argsstring>(const std::vector&lt; Byte &gt; &amp;bytes, unified_ptr&lt; VoxelBlock&lt; VoxelType &gt; &gt; &amp;block)</argsstring>
+        <name>deserializeBlock</name>
+        <qualifiedname>nvblox::deserializeBlock</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; &amp;</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; &gt; &amp;</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" line="42" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/block_serialization.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a4635fca5584da87fcaff8ed8f4be69ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1LayerSerializationFunctions" kindref="compound">LayerSerializationFunctions</ref></type>
+        <definition>LayerSerializationFunctions nvblox::bindDefaultFunctions</definition>
+        <argsstring>()</argsstring>
+        <name>bindDefaultFunctions</name>
+        <qualifiedname>nvblox::bindDefaultFunctions</qualifiedname>
+        <briefdescription>
+<para>Bind default functions for the given types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/common_types.h" line="27" column="29" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/common_types.h" declline="27" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a6ed96b00838d2adfba230bd0709a16c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::registerCommonTypes</definition>
+        <argsstring>()</argsstring>
+        <name>registerCommonTypes</name>
+        <qualifiedname>nvblox::registerCommonTypes</qualifiedname>
+        <briefdescription>
+<para>Registers all the common layer types for serialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be called before you serialize or de-serialize anything. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/common_types.h" line="31" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/common_types.h" declline="31" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ad5a8f5534a4b6789066b937136b35b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref></type>
+        <definition>LayerParameterStruct nvblox::serializeLayerParameters</definition>
+        <argsstring>(const LayerType &amp;layer)</argsstring>
+        <name>serializeLayerParameters</name>
+        <qualifiedname>nvblox::serializeLayerParameters</qualifiedname>
+        <param>
+          <type>const LayerType &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="33" column="22" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="33" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a68738a6de44353303d7c4c8662508bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::getLayerDataIndices</definition>
+        <argsstring>(const LayerType &amp;layer)</argsstring>
+        <name>getLayerDataIndices</name>
+        <qualifiedname>nvblox::getLayerDataIndices</qualifiedname>
+        <param>
+          <type>const LayerType &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="36" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="36" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a99810f5f74b03fbf6dcd807a6c83c4eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt;</type>
+        <definition>std::vector&lt; Byte &gt; nvblox::serializeLayerDataAtIndex</definition>
+        <argsstring>(const LayerType &amp;layer, const Index3D &amp;index)</argsstring>
+        <name>serializeLayerDataAtIndex</name>
+        <qualifiedname>nvblox::serializeLayerDataAtIndex</qualifiedname>
+        <param>
+          <type>const LayerType &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="39" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="39" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a54a3afd4da91d0a6d84e422fb18a1ff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref></type>
+        <definition>LayerParameterStruct nvblox::serializeLayerParameters</definition>
+        <argsstring>(const VoxelBlockLayer&lt; VoxelType &gt; &amp;layer)</argsstring>
+        <name>serializeLayerParameters</name>
+        <qualifiedname>nvblox::serializeLayerParameters</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="44" column="22" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="44" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a609662db86c4b574f6c08694edf2f0ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::getLayerDataIndices</definition>
+        <argsstring>(const VoxelBlockLayer&lt; VoxelType &gt; &amp;layer)</argsstring>
+        <name>getLayerDataIndices</name>
+        <qualifiedname>nvblox::getLayerDataIndices</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="48" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="48" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a7ef435b778e89ff71d0326897f3ccbfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt;</type>
+        <definition>std::vector&lt; Byte &gt; nvblox::serializeLayerDataAtIndex</definition>
+        <argsstring>(const VoxelBlockLayer&lt; VoxelType &gt; &amp;layer, const Index3D &amp;index)</argsstring>
+        <name>serializeLayerDataAtIndex</name>
+        <qualifiedname>nvblox::serializeLayerDataAtIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="52" column="13" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="52" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1ac42544cd06768a1ed8fed4554f388092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::addDataToLayer</definition>
+        <argsstring>(const Index3D &amp;index, const std::vector&lt; Byte &gt; &amp;data, LayerType *layer)</argsstring>
+        <name>addDataToLayer</name>
+        <qualifiedname>nvblox::addDataToLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>LayerType *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="72" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="72" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1a172bba665e591f7562a8c890a8584276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>std::unique_ptr&lt; <ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; &gt;</type>
+        <definition>std::unique_ptr&lt; VoxelBlockLayer&lt; VoxelType &gt; &gt; nvblox::deserializeLayerParameters</definition>
+        <argsstring>(MemoryType memory_type, const LayerParameterStruct &amp;params)</argsstring>
+        <name>deserializeLayerParameters</name>
+        <qualifiedname>nvblox::deserializeLayerParameters</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="77" column="17" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="77" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenvblox_1accf8b6f75f8582239582862b49409c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::addDataToLayer</definition>
+        <argsstring>(const Index3D &amp;index, const std::vector&lt; Byte &gt; &amp;data, VoxelBlockLayer&lt; VoxelType &gt; *layer)</argsstring>
+        <name>addDataToLayer</name>
+        <qualifiedname>nvblox::addDataToLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" line="81" column="6" declfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_serialization.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="22" column="1"/>
+  </compounddef>
+</doxygen>

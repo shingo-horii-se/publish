@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_92184dbe46fddfd3e71c370233e186e6" kind="dir">
+    <compoundname>internal</compoundname>
+    <innerdir refid="dir_93d2dc83386a3d684bbfc8256d2c6992">impl</innerdir>
+    <innerfile refid="marching__cubes_8h">marching_cubes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/internal/"/>
+  </compounddef>
+</doxygen>

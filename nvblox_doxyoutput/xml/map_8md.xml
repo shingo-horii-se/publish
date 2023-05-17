@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="map_8md" kind="file" language="Markdown">
+    <compoundname>map.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Map<sp/>Overview</highlight></codeline>
+<codeline><highlight class="normal">We<sp/>implement<sp/>a<sp/>hierarchical<sp/>sparse<sp/>voxel<sp/>grid<sp/>for<sp/>storing<sp/>data.<sp/>At<sp/>the<sp/>top<sp/>level<sp/>we<sp/>have<sp/>the<sp/>``LayerCake``,<sp/>which<sp/>contains<sp/>several<sp/>layers,<sp/>each<sp/>of<sp/>which<sp/>contains<sp/>a<sp/>different<sp/>type<sp/>of<sp/>mapped<sp/>quantity<sp/>(eg<sp/>TSDF<sp/>and<sp/>ESDF).<sp/>A<sp/>layer<sp/>is<sp/>a<sp/>collection<sp/>of<sp/>sparsely<sp/>allocated<sp/>blocks.<sp/>Each<sp/>block<sp/>is<sp/>in<sp/>charge<sp/>of<sp/>mapping<sp/>a<sp/>cubular<sp/>small<sp/>region<sp/>of<sp/>space.<sp/>Most<sp/>blocks<sp/>are<sp/>composed<sp/>of<sp/>many<sp/>voxels,<sp/>each<sp/>of<sp/>which<sp/>captures<sp/>a<sp/>single<sp/>value<sp/>of<sp/>the<sp/>mapped<sp/>quantity<sp/>(eg<sp/>the<sp/>TSDF).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Map<sp/>Structure](images/map_structure.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>API<sp/>for<sp/>the<sp/>various<sp/>classes<sp/>implementing<sp/>a<sp/>map<sp/>nvblox<sp/>map:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Voxels</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[TsdfVoxel](@ref<sp/>nvblox::TsdfVoxel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[EsdfVoxel](@ref<sp/>nvblox::EsdfVoxel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[ColorVoxel](@ref<sp/>nvblox::ColorVoxel)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Blocks</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>template<sp/>for<sp/>a<sp/>block<sp/>containing<sp/>voxels.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[VoxelBlock](@ref<sp/>nvblox::VoxelBlock)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Blocks<sp/>containing<sp/>specific<sp/>voxel<sp/>types.<sp/>These<sp/>are<sp/>just<sp/>typedefs<sp/>of<sp/>the<sp/>above<sp/>voxel<sp/>blocks.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[TsdfBlock](@ref<sp/>nvblox::TsdfBlock)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Esdflock](@ref<sp/>nvblox::TsdfBlock)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[ColorBlock](@ref<sp/>nvblox::TsdfBlock)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>store<sp/>the<sp/>mesh<sp/>of<sp/>the<sp/>environment<sp/>as<sp/>a<sp/>collection<sp/>of<sp/>smaller<sp/>meshes.<sp/>In<sp/>particular,<sp/>a<sp/>``MeshLayer``<sp/>contains<sp/>``MeshBlocks``,<sp/>each<sp/>of<sp/>which<sp/>contains<sp/>a<sp/>mesh<sp/>of<sp/>the<sp/>surfaces<sp/>in<sp/>that<sp/>region<sp/>contained<sp/>within<sp/>that<sp/>block.<sp/>Note<sp/>that<sp/>we<sp/>store<sp/>a<sp/>mesh<sp/>per<sp/>*block*,<sp/>there<sp/>are<sp/>no<sp/>mesh<sp/>*voxels*.</highlight></codeline>
+<codeline><highlight class="normal">Storage<sp/>of<sp/>the<sp/>mesh<sp/>in<sp/>this<sp/>way<sp/>allows<sp/>us<sp/>to<sp/>perform<sp/>incremental<sp/>updates<sp/>(we<sp/>only<sp/>update<sp/>the<sp/>mesh<sp/>in<sp/>blocks<sp/>where<sp/>the<sp/>underlying<sp/>TSDF<sp/>has<sp/>changed).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[MeshBlock](@ref<sp/>nvblox::MeshBlock&gt;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Layers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Template<sp/>classes<sp/>for<sp/>layers<sp/>containing<sp/>blocks,<sp/>and<sp/>the<sp/>child<sp/>class<sp/>for<sp/>layers<sp/>containing<sp/>``VoxelBlock``<sp/>s.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[BlockLayer](@ref<sp/>nvblox::BlockLayer)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[VoxelBlockLayer](@ref<sp/>nvblox::VoxelBlockLayer)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Typedefs<sp/>for<sp/>layers<sp/>containing<sp/>specific<sp/>block<sp/>types<sp/>and<sp/>voxel<sp/>block<sp/>types.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[TsdfLayer](@ref<sp/>nvblox::TsdfLayer)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[EsdfLayer](@ref<sp/>nvblox::EsdfLayer)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[ColorLayer](@ref<sp/>nvblox::ColorLayer)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[MeshLayer](@ref<sp/>nvblox::MeshLayer)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Layer<sp/>Cake</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>``LayerCake``<sp/>combines<sp/>several<sp/>layers<sp/>into<sp/>a<sp/>single<sp/>object.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[LayerCake](@ref<sp/>nvblox::LayerCake)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="pages/map.md"/>
+  </compounddef>
+</doxygen>

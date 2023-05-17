@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1ProjectiveTsdfIntegrator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::ProjectiveTsdfIntegrator</compoundname>
+    <basecompoundref refid="classnvblox_1_1ProjectiveIntegrator" prot="public" virt="non-virtual">nvblox::ProjectiveIntegrator&lt; TsdfVoxel &gt;</basecompoundref>
+    <includes refid="projective__tsdf__integrator_8h" local="no">projective_tsdf_integrator.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveTsdfIntegrator_1af5d137259084723ee860195446294452" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; UpdateTsdfVoxelFunctor &gt;</type>
+        <definition>unified_ptr&lt;UpdateTsdfVoxelFunctor&gt; nvblox::ProjectiveTsdfIntegrator::update_functor_host_ptr_</definition>
+        <argsstring></argsstring>
+        <name>update_functor_host_ptr_</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::update_functor_host_ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="129" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a11c01de546b158e325848800f8509358" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveTsdfIntegrator::max_weight_</definition>
+        <argsstring></argsstring>
+        <name>max_weight_</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::max_weight_</qualifiedname>
+        <initializer>= 100.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="132" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a2036d7321e33c625418107b0beec28e9" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+        <definition>WeightingFunctionType nvblox::ProjectiveTsdfIntegrator::weighting_function_type_</definition>
+        <argsstring></argsstring>
+        <name>weighting_function_type_</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::weighting_function_type_</qualifiedname>
+        <initializer>=
+      <ref refid="namespacenvblox_1aca11bf4da09302e5daa400017eb6092b" kindref="member">kDefaultWeightingFunctionType</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="135" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveTsdfIntegrator_1ac6118686168fac51c64cd2fa8fe398fe" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_distance_m_</definition>
+        <argsstring></argsstring>
+        <name>marked_unobserved_voxels_distance_m_</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_distance_m_</qualifiedname>
+        <initializer>= -1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="141" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a0597ff97f5b2d6b07634b3afbfbb2a4c" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_weight_</definition>
+        <argsstring></argsstring>
+        <name>marked_unobserved_voxels_weight_</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_weight_</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="144" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a25303b4cec91ab747946bc9b0900ab5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ProjectiveTsdfIntegrator::ProjectiveTsdfIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>ProjectiveTsdfIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::ProjectiveTsdfIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a28d904cf08c98dfa818b713d2db55b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::ProjectiveTsdfIntegrator::~ProjectiveTsdfIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>~ProjectiveTsdfIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::~ProjectiveTsdfIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="34" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a467b37b49ec8a0a4971ffeb325496b3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveTsdfIntegrator::integrateFrame</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Camera &amp;camera, TsdfLayer *layer, std::vector&lt; Index3D &gt; *updated_blocks=nullptr)</argsstring>
+        <name>integrateFrame</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::integrateFrame</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Integrates a depth image in to the passed TSDF layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer into which this observation will be intergrated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updated_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to a vector which will contain the 3D indices of blocks affected by the integration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1ae07e9286468fd68d9f169140e2f4c6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveTsdfIntegrator::integrateFrame</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Lidar &amp;lidar, TsdfLayer *layer, std::vector&lt; Index3D &gt; *updated_blocks=nullptr)</argsstring>
+        <name>integrateFrame</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::integrateFrame</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Integrates a depth image in to the passed TSDF layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A depth image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lidar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the LiDAR model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer into which this observation will be intergrated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updated_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to a vector which will contain the 3D indices of blocks affected by the integration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1ac9f6763373f99dda1aee7b075017dea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveTsdfIntegrator::markUnobservedFreeInsideRadius</definition>
+        <argsstring>(const Vector3f &amp;center, float radius, TsdfLayer *layer, std::vector&lt; Index3D &gt; *updated_blocks=nullptr)</argsstring>
+        <name>markUnobservedFreeInsideRadius</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::markUnobservedFreeInsideRadius</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>For voxels with a radius, allocate memory and give a small weight and truncation distance, effectively making these voxels free-space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Does not affect voxels which are already observed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center of the sphere affected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of the sphere affected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointed to the layer which will be affected by the update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updated_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to a list of blocks affected by the update. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="70" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a5b0a191492a6aea7587d2acc39fe55ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveTsdfIntegrator::max_weight</definition>
+        <argsstring>() const</argsstring>
+        <name>max_weight</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::max_weight</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum weight that voxels can have. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The integrator clips the voxel weight to this value after integration. Note that currently each intragration to a voxel increases the weight by 1.0 (if not clipped). <simplesect kind="return"><para>the maximum weight </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="79" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1abf9011f1ad0aa63de6fe41431d1bb188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveTsdfIntegrator::max_weight</definition>
+        <argsstring>(float max_weight)</argsstring>
+        <name>max_weight</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::max_weight</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_weight</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a5b0a191492a6aea7587d2acc39fe55ea" kindref="member">max_weight()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum of a voxel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a4e517a8cd41dca8ad934447464379ae7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+        <definition>WeightingFunctionType nvblox::ProjectiveTsdfIntegrator::weighting_function_type</definition>
+        <argsstring>() const</argsstring>
+        <name>weighting_function_type</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::weighting_function_type</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The type of weighting function used to fuse observations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The weighting function type used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="89" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a3b79ef3f1a12f856a941be49e312d3ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveTsdfIntegrator::weighting_function_type</definition>
+        <argsstring>(WeightingFunctionType weighting_function_type)</argsstring>
+        <name>weighting_function_type</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::weighting_function_type</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+          <declname>weighting_function_type</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter The type of weighting function used to fuse observations See <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a4e517a8cd41dca8ad934447464379ae7" kindref="member">weighting_function_type()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weighting_function_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of weighting function to be used </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="95" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a5397e662fb0d2ec10cc575ceca75d2b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_distance_m</definition>
+        <argsstring>() const</argsstring>
+        <name>marked_unobserved_voxels_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_distance_m</qualifiedname>
+        <briefdescription>
+<para>A parameter getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance given to unobserved voxels when <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator_1ac9f6763373f99dda1aee7b075017dea3" kindref="member">markUnobservedFreeInsideRadius()</ref> is called. Note that a negative value means that the truncation distance will be used. <simplesect kind="return"><para>The assigned distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="102" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1af3af61169c6215325353af74edf399be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_distance_m</definition>
+        <argsstring>(float marked_unobserved_voxels_distance_m)</argsstring>
+        <name>marked_unobserved_voxels_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_distance_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>marked_unobserved_voxels_distance_m</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a5397e662fb0d2ec10cc575ceca75d2b1" kindref="member">marked_unobserved_voxels_distance_m()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>marked_unobserved_voxels_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The assigned distance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="107" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a8dd171357b59e30d7d82e454b3ddd37c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_weight</definition>
+        <argsstring>() const</argsstring>
+        <name>marked_unobserved_voxels_weight</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_weight</qualifiedname>
+        <briefdescription>
+<para>A parameter getter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The assigned weight </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="114" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1a7904aab52948d29fcef5699b1e8e829d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_weight</definition>
+        <argsstring>(float marked_unobserved_voxels_weight)</argsstring>
+        <name>marked_unobserved_voxels_weight</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::marked_unobserved_voxels_weight</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>marked_unobserved_voxels_weight</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a8dd171357b59e30d7d82e454b3ddd37c" kindref="member">marked_unobserved_voxels_weight()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>marked_unobserved_voxels_weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The assigned weight </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="119" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1aa3787701c6b8919be47041113150d0e7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string nvblox::ProjectiveTsdfIntegrator::getIntegratorName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getIntegratorName</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::getIntegratorName</qualifiedname>
+        <reimplements refid="classnvblox_1_1ProjectiveIntegrator_1ac0983f4ae5c625f853e94bb8e19b26b3">getIntegratorName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="122" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveTsdfIntegrator_1ac25642a071d8457365558fd419408801" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; UpdateTsdfVoxelFunctor &gt;</type>
+        <definition>unified_ptr&lt; UpdateTsdfVoxelFunctor &gt; nvblox::ProjectiveTsdfIntegrator::getTsdfUpdateFunctorOnDevice</definition>
+        <argsstring>(float voxel_size)</argsstring>
+        <name>getTsdfUpdateFunctorOnDevice</name>
+        <qualifiedname>nvblox::ProjectiveTsdfIntegrator::getTsdfUpdateFunctorOnDevice</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="125" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class performing TSDF intregration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Integrates depth images and lidar scans into TSDF layers. The &quot;projective&quot; describes one type of integration. Namely that voxels in view are projected into the depth image (the alternative being casting rays out from the camera). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>nvblox::ProjectiveIntegrator&lt; TsdfVoxel &gt;</label>
+        <link refid="classnvblox_1_1ProjectiveIntegrator"/>
+      </node>
+      <node id="1">
+        <label>nvblox::ProjectiveTsdfIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveTsdfIntegrator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>nvblox::ProjectiveIntegrator&lt; TsdfVoxel &gt;</label>
+        <link refid="classnvblox_1_1ProjectiveIntegrator"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>view_calculator_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>block_ptrs_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox::device_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>nvblox::device_vector&lt; nvblox::VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>nvblox::host_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>nvblox::host_vector&lt; nvblox::VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nvblox::ProjectiveTsdfIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveTsdfIntegrator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>update_functor_host_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nvblox::ViewCalculator</label>
+        <link refid="classnvblox_1_1ViewCalculator"/>
+      </node>
+      <node id="5">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="7">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="10">
+        <label>nvblox::unified_ptr&lt; UpdateTsdfVoxelFunctor &gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" line="31" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_tsdf_integrator.h" bodystart="31" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ac05344feed356684ce3dea241aebdf91" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>block_indices_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a0c0a9d819f5242dbac6d77bcaf68a725" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>block_indices_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a37175688508234a1a692c224fcc6ad0d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>block_ptrs_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab91e95bc2ff75620300e5397c07fa6f9" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>block_ptrs_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1accb2f21f48358e91ce107a3d6d36d5cc" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>get_truncation_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1aa3787701c6b8919be47041113150d0e7" prot="protected" virt="virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>getIntegratorName</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1ac25642a071d8457365558fd419408801" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>getTsdfUpdateFunctorOnDevice</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5189c1fa826a6add2ad6842edf8b7a9d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1aebd92b43838a659515c01aeb3a98adb6" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1acff287881f0654b8519615e4bc654e6d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateBlocksTemplate</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a467b37b49ec8a0a4971ffeb325496b3a" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1ae07e9286468fd68d9f169140e2f4c6ab" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5a79a82841cf74b1881c2eebb0608c2a" prot="public" virt="non-virtual" ambiguityscope="ProjectiveIntegrator&lt; TsdfVoxel &gt;::"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1acbdde4a683d85282bea543277dae162d" prot="public" virt="non-virtual" ambiguityscope="ProjectiveIntegrator&lt; TsdfVoxel &gt;::"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a6002d1b7e08c96c0ddce0cdb807b2a68" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrateFrameTemplate</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab958154f4eb951207d2d38a4f9aecc47" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integration_stream_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ac1732369626a2778e3f7e919b596d952" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrator_name_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a964fc74a99849b9e2fbc6a067dd50664" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>integrator_name_initialized_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5889ffd86c8b7f6de7ca0dda4626941b" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab3521a2f936ec57b5a4200e16ce6bda7" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a20fe96e120d502b6c0e32240ce00a067" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a60822d33ffde1ec1f13f9b4637a4d21b" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a72987163d56ee9e10cdf573ed8d7d4c1" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a92a74e575dfb4ce597aee822ef25b49f" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a5397e662fb0d2ec10cc575ceca75d2b1" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>marked_unobserved_voxels_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1af3af61169c6215325353af74edf399be" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>marked_unobserved_voxels_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1ac6118686168fac51c64cd2fa8fe398fe" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>marked_unobserved_voxels_distance_m_</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a8dd171357b59e30d7d82e454b3ddd37c" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>marked_unobserved_voxels_weight</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a7904aab52948d29fcef5699b1e8e829d" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>marked_unobserved_voxels_weight</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a0597ff97f5b2d6b07634b3afbfbb2a4c" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>marked_unobserved_voxels_weight_</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1ac9f6763373f99dda1aee7b075017dea3" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>markUnobservedFreeInsideRadius</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1af43add6af124e2175b15fcee9852fbb6" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7d7b820b9b32e15b0be6bce986c9bd34" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>max_integration_distance_m_</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a5b0a191492a6aea7587d2acc39fe55ea" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>max_weight</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1abf9011f1ad0aa63de6fe41431d1bb188" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>max_weight</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a11c01de546b158e325848800f8509358" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>max_weight_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a11824e66f6f77396315a759c7c946da2" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>ProjectiveIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a25303b4cec91ab747946bc9b0900ab5a" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>ProjectiveTsdfIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a3e7326d7fe420d1ea15dd85e53da5e4f" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a2629577c63dd028ec8668f0b64ef0a04" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>truncation_distance_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1af5d137259084723ee860195446294452" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>update_functor_host_ptr_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7482a8d92355cf239c9f22c694e1b0a2" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a881ffee867c9e61e9b204b8696c1616c" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a4767efff88bc6e7db81d0e11687d0085" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>view_calculator_</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a4e517a8cd41dca8ad934447464379ae7" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>weighting_function_type</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a3b79ef3f1a12f856a941be49e312d3ef" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>weighting_function_type</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a2036d7321e33c625418107b0beec28e9" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>weighting_function_type_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a60af0a01dc624076a38f33a38cb7f068" prot="public" virt="virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>~ProjectiveIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveTsdfIntegrator_1a28d904cf08c98dfa818b713d2db55b91" prot="public" virt="virtual"><scope>nvblox::ProjectiveTsdfIntegrator</scope><name>~ProjectiveTsdfIntegrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

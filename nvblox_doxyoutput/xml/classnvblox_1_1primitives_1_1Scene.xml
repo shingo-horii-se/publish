@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1primitives_1_1Scene" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::primitives::Scene</compoundname>
+    <includes refid="scene_8h" local="no">scene.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1primitives_1_1Scene_1a6baa5fd44396b39dcc87417a21ca9383" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Primitive&gt; &gt; nvblox::primitives::Scene::primitives_</definition>
+        <argsstring></argsstring>
+        <name>primitives_</name>
+        <qualifiedname>nvblox::primitives::Scene::primitives_</qualifiedname>
+        <briefdescription>
+<para>Vector storing pointers to all the objects in this world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="116" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1primitives_1_1Scene_1ab9721867e0723d27eb5c94e0beca67d9" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::primitives::Scene::aabb_</definition>
+        <argsstring></argsstring>
+        <name>aabb_</name>
+        <qualifiedname>nvblox::primitives::Scene::aabb_</qualifiedname>
+        <briefdescription>
+<para>World boundaries... Can be changed arbitrarily, just sets ground truth generation and visualization bounds, accurate only up to block size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="120" column="26" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a185115484b6aebe79518901e5cc5446a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::primitives::Scene::Scene</definition>
+        <argsstring>()</argsstring>
+        <name>Scene</name>
+        <qualifiedname>nvblox::primitives::Scene::Scene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="61" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a26d27118e1a2ed5c6d3b83baf07a642d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::addPrimitive</definition>
+        <argsstring>(std::unique_ptr&lt; Primitive &gt; primitive)</argsstring>
+        <name>addPrimitive</name>
+        <qualifiedname>nvblox::primitives::Scene::addPrimitive</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classnvblox_1_1primitives_1_1Primitive" kindref="compound">Primitive</ref> &gt;</type>
+          <declname>primitive</declname>
+        </param>
+        <briefdescription>
+<para>Create an environment by adding primitives, which are then owned by the scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="65" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1ac98380fc292314449fbc46cc1bd79fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::addGroundLevel</definition>
+        <argsstring>(float height)</argsstring>
+        <name>addGroundLevel</name>
+        <qualifiedname>nvblox::primitives::Scene::addGroundLevel</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Adds a ground level (normal up) at a given height on the Z axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height, in meters, of the ground. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="69" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a81209df9304042234e3d747bdb6cf180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::addCeiling</definition>
+        <argsstring>(float height)</argsstring>
+        <name>addCeiling</name>
+        <qualifiedname>nvblox::primitives::Scene::addCeiling</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Adds a ceiling at a given height. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All heights on the Z axis. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height, in meters, of the ceiling. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="72" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a37e71596d6cee2b9deb2520f9fa539de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::addPlaneBoundaries</definition>
+        <argsstring>(float x_min, float x_max, float y_min, float y_max)</argsstring>
+        <name>addPlaneBoundaries</name>
+        <qualifiedname>nvblox::primitives::Scene::addPlaneBoundaries</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y_max</declname>
+        </param>
+        <briefdescription>
+<para>Add 4 walls (infinite planes) bounding the space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In case this is not the desired behavior, can use addObject to add walls manually one by one. If infinite walls are undesirable, then use cubes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="77" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a08c34d211daf7d0b5e3e7d6e1ea005ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>nvblox::primitives::Scene::clear</qualifiedname>
+        <briefdescription>
+<para>Deletes all objects! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="80" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a962d608d2ad6092eb3da03f95b728eb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::generateDepthImageFromScene</definition>
+        <argsstring>(const Camera &amp;camera, const Transform &amp;T_S_C, float max_dist, DepthImage *depth_frame) const</argsstring>
+        <name>generateDepthImageFromScene</name>
+        <qualifiedname>nvblox::primitives::Scene::generateDepthImageFromScene</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_S_C</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_dist</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>depth_frame</declname>
+        </param>
+        <briefdescription>
+<para>Generates a synthetic view given camera parameters and a transformation of the camera to the scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a1fc2c5db1048fd4873cf7447d8a15ca9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::generateLayerFromScene</definition>
+        <argsstring>(float max_dist, VoxelBlockLayer&lt; VoxelType &gt; *layer) const</argsstring>
+        <name>generateLayerFromScene</name>
+        <qualifiedname>nvblox::primitives::Scene::generateLayerFromScene</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_dist</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Computes the ground truth SDFs (either TSDF or ESDF depending on template parameter). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="91" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a413240ec039f198ca9fa0623f5991822" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::primitives::Scene::getSignedDistanceToPoint</definition>
+        <argsstring>(const Vector3f &amp;coords, float max_dist) const</argsstring>
+        <name>getSignedDistanceToPoint</name>
+        <qualifiedname>nvblox::primitives::Scene::getSignedDistanceToPoint</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_dist</declname>
+        </param>
+        <briefdescription>
+<para>Computes distance to an arbitrary point across all objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Positive distance is computed only up to max_dist, though negative distance may be smaller than -max_dist. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="97" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a4f6ef756ff0897c45d49d25e6f550042" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::primitives::Scene::getRayIntersection</definition>
+        <argsstring>(const Vector3f &amp;ray_origin, const Vector3f &amp;ray_direction, float max_dist, Vector3f *ray_intersection, float *ray_dist) const</argsstring>
+        <name>getRayIntersection</name>
+        <qualifiedname>nvblox::primitives::Scene::getRayIntersection</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>ray_origin</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>ray_direction</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_dist</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> *</type>
+          <declname>ray_intersection</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>ray_dist</declname>
+        </param>
+        <briefdescription>
+<para>Get the intersection of a ray with the first hit object in the scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="100" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a9d1504b2e77f5ad8fc14688cf456cd5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+        <definition>const AxisAlignedBoundingBox &amp; nvblox::primitives::Scene::aabb</definition>
+        <argsstring>() const</argsstring>
+        <name>aabb</name>
+        <qualifiedname>nvblox::primitives::Scene::aabb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="104" column="32" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a5749c448a3bc2337dfe7762a310c6aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+        <definition>AxisAlignedBoundingBox &amp; nvblox::primitives::Scene::aabb</definition>
+        <argsstring>()</argsstring>
+        <name>aabb</name>
+        <qualifiedname>nvblox::primitives::Scene::aabb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="105" column="26" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a1f0b94bd73d860e07f02c985eccccfcd" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::primitives::Scene::setVoxel</definition>
+        <argsstring>(float value, VoxelType *voxel) const</argsstring>
+        <name>setVoxel</name>
+        <qualifiedname>nvblox::primitives::Scene::setVoxel</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>VoxelType *</type>
+          <declname>voxel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="109" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1primitives_1_1Scene_1a62769115869c65dc655cfcf3225f8be8" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VoxelType</type>
+          </param>
+        </templateparamlist>
+        <type>float</type>
+        <definition>float nvblox::primitives::Scene::getVoxelGroundTruthValue</definition>
+        <argsstring>(const Vector3f &amp;coords, float max_dist, float voxel_size=0) const</argsstring>
+        <name>getVoxelGroundTruthValue</name>
+        <qualifiedname>nvblox::primitives::Scene::getVoxelGroundTruthValue</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_dist</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="112" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" line="59" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/scene.h" bodystart="59" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a9d1504b2e77f5ad8fc14688cf456cd5d" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>aabb</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a5749c448a3bc2337dfe7762a310c6aca" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>aabb</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1ab9721867e0723d27eb5c94e0beca67d9" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>aabb_</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a81209df9304042234e3d747bdb6cf180" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>addCeiling</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1ac98380fc292314449fbc46cc1bd79fa4" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>addGroundLevel</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a37e71596d6cee2b9deb2520f9fa539de" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>addPlaneBoundaries</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a26d27118e1a2ed5c6d3b83baf07a642d" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>addPrimitive</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a08c34d211daf7d0b5e3e7d6e1ea005ec" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>clear</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a962d608d2ad6092eb3da03f95b728eb0" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>generateDepthImageFromScene</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a1fc2c5db1048fd4873cf7447d8a15ca9" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>generateLayerFromScene</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a4f6ef756ff0897c45d49d25e6f550042" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>getRayIntersection</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a413240ec039f198ca9fa0623f5991822" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>getSignedDistanceToPoint</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a62769115869c65dc655cfcf3225f8be8" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>getVoxelGroundTruthValue</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a6baa5fd44396b39dcc87417a21ca9383" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>primitives_</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a185115484b6aebe79518901e5cc5446a" prot="public" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>Scene</name></member>
+      <member refid="classnvblox_1_1primitives_1_1Scene_1a1f0b94bd73d860e07f02c985eccccfcd" prot="protected" virt="non-virtual"><scope>nvblox::primitives::Scene</scope><name>setVoxel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

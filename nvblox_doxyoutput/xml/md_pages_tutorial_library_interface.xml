@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="md_pages_tutorial_library_interface" kind="page">
+    <compoundname>md_pages_tutorial_library_interface</compoundname>
+    <title>Library interface</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>In this page give some brief details of how to interact with nvblox on a library level. For doxygen generated API docs see <ulink url="https://nvblox.readthedocs.io/en/latest/index.html">our readthedocs page</ulink>.</para>
+<para><heading level="1">High-level Interface</heading>
+</para>
+<para>The top level interface is the <computeroutput>Mapper</computeroutput> class.</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">const<sp/>float<sp/>voxel_size_m<sp/>=<sp/>0.05;</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>MemoryType<sp/>memory_type<sp/>=<sp/>MemoryType::kDevice;</highlight></codeline>
+<codeline><highlight class="normal">Mapper(voxel_size_s,<sp/>memory_type);</highlight></codeline>
+</programlisting></para>
+<para>This creates a mapper, which also allocates an empty map. Here we specify that voxels will be 5cm is size, and will be stored on the GPU (device).</para>
+<para>The mapper has methods for adding depth and color images to the reconstruction.</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">mapper.integrateDepth(depth_image,<sp/>T_L_C,<sp/>camera);</highlight></codeline>
+</programlisting></para>
+<para>The input image <computeroutput>depth_image</computeroutput>, the camera pose <computeroutput>T_L_C</computeroutput>, and the camera intrinsic model <computeroutput>camera</computeroutput> need to be supplied by the user of nvblox.</para>
+<para>The function call above integrates the observations into a 3D TSDF voxel grid. The TSDF is rarely the final desired output and usually we would like to generate a Euclidian Signed Distance Function (ESDF) for pathplanning, or to generate a mesh to view the reconstruction, from the TSDF. Mapper includes methods for doing this:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">mapper.updateEsdf();</highlight></codeline>
+<codeline><highlight class="normal">mapper.updateMesh();</highlight></codeline>
+</programlisting></para>
+<para>The word &quot;update&quot; here indicates that these functions don&apos;t generate the mesh or ESDF from scratch, but only update what&apos;s needed.</para>
+<para>We could then save the mesh to disk as a <computeroutput>.ply</computeroutput> file.</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">io::outputMeshLayerToPly(mapper.mesh_layer(),<sp/>&quot;/path/to/my/cool/mesh.ply&quot;);</highlight></codeline>
+</programlisting></para>
+<para><heading level="1">Accessing Voxels</heading>
+</para>
+<para>If you&apos;re using nvblox as a library you likely want to work with voxels directly.</para>
+<para>Voxels are stored in the class &quot;Layer&quot;. A map is composed of multiple layers, which are co-located voxel grids which stored voxels of different types. A typical map has for example TSDF, Color layers.</para>
+<para>Layer provides voxel accessor methods.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getVoxels(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector3f&gt;&amp;<sp/>positions_L,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;VoxelType&gt;*<sp/>voxels_ptr,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;bool&gt;*<sp/>success_flags_ptr)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getVoxelsGPU(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>device_vector&lt;Vector3f&gt;&amp;<sp/>positions_L,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device_vector&lt;VoxelType&gt;*<sp/>voxels_ptr,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device_vector&lt;bool&gt;*<sp/>success_flags_ptr)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+</programlisting> These will return the caller with a vector of voxels on either the GPU or CPU. The flags indicate whether the relevant voxel could be found (we only allocate voxels in memory when that area of space is observed). If you request a voxel in unobserved space the lookup will fail and write a <computeroutput>false</computeroutput> to that entry in the <computeroutput>success_flags</computeroutput> vector.</para>
+<para>Calling these functions requires the GPU to run a kernel to retrieve voxels from the voxel grid and copy their values into the output vector. In the <computeroutput>getVoxels</computeroutput> we additionally copy the voxel back from the GPU to host (CPU) memory.</para>
+<para>Getting voxels using the functions above is a multistep process internally. The function has to:<itemizedlist>
+<listitem><para>Call a kernel which translates query positions to voxel memory locations,</para>
+</listitem><listitem><para>Copies voxels into an output vector.</para>
+</listitem><listitem><para>We the optionally have to copy the output vector from device to host memory.</para>
+</listitem></itemizedlist>
+</para>
+<para>Therefore, advanced users who want maximum query speed should access voxels directly inside a GPU kernel. The next sections discusses this process.</para>
+<para><heading level="1">Accessing Voxels on GPU</heading>
+</para>
+<para>If you want to write high performance code which uses voxel values directly, you&apos;ll likely want to access voxels in GPU kernels.</para>
+<para>We illustrate how this is done by a slightly simplified version of the <computeroutput>getVoxels</computeroutput> function described in the last section.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal">__global__<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>queryVoxelsKernel(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_queries,<sp/>Index3DDeviceHashMapType&lt;TsdfBlock&gt;<sp/>block_hash,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>block_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector3f*<sp/>query_locations_ptr,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TsdfVoxel*<sp/>voxels_ptr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>success_flags_ptr)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>threadIdx.x<sp/>+<sp/>blockIdx.x<sp/>*<sp/>blockDim.x;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&gt;=<sp/>num_queries)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref><sp/>query_location<sp/>=<sp/>query_locations_ptr[idx];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TsdfVoxel*<sp/>voxel;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!getVoxelAtPosition&lt;TsdfVoxel&gt;(block_hash,<sp/>query_location,<sp/>block_size,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;voxel))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>success_flags_ptr[idx]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>success_flags_ptr[idx]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>voxels_ptr[idx]<sp/>=<sp/>*voxel;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getVoxelsGPU(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TsdfLayer<sp/>layer,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>device_vector&lt;Vector3f&gt;&amp;<sp/>positions_L,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>device_vector&lt;TsdfVoxel&gt;*<sp/>voxels_ptr,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>device_vector&lt;bool&gt;*<sp/>success_flags_ptr)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_queries<sp/>=<sp/>positions_L.size();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>voxels_ptr-&gt;resize(num_queries);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>success_flags_ptr-&gt;resize(num_queries);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kNumThreads<sp/>=<sp/>512;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_blocks<sp/>=<sp/>num_queries<sp/>/<sp/>kNumThreads<sp/>+<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>GPULayerView&lt;TsdfBlock&gt;<sp/>gpu_layer_view<sp/>=<sp/>layer.getGpuLayerView();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>queryVoxelsKernel&lt;&lt;&lt;num_blocks,<sp/>kNumThreads&gt;&gt;&gt;(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>num_queries,<sp/>gpu_layer_view.getHash().impl_,<sp/>layer.block_size(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>positions_L.data(),<sp/>voxels_ptr-&gt;data(),<sp/>success_flags_ptr-&gt;data());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="error__check_8h_1af956e3938f5abff900fb99c4a25446a5" kindref="member">checkCudaErrors</ref>(cudaDeviceSynchronize(cuda_stream));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="error__check_8h_1af956e3938f5abff900fb99c4a25446a5" kindref="member">checkCudaErrors</ref>(cudaPeekAtLastError());</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>The first critical thing that happens in the code above is that we get a GPU view of the hash table representing the map.</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal">GPULayerView&lt;TsdfBlock&gt;<sp/>gpu_layer_view<sp/>=<sp/>layer.getGpuLayerView()</highlight></codeline>
+</programlisting> The hash table is used in the kernel to transform 3D query locations into memory locations for voxels.</para>
+<para>Inside the kernel we have <programlisting filename=".cpp"><codeline><highlight class="normal">TsdfVoxel*<sp/>voxel;</highlight></codeline>
+<codeline><highlight class="normal">getVoxelAtPosition&lt;TsdfVoxel&gt;(block_hash,<sp/>query_location,<sp/>block_size,<sp/>&amp;voxel);</highlight></codeline>
+</programlisting> which places a pointer to the voxel in <computeroutput>voxel</computeroutput> and returns true if the voxel has been allocated.</para>
+<para>For a small example application which queries voxels on the GPU see <computeroutput>/nvblox/examples/src/esdf_query.cu</computeroutput>. </para>
+    </detaileddescription>
+    <location file="pages/tutorial_library_interface.md"/>
+  </compounddef>
+</doxygen>

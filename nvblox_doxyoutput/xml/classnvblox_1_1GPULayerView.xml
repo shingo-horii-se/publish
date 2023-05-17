@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1GPULayerView" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::GPULayerView</compoundname>
+    <includes refid="gpu__layer__view_8h" local="no">gpu_layer_view.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename BlockType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classnvblox_1_1GPULayerView_1acae91f0578c0f4c36fc98d9812cb991c" prot="public" static="no">
+        <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; BlockType &gt;</type>
+        <definition>using nvblox::GPULayerView&lt; BlockType &gt;::LayerType =  BlockLayer&lt;BlockType&gt;</definition>
+        <argsstring></argsstring>
+        <name>LayerType</name>
+        <qualifiedname>nvblox::GPULayerView::LayerType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="31" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1GPULayerView_1a2b1f119087a66ea65859ab5276ea8b4c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::GPULayerView&lt; BlockType &gt;::block_size_</definition>
+        <argsstring></argsstring>
+        <name>block_size_</name>
+        <qualifiedname>nvblox::GPULayerView::block_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="62" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1GPULayerView_1a011088a28821191a50016d1b5861f555" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float nvblox::GPULayerView&lt; BlockType &gt;::max_load_factor_</definition>
+        <argsstring></argsstring>
+        <name>max_load_factor_</name>
+        <qualifiedname>nvblox::GPULayerView::max_load_factor_</qualifiedname>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="67" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1GPULayerView_1aa29c9fb51935581f4e64860a590797e7" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float nvblox::GPULayerView&lt; BlockType &gt;::size_expansion_factor_</definition>
+        <argsstring></argsstring>
+        <name>size_expansion_factor_</name>
+        <qualifiedname>nvblox::GPULayerView::size_expansion_factor_</qualifiedname>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="70" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1GPULayerView_1a2f763f6d11793903d241e8492dfbda00" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classnvblox_1_1GPUHashImpl" kindref="compound">GPUHashImpl</ref>&lt; BlockType &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;GPUHashImpl&lt;BlockType&gt; &gt; nvblox::GPULayerView&lt; BlockType &gt;::gpu_hash_ptr_</definition>
+        <argsstring></argsstring>
+        <name>gpu_hash_ptr_</name>
+        <qualifiedname>nvblox::GPULayerView::gpu_hash_ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="74" column="19" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1aeb062e7c86bf2d515b15004d4c283bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::GPULayerView&lt; BlockType &gt;::GPULayerView</definition>
+        <argsstring>()=default</argsstring>
+        <name>GPULayerView</name>
+        <qualifiedname>nvblox::GPULayerView::GPULayerView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a576444dbb3a6ac518a127cfb662f7e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::GPULayerView&lt; BlockType &gt;::GPULayerView</definition>
+        <argsstring>(size_t max_num_blocks)</argsstring>
+        <name>GPULayerView</name>
+        <qualifiedname>nvblox::GPULayerView::GPULayerView</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>max_num_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="34" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a0b7b3dc60f9605fd6847d1d8f5910833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::GPULayerView&lt; BlockType &gt;::GPULayerView</definition>
+        <argsstring>(LayerType *layer_ptr)</argsstring>
+        <name>GPULayerView</name>
+        <qualifiedname>nvblox::GPULayerView::GPULayerView</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1GPULayerView_1acae91f0578c0f4c36fc98d9812cb991c" kindref="member">LayerType</ref> *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a27b3189efadf324c5926ee34cf1a6731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::GPULayerView&lt; BlockType &gt;::GPULayerView</definition>
+        <argsstring>(const GPULayerView &amp;other)</argsstring>
+        <name>GPULayerView</name>
+        <qualifiedname>nvblox::GPULayerView::GPULayerView</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="37" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1aef48edf3b418900fdbd395032f96414f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::GPULayerView&lt; BlockType &gt;::GPULayerView</definition>
+        <argsstring>(GPULayerView &amp;&amp;other)</argsstring>
+        <name>GPULayerView</name>
+        <qualifiedname>nvblox::GPULayerView::GPULayerView</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="38" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a4b1442640fe08501f0d8110e6aa53c03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref> &amp;</type>
+        <definition>GPULayerView &amp; nvblox::GPULayerView&lt; BlockType &gt;::operator=</definition>
+        <argsstring>(const GPULayerView &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::GPULayerView::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="39" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a3686736464cb7f4715552518c718b09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref> &amp;</type>
+        <definition>GPULayerView &amp; nvblox::GPULayerView&lt; BlockType &gt;::operator=</definition>
+        <argsstring>(GPULayerView &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>nvblox::GPULayerView::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1GPULayerView" kindref="compound">GPULayerView</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="40" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1aa52025ee94aca788dece0d2f20634d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::GPULayerView&lt; BlockType &gt;::~GPULayerView</definition>
+        <argsstring>()</argsstring>
+        <name>~GPULayerView</name>
+        <qualifiedname>nvblox::GPULayerView::~GPULayerView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a3524b09bf78c349001acea7fc7c8ecb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::GPULayerView&lt; BlockType &gt;::reset</definition>
+        <argsstring>(LayerType *layer_ptr)</argsstring>
+        <name>reset</name>
+        <qualifiedname>nvblox::GPULayerView::reset</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1GPULayerView_1acae91f0578c0f4c36fc98d9812cb991c" kindref="member">LayerType</ref> *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a70a32f1d04f77bbdf06b6aee2be283f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::GPULayerView&lt; BlockType &gt;::reset</definition>
+        <argsstring>(size_t new_max_num_blocks)</argsstring>
+        <name>reset</name>
+        <qualifiedname>nvblox::GPULayerView::reset</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>new_max_num_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a179047cdd75ffc52cdeca8e19e8ab6ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::GPULayerView&lt; BlockType &gt;::block_size</definition>
+        <argsstring>() const</argsstring>
+        <name>block_size</name>
+        <qualifiedname>nvblox::GPULayerView::block_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="50" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a1eded184d71db147438bc93dd494aa91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1GPUHashImpl" kindref="compound">GPUHashImpl</ref>&lt; BlockType &gt; &amp;</type>
+        <definition>const GPUHashImpl&lt; BlockType &gt; &amp; nvblox::GPULayerView&lt; BlockType &gt;::getHash</definition>
+        <argsstring>() const</argsstring>
+        <name>getHash</name>
+        <qualifiedname>nvblox::GPULayerView::getHash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="52" column="21" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1ac026e6b34719e88514bf5715ebfc3e40" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t nvblox::GPULayerView&lt; BlockType &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>nvblox::GPULayerView::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1aa3c96ebc9edc5bdf6a1333787e55d9b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::GPULayerView&lt; BlockType &gt;::max_load_factor</definition>
+        <argsstring>() const</argsstring>
+        <name>max_load_factor</name>
+        <qualifiedname>nvblox::GPULayerView::max_load_factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="57" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1GPULayerView_1a39e08efea4d37922c1c2e9648503ae4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::GPULayerView&lt; BlockType &gt;::size_expansion_factor</definition>
+        <argsstring>() const</argsstring>
+        <name>size_expansion_factor</name>
+        <qualifiedname>nvblox::GPULayerView::size_expansion_factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="58" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" line="29" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/gpu_hash/gpu_layer_view.h" bodystart="29" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1GPULayerView_1a179047cdd75ffc52cdeca8e19e8ab6ad" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>block_size</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a2b1f119087a66ea65859ab5276ea8b4c" prot="private" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>block_size_</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a1eded184d71db147438bc93dd494aa91" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>getHash</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a2f763f6d11793903d241e8492dfbda00" prot="private" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>gpu_hash_ptr_</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1aeb062e7c86bf2d515b15004d4c283bb3" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>GPULayerView</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a576444dbb3a6ac518a127cfb662f7e27" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>GPULayerView</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a0b7b3dc60f9605fd6847d1d8f5910833" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>GPULayerView</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a27b3189efadf324c5926ee34cf1a6731" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>GPULayerView</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1aef48edf3b418900fdbd395032f96414f" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>GPULayerView</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1acae91f0578c0f4c36fc98d9812cb991c" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>LayerType</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1aa3c96ebc9edc5bdf6a1333787e55d9b9" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>max_load_factor</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a011088a28821191a50016d1b5861f555" prot="private" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>max_load_factor_</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a4b1442640fe08501f0d8110e6aa53c03" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a3686736464cb7f4715552518c718b09d" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>operator=</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a3524b09bf78c349001acea7fc7c8ecb7" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>reset</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a70a32f1d04f77bbdf06b6aee2be283f3" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>reset</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1ac026e6b34719e88514bf5715ebfc3e40" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>size</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1a39e08efea4d37922c1c2e9648503ae4e" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>size_expansion_factor</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1aa29c9fb51935581f4e64860a590797e7" prot="private" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>size_expansion_factor_</name></member>
+      <member refid="classnvblox_1_1GPULayerView_1aa52025ee94aca788dece0d2f20634d38" prot="public" virt="non-virtual"><scope>nvblox::GPULayerView</scope><name>~GPULayerView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

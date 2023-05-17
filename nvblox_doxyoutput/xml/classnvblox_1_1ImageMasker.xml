@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1ImageMasker" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::ImageMasker</compoundname>
+    <includes refid="image__masker_8h" local="no">image_masker.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1ImageMasker_1a6d421726f1d70863cc04b41c2d224768" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ImageMasker::occlusion_threshold_m_</definition>
+        <argsstring></argsstring>
+        <name>occlusion_threshold_m_</name>
+        <qualifiedname>nvblox::ImageMasker::occlusion_threshold_m_</qualifiedname>
+        <initializer>= 0.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="107" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ImageMasker_1aff91c5ca414da4330e8997ff57c14128" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ImageMasker::depth_masked_image_invalid_pixel_</definition>
+        <argsstring></argsstring>
+        <name>depth_masked_image_invalid_pixel_</name>
+        <qualifiedname>nvblox::ImageMasker::depth_masked_image_invalid_pixel_</qualifiedname>
+        <initializer>= -1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="108" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ImageMasker_1aa5bfa6f0fb529fd2ab42a1528c0106a1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ImageMasker::depth_unmasked_image_invalid_pixel_</definition>
+        <argsstring></argsstring>
+        <name>depth_unmasked_image_invalid_pixel_</name>
+        <qualifiedname>nvblox::ImageMasker::depth_unmasked_image_invalid_pixel_</qualifiedname>
+        <initializer>= -1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="109" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ImageMasker_1a7b3d1e6df98b4902cee544c74e056e4d" prot="private" static="no" mutable="no">
+        <type><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color nvblox::ImageMasker::color_masked_image_invalid_pixel_</definition>
+        <argsstring></argsstring>
+        <name>color_masked_image_invalid_pixel_</name>
+        <qualifiedname>nvblox::ImageMasker::color_masked_image_invalid_pixel_</qualifiedname>
+        <initializer>= <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>(0, 0, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="110" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ImageMasker_1a143e95537146ce9c24fe65aca666656b" prot="private" static="no" mutable="no">
+        <type><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color nvblox::ImageMasker::color_unmasked_image_invalid_pixel_</definition>
+        <argsstring></argsstring>
+        <name>color_unmasked_image_invalid_pixel_</name>
+        <qualifiedname>nvblox::ImageMasker::color_unmasked_image_invalid_pixel_</qualifiedname>
+        <initializer>= <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>(0, 0, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="111" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ImageMasker_1abd7dd6e871f55d40fec3f5eb8ad117ab" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::ImageMasker::cuda_stream_</definition>
+        <argsstring></argsstring>
+        <name>cuda_stream_</name>
+        <qualifiedname>nvblox::ImageMasker::cuda_stream_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="113" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1a40554722aca3a1488b9e06dd688f9199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ImageMasker::ImageMasker</definition>
+        <argsstring>()</argsstring>
+        <name>ImageMasker</name>
+        <qualifiedname>nvblox::ImageMasker::ImageMasker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="28" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1a5fdb74fff872d93cb24e5269d627af78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ImageMasker::~ImageMasker</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageMasker</name>
+        <qualifiedname>nvblox::ImageMasker::~ImageMasker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1a53e70cb1b3e4477a7f0c2933319b716e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ImageMasker::splitImageOnGPU</definition>
+        <argsstring>(const ColorImage &amp;input, const MonoImage &amp;mask, ColorImage *unmasked_output, ColorImage *masked_output, ColorImage *masked_color_overlay=nullptr)</argsstring>
+        <name>splitImageOnGPU</name>
+        <qualifiedname>nvblox::ImageMasker::splitImageOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>unmasked_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>masked_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>masked_color_overlay</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Splitting the input color image according to a mask image assuming color and mask images are coming from the same camera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> image to be split according to mask. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mask image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unmasked_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> image containing the color values of all unmasked input pixels. Masked pixels are set to black. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>masked_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional. <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> image containing the color values of all masked input pixels. Unmasked pixels are set to black. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1aac4596da79f1df9d10398847a9a92c30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ImageMasker::splitImageOnGPU</definition>
+        <argsstring>(const DepthImage &amp;depth_input, const MonoImage &amp;mask, const Transform &amp;T_CM_CD, const Camera &amp;depth_camera, const Camera &amp;mask_camera, DepthImage *unmasked_depth_output, DepthImage *masked_depth_output, ColorImage *masked_depth_overlay=nullptr)</argsstring>
+        <name>splitImageOnGPU</name>
+        <qualifiedname>nvblox::ImageMasker::splitImageOnGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_input</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" kindref="member">MonoImage</ref> &amp;</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_CM_CD</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>depth_camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>mask_camera</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>unmasked_depth_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> *</type>
+          <declname>masked_depth_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>masked_depth_overlay</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Splitting the input depth image according to a mask image taking occlusion into account. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth_input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth image to be split according to mask. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mask image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_CM_CD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transform from depth camera to mask camera frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth_camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Intrinsics model of the depth camera. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask_camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Intrinsics model of the mask camera. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unmasked_depth_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth image containing the depth values of all unmasked input pixels. Masked pixels are set to -1. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>masked_depth_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional. Depth image containing the depth values of all masked input pixels. Unmasked pixels are set to -1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1ab57fe50309c0e0dcc90b55a1f33d1bbe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ImageMasker::occlusion_threshold_m</definition>
+        <argsstring>() const</argsstring>
+        <name>occlusion_threshold_m</name>
+        <qualifiedname>nvblox::ImageMasker::occlusion_threshold_m</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The occlusion threshold parameter associated with the image splitter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A point is considered to be occluded on the mask image only if it lies more than the occlusion threshold behind the point occluding it. Occluded points are always assumed to be unmasked. <simplesect kind="return"><para>the occlusion threshold in meters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="71" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1abef7b30d23e408e249524661f6e54f89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ImageMasker::occlusion_threshold_m</definition>
+        <argsstring>(float occlusion_threshold_m)</argsstring>
+        <name>occlusion_threshold_m</name>
+        <qualifiedname>nvblox::ImageMasker::occlusion_threshold_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>occlusion_threshold_m</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ImageMasker_1ab57fe50309c0e0dcc90b55a1f33d1bbe" kindref="member">occlusion_threshold_m()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>occlusion_threshold_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the occlusion threshold in meters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1ab98af2445475d464cd3b0c01935a6957" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ImageMasker::depth_masked_image_invalid_pixel</definition>
+        <argsstring>() const</argsstring>
+        <name>depth_masked_image_invalid_pixel</name>
+        <qualifiedname>nvblox::ImageMasker::depth_masked_image_invalid_pixel</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The float value that gets written to unmasked pixels on the masked depth output image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the invalid pixel value for the masked depth output image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="82" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1ae47aba607b5528d47af0f0e9e5951553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ImageMasker::depth_masked_image_invalid_pixel</definition>
+        <argsstring>(float value)</argsstring>
+        <name>depth_masked_image_invalid_pixel</name>
+        <qualifiedname>nvblox::ImageMasker::depth_masked_image_invalid_pixel</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter see <ref refid="classnvblox_1_1ImageMasker_1ab98af2445475d464cd3b0c01935a6957" kindref="member">depth_masked_image_invalid_pixel()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new parameter value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="87" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1aa8b1f86e0a0d747f7b5a1f6dca90e336" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ImageMasker::depth_unmasked_image_invalid_pixel</definition>
+        <argsstring>() const</argsstring>
+        <name>depth_unmasked_image_invalid_pixel</name>
+        <qualifiedname>nvblox::ImageMasker::depth_unmasked_image_invalid_pixel</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The float value that gets written to masked pixels on the unmasked depth output image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the invalid pixel value for the unmasked depth output image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="93" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1ad0924525ae5ce475009dcb189fac139f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ImageMasker::depth_unmasked_image_invalid_pixel</definition>
+        <argsstring>(float value)</argsstring>
+        <name>depth_unmasked_image_invalid_pixel</name>
+        <qualifiedname>nvblox::ImageMasker::depth_unmasked_image_invalid_pixel</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter see <ref refid="classnvblox_1_1ImageMasker_1aa8b1f86e0a0d747f7b5a1f6dca90e336" kindref="member">depth_unmasked_image_invalid_pixel()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new parameter value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="98" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1ImageMasker_1a3b2edbd8aa0a52d34c25fff996515f12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ImageType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ImageMasker::allocateOutput</definition>
+        <argsstring>(const ImageType &amp;input, ImageType *unmasked_output, ImageType *masked_output, ColorImage *overlay_output=nullptr)</argsstring>
+        <name>allocateOutput</name>
+        <qualifiedname>nvblox::ImageMasker::allocateOutput</qualifiedname>
+        <param>
+          <type>const ImageType &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>ImageType *</type>
+          <declname>unmasked_output</declname>
+        </param>
+        <param>
+          <type>ImageType *</type>
+          <declname>masked_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> *</type>
+          <declname>overlay_output</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="102" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to mask images based on a binary mask. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" line="26" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/semantics/image_masker.h" bodystart="26" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1ImageMasker_1a3b2edbd8aa0a52d34c25fff996515f12" prot="private" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>allocateOutput</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1a7b3d1e6df98b4902cee544c74e056e4d" prot="private" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>color_masked_image_invalid_pixel_</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1a143e95537146ce9c24fe65aca666656b" prot="private" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>color_unmasked_image_invalid_pixel_</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1abd7dd6e871f55d40fec3f5eb8ad117ab" prot="private" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>cuda_stream_</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1ab98af2445475d464cd3b0c01935a6957" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>depth_masked_image_invalid_pixel</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1ae47aba607b5528d47af0f0e9e5951553" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>depth_masked_image_invalid_pixel</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1aff91c5ca414da4330e8997ff57c14128" prot="private" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>depth_masked_image_invalid_pixel_</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1aa8b1f86e0a0d747f7b5a1f6dca90e336" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>depth_unmasked_image_invalid_pixel</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1ad0924525ae5ce475009dcb189fac139f" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>depth_unmasked_image_invalid_pixel</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1aa5bfa6f0fb529fd2ab42a1528c0106a1" prot="private" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>depth_unmasked_image_invalid_pixel_</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1a40554722aca3a1488b9e06dd688f9199" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>ImageMasker</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1ab57fe50309c0e0dcc90b55a1f33d1bbe" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>occlusion_threshold_m</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1abef7b30d23e408e249524661f6e54f89" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>occlusion_threshold_m</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1a6d421726f1d70863cc04b41c2d224768" prot="private" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>occlusion_threshold_m_</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1a53e70cb1b3e4477a7f0c2933319b716e" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>splitImageOnGPU</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1aac4596da79f1df9d10398847a9a92c30" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>splitImageOnGPU</name></member>
+      <member refid="classnvblox_1_1ImageMasker_1a5fdb74fff872d93cb24e5269d627af78" prot="public" virt="non-virtual"><scope>nvblox::ImageMasker</scope><name>~ImageMasker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1OccupancyVoxel" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::OccupancyVoxel</compoundname>
+    <includes refid="voxels_8h" local="no">voxels.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1OccupancyVoxel_1a176595b415a725bad24f7bd75ef72b82" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::OccupancyVoxel::log_odds</definition>
+        <argsstring></argsstring>
+        <name>log_odds</name>
+        <qualifiedname>nvblox::OccupancyVoxel::log_odds</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="57" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="56" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="56" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1OccupancyVoxel_1a176595b415a725bad24f7bd75ef72b82" prot="public" virt="non-virtual"><scope>nvblox::OccupancyVoxel</scope><name>log_odds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

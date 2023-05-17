@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_7cb873b38c15597c227ade43e5956189" kind="dir">
+    <compoundname>mapper</compoundname>
+    <innerfile refid="mapper_8h">mapper.h</innerfile>
+    <innerfile refid="multi__mapper_8h">multi_mapper.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mapper/"/>
+  </compounddef>
+</doxygen>

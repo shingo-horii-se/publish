@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_8dd7082ab489ac47dcffa3090557c3fd" kind="dir">
+    <compoundname>primitives</compoundname>
+    <innerfile refid="primitives_8h">primitives.h</innerfile>
+    <innerfile refid="scene_8h">scene.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/primitives/"/>
+  </compounddef>
+</doxygen>

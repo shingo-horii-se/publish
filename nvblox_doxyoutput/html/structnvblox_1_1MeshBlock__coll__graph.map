@@ -1,0 +1,6 @@
+<map id="nvblox::MeshBlock" name="nvblox::MeshBlock">
+<area shape="rect" id="node1" title="A mesh block containing all of the triangles from this block." alt="" coords="250,80,380,107"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1unified__vector.html" title=" " alt="" coords="5,5,149,48"/>
+<area shape="rect" id="node3" href="$classnvblox_1_1unified__vector.html" title=" " alt="" coords="5,72,149,115"/>
+<area shape="rect" id="node4" href="$classnvblox_1_1unified__vector.html" title=" " alt="" coords="5,139,149,181"/>
+</map>

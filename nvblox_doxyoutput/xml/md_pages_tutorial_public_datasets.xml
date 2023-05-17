@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="md_pages_tutorial_public_datasets" kind="page">
+    <compoundname>md_pages_tutorial_public_datasets</compoundname>
+    <title>Public Datasets Tutorial</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>If you would like to run nvblox on a public datasets, we include some executables for fusing <ulink url="https://3dmatch.cs.princeton.edu/">3DMatch</ulink>, <ulink url="https://github.com/facebookresearch/Replica-Dataset">Replica</ulink>, and <ulink url="http://redwood-data.org/indoor_lidar_rgbd/index.html">Redwood</ulink> datasets.</para>
+<para>The executables are run by pointing the respective binary to a folder containing the dataset. We give details for each dataset below.</para>
+<para><heading level="1">3DMatch</heading>
+</para>
+<para>Instructions to run 3DMatch are given on the front page of the README <ulink url="https://github.com/nvidia-isaac/nvblox#run-an-example">here</ulink>.</para>
+<para><heading level="1">Replica</heading>
+</para>
+<para>We use <ulink url="https://github.com/facebookresearch/Replica-Dataset">Replica</ulink> sequences from the <ulink url="https://github.com/cvg/nice-slam">NICE-SLAM</ulink>.</para>
+<para>First download the dataset:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>~/datasets</highlight></codeline>
+<codeline><highlight class="normal">wget<sp/>https://cvg-data.inf.ethz.ch/nice-slam/data/Replica.zip</highlight></codeline>
+<codeline><highlight class="normal">unzip<sp/>Replica.zip</highlight></codeline>
+</programlisting></para>
+<para>Now run nvblox and output a mesh.</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>nvblox/build/executables</highlight></codeline>
+<codeline><highlight class="normal">./fuse_replica<sp/>~/datasets/Replica/office0<sp/>--voxel_size=0.02<sp/>--color_frame_subsampling=20<sp/>mesh.ply</highlight></codeline>
+</programlisting> Note that here we specify via command line flags to run the reconstruction with 2cm voxels, and only to integrate 1 in 20 color frames.</para>
+<para>View the reconstruction in Open3D <programlisting filename=".bash"><codeline><highlight class="normal">Open3D<sp/>mesh.ply</highlight></codeline>
+</programlisting> <image type="html" name="../images/replica_office0.png" inline="yes"></image>
+</para>
+<para><heading level="1">Redwood</heading>
+</para>
+<para>The replica RGB-D datasets are available <ulink url="http://redwood-data.org/indoor_lidar_rgbd/download.html">here</ulink>.</para>
+<para>Download the &quot;RGB-D sequence&quot; and &quot;Our camera poses&quot; at the link above.</para>
+<para>Extract the data into a common folder. For example for the apartment sequence the resultant folder structure looks like: <programlisting filename=".bash"><codeline><highlight class="normal">~/datasets/redwood/apartment</highlight></codeline>
+<codeline><highlight class="normal">~/datasets/redwood/apartment/pose_apartment/...</highlight></codeline>
+<codeline><highlight class="normal">~/datasets/redwood/apartment/rgbd_apartment/...</highlight></codeline>
+</programlisting></para>
+<para>Now we run the reconstruction <programlisting filename=".bash"><codeline><highlight class="normal">cd<sp/>nvblox/build/executables</highlight></codeline>
+<codeline><highlight class="normal">./fuse_redwood<sp/>~/datasets/redwood/apartment<sp/>--voxel_size=0.02<sp/>--color_frame_subsampling=20<sp/>mesh.ply<sp/></highlight></codeline>
+</programlisting> Note this dataset is large (~30000 images) so the reconstruction can take a couple of minutes.</para>
+<para>View the reconstruction in Open3D <programlisting filename=".bash"><codeline><highlight class="normal">Open3D<sp/>mesh.ply</highlight></codeline>
+</programlisting> <image type="html" name="../images/redwood_apartment.png" inline="yes"></image>
+ </para>
+    </detaileddescription>
+    <location file="pages/tutorial_public_datasets.md"/>
+  </compounddef>
+</doxygen>

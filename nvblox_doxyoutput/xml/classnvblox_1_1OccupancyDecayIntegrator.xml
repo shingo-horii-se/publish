@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1OccupancyDecayIntegrator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::OccupancyDecayIntegrator</compoundname>
+    <includes refid="occupancy__decay__integrator_8h" local="no">occupancy_decay_integrator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1a5f10f33aaa62c623b900294f4f0355bd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nvblox::OccupancyDecayIntegrator::deallocate_decayed_blocks_</definition>
+        <argsstring></argsstring>
+        <name>deallocate_decayed_blocks_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::deallocate_decayed_blocks_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="73" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1ae9af92f5194adff0a0d1700ce3a5fc5f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::OccupancyDecayIntegrator::free_space_decay_log_odds_</definition>
+        <argsstring></argsstring>
+        <name>free_space_decay_log_odds_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::free_space_decay_log_odds_</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1ad640ac31fc054c7e04ac95dedab14a46" kindref="member">logOddsFromProbability</ref>(0.55)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="74" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1a198a9120b8260d9fe0596b2cb7b2950b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::OccupancyDecayIntegrator::occupied_space_decay_log_odds_</definition>
+        <argsstring></argsstring>
+        <name>occupied_space_decay_log_odds_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::occupied_space_decay_log_odds_</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1ad640ac31fc054c7e04ac95dedab14a46" kindref="member">logOddsFromProbability</ref>(0.4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="75" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1acca4cc2863439933670b1dbc1fc5c8ca" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1ae51ca953e59e57aeefcf8721fab9d42b" kindref="member">OccupancyBlock</ref> * &gt;</type>
+        <definition>host_vector&lt;OccupancyBlock*&gt; nvblox::OccupancyDecayIntegrator::allocated_block_ptrs_host_</definition>
+        <argsstring></argsstring>
+        <name>allocated_block_ptrs_host_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::allocated_block_ptrs_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="78" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1a56914b1b4dd1ee26b7285f1d1a4e2af0" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1ae51ca953e59e57aeefcf8721fab9d42b" kindref="member">OccupancyBlock</ref> * &gt;</type>
+        <definition>device_vector&lt;OccupancyBlock*&gt; nvblox::OccupancyDecayIntegrator::allocated_block_ptrs_device_</definition>
+        <argsstring></argsstring>
+        <name>allocated_block_ptrs_device_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::allocated_block_ptrs_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="79" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1aef52898dd3f05cb241c4c16908f145ba" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; bool &gt;</type>
+        <definition>device_vector&lt;bool&gt; nvblox::OccupancyDecayIntegrator::block_fully_decayed_device_</definition>
+        <argsstring></argsstring>
+        <name>block_fully_decayed_device_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::block_fully_decayed_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="80" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1ab0fb472cbebcd01b1528d3d74dd36c96" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; bool &gt;</type>
+        <definition>host_vector&lt;bool&gt; nvblox::OccupancyDecayIntegrator::block_fully_decayed_host_</definition>
+        <argsstring></argsstring>
+        <name>block_fully_decayed_host_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::block_fully_decayed_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="81" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1OccupancyDecayIntegrator_1aeeb462c703ca80cbef8a37adf7968a05" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::OccupancyDecayIntegrator::integration_stream_</definition>
+        <argsstring></argsstring>
+        <name>integration_stream_</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::integration_stream_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="84" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a4888d678c28a3ad4cdbe75931cfdcf84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::OccupancyDecayIntegrator::OccupancyDecayIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>OccupancyDecayIntegrator</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::OccupancyDecayIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1af7a40c6f9ce69c93d48004ade70b1b37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::OccupancyDecayIntegrator::~OccupancyDecayIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>~OccupancyDecayIntegrator</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::~OccupancyDecayIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1aa99f078296728d4a4f48734f4c626521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::OccupancyDecayIntegrator::decay</definition>
+        <argsstring>(OccupancyLayer *layer_ptr)</argsstring>
+        <name>decay</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::decay</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Decay the occupancy grid and deallocate fully decayed blocks (if deallocate_decayed_blocks_ is true);. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a37255bc4a0ba1c7f0ad8bc61cc113ad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::OccupancyDecayIntegrator::deallocate_decayed_blocks</definition>
+        <argsstring>()</argsstring>
+        <name>deallocate_decayed_blocks</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::deallocate_decayed_blocks</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The flag that controls if fully decayed block should be deallocated or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the deallocate_decayed_blocks flag </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1aeef353a2e706f569c46e252eef6f2e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::OccupancyDecayIntegrator::deallocate_decayed_blocks</definition>
+        <argsstring>(bool deallocate_decayed_blocks)</argsstring>
+        <name>deallocate_decayed_blocks</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::deallocate_decayed_blocks</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>deallocate_decayed_blocks</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1OccupancyDecayIntegrator_1a37255bc4a0ba1c7f0ad8bc61cc113ad5" kindref="member">deallocate_decayed_blocks()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deallocate_decayed_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new flag. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a78f11e1e69ca0d31a2e034df860c221f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::OccupancyDecayIntegrator::free_region_decay_probability</definition>
+        <argsstring>()</argsstring>
+        <name>free_region_decay_probability</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::free_region_decay_probability</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The decay probability that is applied to the free region on decay. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the free region decay probability </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="50" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a22800ea3c9a9b85ce1a22d1d52e79dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::OccupancyDecayIntegrator::free_region_decay_probability</definition>
+        <argsstring>(float value)</argsstring>
+        <name>free_region_decay_probability</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::free_region_decay_probability</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1OccupancyDecayIntegrator_1a78f11e1e69ca0d31a2e034df860c221f" kindref="member">free_region_decay_probability()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new free region decay probability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="55" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a6cd8622c4b37b4dd98a1d67a478b1a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::OccupancyDecayIntegrator::occupied_region_decay_probability</definition>
+        <argsstring>()</argsstring>
+        <name>occupied_region_decay_probability</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::occupied_region_decay_probability</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The decay probability that is applied to the occupied region on decay. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the occupied region decay probability </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="60" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a263fb4ddacf3f4ae82218ffbc8c7f95e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::OccupancyDecayIntegrator::occupied_region_decay_probability</definition>
+        <argsstring>(float value)</argsstring>
+        <name>occupied_region_decay_probability</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::occupied_region_decay_probability</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1OccupancyDecayIntegrator_1a6cd8622c4b37b4dd98a1d67a478b1a41" kindref="member">occupied_region_decay_probability()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new occupied region decay probability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="65" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a2ac80bb3c27f1c61ab3a42b56d17790f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::OccupancyDecayIntegrator::decayProbability</definition>
+        <argsstring>(OccupancyLayer *layer_ptr)</argsstring>
+        <name>decayProbability</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::decayProbability</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="69" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1OccupancyDecayIntegrator_1a2b6d1ae278df8c0863358af3549db618" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::OccupancyDecayIntegrator::deallocateFullyDecayedBlocks</definition>
+        <argsstring>(OccupancyLayer *layer_ptr)</argsstring>
+        <name>deallocateFullyDecayedBlocks</name>
+        <qualifiedname>nvblox::OccupancyDecayIntegrator::deallocateFullyDecayedBlocks</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="70" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classnvblox_1_1OccupancyDecayIntegrator" kindref="compound">OccupancyDecayIntegrator</ref> class can be used to decay (approach 0.5 occupancy probability) an occupancy layer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is useful for dynamic scenarios, where object might move/disappear when not constantly observed. </para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" line="27" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/occupancy_decay_integrator.h" bodystart="27" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a56914b1b4dd1ee26b7285f1d1a4e2af0" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>allocated_block_ptrs_device_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1acca4cc2863439933670b1dbc1fc5c8ca" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>allocated_block_ptrs_host_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1aef52898dd3f05cb241c4c16908f145ba" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>block_fully_decayed_device_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1ab0fb472cbebcd01b1528d3d74dd36c96" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>block_fully_decayed_host_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a37255bc4a0ba1c7f0ad8bc61cc113ad5" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>deallocate_decayed_blocks</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1aeef353a2e706f569c46e252eef6f2e71" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>deallocate_decayed_blocks</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a5f10f33aaa62c623b900294f4f0355bd" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>deallocate_decayed_blocks_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a2b6d1ae278df8c0863358af3549db618" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>deallocateFullyDecayedBlocks</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1aa99f078296728d4a4f48734f4c626521" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>decay</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a2ac80bb3c27f1c61ab3a42b56d17790f" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>decayProbability</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a78f11e1e69ca0d31a2e034df860c221f" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>free_region_decay_probability</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a22800ea3c9a9b85ce1a22d1d52e79dfe" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>free_region_decay_probability</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1ae9af92f5194adff0a0d1700ce3a5fc5f" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>free_space_decay_log_odds_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1aeeb462c703ca80cbef8a37adf7968a05" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>integration_stream_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a4888d678c28a3ad4cdbe75931cfdcf84" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>OccupancyDecayIntegrator</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a6cd8622c4b37b4dd98a1d67a478b1a41" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>occupied_region_decay_probability</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a263fb4ddacf3f4ae82218ffbc8c7f95e" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>occupied_region_decay_probability</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1a198a9120b8260d9fe0596b2cb7b2950b" prot="private" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>occupied_space_decay_log_odds_</name></member>
+      <member refid="classnvblox_1_1OccupancyDecayIntegrator_1af7a40c6f9ce69c93d48004ade70b1b37" prot="public" virt="non-virtual"><scope>nvblox::OccupancyDecayIntegrator</scope><name>~OccupancyDecayIntegrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

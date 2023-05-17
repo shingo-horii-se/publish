@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1Camera" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::Camera</compoundname>
+    <includes refid="camera_8h" local="no">camera.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1Camera_1aaf63f3075dbf52f412b14af8ec7c9a05" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Camera::fu_</definition>
+        <argsstring></argsstring>
+        <name>fu_</name>
+        <qualifiedname>nvblox::Camera::fu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="85" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Camera_1ace8ac05eaf1fbdc23f6b5e54777a512f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Camera::fv_</definition>
+        <argsstring></argsstring>
+        <name>fv_</name>
+        <qualifiedname>nvblox::Camera::fv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="86" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Camera_1ae1aa1cccee148c55e29856c06af2e840" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Camera::cu_</definition>
+        <argsstring></argsstring>
+        <name>cu_</name>
+        <qualifiedname>nvblox::Camera::cu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="87" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Camera_1a577ebdf25079a90ac49a33bbc862ac10" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::Camera::cv_</definition>
+        <argsstring></argsstring>
+        <name>cv_</name>
+        <qualifiedname>nvblox::Camera::cv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="88" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Camera_1a9c3ebcbae53881f8d641a71f41de1d7c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::Camera::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <qualifiedname>nvblox::Camera::width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="90" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Camera_1acae2e565bb7def3fa7da9ba9baa4f378" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::Camera::height_</definition>
+        <argsstring></argsstring>
+        <name>height_</name>
+        <qualifiedname>nvblox::Camera::height_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="91" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1Camera_1aca50656d0f0c71102127c317ef511688" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Camera::Camera</definition>
+        <argsstring>()=default</argsstring>
+        <name>Camera</name>
+        <qualifiedname>nvblox::Camera::Camera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="28" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1abf27d7a8455065bf61f0f62e7c745d4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Camera::Camera</definition>
+        <argsstring>(float fu, float fv, float cu, float cv, int width, int height)</argsstring>
+        <name>Camera</name>
+        <qualifiedname>nvblox::Camera::Camera</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>fu</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fv</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cu</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="29" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a88631c6c9be40bb67f59c25b1829051b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Camera::Camera</definition>
+        <argsstring>(float fu, float fv, int width, int height)</argsstring>
+        <name>Camera</name>
+        <qualifiedname>nvblox::Camera::Camera</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>fu</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="31" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1aa1c0e67d89491c30a07675a415e1f43d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::Camera::project</definition>
+        <argsstring>(const Vector3f &amp;p_C, Vector2f *u_C) const</argsstring>
+        <name>project</name>
+        <qualifiedname>nvblox::Camera::project</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_C</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> *</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+<para>Project a 3D point in camera image space to a 2D pixel coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input 3D point coordinate in image space. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output 2D pixel coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the pixel is on the image. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="37" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1ab3f7d3758e6fa2dc0499e9e412a17461" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::Camera::getDepth</definition>
+        <argsstring>(const Vector3f &amp;p_C) const</argsstring>
+        <name>getDepth</name>
+        <qualifiedname>nvblox::Camera::getDepth</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>p_C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="40" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a199a201236b95470f47a28df66977927" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Camera::unprojectFromImagePlaneCoordinates</definition>
+        <argsstring>(const Vector2f &amp;u_C, const float depth) const</argsstring>
+        <name>unprojectFromImagePlaneCoordinates</name>
+        <qualifiedname>nvblox::Camera::unprojectFromImagePlaneCoordinates</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="43" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1aaa1295849e8839be3d15f3cb46e39da9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Camera::unprojectFromPixelIndices</definition>
+        <argsstring>(const Index2D &amp;u_C, const float depth) const</argsstring>
+        <name>unprojectFromPixelIndices</name>
+        <qualifiedname>nvblox::Camera::unprojectFromPixelIndices</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="45" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1adf32bbf90357f772fdb587cfa1131513" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>__host__ <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>__host__ AxisAlignedBoundingBox nvblox::Camera::getViewAABB</definition>
+        <argsstring>(const Transform &amp;T_L_C, const float min_depth, const float max_depth) const</argsstring>
+        <name>getViewAABB</name>
+        <qualifiedname>nvblox::Camera::getViewAABB</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>min_depth</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_depth</declname>
+        </param>
+        <briefdescription>
+<para>Get the axis aligned bounding box of the view in the LAYER coordinate frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="50" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a84bd5c7c57d810751c25d78406eb853b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>__host__ <ref refid="classnvblox_1_1Frustum" kindref="compound">Frustum</ref></type>
+        <definition>__host__ Frustum nvblox::Camera::getViewFrustum</definition>
+        <argsstring>(const Transform &amp;T_L_C, const float min_depth, const float max_depth) const</argsstring>
+        <name>getViewFrustum</name>
+        <qualifiedname>nvblox::Camera::getViewFrustum</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>min_depth</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="54" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1aa24f7e5728babbac8b0fe8bfd00a4e90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>__host__ Eigen::Matrix&lt; float, 8, 3 &gt;</type>
+        <definition>__host__ Eigen::Matrix&lt; float, 8, 3 &gt; nvblox::Camera::getViewCorners</definition>
+        <argsstring>(const float min_depth, const float max_depth) const</argsstring>
+        <name>getViewCorners</name>
+        <qualifiedname>nvblox::Camera::getViewCorners</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>min_depth</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max_depth</declname>
+        </param>
+        <briefdescription>
+<para>Gets the view corners in the CAMERA coordinate frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="58" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a5c9902489fe8f6b0bb93b9aa2830863e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Camera::vectorFromImagePlaneCoordinates</definition>
+        <argsstring>(const Vector2f &amp;u_C) const</argsstring>
+        <name>vectorFromImagePlaneCoordinates</name>
+        <qualifiedname>nvblox::Camera::vectorFromImagePlaneCoordinates</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1ab038ceea5526c6254a4bfd89bed6f65d" kindref="member">Vector2f</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="65" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a9ef40c89b994091201f104a35628d3e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref></type>
+        <definition>__host__ __device__ Vector3f nvblox::Camera::vectorFromPixelIndices</definition>
+        <argsstring>(const Index2D &amp;u_C) const</argsstring>
+        <name>vectorFromPixelIndices</name>
+        <qualifiedname>nvblox::Camera::vectorFromPixelIndices</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a353b46690dae4dc4de729d4a9b931836" kindref="member">Index2D</ref> &amp;</type>
+          <declname>u_C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="67" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1abf86bbdf49bd83c7f6141408f5bea282" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::Camera::fu</definition>
+        <argsstring>() const</argsstring>
+        <name>fu</name>
+        <qualifiedname>nvblox::Camera::fu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="71" column="36" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a0b66e9115e4a487495403b8786287583" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::Camera::fv</definition>
+        <argsstring>() const</argsstring>
+        <name>fv</name>
+        <qualifiedname>nvblox::Camera::fv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="72" column="36" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1ae40ce52e7d005ede36a0522d61620c47" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::Camera::cu</definition>
+        <argsstring>() const</argsstring>
+        <name>cu</name>
+        <qualifiedname>nvblox::Camera::cu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="73" column="36" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a99063ace99361c6787d576f09da19a93" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ float</type>
+        <definition>__host__ __device__ float nvblox::Camera::cv</definition>
+        <argsstring>() const</argsstring>
+        <name>cv</name>
+        <qualifiedname>nvblox::Camera::cv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="74" column="36" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a83f1a6b145d93cfada3e786bc2507920" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Camera::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <qualifiedname>nvblox::Camera::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="75" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a36249550873efb30dc92d50c5c9638df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Camera::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <qualifiedname>nvblox::Camera::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="76" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1a5f4a1a9863946db20b3de3ad309425da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Camera::cols</definition>
+        <argsstring>() const</argsstring>
+        <name>cols</name>
+        <qualifiedname>nvblox::Camera::cols</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="77" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Camera_1aa9292068247c53137fc9132d9330500d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ int</type>
+        <definition>__host__ __device__ int nvblox::Camera::rows</definition>
+        <argsstring>() const</argsstring>
+        <name>rows</name>
+        <qualifiedname>nvblox::Camera::rows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="78" column="34" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnvblox_1_1Camera_1ac0c3a17dd0be72611c232155ccdbad6d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref></type>
+        <definition>static Camera nvblox::Camera::fromIntrinsicsMatrix</definition>
+        <argsstring>(const Eigen::Matrix3f &amp;mat, int width, int height)</argsstring>
+        <name>fromIntrinsicsMatrix</name>
+        <qualifiedname>nvblox::Camera::fromIntrinsicsMatrix</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix3f &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="81" column="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that describes the parameters and FoV of a camera. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="26" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="26" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1Camera_1aca50656d0f0c71102127c317ef511688" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>Camera</name></member>
+      <member refid="classnvblox_1_1Camera_1abf27d7a8455065bf61f0f62e7c745d4d" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>Camera</name></member>
+      <member refid="classnvblox_1_1Camera_1a88631c6c9be40bb67f59c25b1829051b" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>Camera</name></member>
+      <member refid="classnvblox_1_1Camera_1a5f4a1a9863946db20b3de3ad309425da" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>cols</name></member>
+      <member refid="classnvblox_1_1Camera_1ae40ce52e7d005ede36a0522d61620c47" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>cu</name></member>
+      <member refid="classnvblox_1_1Camera_1ae1aa1cccee148c55e29856c06af2e840" prot="private" virt="non-virtual"><scope>nvblox::Camera</scope><name>cu_</name></member>
+      <member refid="classnvblox_1_1Camera_1a99063ace99361c6787d576f09da19a93" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>cv</name></member>
+      <member refid="classnvblox_1_1Camera_1a577ebdf25079a90ac49a33bbc862ac10" prot="private" virt="non-virtual"><scope>nvblox::Camera</scope><name>cv_</name></member>
+      <member refid="classnvblox_1_1Camera_1ac0c3a17dd0be72611c232155ccdbad6d" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>fromIntrinsicsMatrix</name></member>
+      <member refid="classnvblox_1_1Camera_1abf86bbdf49bd83c7f6141408f5bea282" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>fu</name></member>
+      <member refid="classnvblox_1_1Camera_1aaf63f3075dbf52f412b14af8ec7c9a05" prot="private" virt="non-virtual"><scope>nvblox::Camera</scope><name>fu_</name></member>
+      <member refid="classnvblox_1_1Camera_1a0b66e9115e4a487495403b8786287583" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>fv</name></member>
+      <member refid="classnvblox_1_1Camera_1ace8ac05eaf1fbdc23f6b5e54777a512f" prot="private" virt="non-virtual"><scope>nvblox::Camera</scope><name>fv_</name></member>
+      <member refid="classnvblox_1_1Camera_1ab3f7d3758e6fa2dc0499e9e412a17461" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>getDepth</name></member>
+      <member refid="classnvblox_1_1Camera_1adf32bbf90357f772fdb587cfa1131513" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>getViewAABB</name></member>
+      <member refid="classnvblox_1_1Camera_1aa24f7e5728babbac8b0fe8bfd00a4e90" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>getViewCorners</name></member>
+      <member refid="classnvblox_1_1Camera_1a84bd5c7c57d810751c25d78406eb853b" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>getViewFrustum</name></member>
+      <member refid="classnvblox_1_1Camera_1a36249550873efb30dc92d50c5c9638df" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>height</name></member>
+      <member refid="classnvblox_1_1Camera_1acae2e565bb7def3fa7da9ba9baa4f378" prot="private" virt="non-virtual"><scope>nvblox::Camera</scope><name>height_</name></member>
+      <member refid="classnvblox_1_1Camera_1aa1c0e67d89491c30a07675a415e1f43d" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>project</name></member>
+      <member refid="classnvblox_1_1Camera_1aa9292068247c53137fc9132d9330500d" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>rows</name></member>
+      <member refid="classnvblox_1_1Camera_1a199a201236b95470f47a28df66977927" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>unprojectFromImagePlaneCoordinates</name></member>
+      <member refid="classnvblox_1_1Camera_1aaa1295849e8839be3d15f3cb46e39da9" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>unprojectFromPixelIndices</name></member>
+      <member refid="classnvblox_1_1Camera_1a5c9902489fe8f6b0bb93b9aa2830863e" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>vectorFromImagePlaneCoordinates</name></member>
+      <member refid="classnvblox_1_1Camera_1a9ef40c89b994091201f104a35628d3e0" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>vectorFromPixelIndices</name></member>
+      <member refid="classnvblox_1_1Camera_1a83f1a6b145d93cfada3e786bc2507920" prot="public" virt="non-virtual"><scope>nvblox::Camera</scope><name>width</name></member>
+      <member refid="classnvblox_1_1Camera_1a9c3ebcbae53881f8d641a71f41de1d7c" prot="private" virt="non-virtual"><scope>nvblox::Camera</scope><name>width_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

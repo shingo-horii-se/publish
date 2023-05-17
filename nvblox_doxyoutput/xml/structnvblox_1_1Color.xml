@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1Color" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::Color</compoundname>
+    <includes refid="color_8h" local="no">color.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1Color_1a48790d424224c266fc24b23128402436" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t nvblox::Color::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>nvblox::Color::r</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="32" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1Color_1ab9a93366c5a09a470e01854263b3d31c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t nvblox::Color::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <qualifiedname>nvblox::Color::g</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="33" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1Color_1a088f1fa1d4806ec6a0ef479b0493b97c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t nvblox::Color::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>nvblox::Color::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="34" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1Color_1a719c1ba84dfcc89f7b9be438ba8910c6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t nvblox::Color::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>nvblox::Color::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="35" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnvblox_1_1Color_1a839065119c3d12b6d1d16288019f065d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Color::Color</definition>
+        <argsstring>()</argsstring>
+        <name>Color</name>
+        <qualifiedname>nvblox::Color::Color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="26" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1acbb3890abab90b435876d160436fd160" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Color::Color</definition>
+        <argsstring>(uint8_t _r, uint8_t _g, uint8_t _b)</argsstring>
+        <name>Color</name>
+        <qualifiedname>nvblox::Color::Color</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>_r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_g</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="27" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="27" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1a5769666afcc61040e621463b9cc34140" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ nvblox::Color::Color</definition>
+        <argsstring>(uint8_t _r, uint8_t _g, uint8_t _b, uint8_t _a)</argsstring>
+        <name>Color</name>
+        <qualifiedname>nvblox::Color::Color</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>_r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_g</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="29" column="23" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="29" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1a4c02d78a64cf6a854d6e5b4323ef4f11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Color::operator==</definition>
+        <argsstring>(const Color &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>nvblox::Color::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Check if colors are exactly identical. Also checks alpha. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="38" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structnvblox_1_1Color_1a9e2f39d78730fae22f92dad2db034c72" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static Color nvblox::Color::blendTwoColors</definition>
+        <argsstring>(const Color &amp;first_color, float first_weight, const Color &amp;second_color, float second_weight)</argsstring>
+        <name>blendTwoColors</name>
+        <qualifiedname>nvblox::Color::blendTwoColors</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>first_color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>first_weight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>second_color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>second_weight</declname>
+        </param>
+        <briefdescription>
+<para>Static functions for working with colors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="43" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1ad5ecf8330778878d0336ba158d057a4a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::White</definition>
+        <argsstring>()</argsstring>
+        <name>White</name>
+        <qualifiedname>nvblox::Color::White</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="47" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1a7afe3c269d94b4d3ae3c41061f6941b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Black</definition>
+        <argsstring>()</argsstring>
+        <name>Black</name>
+        <qualifiedname>nvblox::Color::Black</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="48" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1a5ff3434954f4092a68ebb2b610651862" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Gray</definition>
+        <argsstring>()</argsstring>
+        <name>Gray</name>
+        <qualifiedname>nvblox::Color::Gray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="49" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1a9b0e8d3fa3c2eca95f97d75103b7ab85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Red</definition>
+        <argsstring>()</argsstring>
+        <name>Red</name>
+        <qualifiedname>nvblox::Color::Red</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="50" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1ae5dfc1b4553c0d6681f5971a5a06bba8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Green</definition>
+        <argsstring>()</argsstring>
+        <name>Green</name>
+        <qualifiedname>nvblox::Color::Green</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="51" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1ab2257428b546c47e332944e81f5d60d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Blue</definition>
+        <argsstring>()</argsstring>
+        <name>Blue</name>
+        <qualifiedname>nvblox::Color::Blue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="52" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1adb40638b4adabb9a784afa095c88d9ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Yellow</definition>
+        <argsstring>()</argsstring>
+        <name>Yellow</name>
+        <qualifiedname>nvblox::Color::Yellow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="53" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1acf7a0809bde9ed7266114bb2fd52eb53" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Orange</definition>
+        <argsstring>()</argsstring>
+        <name>Orange</name>
+        <qualifiedname>nvblox::Color::Orange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="54" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1af94883a2363e64fd91bf736615d8ef0f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Purple</definition>
+        <argsstring>()</argsstring>
+        <name>Purple</name>
+        <qualifiedname>nvblox::Color::Purple</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="55" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1ac407f40dd0cd9a2710c3046a668173ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Teal</definition>
+        <argsstring>()</argsstring>
+        <name>Teal</name>
+        <qualifiedname>nvblox::Color::Teal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="56" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structnvblox_1_1Color_1a78e9f75814f13d0eeba080785ef221bc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static const Color nvblox::Color::Pink</definition>
+        <argsstring>()</argsstring>
+        <name>Pink</name>
+        <qualifiedname>nvblox::Color::Pink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="57" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>, stored as 8-bit RGBA, with helper functions for commonly-used colors. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" line="25" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/color.h" bodystart="25" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1Color_1a719c1ba84dfcc89f7b9be438ba8910c6" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>a</name></member>
+      <member refid="structnvblox_1_1Color_1a088f1fa1d4806ec6a0ef479b0493b97c" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>b</name></member>
+      <member refid="structnvblox_1_1Color_1a7afe3c269d94b4d3ae3c41061f6941b2" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Black</name></member>
+      <member refid="structnvblox_1_1Color_1a9e2f39d78730fae22f92dad2db034c72" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>blendTwoColors</name></member>
+      <member refid="structnvblox_1_1Color_1ab2257428b546c47e332944e81f5d60d6" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Blue</name></member>
+      <member refid="structnvblox_1_1Color_1a839065119c3d12b6d1d16288019f065d" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Color</name></member>
+      <member refid="structnvblox_1_1Color_1acbb3890abab90b435876d160436fd160" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Color</name></member>
+      <member refid="structnvblox_1_1Color_1a5769666afcc61040e621463b9cc34140" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Color</name></member>
+      <member refid="structnvblox_1_1Color_1ab9a93366c5a09a470e01854263b3d31c" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>g</name></member>
+      <member refid="structnvblox_1_1Color_1a5ff3434954f4092a68ebb2b610651862" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Gray</name></member>
+      <member refid="structnvblox_1_1Color_1ae5dfc1b4553c0d6681f5971a5a06bba8" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Green</name></member>
+      <member refid="structnvblox_1_1Color_1a4c02d78a64cf6a854d6e5b4323ef4f11" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>operator==</name></member>
+      <member refid="structnvblox_1_1Color_1acf7a0809bde9ed7266114bb2fd52eb53" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Orange</name></member>
+      <member refid="structnvblox_1_1Color_1a78e9f75814f13d0eeba080785ef221bc" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Pink</name></member>
+      <member refid="structnvblox_1_1Color_1af94883a2363e64fd91bf736615d8ef0f" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Purple</name></member>
+      <member refid="structnvblox_1_1Color_1a48790d424224c266fc24b23128402436" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>r</name></member>
+      <member refid="structnvblox_1_1Color_1a9b0e8d3fa3c2eca95f97d75103b7ab85" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Red</name></member>
+      <member refid="structnvblox_1_1Color_1ac407f40dd0cd9a2710c3046a668173ff" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Teal</name></member>
+      <member refid="structnvblox_1_1Color_1ad5ecf8330778878d0336ba158d057a4a" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>White</name></member>
+      <member refid="structnvblox_1_1Color_1adb40638b4adabb9a784afa095c88d9ea" prot="public" virt="non-virtual"><scope>nvblox::Color</scope><name>Yellow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,839 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1ProjectiveIntegrator" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>nvblox::ProjectiveIntegrator</compoundname>
+    <includes refid="projective__integrator_8h" local="no">projective_integrator.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename VoxelType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a964fc74a99849b9e2fbc6a067dd50664" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrator_name_initialized_</definition>
+        <argsstring></argsstring>
+        <name>integrator_name_initialized_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrator_name_initialized_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="142" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1ac1732369626a2778e3f7e919b596d952" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrator_name_</definition>
+        <argsstring></argsstring>
+        <name>integrator_name_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrator_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="143" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a20fe96e120d502b6c0e32240ce00a067" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::lidar_linear_interpolation_max_allowable_difference_vox_</definition>
+        <argsstring></argsstring>
+        <name>lidar_linear_interpolation_max_allowable_difference_vox_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::lidar_linear_interpolation_max_allowable_difference_vox_</qualifiedname>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="147" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a92a74e575dfb4ce597aee822ef25b49f" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::lidar_nearest_interpolation_max_allowable_dist_to_ray_vox_</definition>
+        <argsstring></argsstring>
+        <name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::lidar_nearest_interpolation_max_allowable_dist_to_ray_vox_</qualifiedname>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="148" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a2629577c63dd028ec8668f0b64ef0a04" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::truncation_distance_vox_</definition>
+        <argsstring></argsstring>
+        <name>truncation_distance_vox_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::truncation_distance_vox_</qualifiedname>
+        <initializer>= 4.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="149" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a7d7b820b9b32e15b0be6bce986c9bd34" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::max_integration_distance_m_</definition>
+        <argsstring></argsstring>
+        <name>max_integration_distance_m_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::max_integration_distance_m_</qualifiedname>
+        <initializer>= 7.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="150" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a4767efff88bc6e7db81d0e11687d0085" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref></type>
+        <definition>ViewCalculator nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::view_calculator_</definition>
+        <argsstring></argsstring>
+        <name>view_calculator_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::view_calculator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="153" column="26" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1ac05344feed356684ce3dea241aebdf91" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>device_vector&lt;Index3D&gt; nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::block_indices_device_</definition>
+        <argsstring></argsstring>
+        <name>block_indices_device_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::block_indices_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="158" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a37175688508234a1a692c224fcc6ad0d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; * &gt;</type>
+        <definition>device_vector&lt;VoxelBlock&lt;VoxelType&gt;*&gt; nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::block_ptrs_device_</definition>
+        <argsstring></argsstring>
+        <name>block_ptrs_device_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::block_ptrs_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="159" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1a0c0a9d819f5242dbac6d77bcaf68a725" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>host_vector&lt;Index3D&gt; nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::block_indices_host_</definition>
+        <argsstring></argsstring>
+        <name>block_indices_host_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::block_indices_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="160" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1ab91e95bc2ff75620300e5397c07fa6f9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; VoxelType &gt; * &gt;</type>
+        <definition>host_vector&lt;VoxelBlock&lt;VoxelType&gt;*&gt; nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::block_ptrs_host_</definition>
+        <argsstring></argsstring>
+        <name>block_ptrs_host_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::block_ptrs_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="161" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveIntegrator_1ab958154f4eb951207d2d38a4f9aecc47" prot="protected" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integration_stream_</definition>
+        <argsstring></argsstring>
+        <name>integration_stream_</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integration_stream_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="164" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a11824e66f6f77396315a759c7c946da2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::ProjectiveIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>ProjectiveIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::ProjectiveIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="37" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a60af0a01dc624076a38f33a38cb7f068" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::~ProjectiveIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>~ProjectiveIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::~ProjectiveIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="38" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a5a79a82841cf74b1881c2eebb0608c2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UpdateFunctor</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrateFrame</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Camera &amp;lidar, UpdateFunctor *op, VoxelBlockLayer&lt; VoxelType &gt; *layer, std::vector&lt; Index3D &gt; *updated_blocks)</argsstring>
+        <name>integrateFrame</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrateFrame</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <param>
+          <type>UpdateFunctor *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1acbdde4a683d85282bea543277dae162d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UpdateFunctor</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrateFrame</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Lidar &amp;lidar, UpdateFunctor *op, VoxelBlockLayer&lt; VoxelType &gt; *layer, std::vector&lt; Index3D &gt; *updated_blocks)</argsstring>
+        <name>integrateFrame</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrateFrame</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <param>
+          <type>UpdateFunctor *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a5889ffd86c8b7f6de7ca0dda4626941b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::lidar_linear_interpolation_max_allowable_difference_vox</definition>
+        <argsstring>() const</argsstring>
+        <name>lidar_linear_interpolation_max_allowable_difference_vox</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::lidar_linear_interpolation_max_allowable_difference_vox</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum allowable value for the maximum distance between the linearly interpolated image value and its four neighbours. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Above this value we consider linear interpolation failed. This is to prevent interpolation across boundaries in the lidar image, which causing bleeding in the reconstructed 3D structure. <simplesect kind="return"><para>the maximum allowable distance in voxels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a60822d33ffde1ec1f13f9b4637a4d21b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</definition>
+        <argsstring>() const</argsstring>
+        <name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum allowable distance between a reprojected voxel&apos;s center and the ray performing this integration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Above this we consider nearest nieghbour interpolation to have failed. <simplesect kind="return"><para>the maximum allowable distance in voxels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="66" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1ab3521a2f936ec57b5a4200e16ce6bda7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::lidar_linear_interpolation_max_allowable_difference_vox</definition>
+        <argsstring>(float value)</argsstring>
+        <name>lidar_linear_interpolation_max_allowable_difference_vox</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::lidar_linear_interpolation_max_allowable_difference_vox</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter see <ref refid="classnvblox_1_1ProjectiveIntegrator_1a5889ffd86c8b7f6de7ca0dda4626941b" kindref="member">lidar_linear_interpolation_max_allowable_difference_vox()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new parameter value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="71" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a72987163d56ee9e10cdf573ed8d7d4c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</definition>
+        <argsstring>(float value)</argsstring>
+        <name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter see <ref refid="classnvblox_1_1ProjectiveIntegrator_1a60822d33ffde1ec1f13f9b4637a4d21b" kindref="member">lidar_nearest_interpolation_max_allowable_dist_to_ray_vox()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new parameter value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::truncation_distance_vox</definition>
+        <argsstring>() const</argsstring>
+        <name>truncation_distance_vox</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::truncation_distance_vox</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The truncation distance parameter associated with this integrator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The truncation distance also determines the max. distance behind a surface up until which blocks are integrated. <simplesect kind="return"><para>the truncation distance in voxels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="83" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1accb2f21f48358e91ce107a3d6d36d5cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::get_truncation_distance_m</definition>
+        <argsstring>(float voxel_size) const</argsstring>
+        <name>get_truncation_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::get_truncation_distance_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <briefdescription>
+<para>Gets the metric truncation distance which is calculated from truncation distance in voxels and the input voxel size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voxel_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The voxel size of the layer you want the truncation distance for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The truncation distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="90" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::max_integration_distance_m</definition>
+        <argsstring>() const</argsstring>
+        <name>max_integration_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::max_integration_distance_m</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum distance at which voxels are updated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Voxels beyond this distance from the camera are not affected by integration. <simplesect kind="return"><para>the maximum intragration distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="96" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a3e7326d7fe420d1ea15dd85e53da5e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::truncation_distance_vox</definition>
+        <argsstring>(float truncation_distance_vox)</argsstring>
+        <name>truncation_distance_vox</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::truncation_distance_vox</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>truncation_distance_vox</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" kindref="member">truncation_distance_vox()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>truncation_distance_vox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the truncation distance in voxels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1af43add6af124e2175b15fcee9852fbb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::max_integration_distance_m</definition>
+        <argsstring>(float max_integration_distance_m)</argsstring>
+        <name>max_integration_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::max_integration_distance_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" kindref="member">max_integration_distance_m()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum intragration distance in meters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="107" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a7482a8d92355cf239c9f22c694e1b0a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref> &amp;</type>
+        <definition>const ViewCalculator &amp; nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::view_calculator</definition>
+        <argsstring>() const</argsstring>
+        <name>view_calculator</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::view_calculator</qualifiedname>
+        <briefdescription>
+<para>Returns the object used to calculate the blocks in camera views. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="110" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a881ffee867c9e61e9b204b8696c1616c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref> &amp;</type>
+        <definition>ViewCalculator &amp; nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::view_calculator</definition>
+        <argsstring>()</argsstring>
+        <name>view_calculator</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::view_calculator</qualifiedname>
+        <briefdescription>
+<para>Returns the object used to calculate the blocks in camera views. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="112" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a5189c1fa826a6add2ad6842edf8b7a9d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UpdateFunctor</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrateBlocks</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_C_L, const Camera &amp;camera, UpdateFunctor *op, VoxelBlockLayer&lt; VoxelType &gt; *layer_ptr)</argsstring>
+        <name>integrateBlocks</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrateBlocks</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_C_L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>UpdateFunctor *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="118" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1aebd92b43838a659515c01aeb3a98adb6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UpdateFunctor</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrateBlocks</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_C_L, const Lidar &amp;lidar, UpdateFunctor *op, VoxelBlockLayer&lt; VoxelType &gt; *layer_ptr)</argsstring>
+        <name>integrateBlocks</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrateBlocks</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_C_L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Lidar" kindref="compound">Lidar</ref> &amp;</type>
+          <declname>lidar</declname>
+        </param>
+        <param>
+          <type>UpdateFunctor *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="122" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1acff287881f0654b8519615e4bc654e6d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SensorType</type>
+          </param>
+          <param>
+            <type>typename UpdateFunctor</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrateBlocksTemplate</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;block_indices, const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const SensorType &amp;sensor, UpdateFunctor *op, VoxelBlockLayer&lt; VoxelType &gt; *layer_ptr)</argsstring>
+        <name>integrateBlocksTemplate</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrateBlocksTemplate</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const SensorType &amp;</type>
+          <declname>sensor</declname>
+        </param>
+        <param>
+          <type>UpdateFunctor *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="127" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1a6002d1b7e08c96c0ddce0cdb807b2a68" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SensorType</type>
+          </param>
+          <param>
+            <type>typename UpdateFunctor</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::integrateFrameTemplate</definition>
+        <argsstring>(const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const SensorType &amp;sensor, UpdateFunctor *op, VoxelBlockLayer&lt; VoxelType &gt; *layer, std::vector&lt; Index3D &gt; *updated_blocks=nullptr)</argsstring>
+        <name>integrateFrameTemplate</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::integrateFrameTemplate</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const SensorType &amp;</type>
+          <declname>sensor</declname>
+        </param>
+        <param>
+          <type>UpdateFunctor *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1VoxelBlockLayer" kindref="compound">VoxelBlockLayer</ref>&lt; VoxelType &gt; *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="134" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveIntegrator_1ac0983f4ae5c625f853e94bb8e19b26b3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string nvblox::ProjectiveIntegrator&lt; VoxelType &gt;::getIntegratorName</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getIntegratorName</name>
+        <qualifiedname>nvblox::ProjectiveIntegrator::getIntegratorName</qualifiedname>
+        <reimplementedby refid="classnvblox_1_1ProjectiveOccupancyIntegrator_1aaa14a0f49fa646f02a44a6e1d646101a">getIntegratorName</reimplementedby>
+        <reimplementedby refid="classnvblox_1_1ProjectiveTsdfIntegrator_1aa3787701c6b8919be47041113150d0e7">getIntegratorName</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="141" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A pure-virtual base-class for the projective occupancy and tsdf integrators. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Integrators deriving from this base class insert (integrate) image and lidar data into a voxel grid. The &quot;projective&quot; in ProjectiveIntegratorBase refers to the fact that the mode of operation is that voxels in the view frustrum are projected into the image in order to associate each voxel with a data pixel. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>nvblox::device_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox::device_vector&lt; nvblox::VoxelBlock&lt; VoxelType &gt; * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>nvblox::host_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>nvblox::host_vector&lt; nvblox::VoxelBlock&lt; VoxelType &gt; * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nvblox::ProjectiveIntegrator&lt; VoxelType &gt;</label>
+        <link refid="classnvblox_1_1ProjectiveIntegrator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>view_calculator_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>block_ptrs_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nvblox::ViewCalculator</label>
+        <link refid="classnvblox_1_1ViewCalculator"/>
+      </node>
+      <node id="4">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="6">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" line="35" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/projective_integrator.h" bodystart="35" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ac05344feed356684ce3dea241aebdf91" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>block_indices_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a0c0a9d819f5242dbac6d77bcaf68a725" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>block_indices_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a37175688508234a1a692c224fcc6ad0d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>block_ptrs_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab91e95bc2ff75620300e5397c07fa6f9" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>block_ptrs_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1accb2f21f48358e91ce107a3d6d36d5cc" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>get_truncation_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ac0983f4ae5c625f853e94bb8e19b26b3" prot="protected" virt="pure-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>getIntegratorName</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5189c1fa826a6add2ad6842edf8b7a9d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1aebd92b43838a659515c01aeb3a98adb6" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1acff287881f0654b8519615e4bc654e6d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrateBlocksTemplate</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5a79a82841cf74b1881c2eebb0608c2a" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1acbdde4a683d85282bea543277dae162d" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a6002d1b7e08c96c0ddce0cdb807b2a68" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrateFrameTemplate</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab958154f4eb951207d2d38a4f9aecc47" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integration_stream_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ac1732369626a2778e3f7e919b596d952" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrator_name_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a964fc74a99849b9e2fbc6a067dd50664" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>integrator_name_initialized_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a5889ffd86c8b7f6de7ca0dda4626941b" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1ab3521a2f936ec57b5a4200e16ce6bda7" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a20fe96e120d502b6c0e32240ce00a067" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>lidar_linear_interpolation_max_allowable_difference_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a60822d33ffde1ec1f13f9b4637a4d21b" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a72987163d56ee9e10cdf573ed8d7d4c1" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a92a74e575dfb4ce597aee822ef25b49f" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>lidar_nearest_interpolation_max_allowable_dist_to_ray_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a62a98ae5d0060f30a01e0acf2fd02728" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1af43add6af124e2175b15fcee9852fbb6" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7d7b820b9b32e15b0be6bce986c9bd34" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>max_integration_distance_m_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a11824e66f6f77396315a759c7c946da2" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>ProjectiveIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7f0e74f8352c990eccb696fcdd4d0dd6" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a3e7326d7fe420d1ea15dd85e53da5e4f" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a2629577c63dd028ec8668f0b64ef0a04" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>truncation_distance_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a7482a8d92355cf239c9f22c694e1b0a2" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a881ffee867c9e61e9b204b8696c1616c" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a4767efff88bc6e7db81d0e11687d0085" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>view_calculator_</name></member>
+      <member refid="classnvblox_1_1ProjectiveIntegrator_1a60af0a01dc624076a38f33a38cb7f068" prot="public" virt="virtual"><scope>nvblox::ProjectiveIntegrator</scope><name>~ProjectiveIntegrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

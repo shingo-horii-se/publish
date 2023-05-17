@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="integrators_8md" kind="file" language="Markdown">
+    <compoundname>integrators.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Integrators</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">An<sp/>integrator<sp/>is,<sp/>very<sp/>generally,<sp/>a<sp/>class<sp/>that<sp/>modifies<sp/>the<sp/>content<sp/>of<sp/>a<sp/>layers.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>integrators<sp/>currently<sp/>offered<sp/>can<sp/>be<sp/>split<sp/>into<sp/>two<sp/>types:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Those<sp/>which<sp/>fuse<sp/>incoming<sp/>sensor<sp/>data<sp/>into<sp/>a<sp/>layer.<sp/>For<sp/>example,<sp/>the<sp/>[TsdfIntegrator](@ref<sp/>nvblox::ProjectiveTsdfIntegrator)<sp/>and<sp/>[ColorIntegrator](@ref<sp/>nvblox::ProjectiveColorIntegrator)<sp/>fused<sp/>depth<sp/>images<sp/>and<sp/>color<sp/>images<sp/>into<sp/>[TsdfLayer](@ref<sp/>nvblox::TsdfLayer)<sp/>and<sp/>[ColorLayer](@ref<sp/>nvblox::ColorLayer)<sp/>respectively.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Those<sp/>which<sp/>transform<sp/>the<sp/>contents<sp/>of<sp/>one<sp/>layer<sp/>to<sp/>update<sp/>the<sp/>data<sp/>in<sp/>another<sp/>layer.<sp/>For<sp/>example<sp/>the<sp/>[EsdfIntegrator](@ref<sp/>nvblox::EsdfIntegrator)<sp/>transforms<sp/>an<sp/>TSDF<sp/>in<sp/>a<sp/>[TsdfLayer](@ref<sp/>nvblox::TsdfLayer)<sp/>into<sp/>an<sp/>ESDF<sp/>in<sp/>a<sp/>[EsdfLayer](@ref<sp/>nvblox::EsdfLayer).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>API</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>API<sp/>for<sp/>the<sp/>currently<sp/>available<sp/>integrators<sp/>are<sp/>here:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[TsdfIntegrator](@ref<sp/>nvblox::ProjectiveTsdfIntegrator)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[ColorIntegrator](@ref<sp/>nvblox::ProjectiveColorIntegrator)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[EsdfIntegrator](@ref<sp/>nvblox::EsdfIntegrator)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[MeshIntegrator](@ref<sp/>nvblox::MeshIntegrator)</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="pages/integrators.md"/>
+  </compounddef>
+</doxygen>

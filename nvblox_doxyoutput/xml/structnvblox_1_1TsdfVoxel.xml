@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1TsdfVoxel" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::TsdfVoxel</compoundname>
+    <includes refid="voxels_8h" local="no">voxels.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1TsdfVoxel_1afea09c0455fb90e5bdcb4f75f34caf3b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::TsdfVoxel::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <qualifiedname>nvblox::TsdfVoxel::distance</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>Signed projective distance of the voxel from a surface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="27" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1TsdfVoxel_1ac170e0a5f7622cd4caa124134ddde7a6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::TsdfVoxel::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>nvblox::TsdfVoxel::weight</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>How many observations/how confident we are in this observation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="29" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A voxel storing TSDF (truncated signed distance field) values. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" line="25" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/map/voxels.h" bodystart="25" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1TsdfVoxel_1afea09c0455fb90e5bdcb4f75f34caf3b" prot="public" virt="non-virtual"><scope>nvblox::TsdfVoxel</scope><name>distance</name></member>
+      <member refid="structnvblox_1_1TsdfVoxel_1ac170e0a5f7622cd4caa124134ddde7a6" prot="public" virt="non-virtual"><scope>nvblox::TsdfVoxel</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

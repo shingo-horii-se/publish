@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="layer__type__register_8h" kind="file" language="C++">
+    <compoundname>layer_type_register.h</compoundname>
+    <includes local="no">map</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">typeindex</includes>
+    <includes local="no">unordered_map</includes>
+    <includes refid="types_8h" local="yes">nvblox/core/types.h</includes>
+    <includes refid="layer_8h" local="yes">nvblox/map/layer.h</includes>
+    <includedby refid="common__types_8h" local="yes">common_types.h</includedby>
+    <includedby refid="layer__serialization_8h" local="yes">layer_serialization.h</includedby>
+    <includedby refid="serializer_8h" local="yes">serializer.h</includedby>
+    <incdepgraph>
+      <node id="33">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>nvblox/core/hash.h</label>
+        <link refid="hash_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>nvblox/core/iterator.h</label>
+        <link refid="iterator_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>nvblox/core/unified_ptr.h</label>
+        <link refid="unified__ptr_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>nvblox/core/unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>nvblox/gpu_hash/gpu_layer_view.h</label>
+        <link refid="gpu__layer__view_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>nvblox/map/blox.h</label>
+        <link refid="blox_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>nvblox/map/layer.h</label>
+        <link refid="layer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>nvblox/map/voxels.h</label>
+        <link refid="voxels_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>layer_type_register.h</label>
+        <link refid="layer__type__register_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="11">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="20">
+        <label>atomic</label>
+      </node>
+      <node id="35">
+        <label>cmath</label>
+      </node>
+      <node id="27">
+        <label>cstddef</label>
+      </node>
+      <node id="9">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="15">
+        <label>functional</label>
+      </node>
+      <node id="23">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="28">
+        <label>iterator</label>
+      </node>
+      <node id="2">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="24">
+        <label>nvblox/core/internal/impl/unified_ptr_impl.h</label>
+      </node>
+      <node id="29">
+        <label>nvblox/core/internal/impl/unified_vector_impl.h</label>
+      </node>
+      <node id="18">
+        <label>nvblox/core/traits.h</label>
+      </node>
+      <node id="36">
+        <label>nvblox/map/internal/impl/blox_impl.h</label>
+      </node>
+      <node id="37">
+        <label>nvblox/map/internal/impl/layer_impl.h</label>
+      </node>
+      <node id="34">
+        <label>stdint.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="21">
+        <label>type_traits</label>
+      </node>
+      <node id="5">
+        <label>typeindex</label>
+      </node>
+      <node id="6">
+        <label>unordered_map</label>
+      </node>
+      <node id="16">
+        <label>unordered_set</label>
+      </node>
+      <node id="17">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>common_types.h</label>
+        <link refid="common__types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>layer_serialization.h</label>
+        <link refid="layer__serialization_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>layer_type_register.h</label>
+        <link refid="layer__type__register_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>serializer.h</label>
+        <link refid="serializer_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnvblox_1_1LayerParameterStruct" prot="public">nvblox::LayerParameterStruct</innerclass>
+    <innerclass refid="structnvblox_1_1LayerSerializationFunctions" prot="public">nvblox::LayerSerializationFunctions</innerclass>
+    <innerclass refid="classnvblox_1_1LayerTypeRegister" prot="public">nvblox::LayerTypeRegister</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeindex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">nvblox/core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="layer_8h" kindref="compound">nvblox/map/layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structnvblox_1_1LayerParameterStruct" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="structnvblox_1_1LayerParameterStruct_1af29cefd450c88992a1b450810b84a13e" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>std::string&gt;<sp/><ref refid="structnvblox_1_1LayerParameterStruct_1af29cefd450c88992a1b450810b84a13e" kindref="member">string_params</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structnvblox_1_1LayerParameterStruct_1aeda22c14d05be3ea302d6302c4c0b1e1" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>int&gt;<sp/><ref refid="structnvblox_1_1LayerParameterStruct_1aeda22c14d05be3ea302d6302c4c0b1e1" kindref="member">int_params</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structnvblox_1_1LayerParameterStruct_1a2a2791abc284b197ee5d5f03cc223d80" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>float&gt;<sp/><ref refid="structnvblox_1_1LayerParameterStruct_1a2a2791abc284b197ee5d5f03cc223d80" kindref="member">float_params</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structnvblox_1_1LayerSerializationFunctions" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvblox_1_1LayerSerializationFunctions" kindref="compound">LayerSerializationFunctions</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Serialization<sp/>functions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;<ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref>*)&gt;</highlight></codeline>
+<codeline lineno="41" refid="structnvblox_1_1LayerSerializationFunctions_1ac017c1a5e0b3a69735f238ce999ebc70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1ac017c1a5e0b3a69735f238ce999ebc70" kindref="member">SerializeLayerParametersFunction</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;std::vector&lt;Index3D&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref>*)&gt;</highlight></codeline>
+<codeline lineno="43" refid="structnvblox_1_1LayerSerializationFunctions_1aeac5c1629e9934da5096c709083d5465" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1aeac5c1629e9934da5096c709083d5465" kindref="member">GetLayerDataIndicesFunction</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;std::vector&lt;Byte&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref>&amp;)&gt;</highlight></codeline>
+<codeline lineno="45" refid="structnvblox_1_1LayerSerializationFunctions_1a93763d0897d52519fe8360dda940ebda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1a93763d0897d52519fe8360dda940ebda" kindref="member">SerializeLayerDataFunction</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Deserialization<sp/>functions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;std::unique_ptr&lt;BaseLayer&gt;(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref>,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref>&amp;)&gt;</highlight></codeline>
+<codeline lineno="50" refid="structnvblox_1_1LayerSerializationFunctions_1aeaf0818a46e700917632a28707f1b201" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1aeaf0818a46e700917632a28707f1b201" kindref="member">ConstructLayerFunction</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Byte&gt;&amp;,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref>*)&gt;</highlight></codeline>
+<codeline lineno="53" refid="structnvblox_1_1LayerSerializationFunctions_1ab038d20ada73290010ef8d6e20549b82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1ab038d20ada73290010ef8d6e20549b82" kindref="member">AddDataToLayerFunction</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>5<sp/>functions<sp/>that<sp/>have<sp/>to<sp/>be<sp/>defined<sp/>to<sp/>serialize<sp/>and<sp/>deserialize<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>layer<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structnvblox_1_1LayerSerializationFunctions_1adea2f12dac29f0ced6ec8e0bed797756" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1ac017c1a5e0b3a69735f238ce999ebc70" kindref="member">SerializeLayerParametersFunction</ref><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1adea2f12dac29f0ced6ec8e0bed797756" kindref="member">serialize_params</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structnvblox_1_1LayerSerializationFunctions_1a78f02db31a26042cbcbc1973533aac46" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1aeac5c1629e9934da5096c709083d5465" kindref="member">GetLayerDataIndicesFunction</ref><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1a78f02db31a26042cbcbc1973533aac46" kindref="member">get_data_indices</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structnvblox_1_1LayerSerializationFunctions_1ae1e5cd7650e70e391fcd603edabddc52" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1a93763d0897d52519fe8360dda940ebda" kindref="member">SerializeLayerDataFunction</ref><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1ae1e5cd7650e70e391fcd603edabddc52" kindref="member">serialize_data</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structnvblox_1_1LayerSerializationFunctions_1a1c1da99f24b67c40a4c0901105fceaf1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1aeaf0818a46e700917632a28707f1b201" kindref="member">ConstructLayerFunction</ref><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1a1c1da99f24b67c40a4c0901105fceaf1" kindref="member">construct_layer</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structnvblox_1_1LayerSerializationFunctions_1adc9e96f13189b0b20aba682d7a62f8c2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1ab038d20ada73290010ef8d6e20549b82" kindref="member">AddDataToLayerFunction</ref><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions_1adc9e96f13189b0b20aba682d7a62f8c2" kindref="member">add_data</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classnvblox_1_1LayerTypeRegister" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1LayerTypeRegister" kindref="compound">LayerTypeRegister</ref><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>constructor!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classnvblox_1_1LayerTypeRegister_1af1958de70216fe7c5e67319aa92138c9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1LayerTypeRegister_1af1958de70216fe7c5e67319aa92138c9" kindref="member">LayerTypeRegister</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classnvblox_1_1LayerTypeRegister_1a334bd3c26079d2f0055f7e83ffc778ab" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1LayerTypeRegister_1a334bd3c26079d2f0055f7e83ffc778ab" kindref="member">registerType</ref>(</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>type_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::type_index&amp;<sp/>type_index,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions" kindref="compound">LayerSerializationFunctions</ref>&amp;<sp/>serialization_functions);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classnvblox_1_1LayerTypeRegister_1a1dab55c37c0baa4b86fa2063c79c30b9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;BaseLayer&gt;<sp/><ref refid="classnvblox_1_1LayerTypeRegister_1a1dab55c37c0baa4b86fa2063c79c30b9" kindref="member">createLayer</ref>(</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>type_name,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref>&amp;<sp/>layer_params);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classnvblox_1_1LayerTypeRegister_1adf4b8c39213f482dd313b2eef0481ab5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1LayerSerializationFunctions" kindref="compound">LayerSerializationFunctions</ref><sp/><ref refid="classnvblox_1_1LayerTypeRegister_1adf4b8c39213f482dd313b2eef0481ab5" kindref="member">getSerializationFunctions</ref>(</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>type_name);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1LayerTypeRegister_1a3c4fd28f6a31d62225c0e6793eeda422" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classnvblox_1_1LayerTypeRegister_1a3c4fd28f6a31d62225c0e6793eeda422" kindref="member">getLayerName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::type_index&amp;<sp/>type_index);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classnvblox_1_1LayerTypeRegister_1aea34021b7e8391465bec6b4225f9bf39" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::type_index<sp/><ref refid="classnvblox_1_1LayerTypeRegister_1aea34021b7e8391465bec6b4225f9bf39" kindref="member">getLayerTypeIndex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>type_name);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>LayerSerializationFunctions&gt;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>layer_function_index_;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::type_index,<sp/>std::string&gt;<sp/>layer_name_index_;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="mesh__block_8h" kind="file" language="C++">
+    <compoundname>mesh_block.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes refid="color_8h" local="yes">nvblox/core/color.h</includes>
+    <includes refid="types_8h" local="yes">nvblox/core/types.h</includes>
+    <includes refid="unified__ptr_8h" local="yes">nvblox/core/unified_ptr.h</includes>
+    <includes refid="unified__vector_8h" local="yes">nvblox/core/unified_vector.h</includes>
+    <includes refid="blox_8h" local="yes">nvblox/map/blox.h</includes>
+    <includes refid="layer_8h" local="yes">nvblox/map/layer.h</includes>
+    <includedby refid="common__names_8h" local="yes">common_names.h</includedby>
+    <includedby refid="marching__cubes_8h" local="yes">marching_cubes.h</includedby>
+    <includedby refid="mesh_8h" local="no">mesh.h</includedby>
+    <includedby refid="mesh__integrator_8h" local="yes">mesh_integrator.h</includedby>
+    <includedby refid="mesh__io_8h" local="yes">mesh_io.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>nvblox/core/hash.h</label>
+        <link refid="hash_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>nvblox/core/iterator.h</label>
+        <link refid="iterator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>nvblox/core/unified_ptr.h</label>
+        <link refid="unified__ptr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>nvblox/core/unified_vector.h</label>
+        <link refid="unified__vector_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>nvblox/gpu_hash/gpu_layer_view.h</label>
+        <link refid="gpu__layer__view_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>nvblox/map/blox.h</label>
+        <link refid="blox_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>nvblox/map/layer.h</label>
+        <link refid="layer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>nvblox/map/voxels.h</label>
+        <link refid="voxels_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mesh_block.h</label>
+        <link refid="mesh__block_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="10">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="13">
+        <label>atomic</label>
+      </node>
+      <node id="6">
+        <label>cmath</label>
+      </node>
+      <node id="20">
+        <label>cstddef</label>
+      </node>
+      <node id="4">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="28">
+        <label>functional</label>
+      </node>
+      <node id="16">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="21">
+        <label>iterator</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="17">
+        <label>nvblox/core/internal/impl/unified_ptr_impl.h</label>
+      </node>
+      <node id="22">
+        <label>nvblox/core/internal/impl/unified_vector_impl.h</label>
+      </node>
+      <node id="32">
+        <label>nvblox/core/traits.h</label>
+      </node>
+      <node id="25">
+        <label>nvblox/map/internal/impl/blox_impl.h</label>
+      </node>
+      <node id="34">
+        <label>nvblox/map/internal/impl/layer_impl.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="14">
+        <label>type_traits</label>
+      </node>
+      <node id="29">
+        <label>unordered_map</label>
+      </node>
+      <node id="30">
+        <label>unordered_set</label>
+      </node>
+      <node id="31">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>bounding_boxes.h</label>
+        <link refid="bounding__boxes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>esdf_integrator.h</label>
+        <link refid="esdf__integrator_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>occupancy_decay_integrator.h</label>
+        <link refid="occupancy__decay__integrator_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>projective_color_integrator.h</label>
+        <link refid="projective__color__integrator_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>interpolation_3d.h</label>
+        <link refid="interpolation__3d_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mesh_io.h</label>
+        <link refid="mesh__io_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pointcloud_io.h</label>
+        <link refid="pointcloud__io_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>common_names.h</label>
+        <link refid="common__names_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>marching_cubes.h</label>
+        <link refid="marching__cubes_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mesh.h</label>
+        <link refid="mesh_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mesh_block.h</label>
+        <link refid="mesh__block_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mesh_integrator.h</label>
+        <link refid="mesh__integrator_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="18">
+        <label>sphere_tracer.h</label>
+        <link refid="sphere__tracer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>common_types.h</label>
+        <link refid="common__types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>serializer.h</label>
+        <link refid="serializer_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnvblox_1_1MeshBlock" prot="public">nvblox::MeshBlock</innerclass>
+    <innerclass refid="structnvblox_1_1CudaMeshBlock" prot="public">nvblox::CudaMeshBlock</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="color_8h" kindref="compound">nvblox/core/color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">nvblox/core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="unified__ptr_8h" kindref="compound">nvblox/core/unified_ptr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="unified__vector_8h" kindref="compound">nvblox/core/unified_vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="blox_8h" kindref="compound">nvblox/map/blox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="layer_8h" kindref="compound">nvblox/map/layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structnvblox_1_1MeshBlock" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="structnvblox_1_1MeshBlock_1a9b2407ee1443344552a7c731ff2949d8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MeshBlock&gt;<sp/><ref refid="structnvblox_1_1MeshBlock_1a9b2407ee1443344552a7c731ff2949d8" kindref="member">Ptr</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structnvblox_1_1MeshBlock_1aa815f2904b574720bf9e5de25afe3dae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;const<sp/>MeshBlock&gt;<sp/><ref refid="structnvblox_1_1MeshBlock_1aa815f2904b574720bf9e5de25afe3dae" kindref="member">ConstPtr</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structnvblox_1_1MeshBlock_1a407f351355b9608c071ea4c41e9974a4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1MeshBlock_1a407f351355b9608c071ea4c41e9974a4" kindref="member">MeshBlock</ref>(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type<sp/>=<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structnvblox_1_1MeshBlock_1a77670c67d8e00672346fb41995a624c4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1MeshBlock_1a77670c67d8e00672346fb41995a624c4" kindref="member">MeshBlock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref>&amp;<sp/>mesh_block);</highlight></codeline>
+<codeline lineno="42" refid="structnvblox_1_1MeshBlock_1aa5ea642759af01c9e057e1963e355bbe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1MeshBlock_1aa5ea642759af01c9e057e1963e355bbe" kindref="member">MeshBlock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref>&amp;<sp/>mesh_block,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Mesh<sp/>Data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>unified<sp/>vectors<sp/>contain<sp/>the<sp/>mesh<sp/>data<sp/>for<sp/>this<sp/>block.<sp/>Note<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Colors<sp/>and/or<sp/>intensities<sp/>are<sp/>optional.<sp/>The<sp/>&quot;triangles&quot;<sp/>vector<sp/>is<sp/>a<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>indices<sp/>into<sp/>the<sp/>vertices<sp/>vector.<sp/>Triplets<sp/>of<sp/>consecutive<sp/>elements<sp/>form</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>triangles<sp/>with<sp/>the<sp/>indexed<sp/>vertices<sp/>as<sp/>their<sp/>corners.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="structnvblox_1_1MeshBlock_1a5cf5d330b3e60e120b9d0120e9adb27a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;Vector3f&gt;</ref><sp/><ref refid="structnvblox_1_1MeshBlock_1a5cf5d330b3e60e120b9d0120e9adb27a" kindref="member">vertices</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structnvblox_1_1MeshBlock_1a22e8e8bb480a7e052e01067b1ac044aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;Vector3f&gt;</ref><sp/><ref refid="structnvblox_1_1MeshBlock_1a22e8e8bb480a7e052e01067b1ac044aa" kindref="member">normals</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structnvblox_1_1MeshBlock_1a6ea4d04d80bcf1604fb3e37297e44b4e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;Color&gt;</ref><sp/><ref refid="structnvblox_1_1MeshBlock_1a6ea4d04d80bcf1604fb3e37297e44b4e" kindref="member">colors</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structnvblox_1_1MeshBlock_1a607e7edfa7ed03bc019d4984518ddfa1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__vector" kindref="compound">unified_vector&lt;int&gt;</ref><sp/><ref refid="structnvblox_1_1MeshBlock_1a607e7edfa7ed03bc019d4984518ddfa1" kindref="member">triangles</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structnvblox_1_1MeshBlock_1aca15e26479441d8d557583bfc07deffb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1aca15e26479441d8d557583bfc07deffb" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structnvblox_1_1MeshBlock_1ab7a125876a39acaa3c0d54866d726b4b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1ab7a125876a39acaa3c0d54866d726b4b" kindref="member">resizeToNumberOfVertices</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>new_size);</highlight></codeline>
+<codeline lineno="60" refid="structnvblox_1_1MeshBlock_1a7d1e86eb71a8846a34b296b99c7bcda9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1a7d1e86eb71a8846a34b296b99c7bcda9" kindref="member">reserveNumberOfVertices</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>new_capacity);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="structnvblox_1_1MeshBlock_1a1ae6f7614a6c98ece277453f7a5b5bd4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1a1ae6f7614a6c98ece277453f7a5b5bd4" kindref="member">size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65" refid="structnvblox_1_1MeshBlock_1af74075e3fd517d8de7b83f58109f3860" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1af74075e3fd517d8de7b83f58109f3860" kindref="member">capacity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structnvblox_1_1MeshBlock_1a456407e63aa513747c9459845c3df459" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1a456407e63aa513747c9459845c3df459" kindref="member">expandColorsToMatchVertices</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>mesh<sp/>data<sp/>to<sp/>the<sp/>CPU.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structnvblox_1_1MeshBlock_1aed06010cb924dbdd5ab926ab9bc0498f" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Vector3f&gt;<sp/><ref refid="structnvblox_1_1MeshBlock_1aed06010cb924dbdd5ab926ab9bc0498f" kindref="member">getVertexVectorOnCPU</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73" refid="structnvblox_1_1MeshBlock_1a46d090dff3ec7f105593979226d9d661" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Vector3f&gt;<sp/><ref refid="structnvblox_1_1MeshBlock_1a46d090dff3ec7f105593979226d9d661" kindref="member">getNormalVectorOnCPU</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74" refid="structnvblox_1_1MeshBlock_1ab06236aed027df9c02ac95d4111b372d" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structnvblox_1_1MeshBlock_1ab06236aed027df9c02ac95d4111b372d" kindref="member">getTriangleVectorOnCPU</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75" refid="structnvblox_1_1MeshBlock_1a9838a46b32be522694844e109964a44c" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Color&gt;<sp/><ref refid="structnvblox_1_1MeshBlock_1a9838a46b32be522694844e109964a44c" kindref="member">getColorVectorOnCPU</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structnvblox_1_1MeshBlock_1a6aacda192dd7aac62a336c9905f9b3d0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1a9b2407ee1443344552a7c731ff2949d8" kindref="member">Ptr</ref><sp/><ref refid="structnvblox_1_1MeshBlock_1a6aacda192dd7aac62a336c9905f9b3d0" kindref="member">allocate</ref>(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="structnvblox_1_1CudaMeshBlock" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvblox_1_1CudaMeshBlock" kindref="compound">CudaMeshBlock</ref><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="structnvblox_1_1CudaMeshBlock_1a0e5824d9250cd1da4410a46678056638" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1CudaMeshBlock_1a0e5824d9250cd1da4410a46678056638" kindref="member">CudaMeshBlock</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86" refid="structnvblox_1_1CudaMeshBlock_1a4bb0c88915bef5a46088b56dc0c2be19" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1CudaMeshBlock_1a4bb0c88915bef5a46088b56dc0c2be19" kindref="member">CudaMeshBlock</ref>(<ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref>*<sp/>block);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structnvblox_1_1CudaMeshBlock_1a75bdfa8e7a3ade3c1751a06a4b27345d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/><ref refid="structnvblox_1_1CudaMeshBlock_1a75bdfa8e7a3ade3c1751a06a4b27345d" kindref="member">vertices</ref>;</highlight></codeline>
+<codeline lineno="89" refid="structnvblox_1_1CudaMeshBlock_1a54224cf98738d0c23c5bc10b6906022b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref>*<sp/><ref refid="structnvblox_1_1CudaMeshBlock_1a54224cf98738d0c23c5bc10b6906022b" kindref="member">normals</ref>;</highlight></codeline>
+<codeline lineno="90" refid="structnvblox_1_1CudaMeshBlock_1afddeb3cb6d916686460939904baf39d0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="structnvblox_1_1CudaMeshBlock_1afddeb3cb6d916686460939904baf39d0" kindref="member">triangles</ref>;</highlight></codeline>
+<codeline lineno="91" refid="structnvblox_1_1CudaMeshBlock_1a116c493e0b3d8ea51fa7f78038a82b14" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref>*<sp/><ref refid="structnvblox_1_1CudaMeshBlock_1a116c493e0b3d8ea51fa7f78038a82b14" kindref="member">colors</ref>;</highlight></codeline>
+<codeline lineno="92" refid="structnvblox_1_1CudaMeshBlock_1a35bdbf6f6b2517b7eb10273d69bde968" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1CudaMeshBlock_1a35bdbf6f6b2517b7eb10273d69bde968" kindref="member">vertices_size</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="93" refid="structnvblox_1_1CudaMeshBlock_1aac18f3cf764ebcf197abf73502cfe300" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1CudaMeshBlock_1aac18f3cf764ebcf197abf73502cfe300" kindref="member">triangles_size</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="98" refid="classnvblox_1_1BlockLayer_1afb0b32224f368a98b17057c196501dd7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BlockLayer_1a920f3bedcc7a6a79c6f7a25562e31a7d" kindref="member">BlockLayer&lt;MeshBlock&gt;::BlockLayer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&amp;<sp/>other,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/>memory_type)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>(other.block_size_,<sp/>memory_type)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>LOG(INFO)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Deep<sp/>copy<sp/>of<sp/>Mesh<sp/>BlockLayer<sp/>containing<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>other.<ref refid="classnvblox_1_1BlockLayer_1a577ce86554097b58eb61d9aa9a9f17f9" kindref="member">numAllocatedBlocks</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>blocks.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Re-create<sp/>all<sp/>the<sp/>blocks.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>std::vector&lt;Index3D&gt;<sp/>all_block_indices<sp/>=<sp/>other.<ref refid="classnvblox_1_1BlockLayer_1ac246abd9fe341b2b6f933d8be88f6d3a" kindref="member">getAllBlockIndices</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>over<sp/>all<sp/>blocks,<sp/>clonin&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref>&amp;<sp/>block_index<sp/>:<sp/>all_block_indices)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="structnvblox_1_1MeshBlock_1aa815f2904b574720bf9e5de25afe3dae" kindref="member">MeshBlock::ConstPtr</ref><sp/>block<sp/>=<sp/>other.<ref refid="classnvblox_1_1BlockLayer_1a4da5e5b6ed0212d2776eb2938f3d076b" kindref="member">getBlockAtIndex</ref>(block_index);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(block<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1BlockLayer_1a5813d390fa87d1776ad78afcd1829e73" kindref="member">blocks_</ref>.emplace(block_index,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::make_shared&lt;MeshBlock&gt;(*block,<sp/><ref refid="classnvblox_1_1BlockLayer_1a8b7cf35aa658d40da629226562cb796f" kindref="member">memory_type</ref>));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_block.h"/>
+  </compounddef>
+</doxygen>

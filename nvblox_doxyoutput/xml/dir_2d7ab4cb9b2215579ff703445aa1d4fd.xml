@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_2d7ab4cb9b2215579ff703445aa1d4fd" kind="dir">
+    <compoundname>sensors</compoundname>
+    <innerfile refid="camera_8h">camera.h</innerfile>
+    <innerfile refid="image_8h">image.h</innerfile>
+    <innerfile refid="lidar_8h">lidar.h</innerfile>
+    <innerfile refid="pointcloud_8h">pointcloud.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/"/>
+  </compounddef>
+</doxygen>

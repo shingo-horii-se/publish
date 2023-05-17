@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1VectorCompare" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::VectorCompare</compoundname>
+    <includes refid="hash_8h" local="no">hash.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnvblox_1_1VectorCompare_1a62448930af8b01510dac34612ae1b07e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__ bool</type>
+        <definition>__host__ __device__ bool nvblox::VectorCompare&lt; T &gt;::operator()</definition>
+        <argsstring>(const T &amp;p_1, const T &amp;p_2) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>nvblox::VectorCompare::operator()</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_1</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="45" column="35" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="45" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="44" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="44" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1VectorCompare_1a62448930af8b01510dac34612ae1b07e" prot="public" virt="non-virtual"><scope>nvblox::VectorCompare</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

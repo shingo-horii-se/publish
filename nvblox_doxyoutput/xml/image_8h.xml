@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="image_8h" kind="file" language="C++">
+    <compoundname>image.h</compoundname>
+    <includes local="no">cuda_runtime.h</includes>
+    <includes refid="color_8h" local="yes">nvblox/core/color.h</includes>
+    <includes refid="types_8h" local="yes">nvblox/core/types.h</includes>
+    <includes refid="unified__ptr_8h" local="yes">nvblox/core/unified_ptr.h</includes>
+    <includes local="yes">nvblox/sensors/internal/impl/image_impl.h</includes>
+    <includedby refid="esdf__integrator_8h" local="yes">esdf_integrator.h</includedby>
+    <includedby refid="image__io_8h" local="yes">image_io.h</includedby>
+    <includedby refid="image__masker_8h" local="yes">image_masker.h</includedby>
+    <includedby refid="image__projector_8h" local="yes">image_projector.h</includedby>
+    <includedby refid="interpolation__2d_8h" local="yes">interpolation_2d.h</includedby>
+    <includedby refid="nvblox_8h" local="yes">nvblox.h</includedby>
+    <includedby refid="pointcloud_8h" local="yes">pointcloud.h</includedby>
+    <includedby refid="projective__integrator_8h" local="yes">projective_integrator.h</includedby>
+    <includedby refid="scene_8h" local="yes">scene.h</includedby>
+    <includedby refid="sphere__tracer_8h" local="yes">sphere_tracer.h</includedby>
+    <includedby refid="view__calculator_8h" local="yes">view_calculator.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>nvblox/core/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>nvblox/core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>nvblox/core/unified_ptr.h</label>
+        <link refid="unified__ptr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>nvblox/utils/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="9">
+        <label>Eigen/Geometry</label>
+      </node>
+      <node id="12">
+        <label>atomic</label>
+      </node>
+      <node id="5">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="15">
+        <label>glog/logging.h</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>nvblox/core/internal/impl/unified_ptr_impl.h</label>
+      </node>
+      <node id="17">
+        <label>nvblox/sensors/internal/impl/image_impl.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="13">
+        <label>type_traits</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>esdf_integrator.h</label>
+        <link refid="esdf__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>projective_integrator.h</label>
+        <link refid="projective__integrator_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>projective_color_integrator.h</label>
+        <link refid="projective__color__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>projective_occupancy_integrator.h</label>
+        <link refid="projective__occupancy__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>projective_tsdf_integrator.h</label>
+        <link refid="projective__tsdf__integrator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>view_calculator.h</label>
+        <link refid="view__calculator_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>interpolation_2d.h</label>
+        <link refid="interpolation__2d_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>image_io.h</label>
+        <link refid="image__io_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>multi_mapper.h</label>
+        <link refid="multi__mapper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox.h</label>
+        <link refid="nvblox_8h"/>
+      </node>
+      <node id="14">
+        <label>scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sphere_tracer.h</label>
+        <link refid="sphere__tracer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>image_masker.h</label>
+        <link refid="image__masker_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>image_projector.h</label>
+        <link refid="image__projector_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>pointcloud.h</label>
+        <link refid="pointcloud_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnvblox_1_1ImageBase" prot="public">nvblox::ImageBase</innerclass>
+    <innerclass refid="classnvblox_1_1Image" prot="public">nvblox::Image</innerclass>
+    <innerclass refid="classnvblox_1_1ImageView" prot="public">nvblox::ImageView</innerclass>
+    <innernamespace refid="namespacenvblox">nvblox</innernamespace>
+    <innernamespace refid="namespacenvblox_1_1image">nvblox::image</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>2022<sp/>NVIDIA<sp/>CORPORATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda_runtime.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="color_8h" kindref="compound">nvblox/core/color.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">nvblox/core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="unified__ptr_8h" kindref="compound">nvblox/core/unified_ptr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenvblox" kindref="compound">nvblox</ref><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacenvblox_1_1image" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">image<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ElementType&gt;</highlight></codeline>
+<codeline lineno="30" refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" refkind="member"><highlight class="normal">__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ElementType&amp;<sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">access</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row_idx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col_idx,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cols,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ElementType*<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[row_idx<sp/>*<sp/>cols<sp/>+<sp/>col_idx];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ElementType&gt;</highlight></codeline>
+<codeline lineno="36" refid="namespacenvblox_1_1image_1acb9e675ada3eb698de7860acaeffd266" refkind="member"><highlight class="normal">__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ElementType&amp;<sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">access</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row_idx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col_idx,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cols,<sp/>ElementType*<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[row_idx<sp/>*<sp/>cols<sp/>+<sp/>col_idx];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ElementType&gt;</highlight></codeline>
+<codeline lineno="41" refid="namespacenvblox_1_1image_1abcbdda20bf866807f0f212c299ebc04f" refkind="member"><highlight class="normal">__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ElementType&amp;<sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">access</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linear_idx,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ElementType*<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[linear_idx];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ElementType&gt;</highlight></codeline>
+<codeline lineno="46" refid="namespacenvblox_1_1image_1a37f3f899dc5530cfc85a735502b9de78" refkind="member"><highlight class="normal">__host__<sp/>__device__<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ElementType&amp;<sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">access</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linear_idx,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ElementType*<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data[linear_idx];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="namespacenvblox_1ab715cffa6ff1964ebcd0a536fd2f2fd1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="namespacenvblox_1ab715cffa6ff1964ebcd0a536fd2f2fd1" kindref="member">kDefaultImageMemoryType</ref><sp/>=<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223a040394711ad65e20323fe0114e507103" kindref="member">MemoryType::kDevice</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_ElementType&gt;</highlight></codeline>
+<codeline lineno="56" refid="classnvblox_1_1ImageBase" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;Save&quot;<sp/>the<sp/>element<sp/>type<sp/>so<sp/>it&apos;s<sp/>queryable<sp/>as<sp/>Image::ElementType.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>_ElementType<sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classnvblox_1_1ImageBase_1a9394ed699e8b48977dbf425f8a94bb0b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a9394ed699e8b48977dbf425f8a94bb0b" kindref="member">~ImageBase</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" kindref="member">cols</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="66" refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" kindref="member">rows</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" kindref="member">rows_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="67" refid="classnvblox_1_1ImageBase_1ad854bf8480a21045488e98e85e5ed28d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ad854bf8480a21045488e98e85e5ed28d" kindref="member">numel</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref><sp/>*<sp/><ref refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" kindref="member">rows_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="68" refid="classnvblox_1_1ImageBase_1a11906bfe86bb4c4956ab93f501c7c73b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a11906bfe86bb4c4956ab93f501c7c73b" kindref="member">width</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="69" refid="classnvblox_1_1ImageBase_1a63357bf56903529282f781514bc162fc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a63357bf56903529282f781514bc162fc" kindref="member">height</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" kindref="member">rows_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classnvblox_1_1ImageBase_1aab8397c3df9d5735d5975a9ac9fb5804" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageBase_1aab8397c3df9d5735d5975a9ac9fb5804" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row_idx,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col_idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">image::access</ref>(row_idx,<sp/>col_idx,<sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref>,<sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78" refid="classnvblox_1_1ImageBase_1ad9dbdb0ea96b7105632ee6c526aa7440" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageBase_1ad9dbdb0ea96b7105632ee6c526aa7440" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row_idx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col_idx)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">image::access</ref>(row_idx,<sp/>col_idx,<sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref>,<sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81" refid="classnvblox_1_1ImageBase_1a36da952d6f8858e22bc9bcbcaf75aeb1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageBase_1a36da952d6f8858e22bc9bcbcaf75aeb1" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linear_idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">image::access</ref>(linear_idx,<sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84" refid="classnvblox_1_1ImageBase_1ad4d1c7922f30076be956d53d3ca425cd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageBase_1ad4d1c7922f30076be956d53d3ca425cd" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linear_idx)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1aedf64fc7b9c772a6bda33f6a227ec802" kindref="member">image::access</ref>(linear_idx,<sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classnvblox_1_1ImageBase_1af18aec811c976ef51a3d91e791cf3a5e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>*<sp/><ref refid="classnvblox_1_1ImageBase_1af18aec811c976ef51a3d91e791cf3a5e" kindref="member">dataPtr</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="90" refid="classnvblox_1_1ImageBase_1a535d9177d9a0eeb3df283676206f011c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>*<sp/><ref refid="classnvblox_1_1ImageBase_1a535d9177d9a0eeb3df283676206f011c" kindref="member">dataConstPtr</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94" refid="classnvblox_1_1ImageBase_1a52fd3795cb941f3de812f10c7eaadb7b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageBase_1a52fd3795cb941f3de812f10c7eaadb7b" kindref="member">ImageBase</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" kindref="member">rows</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" kindref="member">cols</ref>,<sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" kindref="member">rows_</ref>(<ref refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" kindref="member">rows</ref>),<sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref>(<ref refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" kindref="member">cols</ref>),<sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>(data)<sp/>{}</highlight></codeline>
+<codeline lineno="96" refid="classnvblox_1_1ImageBase_1a63c5eb5434b0de06b4b6e7688e74f680" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageBase_1a63c5eb5434b0de06b4b6e7688e74f680" kindref="member">ImageBase</ref>()<sp/>:<sp/><ref refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" kindref="member">rows_</ref>(0),<sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref>(0),<sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Delete<sp/>copying</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classnvblox_1_1ImageBase_1aea81e82f1984f34eed7314805823e031" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageBase_1aea81e82f1984f34eed7314805823e031" kindref="member">ImageBase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100" refid="classnvblox_1_1ImageBase_1a99b33111882c220c7f336e0e28c45679" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageBase_1a99b33111882c220c7f336e0e28c45679" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Delete<sp/>moving</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classnvblox_1_1ImageBase_1a870f61cfb8a3a845a6d590d33a7c57b3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageBase_1a870f61cfb8a3a845a6d590d33a7c57b3" kindref="member">ImageBase</ref>(<ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104" refid="classnvblox_1_1ImageBase_1a75a04dd2f4c68ca26dd301dc1ed23b2f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageBase_1a75a04dd2f4c68ca26dd301dc1ed23b2f" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&amp;&amp;<sp/>other)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a79bb05e8dbcd406f25b4572a493a7cf7" kindref="member">rows_</ref>;</highlight></codeline>
+<codeline lineno="107" refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ad7b25a9aae122bcfb76b10ffa6673701" kindref="member">cols_</ref>;</highlight></codeline>
+<codeline lineno="108" refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageBase_1ab7f1e48540851dad97c8de8cf11d924b" kindref="member">ElementType</ref>*<sp/><ref refid="classnvblox_1_1ImageBase_1a8ac01f53420e26a45a24e01d5c9f67c4" kindref="member">data_</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_ElementType&gt;</highlight></codeline>
+<codeline lineno="119" refid="classnvblox_1_1Image" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&lt;_ElementType&gt;<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;Save&quot;<sp/>the<sp/>element<sp/>type<sp/>so<sp/>it&apos;s<sp/>queryable<sp/>as<sp/>Image::ElementType.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classnvblox_1_1Image_1ac9716902b1ff930f5bcd0728762e7bae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>_ElementType<sp/><ref refid="classnvblox_1_1Image_1ac9716902b1ff930f5bcd0728762e7bae" kindref="member">ElementType</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="classnvblox_1_1Image_1a081fa7ddca3ed53b741836c8f4d44ef7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1a081fa7ddca3ed53b741836c8f4d44ef7" kindref="member">Image</ref>(<ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="namespacenvblox_1ab715cffa6ff1964ebcd0a536fd2f2fd1" kindref="member">kDefaultImageMemoryType</ref>)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnvblox_1_1Image_1a1df37582c3ebe26891ecb0a293f7d4e9" kindref="member">memory_type_</ref>(<ref refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" kindref="member">memory_type</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classnvblox_1_1Image_1a1cde2b3aa3ab942b9c6b2f581f5db4ae" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image_1a1cde2b3aa3ab942b9c6b2f581f5db4ae" kindref="member">Image</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" kindref="member">rows</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" kindref="member">cols</ref>,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="namespacenvblox_1ab715cffa6ff1964ebcd0a536fd2f2fd1" kindref="member">kDefaultImageMemoryType</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classnvblox_1_1Image_1ae32fd075b12733a66b4ac7b8107cee9d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1ae32fd075b12733a66b4ac7b8107cee9d" kindref="member">~Image</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classnvblox_1_1Image_1a1a7f93db4bad987ba4dfc231b6cb2e84" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image_1a1a7f93db4bad987ba4dfc231b6cb2e84" kindref="member">Image</ref>(<ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="133" refid="classnvblox_1_1Image_1a7ac66302cc974845edca81b4b36528de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&amp;<sp/><ref refid="classnvblox_1_1Image_1a7ac66302cc974845edca81b4b36528de" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classnvblox_1_1Image_1a7cb596f9e0eae36c73e9f9c08f12dee3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1a7cb596f9e0eae36c73e9f9c08f12dee3" kindref="member">Image</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="137" refid="classnvblox_1_1Image_1aad5373aacf2d3f39f9951942704d3557" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image_1aad5373aacf2d3f39f9951942704d3557" kindref="member">Image</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&amp;<sp/>other,<sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" kindref="member">memory_type</ref>);</highlight></codeline>
+<codeline lineno="138" refid="classnvblox_1_1Image_1a50c1877f0d1fb7cf4f983aa517ffb4f1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&amp;<sp/><ref refid="classnvblox_1_1Image_1a50c1877f0d1fb7cf4f983aa517ffb4f1" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" kindref="member">memory_type</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1a1df37582c3ebe26891ecb0a293f7d4e9" kindref="member">memory_type_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classnvblox_1_1Image_1a479f4eee0027e4954f9e9542d6b85301" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1a479f4eee0027e4954f9e9542d6b85301" kindref="member">setZero</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classnvblox_1_1Image_1ad1c8c9ca974bbb73d01dfb5cfab326f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1ad1c8c9ca974bbb73d01dfb5cfab326f4" kindref="member">populateFromBuffer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" kindref="member">rows</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" kindref="member">cols</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1ac9716902b1ff930f5bcd0728762e7bae" kindref="member">ElementType</ref>*<sp/>buffer,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="namespacenvblox_1ab715cffa6ff1964ebcd0a536fd2f2fd1" kindref="member">kDefaultImageMemoryType</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="classnvblox_1_1Image_1a374ecbf25da4fd718ba8f876bd728e85" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref><sp/><ref refid="classnvblox_1_1Image_1a374ecbf25da4fd718ba8f876bd728e85" kindref="member">fromBuffer</ref>(</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" kindref="member">rows</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" kindref="member">cols</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image_1ac9716902b1ff930f5bcd0728762e7bae" kindref="member">ElementType</ref>*<sp/>buffer,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Image_1ab42d46cb8dd9f1475111f1ee8e32fb85" kindref="member">memory_type</ref><sp/>=<sp/><ref refid="namespacenvblox_1ab715cffa6ff1964ebcd0a536fd2f2fd1" kindref="member">kDefaultImageMemoryType</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="165" refid="classnvblox_1_1Image_1a1df37582c3ebe26891ecb0a293f7d4e9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref><sp/><ref refid="classnvblox_1_1Image_1a1df37582c3ebe26891ecb0a293f7d4e9" kindref="member">memory_type_</ref>;</highlight></codeline>
+<codeline lineno="166" refid="classnvblox_1_1Image_1a3e93a41a8e358094dcc13cd7639213b1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr&lt;ElementType[]&gt;</ref><sp/><ref refid="classnvblox_1_1Image_1a3e93a41a8e358094dcc13cd7639213b1" kindref="member">owned_data_</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>_ElementType&gt;</highlight></codeline>
+<codeline lineno="170" refid="classnvblox_1_1ImageView" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase" kindref="compound">ImageBase</ref>&lt;_ElementType&gt;<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;Save&quot;<sp/>the<sp/>element<sp/>type<sp/>so<sp/>it&apos;s<sp/>queryable<sp/>as<sp/>Image::ElementType.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classnvblox_1_1ImageView_1ab9eb34a9a1ab3cc70bf5414df4616fae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>_ElementType<sp/><ref refid="classnvblox_1_1ImageView_1ab9eb34a9a1ab3cc70bf5414df4616fae" kindref="member">ElementType</ref>;</highlight></codeline>
+<codeline lineno="174" refid="classnvblox_1_1ImageView_1a9121c4ef2b888cf3b81b3fa79309268b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::remove_cv&lt;_ElementType&gt;::type<sp/><ref refid="classnvblox_1_1ImageView_1a9121c4ef2b888cf3b81b3fa79309268b" kindref="member">ElementType_nonconst</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="classnvblox_1_1ImageView_1af01528f0241757eb0ab10c29a5255c5c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageView_1af01528f0241757eb0ab10c29a5255c5c" kindref="member">ImageView</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1a9d087c511c65b0ed94bc43306b7574ba" kindref="member">rows</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageBase_1ac98eaa783ee38e39574bd75942ca80ed" kindref="member">cols</ref>,<sp/><ref refid="classnvblox_1_1ImageView_1ab9eb34a9a1ab3cc70bf5414df4616fae" kindref="member">ElementType</ref>*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classnvblox_1_1ImageView_1adb3b40c8f8215dd78d176e2e2aac7128" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageView_1adb3b40c8f8215dd78d176e2e2aac7128" kindref="member">ImageView</ref>(<ref refid="classnvblox_1_1Image" kindref="compound">Image&lt;ElementType&gt;</ref>&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="189" refid="classnvblox_1_1ImageView_1a4f6b8451c8d4ff9bf8a59a51384f1c7f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageView_1a4f6b8451c8d4ff9bf8a59a51384f1c7f" kindref="member">ImageView</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image&lt;ElementType_nonconst&gt;</ref>&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classnvblox_1_1ImageView_1aaa967b7ae68f8c59af61f0b3e78f860e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageView_1aaa967b7ae68f8c59af61f0b3e78f860e" kindref="member">~ImageView</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classnvblox_1_1ImageView_1a75465ebcae2a12da93940a1eee1dd3be" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageView_1a75465ebcae2a12da93940a1eee1dd3be" kindref="member">ImageView</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="196" refid="classnvblox_1_1ImageView_1a5b57fdf573157dde0dcb5db40796310d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageView_1a5b57fdf573157dde0dcb5db40796310d" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="classnvblox_1_1ImageView_1accbeba85ddb77c269c0010af515306b4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageView_1accbeba85ddb77c269c0010af515306b4" kindref="member">ImageView</ref>(<ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="201" refid="classnvblox_1_1ImageView_1ad540648a3e57631385be00ee0ca6e049" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&amp;<sp/><ref refid="classnvblox_1_1ImageView_1ad540648a3e57631385be00ee0ca6e049" kindref="member">operator=</ref>(<ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" refkind="member"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref><sp/>=<sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image&lt;float&gt;</ref>;</highlight></codeline>
+<codeline lineno="206" refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref><sp/>=<sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image&lt;Color&gt;</ref>;</highlight></codeline>
+<codeline lineno="207" refid="namespacenvblox_1ae00b9288d204a5f385098d12fe56eb1a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref><sp/>=<sp/><ref refid="classnvblox_1_1Image" kindref="compound">Image&lt;uint8_t&gt;</ref>;</highlight></codeline>
+<codeline lineno="208" refid="namespacenvblox_1a58edbb2cb638a043bede84fdf0f48b90" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageView" kindref="compound">DepthImageView</ref><sp/>=<sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView&lt;float&gt;</ref>;</highlight></codeline>
+<codeline lineno="209" refid="namespacenvblox_1af74360011cc0e25c4af88580f5b0f507" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageView" kindref="compound">ColorImageView</ref><sp/>=<sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView&lt;Color&gt;</ref>;</highlight></codeline>
+<codeline lineno="210" refid="namespacenvblox_1afa716f2a712d2e5f625d791fcce26a7d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageView" kindref="compound">MonoImageView</ref><sp/>=<sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView&lt;uint8_t&gt;</ref>;</highlight></codeline>
+<codeline lineno="211" refid="namespacenvblox_1aa45a16e028be0f73bb142ba2c3f8b6ed" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageView" kindref="compound">DepthImageConstView</ref><sp/>=<sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView&lt;const float&gt;</ref>;</highlight></codeline>
+<codeline lineno="212" refid="namespacenvblox_1a06e69539aa4b41b975f7f595593d83cc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageView" kindref="compound">ColorImageConstView</ref><sp/>=<sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView&lt;const Color&gt;</ref>;</highlight></codeline>
+<codeline lineno="213" refid="namespacenvblox_1a75900255cfdab1120a95489e43268814" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classnvblox_1_1ImageView" kindref="compound">MonoImageConstView</ref><sp/>=<sp/><ref refid="classnvblox_1_1ImageView" kindref="compound">ImageView&lt;const uint8_t&gt;</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Image<sp/>Operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">image<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="namespacenvblox_1_1image_1ab7160574c3a4157b3ecf27b613d825b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1ab7160574c3a4157b3ecf27b613d825b0" kindref="member">maxGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="219" refid="namespacenvblox_1_1image_1aff3b0a87e56ae62762660c89f33abaca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1aff3b0a87e56ae62762660c89f33abaca" kindref="member">minGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="220" refid="namespacenvblox_1_1image_1aad82160765c41eff67ef16565ccf7759" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="namespacenvblox_1_1image_1ab7160574c3a4157b3ecf27b613d825b0" kindref="member">maxGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="221" refid="namespacenvblox_1_1image_1a7e9481b36247ca84bb48bf9f3a3b07e7" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="namespacenvblox_1_1image_1aff3b0a87e56ae62762660c89f33abaca" kindref="member">minGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="222" refid="namespacenvblox_1_1image_1a12437f588a0c5908bb7fc6c309db2b0b" refkind="member"><highlight class="normal">std::pair&lt;float,<sp/>float&gt;<sp/><ref refid="namespacenvblox_1_1image_1a12437f588a0c5908bb7fc6c309db2b0b" kindref="member">minmaxGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="namespacenvblox_1_1image_1a391c87ce0f903ef39e704c7e005ad728" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1a391c87ce0f903ef39e704c7e005ad728" kindref="member">elementWiseMinInPlaceGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constant,<sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>*<sp/>image);</highlight></codeline>
+<codeline lineno="225" refid="namespacenvblox_1_1image_1ad1fc3a3a6720e6d93ba2ed114a717b38" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1ad1fc3a3a6720e6d93ba2ed114a717b38" kindref="member">elementWiseMaxInPlaceGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constant,<sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>*<sp/>image);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="namespacenvblox_1_1image_1aeea282b62aac19dfa69d8cfe8555d592" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1ad1fc3a3a6720e6d93ba2ed114a717b38" kindref="member">elementWiseMaxInPlaceGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image_1,<sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>*<sp/>image_2);</highlight></codeline>
+<codeline lineno="228" refid="namespacenvblox_1_1image_1a109844bc9847b9b6c9c266624cec9572" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1ad1fc3a3a6720e6d93ba2ed114a717b38" kindref="member">elementWiseMaxInPlaceGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>image_1,<sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>*<sp/>image_2);</highlight></codeline>
+<codeline lineno="229" refid="namespacenvblox_1_1image_1a17122dcaf0197be284bf10ed1e2127a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1a391c87ce0f903ef39e704c7e005ad728" kindref="member">elementWiseMinInPlaceGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image_1,<sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>*<sp/>image_2);</highlight></codeline>
+<codeline lineno="230" refid="namespacenvblox_1_1image_1a1e518c0e6fa77e0c5c04e93de44099e2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1a391c87ce0f903ef39e704c7e005ad728" kindref="member">elementWiseMinInPlaceGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>image_1,<sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>*<sp/>image_2);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="namespacenvblox_1_1image_1aa874bb790d8e002f78bc9fa94f79e428" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1aa874bb790d8e002f78bc9fa94f79e428" kindref="member">elementWiseMultiplicationInPlaceGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constant,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>*<sp/>image);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="namespacenvblox_1_1image_1ab0bc1ede273f4bbcf973f2c1e4241d50" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1ab0bc1ede273f4bbcf973f2c1e4241d50" kindref="member">getDifferenceImageGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image_1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image_2,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>*<sp/>diff_image_ptr);</highlight></codeline>
+<codeline lineno="237" refid="namespacenvblox_1_1image_1ad3290d1a2c091cb8c3ed90cddbccfe5c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1ab0bc1ede273f4bbcf973f2c1e4241d50" kindref="member">getDifferenceImageGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/>image_1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>&amp;<sp/>image_2,</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">ColorImage</ref>*<sp/>diff_image_ptr);</highlight></codeline>
+<codeline lineno="239" refid="namespacenvblox_1_1image_1af945c907c59d5e15b039d2920ba543cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1ab0bc1ede273f4bbcf973f2c1e4241d50" kindref="member">getDifferenceImageGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>image_1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>&amp;<sp/>image_2,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>*<sp/>diff_image_ptr);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="namespacenvblox_1_1image_1a7e578140ad57506aadfe29099e648861" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenvblox_1_1image_1a7e578140ad57506aadfe29099e648861" kindref="member">castGPU</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnvblox_1_1Image" kindref="compound">DepthImage</ref>&amp;<sp/>image_in,<sp/><ref refid="classnvblox_1_1Image" kindref="compound">MonoImage</ref>*<sp/>image_out_ptr);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nvblox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nvblox/sensors/internal/impl/image_impl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/image.h"/>
+  </compounddef>
+</doxygen>

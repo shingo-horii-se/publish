@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_c2ad25448f701f3ef9760c6b214a9c7b" kind="dir">
+    <compoundname>internal</compoundname>
+    <innerfile refid="integrators__common_8h">integrators_common.h</innerfile>
+    <innerfile refid="projective__integrator_8h">projective_integrator.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/internal/"/>
+  </compounddef>
+</doxygen>

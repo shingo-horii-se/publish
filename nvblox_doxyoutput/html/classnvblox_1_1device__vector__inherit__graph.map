@@ -1,0 +1,4 @@
+<map id="nvblox::device_vector&lt; T &gt;" name="nvblox::device_vector&lt; T &gt;">
+<area shape="rect" id="node1" title="Specialization for unified_vector on device memory only." alt="" coords="6,80,179,107"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1unified__vector.html" title="Unified&#45;memory CUDA vector that should only be used on trivial types as the constructors and destruct..." alt="" coords="5,5,180,32"/>
+</map>

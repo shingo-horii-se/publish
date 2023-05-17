@@ -1,0 +1,945 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1ProjectiveColorIntegrator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::ProjectiveColorIntegrator</compoundname>
+    <includes refid="projective__color__integrator_8h" local="no">projective_color_integrator.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a690cdb509547ff5baa23bd69c628f572" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::ProjectiveColorIntegrator::sphere_tracing_ray_subsampling_factor_</definition>
+        <argsstring></argsstring>
+        <name>sphere_tracing_ray_subsampling_factor_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::sphere_tracing_ray_subsampling_factor_</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="154" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a259c67fca66170c42eb2d00e4a31cf3a" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveColorIntegrator::truncation_distance_vox_</definition>
+        <argsstring></argsstring>
+        <name>truncation_distance_vox_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::truncation_distance_vox_</qualifiedname>
+        <initializer>= 4.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="155" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1ae67e64ec266085088691735e8b313155" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveColorIntegrator::max_weight_</definition>
+        <argsstring></argsstring>
+        <name>max_weight_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::max_weight_</qualifiedname>
+        <initializer>= 100.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="156" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a58d46324b497b50be34efbb6e46c5a9f" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveColorIntegrator::max_integration_distance_m_</definition>
+        <argsstring></argsstring>
+        <name>max_integration_distance_m_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::max_integration_distance_m_</qualifiedname>
+        <initializer>= 7.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="157" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a80207870b585d5d5b548ed4281853e23" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+        <definition>WeightingFunctionType nvblox::ProjectiveColorIntegrator::weighting_function_type_</definition>
+        <argsstring></argsstring>
+        <name>weighting_function_type_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::weighting_function_type_</qualifiedname>
+        <initializer>=
+      <ref refid="namespacenvblox_1aca11bf4da09302e5daa400017eb6092b" kindref="member">kDefaultWeightingFunctionType</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="158" column="25" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a59dca3c23234e9ab084691e8ec1c1363" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref></type>
+        <definition>ViewCalculator nvblox::ProjectiveColorIntegrator::view_calculator_</definition>
+        <argsstring></argsstring>
+        <name>view_calculator_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::view_calculator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="162" column="26" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a4490c42f388e7f0733c99bff81bcb736" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1SphereTracer" kindref="compound">SphereTracer</ref></type>
+        <definition>SphereTracer nvblox::ProjectiveColorIntegrator::sphere_tracer_</definition>
+        <argsstring></argsstring>
+        <name>sphere_tracer_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::sphere_tracer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="165" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1ac5ca5a5508ad31df424a01ca55bde42f" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref></type>
+        <definition>DepthImage nvblox::ProjectiveColorIntegrator::synthetic_depth_image_</definition>
+        <argsstring></argsstring>
+        <name>synthetic_depth_image_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::synthetic_depth_image_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="168" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a22deb13ba0650e656418a67cdc7c72bc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>device_vector&lt;Index3D&gt; nvblox::ProjectiveColorIntegrator::block_indices_device_</definition>
+        <argsstring></argsstring>
+        <name>block_indices_device_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::block_indices_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="173" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1aae9fb4cf6d7b9d844b441dc9170d4b12" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1ac1052bfb4962ba790bf76307816f8f3d" kindref="member">ColorBlock</ref> * &gt;</type>
+        <definition>device_vector&lt;ColorBlock*&gt; nvblox::ProjectiveColorIntegrator::block_ptrs_device_</definition>
+        <argsstring></argsstring>
+        <name>block_ptrs_device_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::block_ptrs_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="174" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a5486ed601e0e0b1e5e5015b8acdf2a56" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>host_vector&lt;Index3D&gt; nvblox::ProjectiveColorIntegrator::block_indices_host_</definition>
+        <argsstring></argsstring>
+        <name>block_indices_host_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::block_indices_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="175" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1ab67ad8ccc942f33bf658cc297680c900" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1ac1052bfb4962ba790bf76307816f8f3d" kindref="member">ColorBlock</ref> * &gt;</type>
+        <definition>host_vector&lt;ColorBlock*&gt; nvblox::ProjectiveColorIntegrator::block_ptrs_host_</definition>
+        <argsstring></argsstring>
+        <name>block_ptrs_host_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::block_ptrs_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="176" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1aa1f66e835d12380404c0b4dd83fe7f22" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; const <ref refid="namespacenvblox_1a462b1313d22665a2fc7d42ed4dd2fca9" kindref="member">TsdfBlock</ref> * &gt;</type>
+        <definition>device_vector&lt;const TsdfBlock*&gt; nvblox::ProjectiveColorIntegrator::truncation_band_block_ptrs_device_</definition>
+        <argsstring></argsstring>
+        <name>truncation_band_block_ptrs_device_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::truncation_band_block_ptrs_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="179" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a4c8cd83809ac7f01f825c6ee13c9b564" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; const <ref refid="namespacenvblox_1a462b1313d22665a2fc7d42ed4dd2fca9" kindref="member">TsdfBlock</ref> * &gt;</type>
+        <definition>host_vector&lt;const TsdfBlock*&gt; nvblox::ProjectiveColorIntegrator::truncation_band_block_ptrs_host_</definition>
+        <argsstring></argsstring>
+        <name>truncation_band_block_ptrs_host_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::truncation_band_block_ptrs_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="180" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1ac33fc238c313abd8a45b92e75906519a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; bool &gt;</type>
+        <definition>device_vector&lt;bool&gt; nvblox::ProjectiveColorIntegrator::block_in_truncation_band_device_</definition>
+        <argsstring></argsstring>
+        <name>block_in_truncation_band_device_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::block_in_truncation_band_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="181" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a31905ab10c25b5aca46cd014ee7f1f2b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; bool &gt;</type>
+        <definition>host_vector&lt;bool&gt; nvblox::ProjectiveColorIntegrator::block_in_truncation_band_host_</definition>
+        <argsstring></argsstring>
+        <name>block_in_truncation_band_host_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::block_in_truncation_band_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="182" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1ProjectiveColorIntegrator_1a1fd584e706906e6debc0115eaa467f4d" prot="protected" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::ProjectiveColorIntegrator::integration_stream_</definition>
+        <argsstring></argsstring>
+        <name>integration_stream_</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::integration_stream_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="185" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a9e186e26f84b9fd1f6e64c11b1859de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::ProjectiveColorIntegrator::ProjectiveColorIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>ProjectiveColorIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::ProjectiveColorIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a64c92ac8df2133d5195ee8673c4903af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::ProjectiveColorIntegrator::~ProjectiveColorIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>~ProjectiveColorIntegrator</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::~ProjectiveColorIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="34" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a3e6838b141d30e05735d27196db3e4a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveColorIntegrator::integrateFrame</definition>
+        <argsstring>(const ColorImage &amp;color_frame, const Transform &amp;T_L_C, const Camera &amp;camera, const TsdfLayer &amp;tsdf_layer, ColorLayer *color_layer, std::vector&lt; Index3D &gt; *updated_blocks=nullptr)</argsstring>
+        <name>integrateFrame</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::integrateFrame</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> &amp;</type>
+          <declname>color_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> *</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Integrates a color image into the passed color layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A color image. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T_L_C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pose of the camera. Supplied as a Transform mapping points in the camera frame (C) to the layer frame (L). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A the camera (intrinsics) model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TSDF layer with which the color layer associated. <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> integration is only performed on the voxels corresponding to the truncation band of this layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the layer into which this image will be intergrated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updated_blocks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to a vector which will contain the 3D indices of blocks affected by the integration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1ac4e3d0892ae164d11da95a918f4cd478" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1SphereTracer" kindref="compound">SphereTracer</ref> &amp;</type>
+        <definition>const SphereTracer &amp; nvblox::ProjectiveColorIntegrator::sphere_tracer</definition>
+        <argsstring>() const</argsstring>
+        <name>sphere_tracer</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::sphere_tracer</qualifiedname>
+        <briefdescription>
+<para>Returns the sphere tracer used for color integration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In order to perform color integration from an rgb image we have to determine which surfaces are in view. We use sphere tracing for this purpose. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="57" column="22" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a1ab7f192ec2e24ba5df0adec6d2a232c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1SphereTracer" kindref="compound">SphereTracer</ref> &amp;</type>
+        <definition>SphereTracer &amp; nvblox::ProjectiveColorIntegrator::sphere_tracer</definition>
+        <argsstring>()</argsstring>
+        <name>sphere_tracer</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::sphere_tracer</qualifiedname>
+        <briefdescription>
+<para>Returns the object used to calculate the blocks in camera views. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In order to perform color integration from an rgb image we have to determine which surfaces are in view. We use sphere tracing for this purpose. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="62" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a78fc3f3d584e59c10b562429e8b0a5c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::ProjectiveColorIntegrator::sphere_tracing_ray_subsampling_factor</definition>
+        <argsstring>() const</argsstring>
+        <name>sphere_tracing_ray_subsampling_factor</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::sphere_tracing_ray_subsampling_factor</qualifiedname>
+        <briefdescription>
+<para>A parameter getter We find a surface on which to integrate color by sphere tracing from the camera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a relatively expensive operation. This parameter controls how many rays are traced for an image. For example, for a 100px by 100px image with a subsampling factor of 4, 25x25 rays are traced. <simplesect kind="return"><para>the ray subsampling factor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="70" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a42a28d0e147d30385b664dea57864149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveColorIntegrator::sphere_tracing_ray_subsampling_factor</definition>
+        <argsstring>(int sphere_tracing_ray_subsampling_factor)</argsstring>
+        <name>sphere_tracing_ray_subsampling_factor</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::sphere_tracing_ray_subsampling_factor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sphere_tracing_ray_subsampling_factor</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveColorIntegrator_1a78fc3f3d584e59c10b562429e8b0a5c7" kindref="member">sphere_tracing_ray_subsampling_factor()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sphere_tracing_ray_subsampling_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ray subsampling factor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="75" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a5ed25bbcb2908c687ed0e8db266a80fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveColorIntegrator::truncation_distance_vox</definition>
+        <argsstring>() const</argsstring>
+        <name>truncation_distance_vox</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::truncation_distance_vox</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The truncation distance parameter associated with this integrator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The truncation distance also determines the max. distance behind a surface up until which blocks are integrated. <simplesect kind="return"><para>the truncation distance in voxels </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="83" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a564dc2440747090ee0df468e229569f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveColorIntegrator::max_weight</definition>
+        <argsstring>() const</argsstring>
+        <name>max_weight</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::max_weight</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum weight that voxels can have. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The integrator clips the voxel weight to this value after integration. Note that currently each integration to a voxel increases the weight by 1.0 (if not clipped). <simplesect kind="return"><para>the maximum weight </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="90" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1adbf4f49691cb924864d371f6edf108d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveColorIntegrator::max_integration_distance_m</definition>
+        <argsstring>() const</argsstring>
+        <name>max_integration_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::max_integration_distance_m</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum distance at which voxels are updated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Voxels beyond this distance from the camera are not affected by integration. <simplesect kind="return"><para>the maximum intragration distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="96" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a10d7de1bb365fc67742e2a579fcb952a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveColorIntegrator::truncation_distance_vox</definition>
+        <argsstring>(float truncation_distance_vox)</argsstring>
+        <name>truncation_distance_vox</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::truncation_distance_vox</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>truncation_distance_vox</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveColorIntegrator_1a5ed25bbcb2908c687ed0e8db266a80fc" kindref="member">truncation_distance_vox()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>truncation_distance_vox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the truncation distance in voxels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a0b54e523c6d826f644c873c09fd2f306" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::ProjectiveColorIntegrator::get_truncation_distance_m</definition>
+        <argsstring>(float voxel_size) const</argsstring>
+        <name>get_truncation_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::get_truncation_distance_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <briefdescription>
+<para>Gets the metric truncation distance which is calculated from truncation distance in voxels and the input voxel size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>voxel_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The voxel size of the layer you want the truncation distance for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The truncation distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="108" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1ab3c2c1ef10fbfc852b391c98d7bf7e0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveColorIntegrator::max_weight</definition>
+        <argsstring>(float max_weight)</argsstring>
+        <name>max_weight</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::max_weight</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_weight</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveColorIntegrator_1a564dc2440747090ee0df468e229569f0" kindref="member">max_weight()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum weight of a voxel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="113" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a47ec6e27ed185b20cdf1506fd6f2d732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveColorIntegrator::max_integration_distance_m</definition>
+        <argsstring>(float max_integration_distance_m)</argsstring>
+        <name>max_integration_distance_m</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::max_integration_distance_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_integration_distance_m</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1ProjectiveColorIntegrator_1adbf4f49691cb924864d371f6edf108d5" kindref="member">max_integration_distance_m()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_integration_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum intragration distance in meters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="119" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a5ea644d141a90d7b70efa2909049d8a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+        <definition>WeightingFunctionType nvblox::ProjectiveColorIntegrator::weighting_function_type</definition>
+        <argsstring>() const</argsstring>
+        <name>weighting_function_type</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::weighting_function_type</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The type of weighting function used to fuse observations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The weighting function type used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="124" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1ad6cdb63187b26780e18144ea7a5303c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveColorIntegrator::weighting_function_type</definition>
+        <argsstring>(WeightingFunctionType weighting_function_type)</argsstring>
+        <name>weighting_function_type</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::weighting_function_type</qualifiedname>
+        <param>
+          <type><ref refid="namespacenvblox_1ae76b8cc1c9b44b61cf58f4662f97bbc5" kindref="member">WeightingFunctionType</ref></type>
+          <declname>weighting_function_type</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter The type of weighting function used to fuse observations See <ref refid="classnvblox_1_1ProjectiveColorIntegrator_1a5ea644d141a90d7b70efa2909049d8a4" kindref="member">weighting_function_type()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weighting_function_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of weighting function to be used </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="130" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1aa775569e120f5c06dbedf9c86b381e67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref> &amp;</type>
+        <definition>const ViewCalculator &amp; nvblox::ProjectiveColorIntegrator::view_calculator</definition>
+        <argsstring>() const</argsstring>
+        <name>view_calculator</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::view_calculator</qualifiedname>
+        <briefdescription>
+<para>Returns the object used to calculate the blocks in camera views. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="133" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a48b97fdf1c2fa9fcff82823e8389a480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnvblox_1_1ViewCalculator" kindref="compound">ViewCalculator</ref> &amp;</type>
+        <definition>ViewCalculator &amp; nvblox::ProjectiveColorIntegrator::view_calculator</definition>
+        <argsstring>()</argsstring>
+        <name>view_calculator</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::view_calculator</qualifiedname>
+        <briefdescription>
+<para>Returns the object used to calculate the blocks in camera views. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="135" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1a09583390dc36b19d38eb7d8c0d8157e0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::ProjectiveColorIntegrator::updateBlocks</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;block_indices, const ColorImage &amp;color_frame, const DepthImage &amp;depth_frame, const Transform &amp;T_L_C, const Camera &amp;camera, const float truncation_distance_m, ColorLayer *layer)</argsstring>
+        <name>updateBlocks</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::updateBlocks</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a567eee9cb474b276ce1882163bdf7509" kindref="member">ColorImage</ref> &amp;</type>
+          <declname>color_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a40fb07a915c9dbfd3d7333e1080deea9" kindref="member">DepthImage</ref> &amp;</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="140" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1ProjectiveColorIntegrator_1aa8e1872ab04d3bb25fc31160be926ff5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>std::vector&lt; Index3D &gt; nvblox::ProjectiveColorIntegrator::reduceBlocksToThoseInTruncationBand</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;block_indices, const TsdfLayer &amp;tsdf_layer, const float truncation_distance_m)</argsstring>
+        <name>reduceBlocksToThoseInTruncationBand</name>
+        <qualifiedname>nvblox::ProjectiveColorIntegrator::reduceBlocksToThoseInTruncationBand</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>truncation_distance_m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="149" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class performing color intregration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Integrates color images into color layers. The &quot;projective&quot; describes one type of integration. Namely that voxels in view are projected into the depth image (the alternative being casting rays out from the camera). </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>nvblox::Image&lt; float &gt;</label>
+        <link refid="classnvblox_1_1Image"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>owned_data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>nvblox::device_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>nvblox::device_vector&lt; bool &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>nvblox::device_vector&lt; const VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>nvblox::device_vector&lt; nvblox::VoxelBlock * &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>nvblox::host_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>nvblox::host_vector&lt; bool &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>nvblox::host_vector&lt; const VoxelBlock&lt; TsdfVoxel &gt; * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>nvblox::host_vector&lt; nvblox::VoxelBlock * &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nvblox::ImageBase&lt; _ElementType &gt;</label>
+        <link refid="classnvblox_1_1ImageBase"/>
+      </node>
+      <node id="1">
+        <label>nvblox::ProjectiveColorIntegrator</label>
+        <link refid="classnvblox_1_1ProjectiveColorIntegrator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>view_calculator_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sphere_tracer_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>synthetic_depth_image_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>block_ptrs_host_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>truncation_band_block_ptrs_device_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>truncation_band_block_ptrs_host_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>block_in_truncation_band_device_</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>block_in_truncation_band_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nvblox::SphereTracer</label>
+        <link refid="classnvblox_1_1SphereTracer"/>
+      </node>
+      <node id="2">
+        <label>nvblox::ViewCalculator</label>
+        <link refid="classnvblox_1_1ViewCalculator"/>
+      </node>
+      <node id="8">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="17">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="14">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="10">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="6">
+        <label>nvblox::unified_ptr&lt; ElementType[]&gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" line="31" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/projective_color_integrator.h" bodystart="31" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1ac33fc238c313abd8a45b92e75906519a" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>block_in_truncation_band_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a31905ab10c25b5aca46cd014ee7f1f2b" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>block_in_truncation_band_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a22deb13ba0650e656418a67cdc7c72bc" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>block_indices_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a5486ed601e0e0b1e5e5015b8acdf2a56" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>block_indices_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1aae9fb4cf6d7b9d844b441dc9170d4b12" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>block_ptrs_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1ab67ad8ccc942f33bf658cc297680c900" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>block_ptrs_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a0b54e523c6d826f644c873c09fd2f306" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>get_truncation_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a3e6838b141d30e05735d27196db3e4a8" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>integrateFrame</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a1fd584e706906e6debc0115eaa467f4d" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>integration_stream_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1adbf4f49691cb924864d371f6edf108d5" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a47ec6e27ed185b20cdf1506fd6f2d732" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>max_integration_distance_m</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a58d46324b497b50be34efbb6e46c5a9f" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>max_integration_distance_m_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a564dc2440747090ee0df468e229569f0" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>max_weight</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1ab3c2c1ef10fbfc852b391c98d7bf7e0c" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>max_weight</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1ae67e64ec266085088691735e8b313155" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>max_weight_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a9e186e26f84b9fd1f6e64c11b1859de8" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>ProjectiveColorIntegrator</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1aa8e1872ab04d3bb25fc31160be926ff5" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>reduceBlocksToThoseInTruncationBand</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1ac4e3d0892ae164d11da95a918f4cd478" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>sphere_tracer</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a1ab7f192ec2e24ba5df0adec6d2a232c" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>sphere_tracer</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a4490c42f388e7f0733c99bff81bcb736" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>sphere_tracer_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a78fc3f3d584e59c10b562429e8b0a5c7" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>sphere_tracing_ray_subsampling_factor</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a42a28d0e147d30385b664dea57864149" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>sphere_tracing_ray_subsampling_factor</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a690cdb509547ff5baa23bd69c628f572" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>sphere_tracing_ray_subsampling_factor_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1ac5ca5a5508ad31df424a01ca55bde42f" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>synthetic_depth_image_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1aa1f66e835d12380404c0b4dd83fe7f22" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>truncation_band_block_ptrs_device_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a4c8cd83809ac7f01f825c6ee13c9b564" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>truncation_band_block_ptrs_host_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a5ed25bbcb2908c687ed0e8db266a80fc" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a10d7de1bb365fc67742e2a579fcb952a" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>truncation_distance_vox</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a259c67fca66170c42eb2d00e4a31cf3a" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>truncation_distance_vox_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a09583390dc36b19d38eb7d8c0d8157e0" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>updateBlocks</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1aa775569e120f5c06dbedf9c86b381e67" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a48b97fdf1c2fa9fcff82823e8389a480" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>view_calculator</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a59dca3c23234e9ab084691e8ec1c1363" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>view_calculator_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a5ea644d141a90d7b70efa2909049d8a4" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>weighting_function_type</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1ad6cdb63187b26780e18144ea7a5303c6" prot="public" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>weighting_function_type</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a80207870b585d5d5b548ed4281853e23" prot="protected" virt="non-virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>weighting_function_type_</name></member>
+      <member refid="classnvblox_1_1ProjectiveColorIntegrator_1a64c92ac8df2133d5195ee8673c4903af" prot="public" virt="virtual"><scope>nvblox::ProjectiveColorIntegrator</scope><name>~ProjectiveColorIntegrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

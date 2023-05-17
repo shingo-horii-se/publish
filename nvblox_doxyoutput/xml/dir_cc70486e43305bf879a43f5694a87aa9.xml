@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_cc70486e43305bf879a43f5694a87aa9" kind="dir">
+    <compoundname>nvblox</compoundname>
+    <innerdir refid="dir_98d864bcbea306abe83d890b944f43a8">core</innerdir>
+    <innerdir refid="dir_1d84071c302d70e5a4ca5e620eb65c21">geometry</innerdir>
+    <innerdir refid="dir_9b3b7a5ee493a912d28de1e4ab360245">gpu_hash</innerdir>
+    <innerdir refid="dir_0ad59407ef31c4db8bf65bcf03cd93e3">integrators</innerdir>
+    <innerdir refid="dir_f290e183fd16ef6c595dc28a6812e745">interpolation</innerdir>
+    <innerdir refid="dir_f9a832c86268c9002a72b4bbebd2ddaa">io</innerdir>
+    <innerdir refid="dir_89440a54e9172c70e27a46242f3566d2">map</innerdir>
+    <innerdir refid="dir_7cb873b38c15597c227ade43e5956189">mapper</innerdir>
+    <innerdir refid="dir_92d28860d9f91604b338ef4a50f59c72">mesh</innerdir>
+    <innerdir refid="dir_8dd7082ab489ac47dcffa3090557c3fd">primitives</innerdir>
+    <innerdir refid="dir_719c839cb060cd8d4e986e679a39d5d8">rays</innerdir>
+    <innerdir refid="dir_009d6a0e5493ed69d150249638ef833c">semantics</innerdir>
+    <innerdir refid="dir_2d7ab4cb9b2215579ff703445aa1d4fd">sensors</innerdir>
+    <innerdir refid="dir_533c6cd4a58f5e04b6da6d205ab8957a">serialization</innerdir>
+    <innerdir refid="dir_eee163cfb6355dfa352913b91a5eb715">utils</innerdir>
+    <innerfile refid="nvblox_8h">nvblox.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/"/>
+  </compounddef>
+</doxygen>

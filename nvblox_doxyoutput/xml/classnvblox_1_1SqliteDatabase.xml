@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1SqliteDatabase" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::SqliteDatabase</compoundname>
+    <includes refid="sqlite__database_8h" local="no">sqlite_database.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1SqliteDatabase_1ac6a924d01261690d65342e1a6f8d8379" prot="private" static="no" mutable="no">
+        <type>sqlite3 *</type>
+        <definition>sqlite3* nvblox::SqliteDatabase::db_</definition>
+        <argsstring></argsstring>
+        <name>db_</name>
+        <qualifiedname>nvblox::SqliteDatabase::db_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="66" column="11" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a3ceea68857270fcf2272425a865ec107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::SqliteDatabase::SqliteDatabase</definition>
+        <argsstring>()=default</argsstring>
+        <name>SqliteDatabase</name>
+        <qualifiedname>nvblox::SqliteDatabase::SqliteDatabase</qualifiedname>
+        <briefdescription>
+<para>Default constructor for invalid file. Must call open before using. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="31" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1ab71b1509fde895144490159a67955be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::SqliteDatabase::~SqliteDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>~SqliteDatabase</name>
+        <qualifiedname>nvblox::SqliteDatabase::~SqliteDatabase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="32" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a05516791cfd134ad780d76977b0c3854" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>nvblox::SqliteDatabase::valid</qualifiedname>
+        <briefdescription>
+<para>Is the current file valid? Basically, have we opened a file that sqlite agrees is a database? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1af7ce416fdbb15470679ec0d631f0026a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::open</definition>
+        <argsstring>(const std::string &amp;filename, std::ios_base::openmode openmode=std::ios::in)</argsstring>
+        <name>open</name>
+        <qualifiedname>nvblox::SqliteDatabase::open</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::ios_base::openmode</type>
+          <declname>openmode</declname>
+          <defval>std::ios::in</defval>
+        </param>
+        <briefdescription>
+<para>Open a file for reading (std::ios::in) or writing (std::ios::out) or both. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a7d3695fb56712fa108b612b50faac52b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>nvblox::SqliteDatabase::close</qualifiedname>
+        <briefdescription>
+<para>Close the file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a5c545e49939062d75ee4232ed7657638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runStatement</definition>
+        <argsstring>(const std::string &amp;statement)</argsstring>
+        <name>runStatement</name>
+        <qualifiedname>nvblox::SqliteDatabase::runStatement</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>statement</declname>
+        </param>
+        <briefdescription>
+<para>Run a statement that does not have a return value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="46" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1af61408a33031dae14002f2bf15bdf0e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runStatementWithBlob</definition>
+        <argsstring>(const std::string &amp;statement, const std::vector&lt; Byte &gt; &amp;blob)</argsstring>
+        <name>runStatementWithBlob</name>
+        <qualifiedname>nvblox::SqliteDatabase::runStatementWithBlob</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>statement</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Run a return-value-less statement on a byte blob. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a9ec4e3e42c44a06b948524a01615e97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runSingleQueryString</definition>
+        <argsstring>(const std::string &amp;sql_query, std::string *result)</argsstring>
+        <name>runSingleQueryString</name>
+        <qualifiedname>nvblox::SqliteDatabase::runSingleQueryString</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sql_query</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Run a query that has a SINGLE return value of the given type: </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1affa7650c89d4bf9ea745b6b384b6014d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runSingleQueryInt</definition>
+        <argsstring>(const std::string &amp;sql_query, int *result)</argsstring>
+        <name>runSingleQueryInt</name>
+        <qualifiedname>nvblox::SqliteDatabase::runSingleQueryInt</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sql_query</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1af6556abd234cf80cc03c1b589bc37541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runSingleQueryFloat</definition>
+        <argsstring>(const std::string &amp;sql_query, float *result)</argsstring>
+        <name>runSingleQueryFloat</name>
+        <qualifiedname>nvblox::SqliteDatabase::runSingleQueryFloat</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sql_query</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="54" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a5470cdf633314f958a35e5be20956fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runSingleQueryBlob</definition>
+        <argsstring>(const std::string &amp;sql_query, std::vector&lt; Byte &gt; *result)</argsstring>
+        <name>runSingleQueryBlob</name>
+        <qualifiedname>nvblox::SqliteDatabase::runSingleQueryBlob</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sql_query</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a91e5d9c92640e17fb508f6ba4016bd82" kindref="member">Byte</ref> &gt; *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="55" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a7f9a0e72e7d6a87fbb0285a6544672de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runMultipleQueryString</definition>
+        <argsstring>(const std::string &amp;sql_query, std::vector&lt; std::string &gt; *result)</argsstring>
+        <name>runMultipleQueryString</name>
+        <qualifiedname>nvblox::SqliteDatabase::runMultipleQueryString</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sql_query</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns MULTIPLE values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="59" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1SqliteDatabase_1a7b5174c06d4559b4357e659cb9e2494b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::SqliteDatabase::runMultipleQueryIndex3D</definition>
+        <argsstring>(const std::string &amp;sql_query, std::vector&lt; Index3D &gt; *result)</argsstring>
+        <name>runMultipleQueryIndex3D</name>
+        <qualifiedname>nvblox::SqliteDatabase::runMultipleQueryIndex3D</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sql_query</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Return multiple values in an index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="62" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to wrap access to the C interface of SQLite in a slightly more usable format. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" line="28" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/sqlite_database.h" bodystart="28" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1SqliteDatabase_1a7d3695fb56712fa108b612b50faac52b" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>close</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1ac6a924d01261690d65342e1a6f8d8379" prot="private" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>db_</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1af7ce416fdbb15470679ec0d631f0026a" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>open</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1a7b5174c06d4559b4357e659cb9e2494b" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runMultipleQueryIndex3D</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1a7f9a0e72e7d6a87fbb0285a6544672de" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runMultipleQueryString</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1a5470cdf633314f958a35e5be20956fa1" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runSingleQueryBlob</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1af6556abd234cf80cc03c1b589bc37541" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runSingleQueryFloat</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1affa7650c89d4bf9ea745b6b384b6014d" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runSingleQueryInt</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1a9ec4e3e42c44a06b948524a01615e97d" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runSingleQueryString</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1a5c545e49939062d75ee4232ed7657638" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runStatement</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1af61408a33031dae14002f2bf15bdf0e1" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>runStatementWithBlob</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1a3ceea68857270fcf2272425a865ec107" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>SqliteDatabase</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1a05516791cfd134ad780d76977b0c3854" prot="public" virt="non-virtual"><scope>nvblox::SqliteDatabase</scope><name>valid</name></member>
+      <member refid="classnvblox_1_1SqliteDatabase_1ab71b1509fde895144490159a67955be9" prot="public" virt="virtual"><scope>nvblox::SqliteDatabase</scope><name>~SqliteDatabase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

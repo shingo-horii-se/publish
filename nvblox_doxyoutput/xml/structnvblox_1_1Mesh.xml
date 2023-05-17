@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1Mesh" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::Mesh</compoundname>
+    <includes refid="mesh_8h" local="no">mesh.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvblox_1_1Mesh_1a0794d198d38f2c3bd1b7ae4ac1894f9f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector3f&gt; nvblox::Mesh::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <qualifiedname>nvblox::Mesh::vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" line="30" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1Mesh_1a74f192eca2268f8d092a491810bce3e9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector3f&gt; nvblox::Mesh::normals</definition>
+        <argsstring></argsstring>
+        <name>normals</name>
+        <qualifiedname>nvblox::Mesh::normals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" line="31" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1Mesh_1a4a2262b07f333d8c8c67d820eb517abc" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; nvblox::Mesh::triangles</definition>
+        <argsstring></argsstring>
+        <name>triangles</name>
+        <qualifiedname>nvblox::Mesh::triangles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" line="32" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvblox_1_1Mesh_1a33c04bd72659f52ad40d5e0c438367f6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> &gt;</type>
+        <definition>std::vector&lt;Color&gt; nvblox::Mesh::colors</definition>
+        <argsstring></argsstring>
+        <name>colors</name>
+        <qualifiedname>nvblox::Mesh::colors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" line="33" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structnvblox_1_1Mesh_1afc91f4703264578c7656993d7968f440" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref></type>
+        <definition>static Mesh nvblox::Mesh::fromLayer</definition>
+        <argsstring>(const BlockLayer&lt; MeshBlock &gt; &amp;layer)</argsstring>
+        <name>fromLayer</name>
+        <qualifiedname>nvblox::Mesh::fromLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Create a combined <ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref> object from a <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Useful for mesh output. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" line="37" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure which holds a combined <ref refid="structnvblox_1_1Mesh" kindref="compound">Mesh</ref> for CPU access. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Generally produced as the result of fusing MeshBlocks in a Layer&lt;MeshBlock&gt; into a single mesh. NOTE(alexmillane): Currently only on the CPU. </para>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" line="28" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh.h" bodystart="28" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1Mesh_1a33c04bd72659f52ad40d5e0c438367f6" prot="public" virt="non-virtual"><scope>nvblox::Mesh</scope><name>colors</name></member>
+      <member refid="structnvblox_1_1Mesh_1afc91f4703264578c7656993d7968f440" prot="public" virt="non-virtual"><scope>nvblox::Mesh</scope><name>fromLayer</name></member>
+      <member refid="structnvblox_1_1Mesh_1a74f192eca2268f8d092a491810bce3e9" prot="public" virt="non-virtual"><scope>nvblox::Mesh</scope><name>normals</name></member>
+      <member refid="structnvblox_1_1Mesh_1a4a2262b07f333d8c8c67d820eb517abc" prot="public" virt="non-virtual"><scope>nvblox::Mesh</scope><name>triangles</name></member>
+      <member refid="structnvblox_1_1Mesh_1a0794d198d38f2c3bd1b7ae4ac1894f9f" prot="public" virt="non-virtual"><scope>nvblox::Mesh</scope><name>vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

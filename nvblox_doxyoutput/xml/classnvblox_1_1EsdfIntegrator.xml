@@ -1,0 +1,1527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1EsdfIntegrator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::EsdfIntegrator</compoundname>
+    <includes refid="esdf__integrator_8h" local="no">esdf_integrator.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a6f8cf81eb55da32c1ef8858d43822f0d" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::max_distance_m_</definition>
+        <argsstring></argsstring>
+        <name>max_distance_m_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::max_distance_m_</qualifiedname>
+        <initializer>= 2.0</initializer>
+        <briefdescription>
+<para>TsdfLayer related parameter Maximum distance to compute the ESDF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="267" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1ab457e85463e6f380723e993c8bcbbbce" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::tsdf_max_site_distance_vox_</definition>
+        <argsstring></argsstring>
+        <name>tsdf_max_site_distance_vox_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::tsdf_max_site_distance_vox_</qualifiedname>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+<para>TsdfLayer related parameter Maximum (TSDF) distance at which a voxel is considered a site. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="271" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1ac2fd5f99af5b69308a616af921936a48" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::tsdf_min_weight_</definition>
+        <argsstring></argsstring>
+        <name>tsdf_min_weight_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::tsdf_min_weight_</qualifiedname>
+        <initializer>= 1e-4</initializer>
+        <briefdescription>
+<para>TsdfLayer related parameterx Minimum weight to consider a TSDF voxel observed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="275" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1adbe2ce042c26a091fbd197d932599a82" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::occupied_threshold_log_odds_</definition>
+        <argsstring></argsstring>
+        <name>occupied_threshold_log_odds_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::occupied_threshold_log_odds_</qualifiedname>
+        <initializer>= <ref refid="namespacenvblox_1ad640ac31fc054c7e04ac95dedab14a46" kindref="member">logOddsFromProbability</ref>(0.5f)</initializer>
+        <briefdescription>
+<para>OccupancyLayer related parameter The log odds value greater than which we consider a voxel occupied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="279" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a1a45ff6f512b1e5e0ac44bd067625bd1" prot="protected" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::EsdfIntegrator::cuda_stream_</definition>
+        <argsstring></argsstring>
+        <name>cuda_stream_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::cuda_stream_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="282" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a51de0dfeb2ddd79e3e515e918f8e67c1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>device_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::block_indices_device_</definition>
+        <argsstring></argsstring>
+        <name>block_indices_device_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::block_indices_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="285" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1adaccb63a30a78ae43531eaa72091ec36" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>host_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::block_indices_host_</definition>
+        <argsstring></argsstring>
+        <name>block_indices_host_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::block_indices_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="286" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1ab093484df3d4a546dcc0c8221ddac69a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>device_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::updated_indices_device_</definition>
+        <argsstring></argsstring>
+        <name>updated_indices_device_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::updated_indices_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="287" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a7e1d59ad45fafc9f06fca014b1f43cef" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>host_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::updated_indices_host_</definition>
+        <argsstring></argsstring>
+        <name>updated_indices_host_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::updated_indices_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="288" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1ade260783c0c64ec5e07ae9d4ba957ea9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>device_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::to_clear_indices_device_</definition>
+        <argsstring></argsstring>
+        <name>to_clear_indices_device_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::to_clear_indices_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="289" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1aa46aa601cc4756ca1260d561cf26b3fa" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>host_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::to_clear_indices_host_</definition>
+        <argsstring></argsstring>
+        <name>to_clear_indices_host_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::to_clear_indices_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="290" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1aabe2b14917cf551f1d977264b7ce39ca" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>device_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::temp_indices_device_</definition>
+        <argsstring></argsstring>
+        <name>temp_indices_device_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::temp_indices_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="291" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a556c45a4dd9bd523dc6cefb2b6dc502b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>host_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::temp_indices_host_</definition>
+        <argsstring></argsstring>
+        <name>temp_indices_host_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::temp_indices_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="292" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a1f6c23e2b222449888d8c0485bb7472d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;</type>
+        <definition>device_vector&lt;Index3D&gt; nvblox::EsdfIntegrator::cleared_block_indices_device_</definition>
+        <argsstring></argsstring>
+        <name>cleared_block_indices_device_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::cleared_block_indices_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="293" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1ae3c81bac1dca8d1bd9e5e6b6c7d157de" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; int &gt;</type>
+        <definition>unified_ptr&lt;int&gt; nvblox::EsdfIntegrator::updated_counter_device_</definition>
+        <argsstring></argsstring>
+        <name>updated_counter_device_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::updated_counter_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="295" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a9b5c1082115bef7659514e670e69d5c3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; int &gt;</type>
+        <definition>unified_ptr&lt;int&gt; nvblox::EsdfIntegrator::updated_counter_host_</definition>
+        <argsstring></argsstring>
+        <name>updated_counter_host_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::updated_counter_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="296" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1aeea8d9b7ca9827c60c044aee7eba7ebe" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; int &gt;</type>
+        <definition>unified_ptr&lt;int&gt; nvblox::EsdfIntegrator::cleared_counter_device_</definition>
+        <argsstring></argsstring>
+        <name>cleared_counter_device_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::cleared_counter_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="297" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1EsdfIntegrator_1a7d32ac56f24c95ed6e833eea581c32bf" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1unified__ptr" kindref="compound">unified_ptr</ref>&lt; int &gt;</type>
+        <definition>unified_ptr&lt;int&gt; nvblox::EsdfIntegrator::cleared_counter_host_</definition>
+        <argsstring></argsstring>
+        <name>cleared_counter_host_</name>
+        <qualifiedname>nvblox::EsdfIntegrator::cleared_counter_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="298" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a105381ee348bc6feffed9238fc68fc83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::EsdfIntegrator::EsdfIntegrator</definition>
+        <argsstring>()=default</argsstring>
+        <name>EsdfIntegrator</name>
+        <qualifiedname>nvblox::EsdfIntegrator::EsdfIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="43" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a4622230062b557aa12a5b53b7c75adec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual nvblox::EsdfIntegrator::~EsdfIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>~EsdfIntegrator</name>
+        <qualifiedname>nvblox::EsdfIntegrator::~EsdfIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="44" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1adcc116190b60a7d5b992a922d4bb706c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::integrateLayer</definition>
+        <argsstring>(const TsdfLayer &amp;tsdf_layer, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateLayer</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Build an EsdfLayer from a TsdfLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input TsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">esdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output EsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="49" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a6aeeb00d65cd0be83515a73b364ef149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::integrateLayer</definition>
+        <argsstring>(const OccupancyLayer &amp;occupancy_layer, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateLayer</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> &amp;</type>
+          <declname>occupancy_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Build an EsdfLayer from a TsdfLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>occupancy_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input OccupancyLayer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">esdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output EsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="54" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1aae9f98d8d6d11c63f7efa27cfda702ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void nvblox::EsdfIntegrator::integrateBlocks</definition>
+        <argsstring>(const TsdfLayer &amp;tsdf_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateBlocks</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateBlocks</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Build an EsdfLayer from a TsdfLayer (incremental) (on GPU) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input TsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indices of the EsdfLayer which should be updated (usually because the TSDF at these indices has changed). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">esdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output EsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="62" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1abaa816e559ba2820e49a79458b6b98b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void nvblox::EsdfIntegrator::integrateBlocks</definition>
+        <argsstring>(const OccupancyLayer &amp;occupancy_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateBlocks</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateBlocks</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> &amp;</type>
+          <declname>occupancy_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Build an EsdfLayer from an <ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer(incremental)</ref> (on GPU) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>occupancy_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input OccupancyLayer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indices of the EsdfLayer which should be updated (usually because the Occupancy at these indices has changed). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">esdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output EsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="71" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a290d4b5dcd45f43d051d6753b2c7429c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::integrateSlice</definition>
+        <argsstring>(const TsdfLayer &amp;tsdf_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, float z_min, float z_max, float z_output, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateSlice</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateSlice</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>tsdf_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Build an EsdfLayer slice from a TsdfLayer (incremental) (on GPU) This function takes the voxels between z_min and z_max in the TsdfLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Any surface in this z range generates a surface for ESDF computation in 2D. The 2D ESDF if written to a voxels with a single z index in the output. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tsdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input TsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indices of the EsdfLayer which should be updated (usually because the TSDF at these indices has changed). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum height (in meters) (in the layer frame) at which an obstacle is considered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum height (in meters) (in the layer frame) at which an obstacle is considered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height (in meters) (in the layer frame) where the ESDF is written to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">esdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output EsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="90" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a22f642d37e468a10a9302407bd5f720a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::integrateSlice</definition>
+        <argsstring>(const OccupancyLayer &amp;occupancy_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, float z_min, float z_max, float z_output, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateSlice</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateSlice</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> &amp;</type>
+          <declname>occupancy_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Build an EsdfLayer slice from a OccupancyLayer (incremental) (on GPU) This function takes the voxels between z_min and z_max in the OccupancyLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Any occupied voxel in this z range generates a surface for ESDF computation in 2D. The 2D ESDF if written to a voxels with a single z index in the output. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>occupancy_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input OccupancyLayer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indices of the EsdfLayer which should be updated (usually because the Occupancy at these indices has changed). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum height (in meters) (in the layer frame) at which an obstacle is considered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum height (in meters) (in the layer frame) at which an obstacle is considered. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height (in meters) (in the layer frame) where the ESDF is written to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">esdf_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output EsdfLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="109" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a2b30a8cbcaaf6dea5b8eaf39c5984c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::convertLayerSliceToDistanceImage</definition>
+        <argsstring>(const EsdfLayer &amp;layer, float unobserved_value, float slice_height, bool image_coordinates, const AxisAlignedBoundingBox &amp;aabb, Image&lt; float &gt; *output_image)</argsstring>
+        <name>convertLayerSliceToDistanceImage</name>
+        <qualifiedname>nvblox::EsdfIntegrator::convertLayerSliceToDistanceImage</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>unobserved_value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>slice_height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>image_coordinates</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+          <declname>aabb</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; float &gt; *</type>
+          <declname>output_image</declname>
+        </param>
+        <briefdescription>
+<para>Convert an ESDF layer slice to a distance image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses the slice height that&apos;s set in the integrator and outputs within a custom AABB. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input ESDF layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unobserved_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Floating-point value to use for unknown/unobserved points. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the slice to output. When using the 2D ESDF, this <emphasis>must</emphasis> match the z_output passed in to the slice integrator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to use image coordinates (true) or matrix coordinates (false). <ref refid="classnvblox_1_1Image" kindref="compound">Image</ref> coordinates have the 0, 0 in the upper left, and matrix coordinates have 0, 0 in the lower left. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aabb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AABB to generate the distance image in. Used as-is; if it&apos;s larger than the layer, the rest is just filled in as unknown value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output floating point image with the distances at each pixel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="127" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a432f0900497c84748331be8302595b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::convertLayerSliceToDistanceImage</definition>
+        <argsstring>(const EsdfLayer &amp;layer, float unobserved_value, float slice_height, bool image_coordinates, Image&lt; float &gt; *output_image, AxisAlignedBoundingBox *aabb)</argsstring>
+        <name>convertLayerSliceToDistanceImage</name>
+        <qualifiedname>nvblox::EsdfIntegrator::convertLayerSliceToDistanceImage</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>unobserved_value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>slice_height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>image_coordinates</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; float &gt; *</type>
+          <declname>output_image</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> *</type>
+          <declname>aabb</declname>
+        </param>
+        <briefdescription>
+<para>Convert an ESDF layer slice to a distance image for the entire layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses the slice height that&apos;s set in the integrator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input ESDF layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unobserved_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Floating-point value to use for unknown/unobserved points. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the slice to output. When using the 2D ESDF, this <emphasis>must</emphasis> match the z_output passed in to the slice integrator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to use image coordinates (true) or matrix coordinates (false). <ref refid="classnvblox_1_1Image" kindref="compound">Image</ref> coordinates have the 0, 0 in the upper left, and matrix coordinates have 0, 0 in the lower left. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output floating point image with the distances at each pixel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aabb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AABB of the complete slice, as an output. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="147" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a0bf7599fd4917215a3e9390c6f8f252f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::max_distance_m</definition>
+        <argsstring>() const</argsstring>
+        <name>max_distance_m</name>
+        <qualifiedname>nvblox::EsdfIntegrator::max_distance_m</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum distance in meters out to which to calculate the ESDF. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the maximum distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="157" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a13f8f14ac82cdf16438b6d891b51117d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::max_site_distance_vox</definition>
+        <argsstring>() const</argsstring>
+        <name>max_site_distance_vox</name>
+        <qualifiedname>nvblox::EsdfIntegrator::max_site_distance_vox</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The maximum (TSDF) distance at which we call a voxel in the TsdfLatyer a &quot;site&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A site is a voxel that is on the surface for the purposes of ESDF calculation. <simplesect kind="return"><para>the maximum distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="164" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a84238c3d6c2344f0c7a08c72e9deeab5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::min_weight</definition>
+        <argsstring>() const</argsstring>
+        <name>min_weight</name>
+        <qualifiedname>nvblox::EsdfIntegrator::min_weight</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The minimum (TSDF) weight at which we call a voxel in the TsdfLatyer a &quot;site&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A site is a voxel that is on the surface for the purposes of ESDF calculation. <simplesect kind="return"><para>the minimum weight </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="171" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a533c41a735b08287134750bd9a801df3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::EsdfIntegrator::occupied_threshold</definition>
+        <argsstring>() const</argsstring>
+        <name>occupied_threshold</name>
+        <qualifiedname>nvblox::EsdfIntegrator::occupied_threshold</qualifiedname>
+        <briefdescription>
+<para>A parameter getter The minimum probability (between 0.0 and 1.0) which we consider an occupancy voxel occupied. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the minimum probability </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="177" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1ad54c7b95c3f2c1b05e49b27cfbdc7984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::max_distance_m</definition>
+        <argsstring>(float max_distance_m)</argsstring>
+        <name>max_distance_m</name>
+        <qualifiedname>nvblox::EsdfIntegrator::max_distance_m</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_distance_m</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See truncation_distance_vox(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_distance_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum distance out to which to calculate the ESDF. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="183" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a2fb6776f0ac7b5e3ad27fbc64aaf1815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::max_site_distance_vox</definition>
+        <argsstring>(float max_site_distance_vox)</argsstring>
+        <name>max_site_distance_vox</name>
+        <qualifiedname>nvblox::EsdfIntegrator::max_site_distance_vox</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_site_distance_vox</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1EsdfIntegrator_1a13f8f14ac82cdf16438b6d891b51117d" kindref="member">max_site_distance_vox()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_site_distance_vox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the max distance to a site in voxels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="188" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a9dfdc0bee6f73e448506e44ab3d15d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::min_weight</definition>
+        <argsstring>(float min_weight)</argsstring>
+        <name>min_weight</name>
+        <qualifiedname>nvblox::EsdfIntegrator::min_weight</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>min_weight</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1EsdfIntegrator_1a84238c3d6c2344f0c7a08c72e9deeab5" kindref="member">min_weight()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum weight at which to consider a voxel a site. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="193" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a806eeaf3bcd7f2bb10ce6bc7cb4dfa15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::occupied_threshold</definition>
+        <argsstring>(float occupied_threshold)</argsstring>
+        <name>occupied_threshold</name>
+        <qualifiedname>nvblox::EsdfIntegrator::occupied_threshold</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>occupied_threshold</declname>
+        </param>
+        <briefdescription>
+<para>A parameter setter See <ref refid="classnvblox_1_1EsdfIntegrator_1a533c41a735b08287134750bd9a801df3" kindref="member">occupied_threshold()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>occupied_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the minimum probability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="198" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a321ad8eb3462077c2981038451dcdbd0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::integrateBlocks</definition>
+        <argsstring>(const LayerType &amp;layer, const std::vector&lt; Index3D &gt; &amp;block_indices, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateBlocks</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateBlocks</qualifiedname>
+        <param>
+          <type>const LayerType &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Templated version of the public functions above, used internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="203" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a55b6e50ab3a25c463871c09aaadb567c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::integrateSlice</definition>
+        <argsstring>(const LayerType &amp;layer, const std::vector&lt; Index3D &gt; &amp;block_indices, float z_min, float z_max, float z_output, EsdfLayer *esdf_layer)</argsstring>
+        <name>integrateSlice</name>
+        <qualifiedname>nvblox::EsdfIntegrator::integrateSlice</qualifiedname>
+        <param>
+          <type>const LayerType &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_output</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="208" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a8b405181fbf08c08fc198844a77b9bed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::allocateBlocksOnCPU</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;block_indices, EsdfLayer *esdf_layer)</argsstring>
+        <name>allocateBlocksOnCPU</name>
+        <qualifiedname>nvblox::EsdfIntegrator::allocateBlocksOnCPU</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+<para>Allocate all blocks in the given block indices list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="213" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a2c3c48a8433ee7000be9205e8c879ee9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OccupancySiteFunctor</type>
+        <definition>OccupancySiteFunctor nvblox::EsdfIntegrator::getSiteFunctor</definition>
+        <argsstring>(const OccupancyLayer &amp;layer)</argsstring>
+        <name>getSiteFunctor</name>
+        <qualifiedname>nvblox::EsdfIntegrator::getSiteFunctor</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a1eae2c08611e449edfed4491bd36fa18" kindref="member">OccupancyLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the site-finding functors for a specific layer type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="217" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1aee2bc5e1a970448b68760dad1bd07dc4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TsdfSiteFunctor</type>
+        <definition>TsdfSiteFunctor nvblox::EsdfIntegrator::getSiteFunctor</definition>
+        <argsstring>(const TsdfLayer &amp;layer)</argsstring>
+        <name>getSiteFunctor</name>
+        <qualifiedname>nvblox::EsdfIntegrator::getSiteFunctor</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="218" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a5a143ffe4e37a90b1f4c10944ee44884" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::markAllSitesCombined</definition>
+        <argsstring>(const LayerType &amp;layer, const std::vector&lt; Index3D &gt; &amp;block_indices, EsdfLayer *esdf_layer, device_vector&lt; Index3D &gt; *blocks_with_sites, device_vector&lt; Index3D &gt; *cleared_blocks)</argsstring>
+        <name>markAllSitesCombined</name>
+        <qualifiedname>nvblox::EsdfIntegrator::markAllSitesCombined</qualifiedname>
+        <param>
+          <type>const LayerType &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>blocks_with_sites</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>cleared_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="221" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a2ca8587f8f7a9d919768339913e21124" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LayerType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::markSitesInSliceCombined</definition>
+        <argsstring>(const LayerType &amp;layer, const std::vector&lt; Index3D &gt; &amp;block_indices, float min_z, float max_z, float output_z, EsdfLayer *esdf_layer, device_vector&lt; Index3D &gt; *updated_blocks, device_vector&lt; Index3D &gt; *cleared_blocks)</argsstring>
+        <name>markSitesInSliceCombined</name>
+        <qualifiedname>nvblox::EsdfIntegrator::markSitesInSliceCombined</qualifiedname>
+        <param>
+          <type>const LayerType &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min_z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>output_z</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>cleared_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="231" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1aa670eba1d991ed84b3959ce642fcb0b3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::updateNeighborBandsCombined</definition>
+        <argsstring>(device_vector&lt; Index3D &gt; *block_indices, EsdfLayer *esdf_layer, float max_squared_distance_vox, device_vector&lt; Index3D &gt; *updated_block_indices)</argsstring>
+        <name>updateNeighborBandsCombined</name>
+        <qualifiedname>nvblox::EsdfIntegrator::updateNeighborBandsCombined</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_squared_distance_vox</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_block_indices</declname>
+        </param>
+        <briefdescription>
+<para>Combined methods using the GPU hash to simplify the ESDF update logic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="241" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a16bdc535a97d0c1c88a6ee183ec18ab7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::sweepBlockBandCombined</definition>
+        <argsstring>(device_vector&lt; Index3D &gt; *block_indices, EsdfLayer *esdf_layer, float max_squared_distance_vox)</argsstring>
+        <name>sweepBlockBandCombined</name>
+        <qualifiedname>nvblox::EsdfIntegrator::sweepBlockBandCombined</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_squared_distance_vox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="246" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a908bc65c6f29b07dcdb9e634f0c4c3be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::computeEsdfCombined</definition>
+        <argsstring>(const device_vector&lt; Index3D &gt; &amp;blocks_with_sites, EsdfLayer *esdf_layer)</argsstring>
+        <name>computeEsdfCombined</name>
+        <qualifiedname>nvblox::EsdfIntegrator::computeEsdfCombined</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>blocks_with_sites</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="249" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a9ed02e0d36ee724dae0587c70784c01e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::clearAllInvalid</definition>
+        <argsstring>(const std::vector&lt; Index3D &gt; &amp;blocks_to_clear, EsdfLayer *esdf_layer, device_vector&lt; Index3D &gt; *updated_blocks)</argsstring>
+        <name>clearAllInvalid</name>
+        <qualifiedname>nvblox::EsdfIntegrator::clearAllInvalid</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>blocks_to_clear</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> *</type>
+          <declname>esdf_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>updated_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="251" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1a997b346668f136fd13af54fc651bad08" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::sortAndTakeUniqueIndices</definition>
+        <argsstring>(device_vector&lt; Index3D &gt; *block_indices)</argsstring>
+        <name>sortAndTakeUniqueIndices</name>
+        <qualifiedname>nvblox::EsdfIntegrator::sortAndTakeUniqueIndices</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>block_indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="256" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1EsdfIntegrator_1aa6759cc715887416592df9b6cf0c99cf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::EsdfIntegrator::populateSliceFromLayer</definition>
+        <argsstring>(const EsdfLayer &amp;layer, const AxisAlignedBoundingBox &amp;aabb, float z_slice_height, float resolution, float unobserved_value, bool image_coordinates, Image&lt; float &gt; *image)</argsstring>
+        <name>populateSliceFromLayer</name>
+        <qualifiedname>nvblox::EsdfIntegrator::populateSliceFromLayer</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a196d96c2a51e35486f565c0d752a36a5" kindref="member">EsdfLayer</ref> &amp;</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+          <declname>aabb</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z_slice_height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>resolution</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>unobserved_value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>image_coordinates</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1Image" kindref="compound">Image</ref>&lt; float &gt; *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="259" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class performing (incremental) ESDF integration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Euclidian Signed Distance Function (ESDF) is a distance function where obstacle distances are true (in the sense that they are not distances along the observation ray as they are in the TSDF). This class calculates an ESDFLayer from an input TSDFLayer. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>nvblox::device_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1device__vector"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nvblox::host_vector&lt; Index3D &gt;</label>
+        <link refid="classnvblox_1_1host__vector"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nvblox::EsdfIntegrator</label>
+        <link refid="classnvblox_1_1EsdfIntegrator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>block_indices_device_</edgelabel>
+          <edgelabel>cleared_block_indices_device_</edgelabel>
+          <edgelabel>temp_indices_device_</edgelabel>
+          <edgelabel>to_clear_indices_device_</edgelabel>
+          <edgelabel>updated_indices_device_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>block_indices_host_</edgelabel>
+          <edgelabel>temp_indices_host_</edgelabel>
+          <edgelabel>to_clear_indices_host_</edgelabel>
+          <edgelabel>updated_indices_host_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cleared_counter_device_</edgelabel>
+          <edgelabel>cleared_counter_host_</edgelabel>
+          <edgelabel>updated_counter_device_</edgelabel>
+          <edgelabel>updated_counter_host_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nvblox::unified_vector&lt; T &gt;</label>
+        <link refid="classnvblox_1_1unified__vector"/>
+      </node>
+      <node id="5">
+        <label>nvblox::unified_ptr&lt; int &gt;</label>
+        <link refid="classnvblox_1_1unified__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" line="41" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/integrators/esdf_integrator.h" bodystart="41" bodyend="299"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a8b405181fbf08c08fc198844a77b9bed" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>allocateBlocksOnCPU</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a51de0dfeb2ddd79e3e515e918f8e67c1" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>block_indices_device_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1adaccb63a30a78ae43531eaa72091ec36" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>block_indices_host_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a9ed02e0d36ee724dae0587c70784c01e" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>clearAllInvalid</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a1f6c23e2b222449888d8c0485bb7472d" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>cleared_block_indices_device_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1aeea8d9b7ca9827c60c044aee7eba7ebe" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>cleared_counter_device_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a7d32ac56f24c95ed6e833eea581c32bf" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>cleared_counter_host_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a908bc65c6f29b07dcdb9e634f0c4c3be" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>computeEsdfCombined</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a2b30a8cbcaaf6dea5b8eaf39c5984c9b" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>convertLayerSliceToDistanceImage</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a432f0900497c84748331be8302595b4c" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>convertLayerSliceToDistanceImage</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a1a45ff6f512b1e5e0ac44bd067625bd1" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>cuda_stream_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a105381ee348bc6feffed9238fc68fc83" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>EsdfIntegrator</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a2c3c48a8433ee7000be9205e8c879ee9" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>getSiteFunctor</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1aee2bc5e1a970448b68760dad1bd07dc4" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>getSiteFunctor</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1aae9f98d8d6d11c63f7efa27cfda702ee" prot="public" virt="virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1abaa816e559ba2820e49a79458b6b98b8" prot="public" virt="virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a321ad8eb3462077c2981038451dcdbd0" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateBlocks</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1adcc116190b60a7d5b992a922d4bb706c" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateLayer</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a6aeeb00d65cd0be83515a73b364ef149" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateLayer</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a290d4b5dcd45f43d051d6753b2c7429c" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateSlice</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a22f642d37e468a10a9302407bd5f720a" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateSlice</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a55b6e50ab3a25c463871c09aaadb567c" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>integrateSlice</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a5a143ffe4e37a90b1f4c10944ee44884" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>markAllSitesCombined</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a2ca8587f8f7a9d919768339913e21124" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>markSitesInSliceCombined</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a0bf7599fd4917215a3e9390c6f8f252f" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>max_distance_m</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1ad54c7b95c3f2c1b05e49b27cfbdc7984" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>max_distance_m</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a6f8cf81eb55da32c1ef8858d43822f0d" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>max_distance_m_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a13f8f14ac82cdf16438b6d891b51117d" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>max_site_distance_vox</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a2fb6776f0ac7b5e3ad27fbc64aaf1815" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>max_site_distance_vox</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a84238c3d6c2344f0c7a08c72e9deeab5" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>min_weight</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a9dfdc0bee6f73e448506e44ab3d15d8e" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>min_weight</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a533c41a735b08287134750bd9a801df3" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>occupied_threshold</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a806eeaf3bcd7f2bb10ce6bc7cb4dfa15" prot="public" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>occupied_threshold</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1adbe2ce042c26a091fbd197d932599a82" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>occupied_threshold_log_odds_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1aa6759cc715887416592df9b6cf0c99cf" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>populateSliceFromLayer</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a997b346668f136fd13af54fc651bad08" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>sortAndTakeUniqueIndices</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a16bdc535a97d0c1c88a6ee183ec18ab7" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>sweepBlockBandCombined</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1aabe2b14917cf551f1d977264b7ce39ca" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>temp_indices_device_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a556c45a4dd9bd523dc6cefb2b6dc502b" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>temp_indices_host_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1ade260783c0c64ec5e07ae9d4ba957ea9" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>to_clear_indices_device_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1aa46aa601cc4756ca1260d561cf26b3fa" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>to_clear_indices_host_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1ab457e85463e6f380723e993c8bcbbbce" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>tsdf_max_site_distance_vox_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1ac2fd5f99af5b69308a616af921936a48" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>tsdf_min_weight_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1ae3c81bac1dca8d1bd9e5e6b6c7d157de" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>updated_counter_device_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a9b5c1082115bef7659514e670e69d5c3" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>updated_counter_host_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1ab093484df3d4a546dcc0c8221ddac69a" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>updated_indices_device_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a7e1d59ad45fafc9f06fca014b1f43cef" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>updated_indices_host_</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1aa670eba1d991ed84b3959ce642fcb0b3" prot="protected" virt="non-virtual"><scope>nvblox::EsdfIntegrator</scope><name>updateNeighborBandsCombined</name></member>
+      <member refid="classnvblox_1_1EsdfIntegrator_1a4622230062b557aa12a5b53b7c75adec" prot="public" virt="virtual"><scope>nvblox::EsdfIntegrator</scope><name>~EsdfIntegrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

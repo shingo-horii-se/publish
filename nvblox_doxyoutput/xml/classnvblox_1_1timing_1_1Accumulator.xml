@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1timing_1_1Accumulator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::timing::Accumulator</compoundname>
+    <includes refid="timing_8h" local="no">timing.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename Total</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1Accumulator_1a85622e7397673325ec0181b8b8be2e4e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::timing::Accumulator&lt; T, Total, N &gt;::window_samples_</definition>
+        <argsstring></argsstring>
+        <name>window_samples_</name>
+        <qualifiedname>nvblox::timing::Accumulator::window_samples_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="116" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1Accumulator_1a3ed5e56b3ff4a4eecd8b9ae063738e42" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nvblox::timing::Accumulator&lt; T, Total, N &gt;::totalsamples_</definition>
+        <argsstring></argsstring>
+        <name>totalsamples_</name>
+        <qualifiedname>nvblox::timing::Accumulator::totalsamples_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="117" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1Accumulator_1ab8d93b9245f3b7342e810c1c24eeabea" prot="private" static="no" mutable="no">
+        <type>Total</type>
+        <definition>Total nvblox::timing::Accumulator&lt; T, Total, N &gt;::window_sum_</definition>
+        <argsstring></argsstring>
+        <name>window_sum_</name>
+        <qualifiedname>nvblox::timing::Accumulator::window_sum_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="118" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1Accumulator_1a4f062735f505de9526df4b53073ee767" prot="private" static="no" mutable="no">
+        <type>Total</type>
+        <definition>Total nvblox::timing::Accumulator&lt; T, Total, N &gt;::sum_</definition>
+        <argsstring></argsstring>
+        <name>sum_</name>
+        <qualifiedname>nvblox::timing::Accumulator::sum_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="119" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1Accumulator_1a049af02c62b6539dc88a5c38307f5406" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T nvblox::timing::Accumulator&lt; T, Total, N &gt;::min_</definition>
+        <argsstring></argsstring>
+        <name>min_</name>
+        <qualifiedname>nvblox::timing::Accumulator::min_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="120" column="5" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1Accumulator_1a7f06de104fa34d53a9f938a33d8df3bd" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T nvblox::timing::Accumulator&lt; T, Total, N &gt;::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <qualifiedname>nvblox::timing::Accumulator::max_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="121" column="5" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1timing_1_1Accumulator_1aa3b4a7ab79c90c3043286802be2f9f62" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T nvblox::timing::Accumulator&lt; T, Total, N &gt;::samples_[N]</definition>
+        <argsstring>[N]</argsstring>
+        <name>samples_</name>
+        <qualifiedname>nvblox::timing::Accumulator::samples_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="122" column="5" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1a20cb389c9500edcf2f108fa8ed151b7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::timing::Accumulator&lt; T, Total, N &gt;::Accumulator</definition>
+        <argsstring>()</argsstring>
+        <name>Accumulator</name>
+        <qualifiedname>nvblox::timing::Accumulator::Accumulator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="61" column="3" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1aae6eef2c552aaf67d8f5b9226522b5ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::timing::Accumulator&lt; T, Total, N &gt;::Add</definition>
+        <argsstring>(T sample)</argsstring>
+        <name>Add</name>
+        <qualifiedname>nvblox::timing::Accumulator::Add</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="69" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="69" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1ac99633030d9e35974739f6695c4594ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int nvblox::timing::Accumulator&lt; T, Total, N &gt;::TotalSamples</definition>
+        <argsstring>() const</argsstring>
+        <name>TotalSamples</name>
+        <qualifiedname>nvblox::timing::Accumulator::TotalSamples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="88" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1a9d2a38c6dd40c2108d281e058631bb03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double nvblox::timing::Accumulator&lt; T, Total, N &gt;::Sum</definition>
+        <argsstring>() const</argsstring>
+        <name>Sum</name>
+        <qualifiedname>nvblox::timing::Accumulator::Sum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="90" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1a3b6e543c2a9d8244cb70184c7706462b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double nvblox::timing::Accumulator&lt; T, Total, N &gt;::Mean</definition>
+        <argsstring>() const</argsstring>
+        <name>Mean</name>
+        <qualifiedname>nvblox::timing::Accumulator::Mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="92" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1af589bb5932b5c9221650918b087af425" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double nvblox::timing::Accumulator&lt; T, Total, N &gt;::RollingMean</definition>
+        <argsstring>() const</argsstring>
+        <name>RollingMean</name>
+        <qualifiedname>nvblox::timing::Accumulator::RollingMean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="94" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1a81d353942ee1fbe40d476ea343b66dc6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double nvblox::timing::Accumulator&lt; T, Total, N &gt;::Max</definition>
+        <argsstring>() const</argsstring>
+        <name>Max</name>
+        <qualifiedname>nvblox::timing::Accumulator::Max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="98" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1af4b918ee12a40b75a5bede21fbedd4c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double nvblox::timing::Accumulator&lt; T, Total, N &gt;::Min</definition>
+        <argsstring>() const</argsstring>
+        <name>Min</name>
+        <qualifiedname>nvblox::timing::Accumulator::Min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="100" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1timing_1_1Accumulator_1add53828b757526c31361f3f32a6770c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double nvblox::timing::Accumulator&lt; T, Total, N &gt;::LazyVariance</definition>
+        <argsstring>() const</argsstring>
+        <name>LazyVariance</name>
+        <qualifiedname>nvblox::timing::Accumulator::LazyVariance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="102" column="10" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="102" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" line="59" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/utils/timing.h" bodystart="59" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a20cb389c9500edcf2f108fa8ed151b7d" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>Accumulator</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1aae6eef2c552aaf67d8f5b9226522b5ac" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>Add</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1add53828b757526c31361f3f32a6770c0" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>LazyVariance</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a81d353942ee1fbe40d476ea343b66dc6" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>Max</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a7f06de104fa34d53a9f938a33d8df3bd" prot="private" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>max_</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a3b6e543c2a9d8244cb70184c7706462b" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>Mean</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1af4b918ee12a40b75a5bede21fbedd4c3" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>Min</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a049af02c62b6539dc88a5c38307f5406" prot="private" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>min_</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1af589bb5932b5c9221650918b087af425" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>RollingMean</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1aa3b4a7ab79c90c3043286802be2f9f62" prot="private" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>samples_</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a9d2a38c6dd40c2108d281e058631bb03" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>Sum</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a4f062735f505de9526df4b53073ee767" prot="private" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>sum_</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1ac99633030d9e35974739f6695c4594ed" prot="public" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>TotalSamples</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a3ed5e56b3ff4a4eecd8b9ae063738e42" prot="private" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>totalsamples_</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1a85622e7397673325ec0181b8b8be2e4e" prot="private" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>window_samples_</name></member>
+      <member refid="classnvblox_1_1timing_1_1Accumulator_1ab8d93b9245f3b7342e810c1c24eeabea" prot="private" virt="non-virtual"><scope>nvblox::timing::Accumulator</scope><name>window_sum_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

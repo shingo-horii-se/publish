@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>nvblox<sp/>![nvblox_logo](docs/images/nvblox_logo_64.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Signed<sp/>Distance<sp/>Functions<sp/>(SDFs)<sp/>on<sp/>NVIDIA<sp/>GPUs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>align=&quot;center&quot;&gt;&lt;img<sp/>src=&quot;docs/images/3dmatch.gif&quot;<sp/>width=600px/&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>GPU<sp/>SDF<sp/>library<sp/>which<sp/>offers</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>GPU<sp/>accelerated<sp/>algorithms<sp/>such<sp/>as:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>TSDF<sp/>construction</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Occupancy<sp/>mapping</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ESDF<sp/>construction</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Meshing</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>ROS<sp/>2<sp/>interface<sp/>(see<sp/>[isaac_ros_nvblox](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox))</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Support<sp/>for<sp/>storage<sp/>of<sp/>various<sp/>voxel<sp/>types,<sp/>and<sp/>easily<sp/>extended<sp/>to<sp/>custom<sp/>voxel<sp/>types.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Above<sp/>we<sp/>show<sp/>reconstruction<sp/>using<sp/>data<sp/>from<sp/>the<sp/>[3DMatch<sp/>dataset](https://3dmatch.cs.princeton.edu/),<sp/>specifically<sp/>the<sp/>[Sun3D](http://sun3d.cs.princeton.edu/)<sp/>`mit_76_studyroom`<sp/>scene.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Table<sp/>of<sp/>Contents</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[nvblox<sp/>](#nvblox-)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Table<sp/>of<sp/>Contents](#table-of-contents)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Why<sp/>nvblox?](#why-nvblox)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[How<sp/>to<sp/>use<sp/>nvblox](#how-to-use-nvblox)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Out-of-the-box<sp/>Reconstruction/ROS<sp/>2<sp/>Interface](#out-of-the-box-reconstructionros-2-interface)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Public<sp/>Datasets](#public-datasets)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[C++<sp/>Interface](#c-interface)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Native<sp/>Installation](#native-installation)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Install<sp/>dependencies](#install-dependencies)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Build<sp/>and<sp/>run<sp/>tests](#build-and-run-tests)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Run<sp/>an<sp/>example](#run-an-example)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Docker](#docker)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Additional<sp/>instructions<sp/>for<sp/>Jetson<sp/>Xavier](#additional-instructions-for-jetson-xavier)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Open3D<sp/>on<sp/>Jetson](#open3d-on-jetson)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Building<sp/>for<sp/>multiple<sp/>GPU<sp/>architectures](#building-for-multiple-gpu-architectures)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Building<sp/>redistributable<sp/>binaries,<sp/>with<sp/>static<sp/>dependencies](#building-redistributable-binaries-with-static-dependencies)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[License](#license)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Why<sp/>nvblox?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Do<sp/>we<sp/>need<sp/>another<sp/>SDF<sp/>library?<sp/>That<sp/>depends<sp/>on<sp/>your<sp/>use<sp/>case.<sp/>If<sp/>you&apos;re<sp/>interested<sp/>in:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Path<sp/>planning**:<sp/>We<sp/>provide<sp/>GPU<sp/>accelerated,<sp/>incremental<sp/>algorithms<sp/>for<sp/>calculating<sp/>the<sp/>Euclidean<sp/>Signed<sp/>Distance<sp/>Field<sp/>(ESDF)<sp/>which<sp/>is<sp/>useful<sp/>for<sp/>collision<sp/>checking<sp/>for<sp/>robotic<sp/>path-planning.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**GPU<sp/>acceleration**:<sp/>Our<sp/>previous<sp/>works<sp/>[voxblox](https://github.com/ethz-asl/voxblox)<sp/>and<sp/>[voxgraph](https://github.com/ethz-asl/voxgraph)<sp/>are<sp/>used<sp/>for<sp/>path-planning,<sp/>however<sp/>utilize<sp/>CPU<sp/>compute<sp/>only,<sp/>which<sp/>limits<sp/>the<sp/>speed<sp/>of<sp/>these<sp/>toolboxes,<sp/>and<sp/>therefore<sp/>the<sp/>resolution<sp/>of<sp/>the<sp/>maps<sp/>they<sp/>can<sp/>build<sp/>in<sp/>real-time.<sp/>nvblox<sp/>is<sp/>*much*<sp/>faster.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Jetson<sp/>Platform**:<sp/>nvblox<sp/>is<sp/>written<sp/>with<sp/>the<sp/>[NVIDIA<sp/>jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/)<sp/>in<sp/>mind.<sp/>If<sp/>you<sp/>want<sp/>to<sp/>run<sp/>reconstruction<sp/>on<sp/>an<sp/>embedded<sp/>GPU,<sp/>you&apos;re<sp/>in<sp/>the<sp/>right<sp/>place.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Below<sp/>we<sp/>visualize<sp/>slices<sp/>through<sp/>a<sp/>distance<sp/>function<sp/>(ESDF):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>align=&quot;center&quot;&gt;&lt;img<sp/>src=&quot;docs/images/nvblox_slice.gif&quot;<sp/>width=600px/&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>How<sp/>to<sp/>use<sp/>nvblox</highlight></codeline>
+<codeline><highlight class="normal">How<sp/>use<sp/>nvblox<sp/>depends<sp/>on<sp/>what<sp/>you<sp/>want<sp/>to<sp/>do.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Out-of-the-box<sp/>Reconstruction/ROS<sp/>2<sp/>Interface</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>users<sp/>who<sp/>would<sp/>like<sp/>to<sp/>use<sp/>nvblox<sp/>in<sp/>a<sp/>robotic<sp/>system<sp/>or<sp/>connect<sp/>easily<sp/>to<sp/>a<sp/>sensor,<sp/>we<sp/>suggest<sp/>using<sp/>our<sp/>[ROS<sp/>2<sp/>interface](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>ROS<sp/>2<sp/>interface<sp/>includes<sp/>examples<sp/>which<sp/>allow<sp/>you<sp/>to:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Build<sp/>a<sp/>reconstruction<sp/>from<sp/>a<sp/>realsense<sp/>camera<sp/>using<sp/>nvblox<sp/>and<sp/>NVIDIA<sp/>VSLAM<sp/>[here](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox/blob/main/docs/tutorial-realsense.md).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Navigate<sp/>a<sp/>robot<sp/>in<sp/>Isaac<sp/>Sim<sp/>[here](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox/blob/main/docs/tutorial-isaac-sim.md).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Combine<sp/>3D<sp/>reconstruction<sp/>with<sp/>image<sp/>segmentation<sp/>with<sp/>[realsense<sp/>data](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox/blob/main/docs/tutorial-human-reconstruction-realsense.md)<sp/>and<sp/>in<sp/>[simulation](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox/blob/main/docs/tutorial-human-reconstruction-isaac-sim.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>ROS<sp/>2<sp/>interface<sp/>downloads<sp/>and<sp/>builds<sp/>the<sp/>library<sp/>contained<sp/>in<sp/>this<sp/>repository<sp/>during<sp/>installation,<sp/>so<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>clone<sp/>and<sp/>build<sp/>this<sp/>repository<sp/>at<sp/>all.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Public<sp/>Datasets</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>would<sp/>like<sp/>to<sp/>run<sp/>nvblox<sp/>on<sp/>a<sp/>public<sp/>datasets,<sp/>we<sp/>include<sp/>some<sp/>executables<sp/>for<sp/>running<sp/>reconstructions<sp/>on<sp/>[3DMatch](https://3dmatch.cs.princeton.edu/),<sp/>[Replica](https://github.com/facebookresearch/Replica-Dataset),<sp/>and<sp/>[Redwood](http://redwood-data.org/indoor_lidar_rgbd/index.html)<sp/>datasets.<sp/>Please<sp/>see<sp/>our<sp/>[tutorial](./docs/pages/tutorial_public_datasets.md)<sp/>on<sp/>running<sp/>these.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>C++<sp/>Interface</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>build<sp/>nvblox<sp/>into<sp/>a<sp/>larger<sp/>project,<sp/>without<sp/>ROS,<sp/>or<sp/>you<sp/>would<sp/>like<sp/>to<sp/>make<sp/>modifications<sp/>to<sp/>nvblox&apos;s<sp/>core<sp/>reconstruction<sp/>features,<sp/>this<sp/>repository<sp/>contains<sp/>the<sp/>code<sp/>you<sp/>need.<sp/>Our<sp/>[tutorial](./docs/pages/tutorial_library_interface.md)<sp/>provides<sp/>some<sp/>brief<sp/>details<sp/>of<sp/>how<sp/>to<sp/>interact<sp/>with<sp/>the<sp/>reconstruction<sp/>in<sp/>c++.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Native<sp/>Installation</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>build<sp/>natively,<sp/>please<sp/>follow<sp/>these<sp/>instructions.<sp/>Instructions<sp/>for<sp/>docker<sp/>are<sp/>[further<sp/>below](#docker).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Install<sp/>dependencies</highlight></codeline>
+<codeline><highlight class="normal">We<sp/>depend<sp/>on:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>gtest</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>glog</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>gflags</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>SQLite<sp/>3</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>CUDA<sp/>11.0<sp/>-<sp/>11.8<sp/>(others<sp/>might<sp/>work<sp/>but<sp/>are<sp/>untested)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Eigen<sp/>(no<sp/>need<sp/>to<sp/>explicitly<sp/>install,<sp/>a<sp/>recent<sp/>version<sp/>is<sp/>built<sp/>into<sp/>the<sp/>library)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>stdgpu<sp/>(downloaded<sp/>during<sp/>compilation)</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>-y<sp/>libgoogle-glog-dev<sp/>libgtest-dev<sp/>libgflags-dev<sp/>python3-dev<sp/>libsqlite3-dev</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>/usr/src/googletest<sp/>&amp;&amp;<sp/>sudo<sp/>cmake<sp/>.<sp/>&amp;&amp;<sp/>sudo<sp/>cmake<sp/>--build<sp/>.<sp/>--target<sp/>install</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Build<sp/>and<sp/>run<sp/>tests</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>nvblox/nvblox</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>..<sp/>&amp;&amp;<sp/>make<sp/>&amp;&amp;<sp/>cd<sp/>tests<sp/>&amp;&amp;<sp/>ctest</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Run<sp/>an<sp/>example</highlight></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>example<sp/>we<sp/>fuse<sp/>data<sp/>from<sp/>the<sp/>[3DMatch<sp/>dataset](https://3dmatch.cs.princeton.edu/).<sp/>First<sp/>let&apos;s<sp/>grab<sp/>the<sp/>dataset.<sp/>Here<sp/>I&apos;m<sp/>downloading<sp/>it<sp/>to<sp/>my<sp/>dataset<sp/>folder<sp/>`~/datasets/3dmatch`.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">wget<sp/>http://vision.princeton.edu/projects/2016/3DMatch/downloads/rgbd-datasets/sun3d-mit_76_studyroom-76-1studyroom2.zip<sp/>-P<sp/>~/datasets/3dmatch</highlight></codeline>
+<codeline><highlight class="normal">unzip<sp/>~/datasets/3dmatch/sun3d-mit_76_studyroom-76-1studyroom2.zip<sp/>-d<sp/>~/datasets/3dmatch</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Navigate<sp/>to<sp/>and<sp/>run<sp/>the<sp/>`fuse_3dmatch`<sp/>binary.<sp/>From<sp/>the<sp/>nvblox<sp/>base<sp/>folder<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>nvblox/build/executables</highlight></codeline>
+<codeline><highlight class="normal">./fuse_3dmatch<sp/>~/datasets/3dmatch/sun3d-mit_76_studyroom-76-1studyroom2/<sp/>mesh.ply</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Once<sp/>it&apos;s<sp/>done<sp/>we<sp/>can<sp/>view<sp/>the<sp/>output<sp/>mesh<sp/>using<sp/>the<sp/>Open3D<sp/>viewer.<sp/>Instructions<sp/>for<sp/>installing<sp/>open3d-viewer<sp/>can<sp/>be<sp/>found<sp/>below.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Open3D<sp/>mesh.ply</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>should<sp/>see<sp/>a<sp/>mesh<sp/>of<sp/>a<sp/>room:</highlight></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>align=&quot;center&quot;&gt;&lt;img<sp/>src=&quot;docs/images/reconstruction_in_docker_trim.png&quot;<sp/>width=600px/&gt;&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Docker</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>have<sp/>several<sp/>dockerfiles<sp/>(in<sp/>the<sp/>`docker`<sp/>subfolder)<sp/>which<sp/>layer<sp/>on<sp/>top<sp/>of<sp/>one<sp/>another<sp/>for<sp/>the<sp/>following<sp/>purposes:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Docker.deps**</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>This<sp/>installs<sp/>our<sp/>dependencies.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>This<sp/>is<sp/>used<sp/>in<sp/>our<sp/>CI,<sp/>where<sp/>the<sp/>later<sp/>steps<sp/>(building<sp/>and<sp/>testing)<sp/>are<sp/>taken<sp/>care<sp/>of<sp/>by<sp/>Jenkins<sp/>(and<sp/>not<sp/>docker).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Docker.jetson_deps**</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>Same<sp/>as<sp/>above,<sp/>just<sp/>on<sp/>the<sp/>Jetson<sp/>(Jetpack<sp/>5<sp/>and<sp/>above).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Docker.build**</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>Layers<sp/>on<sp/>top<sp/>of<sp/>Docker.deps.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>This<sp/>builds<sp/>our<sp/>package.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>This<sp/>is<sp/>where<sp/>you<sp/>get<sp/>off<sp/>the<sp/>layer<sp/>train<sp/>if<sp/>you<sp/>wanna<sp/>run<sp/>stuff<sp/>(and<sp/>don&apos;t<sp/>care<sp/>if<sp/>it&apos;s<sp/>tested).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Docker.test**</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>Layers<sp/>on<sp/>top<sp/>of<sp/>Docker.build.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>Runs<sp/>ours<sp/>tests.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>*<sp/>Useful<sp/>for<sp/>checking<sp/>if<sp/>things<sp/>are<sp/>likely<sp/>to<sp/>pass<sp/>the<sp/>tests<sp/>in<sp/>CI.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>rely<sp/>on<sp/>nvidia<sp/>docker.<sp/>Install<sp/>the<sp/>[NVIDIA<sp/>Container<sp/>Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)<sp/>following<sp/>the<sp/>instructions<sp/>on<sp/>that<sp/>website.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>use<sp/>the<sp/>GPU<sp/>during<sp/>build,<sp/>not<sp/>only<sp/>at<sp/>run<sp/>time.<sp/>In<sp/>the<sp/>default<sp/>configuration<sp/>the<sp/>GPU<sp/>is<sp/>only<sp/>used<sp/>at<sp/>at<sp/>runtime.<sp/>One<sp/>must<sp/>therefore<sp/>set<sp/>the<sp/>default<sp/>runtime.<sp/>Add<sp/>`&quot;default-runtime&quot;:<sp/>&quot;nvidia&quot;`<sp/>to<sp/>`/etc/docker/daemon.json`<sp/>such<sp/>that<sp/>it<sp/>looks<sp/>like:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;runtimes&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;nvidia&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;path&quot;:<sp/>&quot;/usr/bin/nvidia-container-runtime&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;runtimeArgs&quot;:<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;default-runtime&quot;:<sp/>&quot;nvidia&quot;<sp/></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Restart<sp/>docker</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>systemctl<sp/>restart<sp/>docker</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Now<sp/>Let&apos;s<sp/>build<sp/>Dockerfile.deps<sp/>docker<sp/>image.<sp/>This<sp/>image<sp/>install<sp/>contains<sp/>our<sp/>dependencies.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">docker<sp/>build<sp/>-t<sp/>nvblox_deps<sp/>-f<sp/>docker/Dockerfile.deps<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>In<sp/>case<sp/>you<sp/>are<sp/>running<sp/>this<sp/>on<sp/>the<sp/>Jetson,<sp/>substitute<sp/>the<sp/>dockerfile:<sp/>`docker/Dockerfile.jetson_deps`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Now<sp/>let&apos;s<sp/>build<sp/>the<sp/>Dockerfile.build.<sp/>This<sp/>image<sp/>layers<sp/>on<sp/>the<sp/>last,<sp/>and<sp/>actually<sp/>builds<sp/>the<sp/>nvblox<sp/>library.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">docker<sp/>build<sp/>-t<sp/>nvblox<sp/>-f<sp/>docker/Dockerfile.build<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Now<sp/>let&apos;s<sp/>run<sp/>the<sp/>3DMatch<sp/>example<sp/>inside<sp/>the<sp/>docker.<sp/>Note<sp/>there&apos;s<sp/>some<sp/>additional<sp/>complexity<sp/>in<sp/>the<sp/>`docker<sp/>run`<sp/>command<sp/>such<sp/>that<sp/>we<sp/>can<sp/>forward<sp/>X11<sp/>to<sp/>the<sp/>host<sp/>(we&apos;re<sp/>going<sp/>to<sp/>be<sp/>view<sp/>a<sp/>reconstruction<sp/>in<sp/>a<sp/>GUI).<sp/>Run<sp/>the<sp/>container<sp/>using:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">xhost<sp/>local:docker</highlight></codeline>
+<codeline><highlight class="normal">docker<sp/>run<sp/>-it<sp/>--net=host<sp/>--env=&quot;DISPLAY&quot;<sp/>-v<sp/>$HOME/.Xauthority:/root/.Xauthority:rw<sp/>-v<sp/>/tmp/.X11-unix:/tmp/.X11-unix:rw<sp/>nvblox</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Let&apos;s<sp/>download<sp/>a<sp/>dataset<sp/>and<sp/>run<sp/>the<sp/>example<sp/>(this<sp/>is<sp/>largely<sp/>a<sp/>repeat<sp/>of<sp/>&quot;Run<sp/>an<sp/>example&quot;<sp/>above).</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">apt-get<sp/>update</highlight></codeline>
+<codeline><highlight class="normal">apt-get<sp/>install<sp/>unzip</highlight></codeline>
+<codeline><highlight class="normal">wget<sp/>http://vision.princeton.edu/projects/2016/3DMatch/downloads/rgbd-datasets/sun3d-mit_76_studyroom-76-1studyroom2.zip<sp/>-P<sp/>~/datasets/3dmatch</highlight></codeline>
+<codeline><highlight class="normal">unzip<sp/>~/datasets/3dmatch/sun3d-mit_76_studyroom-76-1studyroom2.zip<sp/>-d<sp/>~/datasets/3dmatch</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>nvblox/nvblox/build/executables/</highlight></codeline>
+<codeline><highlight class="normal">./fuse_3dmatch<sp/>~/datasets/3dmatch/sun3d-mit_76_studyroom-76-1studyroom2/<sp/>mesh.ply</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Now<sp/>let&apos;s<sp/>visualize.<sp/>From<sp/>the<sp/>same<sp/>executable<sp/>folder<sp/>run:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">apt-get<sp/>install<sp/>libgl1-mesa-glx<sp/>libc++1<sp/>libc++1-10<sp/>libc++abi1-10<sp/>libglfw3<sp/>libpng16-16</highlight></codeline>
+<codeline><highlight class="normal">wget<sp/>https://github.com/isl-org/Open3D/releases/download/v0.13.0/open3d-app-0.13.0-Ubuntu_20.04.deb</highlight></codeline>
+<codeline><highlight class="normal">dpkg<sp/>-i<sp/>open3d-app-0.13.0-Ubuntu_20.04.deb</highlight></codeline>
+<codeline><highlight class="normal">Open3D<sp/>mesh.ply</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>visualize<sp/>on<sp/>the<sp/>jetson<sp/>see<sp/>[below](#open3d-on-jetson).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Additional<sp/>instructions<sp/>for<sp/>Jetson<sp/>Xavier</highlight></codeline>
+<codeline><highlight class="normal">These<sp/>instructions<sp/>are<sp/>for<sp/>a<sp/>native<sp/>build<sp/>on<sp/>the<sp/>Jetson<sp/>Xavier.<sp/>You<sp/>can<sp/>see<sp/>the<sp/>instructions<sp/>above<sp/>for<sp/>running<sp/>in<sp/>docker.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>instructions<sp/>for<sp/>the<sp/>native<sp/>build<sp/>above<sp/>work,<sp/>with<sp/>one<sp/>exception:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>build<sp/>using<sp/>CMake&apos;s<sp/>modern<sp/>CUDA<sp/>integration<sp/>and<sp/>therefore<sp/>require<sp/>a<sp/>more<sp/>modern<sp/>version<sp/>of<sp/>CMAKE<sp/>than<sp/>(currently)<sp/>ships<sp/>with<sp/>jetpack.<sp/>Luckily<sp/>the<sp/>Cmake<sp/>developer<sp/>team<sp/>provide<sp/>a<sp/>means<sp/>obtaining<sp/>recent<sp/>versions<sp/>of<sp/>CMake<sp/>through<sp/>apt.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>signing<sp/>key:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">wget<sp/>-qO<sp/>-<sp/>https://apt.kitware.com/keys/kitware-archive-latest.asc<sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sudo<sp/>apt-key<sp/>add<sp/>-</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Add<sp/>the<sp/>repository<sp/>to<sp/>your<sp/>sources<sp/>list<sp/>and<sp/>update.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-add-repository<sp/>&apos;deb<sp/>https://apt.kitware.com/ubuntu/<sp/>focal<sp/>main&apos;</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-get<sp/>update</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Update!</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>cmake</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>To<sp/>use<sp/>the<sp/>python<sp/>examples,<sp/>it<sp/>is<sp/>also<sp/>necessary<sp/>to<sp/>make<sp/>numpy<sp/>play<sp/>nice<sp/>with<sp/>the<sp/>Jetson.<sp/>You<sp/>can<sp/>do<sp/>that<sp/>by<sp/>adding<sp/>the<sp/>following<sp/>to<sp/>your<sp/>`~/.bashrc`:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>OPENBLAS_CORETYPE=ARMV8</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Open3D<sp/>on<sp/>Jetson</highlight></codeline>
+<codeline><highlight class="normal">Open3D<sp/>is<sp/>available<sp/>pre-compiled<sp/>for<sp/>the<sp/>jetson<sp/>([details<sp/>here](http://www.open3d.org/docs/release/arm.html)).<sp/>Install<sp/>via<sp/>pip:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">apt-get<sp/>install<sp/>python3-pip</highlight></codeline>
+<codeline><highlight class="normal">pip3<sp/>install<sp/>open3d==0.16.0</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>If<sp/>version<sp/>`0.16.0`<sp/>is<sp/>not<sp/>available<sp/>you<sp/>need<sp/>to<sp/>upgrade<sp/>your<sp/>pip<sp/>with<sp/>`pip3<sp/>install<sp/>-U<sp/>pip`.<sp/>You<sp/>may<sp/>additionally<sp/>need<sp/>to<sp/>add<sp/>the<sp/>upgraded<sp/>pip<sp/>version<sp/>to<sp/>your<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">View<sp/>the<sp/>mesh<sp/>via:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">open3d<sp/>draw<sp/>mesh.ply</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Building<sp/>for<sp/>multiple<sp/>GPU<sp/>architectures</highlight></codeline>
+<codeline><highlight class="normal">By<sp/>default,<sp/>the<sp/>library<sp/>builds<sp/>ONLY<sp/>for<sp/>the<sp/>compute<sp/>capability<sp/>(CC)<sp/>of<sp/>the<sp/>machine<sp/>it&apos;s<sp/>being<sp/>built<sp/>on.<sp/>To<sp/>build<sp/>binaries<sp/>that<sp/>can<sp/>be<sp/>used<sp/>across<sp/>multiple<sp/>machines<sp/>(i.e.,<sp/>pre-built<sp/>binaries<sp/>for<sp/>CI,<sp/>for<sp/>example),<sp/>you<sp/>can<sp/>use<sp/>the<sp/>`BUILD_FOR_ALL_ARCHS`<sp/>flag<sp/>and<sp/>set<sp/>it<sp/>to<sp/>true.<sp/>Example:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>..<sp/>-DBUILD_FOR_ALL_ARCHS=True<sp/>-DCMAKE_INSTALL_PREFIX=../install/<sp/>&amp;&amp;<sp/>make<sp/>-j8<sp/>&amp;&amp;<sp/>make<sp/>install</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Building<sp/>redistributable<sp/>binaries,<sp/>with<sp/>static<sp/>dependencies</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>include<sp/>nvblox<sp/>in<sp/>another<sp/>CMake<sp/>project,<sp/>simply<sp/>`find_package(nvblox)`<sp/>should<sp/>bring<sp/>in<sp/>the<sp/>correct<sp/>libraries<sp/>and<sp/>headers.<sp/>However,<sp/>if<sp/>you<sp/>want<sp/>to<sp/>include<sp/>it<sp/>in<sp/>a<sp/>different<sp/>build<sp/>system<sp/>such<sp/>as<sp/>Bazel,<sp/>you<sp/>can<sp/>see<sp/>the<sp/>instructions<sp/>[here](./docs/redistributable.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>License</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>code<sp/>is<sp/>under<sp/>an<sp/>[open-source<sp/>license](LICENSE)<sp/>(Apache<sp/>2.0).<sp/>:)</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/README.md"/>
+  </compounddef>
+</doxygen>

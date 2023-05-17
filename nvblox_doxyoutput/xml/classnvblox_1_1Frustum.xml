@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1Frustum" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::Frustum</compoundname>
+    <includes refid="camera_8h" local="no">camera.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1Frustum_1a374f8716a5a9e34b3242eca9f483315a" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="classnvblox_1_1BoundingPlane" kindref="compound">BoundingPlane</ref>, 6 &gt;</type>
+        <definition>std::array&lt;BoundingPlane, 6&gt; nvblox::Frustum::bounding_planes_L_</definition>
+        <argsstring></argsstring>
+        <name>bounding_planes_L_</name>
+        <qualifiedname>nvblox::Frustum::bounding_planes_L_</qualifiedname>
+        <briefdescription>
+<para>Bounding planes containing around the frustum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Expressed in the layer coordinate frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="142" column="14" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1Frustum_1ad8ed73adabf7f0fce04e3374cd3d29b6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::Frustum::aabb_</definition>
+        <argsstring></argsstring>
+        <name>aabb_</name>
+        <qualifiedname>nvblox::Frustum::aabb_</qualifiedname>
+        <briefdescription>
+<para>Cached AABB of the. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="145" column="26" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1Frustum_1a026fbd6b337f6569593b5793c9d9f260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::Frustum::Frustum</definition>
+        <argsstring>(const Camera &amp;camera, const Transform &amp;T_L_C, float min_depth, float max_depth)</argsstring>
+        <name>Frustum</name>
+        <qualifiedname>nvblox::Frustum::Frustum</qualifiedname>
+        <param>
+          <type>const <ref refid="classnvblox_1_1Camera" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min_depth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="127" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Frustum_1af73195f9108487778a6f53fa169f7ddb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref></type>
+        <definition>AxisAlignedBoundingBox nvblox::Frustum::getAABB</definition>
+        <argsstring>() const</argsstring>
+        <name>getAABB</name>
+        <qualifiedname>nvblox::Frustum::getAABB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="130" column="26" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Frustum_1a0a2417b09419f2dcbe43532d8ad80bfa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Frustum::isPointInView</definition>
+        <argsstring>(const Vector3f &amp;point) const</argsstring>
+        <name>isPointInView</name>
+        <qualifiedname>nvblox::Frustum::isPointInView</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="132" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1Frustum_1a55646589206d2420d6513c24044edb9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::Frustum::isAABBInView</definition>
+        <argsstring>(const AxisAlignedBoundingBox &amp;aabb) const</argsstring>
+        <name>isAABBInView</name>
+        <qualifiedname>nvblox::Frustum::isAABBInView</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1acc1a2583960d9c101856c61101b56739" kindref="member">AxisAlignedBoundingBox</ref> &amp;</type>
+          <declname>aabb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="133" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1Frustum_1a398ea13c00a4ca68df4305c733d15f3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::Frustum::computeBoundingPlanes</definition>
+        <argsstring>(const Eigen::Matrix&lt; float, 8, 3 &gt; &amp;corners_C, const Transform &amp;T_L_C)</argsstring>
+        <name>computeBoundingPlanes</name>
+        <qualifiedname>nvblox::Frustum::computeBoundingPlanes</qualifiedname>
+        <param>
+          <type>const Eigen::Matrix&lt; float, 8, 3 &gt; &amp;</type>
+          <declname>corners_C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a187a99e3c413b9f0d52249e3a53816e3" kindref="member">Transform</ref> &amp;</type>
+          <declname>T_L_C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="137" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that allows checking for whether objects are within the field of view of a camera or not. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" line="124" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/sensors/camera.h" bodystart="124" bodyend="146"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1Frustum_1ad8ed73adabf7f0fce04e3374cd3d29b6" prot="private" virt="non-virtual"><scope>nvblox::Frustum</scope><name>aabb_</name></member>
+      <member refid="classnvblox_1_1Frustum_1a374f8716a5a9e34b3242eca9f483315a" prot="private" virt="non-virtual"><scope>nvblox::Frustum</scope><name>bounding_planes_L_</name></member>
+      <member refid="classnvblox_1_1Frustum_1a398ea13c00a4ca68df4305c733d15f3a" prot="private" virt="non-virtual"><scope>nvblox::Frustum</scope><name>computeBoundingPlanes</name></member>
+      <member refid="classnvblox_1_1Frustum_1a026fbd6b337f6569593b5793c9d9f260" prot="public" virt="non-virtual"><scope>nvblox::Frustum</scope><name>Frustum</name></member>
+      <member refid="classnvblox_1_1Frustum_1af73195f9108487778a6f53fa169f7ddb" prot="public" virt="non-virtual"><scope>nvblox::Frustum</scope><name>getAABB</name></member>
+      <member refid="classnvblox_1_1Frustum_1a55646589206d2420d6513c24044edb9e" prot="public" virt="non-virtual"><scope>nvblox::Frustum</scope><name>isAABBInView</name></member>
+      <member refid="classnvblox_1_1Frustum_1a0a2417b09419f2dcbe43532d8ad80bfa" prot="public" virt="non-virtual"><scope>nvblox::Frustum</scope><name>isPointInView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,835 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1MeshIntegrator" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::MeshIntegrator</compoundname>
+    <includes refid="mesh__integrator_8h" local="no">mesh_integrator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a3441346895b79681aeff7d6e8d060383" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nvblox::MeshIntegrator::min_weight_</definition>
+        <argsstring></argsstring>
+        <name>min_weight_</name>
+        <qualifiedname>nvblox::MeshIntegrator::min_weight_</qualifiedname>
+        <initializer>= 1e-4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="106" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a081c6d1fd1ad3ad56c1a29bad37f292a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nvblox::MeshIntegrator::weld_vertices_</definition>
+        <argsstring></argsstring>
+        <name>weld_vertices_</name>
+        <qualifiedname>nvblox::MeshIntegrator::weld_vertices_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether to perform vertex welding or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It cuts down number of vertices by 5x. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="110" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a46888009a7d7273e339e28bc7c3c5be7" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; int, 3, 8 &gt;</type>
+        <definition>Eigen::Matrix&lt;int, 3, 8&gt; nvblox::MeshIntegrator::cube_index_offsets_</definition>
+        <argsstring></argsstring>
+        <name>cube_index_offsets_</name>
+        <qualifiedname>nvblox::MeshIntegrator::cube_index_offsets_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="113" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1ad56a8769d3a81b7b29e02e490b89d7ff" prot="private" static="no" mutable="no">
+        <type><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color nvblox::MeshIntegrator::default_mesh_color_</definition>
+        <argsstring></argsstring>
+        <name>default_mesh_color_</name>
+        <qualifiedname>nvblox::MeshIntegrator::default_mesh_color_</qualifiedname>
+        <initializer>= <ref refid="structnvblox_1_1Color_1a5ff3434954f4092a68ebb2b610651862" kindref="member">Color::Gray</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="116" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a21d4c04ece5f1072edf855f76901bd0e" prot="private" static="no" mutable="no">
+        <type>cudaStream_t</type>
+        <definition>cudaStream_t nvblox::MeshIntegrator::cuda_stream_</definition>
+        <argsstring></argsstring>
+        <name>cuda_stream_</name>
+        <qualifiedname>nvblox::MeshIntegrator::cuda_stream_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="119" column="16" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a5aa8fd8459a6f366210d50ccc2d18c09" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; const <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt; * &gt;</type>
+        <definition>host_vector&lt;const VoxelBlock&lt;TsdfVoxel&gt;*&gt; nvblox::MeshIntegrator::block_ptrs_host_</definition>
+        <argsstring></argsstring>
+        <name>block_ptrs_host_</name>
+        <qualifiedname>nvblox::MeshIntegrator::block_ptrs_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="123" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a594e0f71233705947556a63120b559ae" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; const <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt; * &gt;</type>
+        <definition>device_vector&lt;const VoxelBlock&lt;TsdfVoxel&gt;*&gt; nvblox::MeshIntegrator::block_ptrs_device_</definition>
+        <argsstring></argsstring>
+        <name>block_ptrs_device_</name>
+        <qualifiedname>nvblox::MeshIntegrator::block_ptrs_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="124" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a7a4557249e1d920b745329d844d65487" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; bool &gt;</type>
+        <definition>host_vector&lt;bool&gt; nvblox::MeshIntegrator::meshable_host_</definition>
+        <argsstring></argsstring>
+        <name>meshable_host_</name>
+        <qualifiedname>nvblox::MeshIntegrator::meshable_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="125" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a4b511d9bcceb7ef23b0cc41d33a9a8c8" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; bool &gt;</type>
+        <definition>device_vector&lt;bool&gt; nvblox::MeshIntegrator::meshable_device_</definition>
+        <argsstring></argsstring>
+        <name>meshable_device_</name>
+        <qualifiedname>nvblox::MeshIntegrator::meshable_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="126" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a41282d7de0763aa5fcf3864467385162" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;</type>
+        <definition>host_vector&lt;Vector3f&gt; nvblox::MeshIntegrator::block_positions_host_</definition>
+        <argsstring></argsstring>
+        <name>block_positions_host_</name>
+        <qualifiedname>nvblox::MeshIntegrator::block_positions_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="127" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1ac6fe95e0375381187b4a03c436c302ff" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;</type>
+        <definition>device_vector&lt;Vector3f&gt; nvblox::MeshIntegrator::block_positions_device_</definition>
+        <argsstring></argsstring>
+        <name>block_positions_device_</name>
+        <qualifiedname>nvblox::MeshIntegrator::block_positions_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="128" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a595c7ea84729bcb27ea9fcbfbce4a37d" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; <ref refid="structnvblox_1_1CudaMeshBlock" kindref="compound">CudaMeshBlock</ref> &gt;</type>
+        <definition>host_vector&lt;CudaMeshBlock&gt; nvblox::MeshIntegrator::mesh_blocks_host_</definition>
+        <argsstring></argsstring>
+        <name>mesh_blocks_host_</name>
+        <qualifiedname>nvblox::MeshIntegrator::mesh_blocks_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="129" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1af81215a3d4386b0f7b825603c7fba4ef" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="structnvblox_1_1CudaMeshBlock" kindref="compound">CudaMeshBlock</ref> &gt;</type>
+        <definition>device_vector&lt;CudaMeshBlock&gt; nvblox::MeshIntegrator::mesh_blocks_device_</definition>
+        <argsstring></argsstring>
+        <name>mesh_blocks_device_</name>
+        <qualifiedname>nvblox::MeshIntegrator::mesh_blocks_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="130" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a70b38e82dfac9f9affc7fb3eadcb7b58" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;</type>
+        <definition>device_vector&lt;Vector3f&gt; nvblox::MeshIntegrator::input_vertices_</definition>
+        <argsstring></argsstring>
+        <name>input_vertices_</name>
+        <qualifiedname>nvblox::MeshIntegrator::input_vertices_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="132" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1aa5ed1b147c168a4b2544f1fb6870f540" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &gt;</type>
+        <definition>device_vector&lt;Vector3f&gt; nvblox::MeshIntegrator::input_normals_</definition>
+        <argsstring></argsstring>
+        <name>input_normals_</name>
+        <qualifiedname>nvblox::MeshIntegrator::input_normals_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="133" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a31cd320fac6d3c291887bd9d3a202ea1" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults" kindref="compound">marching_cubes::PerVoxelMarchingCubesResults</ref> &gt;</type>
+        <definition>device_vector&lt;marching_cubes::PerVoxelMarchingCubesResults&gt; nvblox::MeshIntegrator::marching_cubes_results_device_</definition>
+        <argsstring></argsstring>
+        <name>marching_cubes_results_device_</name>
+        <qualifiedname>nvblox::MeshIntegrator::marching_cubes_results_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="137" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1ab0d9399ff95dc25f33d57d41d67bba0b" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; int &gt;</type>
+        <definition>device_vector&lt;int&gt; nvblox::MeshIntegrator::mesh_block_sizes_device_</definition>
+        <argsstring></argsstring>
+        <name>mesh_block_sizes_device_</name>
+        <qualifiedname>nvblox::MeshIntegrator::mesh_block_sizes_device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="138" column="17" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1MeshIntegrator_1a87e0f137f6ae00fe51eb732f90052eb2" prot="private" static="no" mutable="no">
+        <type><ref refid="classnvblox_1_1host__vector" kindref="compound">host_vector</ref>&lt; int &gt;</type>
+        <definition>host_vector&lt;int&gt; nvblox::MeshIntegrator::mesh_block_sizes_host_</definition>
+        <argsstring></argsstring>
+        <name>mesh_block_sizes_host_</name>
+        <qualifiedname>nvblox::MeshIntegrator::mesh_block_sizes_host_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="139" column="15" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a199e1af865417308b9d6c43a603f0be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::MeshIntegrator::MeshIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>MeshIntegrator</name>
+        <qualifiedname>nvblox::MeshIntegrator::MeshIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="28" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a2f308c4e9422c8efe7020daa980f5047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::MeshIntegrator::~MeshIntegrator</definition>
+        <argsstring>()</argsstring>
+        <name>~MeshIntegrator</name>
+        <qualifiedname>nvblox::MeshIntegrator::~MeshIntegrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a724fba93bda5d1f6d93b1ff405eb47f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::MeshIntegrator::integrateMeshFromDistanceField</definition>
+        <argsstring>(const TsdfLayer &amp;distance_layer, BlockLayer&lt; MeshBlock &gt; *mesh_layer, const DeviceType device_type=DeviceType::kGPU)</argsstring>
+        <name>integrateMeshFromDistanceField</name>
+        <qualifiedname>nvblox::MeshIntegrator::integrateMeshFromDistanceField</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>distance_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a18eed59ca95a61c942eeaedc3f8ac835" kindref="member">DeviceType</ref></type>
+          <declname>device_type</declname>
+          <defval><ref refid="namespacenvblox_1a18eed59ca95a61c942eeaedc3f8ac835a37ae524b76587efa776affdc5cdf2ac1" kindref="member">DeviceType::kGPU</ref></defval>
+        </param>
+        <briefdescription>
+<para>Chooses the default mesher between CPU and GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="32" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a5ac56cab1d44cfeb8f7d0edd1a8e62f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::MeshIntegrator::integrateBlocksCPU</definition>
+        <argsstring>(const TsdfLayer &amp;distance_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, BlockLayer&lt; MeshBlock &gt; *mesh_layer)</argsstring>
+        <name>integrateBlocksCPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::integrateBlocksCPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>distance_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+<para>Integrates only the selected blocks from the distance layer on the CPU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Prefer to use the GPU version. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a62454cd19d60af0c0271ba1ad84241c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::MeshIntegrator::integrateBlocksGPU</definition>
+        <argsstring>(const TsdfLayer &amp;distance_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, BlockLayer&lt; MeshBlock &gt; *mesh_layer)</argsstring>
+        <name>integrateBlocksGPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::integrateBlocksGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>distance_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+<para>Integrate new TSDF blocks into a mesh on the GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TSDF layer to integrate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block_indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which block indices to integrate, can either be updated ones or all blocks in the TSDF layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mesh layer for output. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the integration succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a1504555f68fd81def51658d5898065ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::colorMesh</definition>
+        <argsstring>(const ColorLayer &amp;color_layer, MeshLayer *mesh_layer)</argsstring>
+        <name>colorMesh</name>
+        <qualifiedname>nvblox::MeshIntegrator::colorMesh</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="structnvblox_1_1Color" kindref="compound">Color</ref> mesh layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO(alexmillane): Currently these functions color vertices by taking the CLOSEST color. Would be good to have an option at least for interpolation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="55" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a726589d0952066ca4f61ab08a4bc455a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::colorMesh</definition>
+        <argsstring>(const ColorLayer &amp;color_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, MeshLayer *mesh_layer)</argsstring>
+        <name>colorMesh</name>
+        <qualifiedname>nvblox::MeshIntegrator::colorMesh</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="56" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a3808abadf61c27aa5f1d268aca26ee38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::colorMeshGPU</definition>
+        <argsstring>(const ColorLayer &amp;color_layer, MeshLayer *mesh_layer)</argsstring>
+        <name>colorMeshGPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::colorMeshGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="59" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a96554413b206f6598616ba0a12a7eb5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::colorMeshGPU</definition>
+        <argsstring>(const ColorLayer &amp;color_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, MeshLayer *mesh_layer)</argsstring>
+        <name>colorMeshGPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::colorMeshGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1ab5e3655b8316939738b8d1a00195cb0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::colorMeshCPU</definition>
+        <argsstring>(const ColorLayer &amp;color_layer, MeshLayer *mesh_layer)</argsstring>
+        <name>colorMeshCPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::colorMeshCPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a5678f6eeb52eaa91496e8292416230fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::colorMeshCPU</definition>
+        <argsstring>(const ColorLayer &amp;color_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, MeshLayer *mesh_layer)</argsstring>
+        <name>colorMeshCPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::colorMeshCPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1af96d82304f21279b2c74ef070f9aff19" kindref="member">ColorLayer</ref> &amp;</type>
+          <declname>color_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1a45dddc71de28dc4c47352193a472e0d3" kindref="member">MeshLayer</ref> *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="64" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a4dae70aa48afeac6caded3f0116897d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float nvblox::MeshIntegrator::min_weight</definition>
+        <argsstring>() const</argsstring>
+        <name>min_weight</name>
+        <qualifiedname>nvblox::MeshIntegrator::min_weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="68" column="9" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a451a4678cef5d013e3aa68462c083c76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::min_weight</definition>
+        <argsstring>(float min_weight)</argsstring>
+        <name>min_weight</name>
+        <qualifiedname>nvblox::MeshIntegrator::min_weight</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>min_weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="69" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a729b67b96fd5af599924e799f71eda0b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::MeshIntegrator::weld_vertices</definition>
+        <argsstring>() const</argsstring>
+        <name>weld_vertices</name>
+        <qualifiedname>nvblox::MeshIntegrator::weld_vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="71" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1acd537b6b68ee9755b4a38ebc8e97e6f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::weld_vertices</definition>
+        <argsstring>(bool weld_vertices)</argsstring>
+        <name>weld_vertices</name>
+        <qualifiedname>nvblox::MeshIntegrator::weld_vertices</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>weld_vertices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="72" column="8" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1ad85d3782cc96b4db4ce8a86b20129f60" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::MeshIntegrator::isBlockMeshable</definition>
+        <argsstring>(const VoxelBlock&lt; TsdfVoxel &gt;::ConstPtr block, float cutoff) const</argsstring>
+        <name>isBlockMeshable</name>
+        <qualifiedname>nvblox::MeshIntegrator::isBlockMeshable</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt;::ConstPtr</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cutoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="75" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1afda529b0c65d1305fa56fda89467d224" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool nvblox::MeshIntegrator::getTriangleCandidatesAroundVoxel</definition>
+        <argsstring>(const VoxelBlock&lt; TsdfVoxel &gt;::ConstPtr block, const std::vector&lt; VoxelBlock&lt; TsdfVoxel &gt;::ConstPtr &gt; &amp;neighbor_blocks, const Index3D &amp;index, const Vector3f &amp;voxel_position, const float voxel_size, marching_cubes::PerVoxelMarchingCubesResults *neighbors)</argsstring>
+        <name>getTriangleCandidatesAroundVoxel</name>
+        <qualifiedname>nvblox::MeshIntegrator::getTriangleCandidatesAroundVoxel</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt;::ConstPtr</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt;::ConstPtr &gt; &amp;</type>
+          <declname>neighbor_blocks</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a4b87a147b3363eaf7442ed521d3a9968" kindref="member">Vector3f</ref> &amp;</type>
+          <declname>voxel_position</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>voxel_size</declname>
+        </param>
+        <param>
+          <type><ref refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults" kindref="compound">marching_cubes::PerVoxelMarchingCubesResults</ref> *</type>
+          <declname>neighbors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="78" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a8ab11c629024828ceaf52d23de7faaf8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::getTriangleCandidatesInBlock</definition>
+        <argsstring>(const VoxelBlock&lt; TsdfVoxel &gt;::ConstPtr block, const std::vector&lt; VoxelBlock&lt; TsdfVoxel &gt;::ConstPtr &gt; &amp;neighbor_blocks, const Index3D &amp;block_index, const float block_size, std::vector&lt; marching_cubes::PerVoxelMarchingCubesResults &gt; *triangle_candidates)</argsstring>
+        <name>getTriangleCandidatesInBlock</name>
+        <qualifiedname>nvblox::MeshIntegrator::getTriangleCandidatesInBlock</qualifiedname>
+        <param>
+          <type>const <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt;::ConstPtr</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structnvblox_1_1VoxelBlock" kindref="compound">VoxelBlock</ref>&lt; <ref refid="structnvblox_1_1TsdfVoxel" kindref="compound">TsdfVoxel</ref> &gt;::ConstPtr &gt; &amp;</type>
+          <declname>neighbor_blocks</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &amp;</type>
+          <declname>block_index</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>block_size</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structnvblox_1_1marching__cubes_1_1PerVoxelMarchingCubesResults" kindref="compound">marching_cubes::PerVoxelMarchingCubesResults</ref> &gt; *</type>
+          <declname>triangle_candidates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="85" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a501a2321a033f3de3e503379e4b4f584" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::getMeshableBlocksGPU</definition>
+        <argsstring>(const TsdfLayer &amp;distance_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, float cutoff_distance, std::vector&lt; Index3D &gt; *meshable_blocks)</argsstring>
+        <name>getMeshableBlocksGPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::getMeshableBlocksGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>distance_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cutoff_distance</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; *</type>
+          <declname>meshable_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="92" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1a20f4312844aa9ba67b76863ee03c361c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::meshBlocksGPU</definition>
+        <argsstring>(const TsdfLayer &amp;distance_layer, const std::vector&lt; Index3D &gt; &amp;block_indices, BlockLayer&lt; MeshBlock &gt; *mesh_layer)</argsstring>
+        <name>meshBlocksGPU</name>
+        <qualifiedname>nvblox::MeshIntegrator::meshBlocksGPU</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacenvblox_1a41cd24e7c00a316481ae92646108583f" kindref="member">TsdfLayer</ref> &amp;</type>
+          <declname>distance_layer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt; &amp;</type>
+          <declname>block_indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classnvblox_1_1BlockLayer" kindref="compound">BlockLayer</ref>&lt; <ref refid="structnvblox_1_1MeshBlock" kindref="compound">MeshBlock</ref> &gt; *</type>
+          <declname>mesh_layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="97" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1MeshIntegrator_1ab30f842124f287d0313c57caef59d815" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvblox::MeshIntegrator::weldVertices</definition>
+        <argsstring>(device_vector&lt; CudaMeshBlock &gt; *cuda_mesh_blocks)</argsstring>
+        <name>weldVertices</name>
+        <qualifiedname>nvblox::MeshIntegrator::weldVertices</qualifiedname>
+        <param>
+          <type><ref refid="classnvblox_1_1device__vector" kindref="compound">device_vector</ref>&lt; <ref refid="structnvblox_1_1CudaMeshBlock" kindref="compound">CudaMeshBlock</ref> &gt; *</type>
+          <declname>cuda_mesh_blocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="103" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to integrate TSDF data into a mesh using marching cubes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" line="26" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/mesh/mesh_integrator.h" bodystart="26" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1MeshIntegrator_1ac6fe95e0375381187b4a03c436c302ff" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>block_positions_device_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a41282d7de0763aa5fcf3864467385162" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>block_positions_host_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a594e0f71233705947556a63120b559ae" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>block_ptrs_device_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a5aa8fd8459a6f366210d50ccc2d18c09" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>block_ptrs_host_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a1504555f68fd81def51658d5898065ba" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>colorMesh</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a726589d0952066ca4f61ab08a4bc455a" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>colorMesh</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1ab5e3655b8316939738b8d1a00195cb0b" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>colorMeshCPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a5678f6eeb52eaa91496e8292416230fe" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>colorMeshCPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a3808abadf61c27aa5f1d268aca26ee38" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>colorMeshGPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a96554413b206f6598616ba0a12a7eb5c" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>colorMeshGPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a46888009a7d7273e339e28bc7c3c5be7" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>cube_index_offsets_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a21d4c04ece5f1072edf855f76901bd0e" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>cuda_stream_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1ad56a8769d3a81b7b29e02e490b89d7ff" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>default_mesh_color_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a501a2321a033f3de3e503379e4b4f584" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>getMeshableBlocksGPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1afda529b0c65d1305fa56fda89467d224" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>getTriangleCandidatesAroundVoxel</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a8ab11c629024828ceaf52d23de7faaf8" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>getTriangleCandidatesInBlock</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1aa5ed1b147c168a4b2544f1fb6870f540" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>input_normals_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a70b38e82dfac9f9affc7fb3eadcb7b58" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>input_vertices_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a5ac56cab1d44cfeb8f7d0edd1a8e62f9" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>integrateBlocksCPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a62454cd19d60af0c0271ba1ad84241c5" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>integrateBlocksGPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a724fba93bda5d1f6d93b1ff405eb47f0" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>integrateMeshFromDistanceField</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1ad85d3782cc96b4db4ce8a86b20129f60" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>isBlockMeshable</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a31cd320fac6d3c291887bd9d3a202ea1" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>marching_cubes_results_device_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1ab0d9399ff95dc25f33d57d41d67bba0b" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>mesh_block_sizes_device_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a87e0f137f6ae00fe51eb732f90052eb2" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>mesh_block_sizes_host_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1af81215a3d4386b0f7b825603c7fba4ef" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>mesh_blocks_device_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a595c7ea84729bcb27ea9fcbfbce4a37d" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>mesh_blocks_host_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a4b511d9bcceb7ef23b0cc41d33a9a8c8" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>meshable_device_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a7a4557249e1d920b745329d844d65487" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>meshable_host_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a20f4312844aa9ba67b76863ee03c361c" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>meshBlocksGPU</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a199e1af865417308b9d6c43a603f0be6" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>MeshIntegrator</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a4dae70aa48afeac6caded3f0116897d5" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>min_weight</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a451a4678cef5d013e3aa68462c083c76" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>min_weight</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a3441346895b79681aeff7d6e8d060383" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>min_weight_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a729b67b96fd5af599924e799f71eda0b" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>weld_vertices</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1acd537b6b68ee9755b4a38ebc8e97e6f0" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>weld_vertices</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a081c6d1fd1ad3ad56c1a29bad37f292a" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>weld_vertices_</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1ab30f842124f287d0313c57caef59d815" prot="private" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>weldVertices</name></member>
+      <member refid="classnvblox_1_1MeshIntegrator_1a2f308c4e9422c8efe7020daa980f5047" prot="public" virt="non-virtual"><scope>nvblox::MeshIntegrator</scope><name>~MeshIntegrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

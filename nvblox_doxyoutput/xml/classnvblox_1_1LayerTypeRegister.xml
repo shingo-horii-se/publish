@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classnvblox_1_1LayerTypeRegister" kind="class" language="C++" prot="public">
+    <compoundname>nvblox::LayerTypeRegister</compoundname>
+    <includes refid="layer__type__register_8h" local="no">layer_type_register.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classnvblox_1_1LayerTypeRegister_1ac464d5203ce725256715d92cfa8ab822" prot="private" static="yes" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="structnvblox_1_1LayerSerializationFunctions" kindref="compound">LayerSerializationFunctions</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, LayerSerializationFunctions&gt; nvblox::LayerTypeRegister::layer_function_index_</definition>
+        <argsstring></argsstring>
+        <name>layer_function_index_</name>
+        <qualifiedname>nvblox::LayerTypeRegister::layer_function_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="97" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnvblox_1_1LayerTypeRegister_1ab8c4a8cd7a1cd982ebf841442a443521" prot="private" static="yes" mutable="no">
+        <type>std::unordered_map&lt; std::type_index, std::string &gt;</type>
+        <definition>std::unordered_map&lt;std::type_index, std::string&gt; nvblox::LayerTypeRegister::layer_name_index_</definition>
+        <argsstring></argsstring>
+        <name>layer_name_index_</name>
+        <qualifiedname>nvblox::LayerTypeRegister::layer_name_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="98" column="29" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnvblox_1_1LayerTypeRegister_1af1958de70216fe7c5e67319aa92138c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nvblox::LayerTypeRegister::LayerTypeRegister</definition>
+        <argsstring>()=delete</argsstring>
+        <name>LayerTypeRegister</name>
+        <qualifiedname>nvblox::LayerTypeRegister::LayerTypeRegister</qualifiedname>
+        <briefdescription>
+<para>This is the function all classes need to implement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>type_index is the <emphasis>derived</emphasis> type. This is not what&apos;s stored in the index as it is <emphasis>not</emphasis> portable, but used by the <ref refid="classnvblox_1_1LayerCake" kindref="compound">LayerCake</ref> later on. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="73" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnvblox_1_1LayerTypeRegister_1a334bd3c26079d2f0055f7e83ffc778ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void nvblox::LayerTypeRegister::registerType</definition>
+        <argsstring>(const std::string &amp;type_name, const std::type_index &amp;type_index, const LayerSerializationFunctions &amp;serialization_functions)</argsstring>
+        <name>registerType</name>
+        <qualifiedname>nvblox::LayerTypeRegister::registerType</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type_name</declname>
+        </param>
+        <param>
+          <type>const std::type_index &amp;</type>
+          <declname>type_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1LayerSerializationFunctions" kindref="compound">LayerSerializationFunctions</ref> &amp;</type>
+          <declname>serialization_functions</declname>
+        </param>
+        <briefdescription>
+<para>Register a type and how to construct one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="76" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerTypeRegister_1a1dab55c37c0baa4b86fa2063c79c30b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classnvblox_1_1BaseLayer" kindref="compound">BaseLayer</ref> &gt;</type>
+        <definition>static std::unique_ptr&lt; BaseLayer &gt; nvblox::LayerTypeRegister::createLayer</definition>
+        <argsstring>(const std::string &amp;type_name, MemoryType memory_type, const LayerParameterStruct &amp;layer_params)</argsstring>
+        <name>createLayer</name>
+        <qualifiedname>nvblox::LayerTypeRegister::createLayer</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenvblox_1adb582c0d90a20d74dff447c0ac393223" kindref="member">MemoryType</ref></type>
+          <declname>memory_type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnvblox_1_1LayerParameterStruct" kindref="compound">LayerParameterStruct</ref> &amp;</type>
+          <declname>layer_params</declname>
+        </param>
+        <briefdescription>
+<para>Create a layer of a given type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="81" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerTypeRegister_1adf4b8c39213f482dd313b2eef0481ab5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structnvblox_1_1LayerSerializationFunctions" kindref="compound">LayerSerializationFunctions</ref></type>
+        <definition>static LayerSerializationFunctions nvblox::LayerTypeRegister::getSerializationFunctions</definition>
+        <argsstring>(const std::string &amp;type_name)</argsstring>
+        <name>getSerializationFunctions</name>
+        <qualifiedname>nvblox::LayerTypeRegister::getSerializationFunctions</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type_name</declname>
+        </param>
+        <briefdescription>
+<para>Get the struct of function callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="86" column="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerTypeRegister_1a3c4fd28f6a31d62225c0e6793eeda422" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string nvblox::LayerTypeRegister::getLayerName</definition>
+        <argsstring>(const std::type_index &amp;type_index)</argsstring>
+        <name>getLayerName</name>
+        <qualifiedname>nvblox::LayerTypeRegister::getLayerName</qualifiedname>
+        <param>
+          <type>const std::type_index &amp;</type>
+          <declname>type_index</declname>
+        </param>
+        <briefdescription>
+<para>Get the name of the layer based on its type index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="90" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classnvblox_1_1LayerTypeRegister_1aea34021b7e8391465bec6b4225f9bf39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::type_index</type>
+        <definition>static std::type_index nvblox::LayerTypeRegister::getLayerTypeIndex</definition>
+        <argsstring>(const std::string &amp;type_name)</argsstring>
+        <name>getLayerTypeIndex</name>
+        <qualifiedname>nvblox::LayerTypeRegister::getLayerTypeIndex</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type_name</declname>
+        </param>
+        <briefdescription>
+<para>Look up the type index based on a layer name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="93" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class that allows registering a layer type to be used for serialization. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" line="66" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/serialization/internal/layer_type_register.h" bodystart="66" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classnvblox_1_1LayerTypeRegister_1a1dab55c37c0baa4b86fa2063c79c30b9" prot="public" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>createLayer</name></member>
+      <member refid="classnvblox_1_1LayerTypeRegister_1a3c4fd28f6a31d62225c0e6793eeda422" prot="public" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>getLayerName</name></member>
+      <member refid="classnvblox_1_1LayerTypeRegister_1aea34021b7e8391465bec6b4225f9bf39" prot="public" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>getLayerTypeIndex</name></member>
+      <member refid="classnvblox_1_1LayerTypeRegister_1adf4b8c39213f482dd313b2eef0481ab5" prot="public" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>getSerializationFunctions</name></member>
+      <member refid="classnvblox_1_1LayerTypeRegister_1ac464d5203ce725256715d92cfa8ab822" prot="private" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>layer_function_index_</name></member>
+      <member refid="classnvblox_1_1LayerTypeRegister_1ab8c4a8cd7a1cd982ebf841442a443521" prot="private" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>layer_name_index_</name></member>
+      <member refid="classnvblox_1_1LayerTypeRegister_1af1958de70216fe7c5e67319aa92138c9" prot="public" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>LayerTypeRegister</name></member>
+      <member refid="classnvblox_1_1LayerTypeRegister_1a334bd3c26079d2f0055f7e83ffc778ab" prot="public" virt="non-virtual"><scope>nvblox::LayerTypeRegister</scope><name>registerType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="nvblox::CudaMeshBlock" name="nvblox::CudaMeshBlock">
+<area shape="rect" id="node1" title="Helper struct for mesh blocks on CUDA." alt="" coords="5,96,166,123"/>
+<area shape="rect" id="node2" href="$structnvblox_1_1Color.html" title="Color, stored as 8&#45;bit RGBA, with helper functions for commonly&#45;used colors." alt="" coords="38,5,133,32"/>
+</map>

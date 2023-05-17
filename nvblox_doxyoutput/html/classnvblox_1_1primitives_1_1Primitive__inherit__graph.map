@@ -1,0 +1,7 @@
+<map id="nvblox::primitives::Primitive" name="nvblox::primitives::Primitive">
+<area shape="rect" id="node1" title="Base class for primitive objects." alt="" coords="5,105,125,148"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1primitives_1_1Cube.html" title="Primitive cube, given a center and an X,Y,Z size (can be a rectangular prism)." alt="" coords="173,5,292,48"/>
+<area shape="rect" id="node3" href="$classnvblox_1_1primitives_1_1Cylinder.html" title="Cylinder centered on the XY plane, with a given radius and height (in Z)." alt="" coords="173,72,292,115"/>
+<area shape="rect" id="node4" href="$classnvblox_1_1primitives_1_1Plane.html" title="Primitive plane, given a center and a normal." alt="" coords="173,139,292,181"/>
+<area shape="rect" id="node5" href="$classnvblox_1_1primitives_1_1Sphere.html" title="Primitive sphere, given a center and a radius." alt="" coords="173,205,292,248"/>
+</map>

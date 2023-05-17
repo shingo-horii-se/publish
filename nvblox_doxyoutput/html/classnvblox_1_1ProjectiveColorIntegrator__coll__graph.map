@@ -1,0 +1,20 @@
+<map id="nvblox::ProjectiveColorIntegrator" name="nvblox::ProjectiveColorIntegrator">
+<area shape="rect" id="node1" title="A class performing color intregration." alt="" coords="738,312,943,339"/>
+<area shape="rect" id="node2" href="$classnvblox_1_1ViewCalculator.html" title="A class that calculates the blocks in the camera view, given intrinsic and extrinsic parameters." alt="" coords="351,19,502,45"/>
+<area shape="rect" id="node3" href="$classnvblox_1_1SphereTracer.html" title="A class for rendering synthetic depth images using sphere tracing." alt="" coords="355,69,498,96"/>
+<area shape="rect" id="node4" href="$classnvblox_1_1Image.html" title=" " alt="" coords="352,120,501,147"/>
+<area shape="rect" id="node5" href="$classnvblox_1_1ImageBase.html" title=" " alt="" coords="23,57,162,100"/>
+<area shape="rect" id="node6" href="$classnvblox_1_1unified__ptr.html" title=" " alt="" coords="30,124,155,167"/>
+<area shape="rect" id="node7" href="$classnvblox_1_1device__vector.html" title=" " alt="" coords="355,171,498,213"/>
+<area shape="rect" id="node8" href="$classnvblox_1_1unified__vector.html" title="Unified&#45;memory CUDA vector that should only be used on trivial types as the constructors and destruct..." alt="" coords="5,200,180,227"/>
+<area shape="rect" id="node11" href="$classnvblox_1_1host__vector.html" title=" " alt="" coords="361,237,492,280"/>
+<area shape="rect" id="node9" href="$classnvblox_1_1device__vector.html" title=" " alt="" coords="344,304,509,347"/>
+<area shape="rect" id="node10" href="$classnvblox_1_1unified__vector.html" title="Unified&#45;memory CUDA vector that should only be used on trivial types as the constructors and destruct..." alt="" coords="5,348,180,375"/>
+<area shape="rect" id="node12" href="$classnvblox_1_1host__vector.html" title=" " alt="" coords="344,371,509,413"/>
+<area shape="rect" id="node13" href="$classnvblox_1_1device__vector.html" title=" " alt="" coords="308,437,545,480"/>
+<area shape="rect" id="node14" href="$classnvblox_1_1unified__vector.html" title="Unified&#45;memory CUDA vector that should only be used on trivial types as the constructors and destruct..." alt="" coords="5,487,180,513"/>
+<area shape="rect" id="node15" href="$classnvblox_1_1host__vector.html" title=" " alt="" coords="355,504,498,563"/>
+<area shape="rect" id="node16" href="$classnvblox_1_1device__vector.html" title=" " alt="" coords="355,587,498,629"/>
+<area shape="rect" id="node17" href="$classnvblox_1_1unified__vector.html" title="Unified&#45;memory CUDA vector that should only be used on trivial types as the constructors and destruct..." alt="" coords="5,631,180,657"/>
+<area shape="rect" id="node18" href="$classnvblox_1_1host__vector.html" title=" " alt="" coords="361,653,492,696"/>
+</map>

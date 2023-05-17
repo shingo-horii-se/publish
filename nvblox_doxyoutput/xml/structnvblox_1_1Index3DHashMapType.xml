@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structnvblox_1_1Index3DHashMapType" kind="struct" language="C++" prot="public">
+    <compoundname>nvblox::Index3DHashMapType</compoundname>
+    <includes refid="hash_8h" local="no">hash.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structnvblox_1_1Index3DHashMapType_1acfe963b2eececbdf29e8d1e2691364be" prot="public" static="no">
+        <type>std::unordered_map&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref>, ValueType, <ref refid="structnvblox_1_1Index3DHash" kindref="compound">Index3DHash</ref>, std::equal_to&lt; <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref> &gt;, Eigen::aligned_allocator&lt; std::pair&lt; const <ref refid="namespacenvblox_1a9d25b1bf98870a5d7242e728915cc1d5" kindref="member">Index3D</ref>, ValueType &gt; &gt; &gt;</type>
+        <definition>typedef std::unordered_map&lt; Index3D, ValueType, Index3DHash, std::equal_to&lt;Index3D&gt;, Eigen::aligned_allocator&lt;std::pair&lt;const Index3D, ValueType&gt; &gt; &gt; nvblox::Index3DHashMapType&lt; ValueType &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>nvblox::Index3DHashMapType::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="61" column="7" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" line="57" column="1" bodyfile="C:/Users/M502228/Downloads/nvblox-public/nvblox-public/nvblox/include/nvblox/core/hash.h" bodystart="57" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structnvblox_1_1Index3DHashMapType_1acfe963b2eececbdf29e8d1e2691364be" prot="public" virt="non-virtual"><scope>nvblox::Index3DHashMapType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

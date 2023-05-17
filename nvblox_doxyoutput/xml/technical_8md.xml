@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="technical_8md" kind="file" language="Markdown">
+    <compoundname>technical.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Technical<sp/>Details</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Input/Outputs</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>we<sp/>discuss<sp/>the<sp/>inputs<sp/>you<sp/>have<sp/>to<sp/>provide<sp/>to<sp/>nvblox,<sp/>and<sp/>the<sp/>outputs<sp/>it<sp/>produces<sp/>for<sp/>downstream<sp/>tasks.<sp/>This<sp/>is<sp/>the<sp/>default<sp/>setup<sp/>within<sp/>ROS<sp/>2<sp/>for<sp/>2D<sp/>navigation,<sp/>but<sp/>note<sp/>that<sp/>other<sp/>outputs<sp/>are<sp/>possible<sp/>(such<sp/>as<sp/>the<sp/>full<sp/>3D<sp/>distance<sp/>map).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Inputs_:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Depth<sp/>Images**:<sp/>(@ref<sp/>nvblox::Image)<sp/>We<sp/>require<sp/>input<sp/>from<sp/>a<sp/>sensor<sp/>supplying<sp/>depth<sp/>per<sp/>pixel.<sp/>Examples<sp/>of<sp/>such<sp/>sensors<sp/>are<sp/>the<sp/>Intel<sp/>Realsense<sp/>series<sp/>and<sp/>Kinect<sp/>cameras.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Camera<sp/>Intrinsics**:<sp/>(@ref<sp/>nvblox::Camera)<sp/>The<sp/>intrinsics<sp/>associated<sp/>with<sp/>the<sp/>camera<sp/>that<sp/>generated<sp/>the<sp/>depth<sp/>(or<sp/>color)<sp/>image.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Sensor<sp/>Pose**:<sp/>(@ref<sp/>nvblox::Transform)<sp/>We<sp/>require<sp/>localization<sp/>of<sp/>the<sp/>depth<sp/>sensor<sp/>as<sp/>input<sp/>to<sp/>nvblox</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Optional]<sp/>**Color<sp/>Images**:<sp/>(@ref<sp/>nvblox::Image)<sp/>These<sp/>can<sp/>be<sp/>used<sp/>to<sp/>color<sp/>the<sp/>reconstruction<sp/>for<sp/>visualization.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Optional]<sp/>**LIDAR**:<sp/>(@ref<sp/>nvblox::Lidar)<sp/>Optionally<sp/>or<sp/>instead<sp/>of<sp/>Depth<sp/>images,<sp/>we<sp/>can<sp/>also<sp/>consume<sp/>LIDAR<sp/>pointclouds<sp/>which<sp/>are<sp/>reprojected<sp/>to<sp/>a<sp/>cylindrical<sp/>depth<sp/>image<sp/>based<sp/>on<sp/>the<sp/>LIDAR<sp/>intrinsics<sp/>specified<sp/>in<sp/>this<sp/>datatype.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_Outputs_:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Distance<sp/>map<sp/>slice**:<sp/>(@ref<sp/>nvblox::EsdfLayer)<sp/>A<sp/>2D<sp/>map<sp/>that<sp/>expresses<sp/>the<sp/>distance<sp/>at<sp/>each<sp/>point<sp/>from<sp/>objects<sp/>reconstructed<sp/>in<sp/>the<sp/>environment.<sp/>This<sp/>is<sp/>typically<sp/>used<sp/>by<sp/>a<sp/>planner<sp/>to<sp/>compute<sp/>a<sp/>collision<sp/>cost<sp/>map.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Mesh**:<sp/>(@ref<sp/>nvblox::MeshLayer)<sp/>We<sp/>output<sp/>a<sp/>mesh<sp/>for<sp/>visualization<sp/>in<sp/>RVIZ.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>figure<sp/>below<sp/>shows<sp/>a<sp/>simple<sp/>system<sp/>utilizing<sp/>nvblox<sp/>for<sp/>path<sp/>planning.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![System<sp/>Diagram](images/system_diagram.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>(Brief)<sp/>Technical<sp/>Details</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Nvblox<sp/>builds<sp/>the<sp/>reconstructed<sp/>map<sp/>in<sp/>the<sp/>form<sp/>of<sp/>a<sp/>Truncated<sp/>Signed<sp/>Distance<sp/>Function<sp/>(TSDF)<sp/>stored<sp/>in<sp/>a<sp/>3D<sp/>voxel<sp/>grid.<sp/>This<sp/>approach<sp/>is<sp/>similar<sp/>to<sp/>3D<sp/>occupancy<sp/>grid<sp/>mapping<sp/>approaches<sp/>in<sp/>which<sp/>occupancy<sp/>probabilities<sp/>are<sp/>stored<sp/>at<sp/>each<sp/>voxel.<sp/>In<sp/>contrast<sp/>however,<sp/>TSDF-based<sp/>approaches<sp/>(like<sp/>nvblox)<sp/>store<sp/>the<sp/>(signed)<sp/>distance<sp/>to<sp/>the<sp/>closest<sp/>surface<sp/>at<sp/>each<sp/>voxel.<sp/>The<sp/>surface<sp/>of<sp/>the<sp/>environment<sp/>can<sp/>then<sp/>be<sp/>extracted<sp/>as<sp/>the<sp/>zero-level<sp/>set<sp/>of<sp/>this<sp/>voxelized<sp/>function.<sp/>Typically<sp/>TSDF-based<sp/>reconstructions<sp/>provide<sp/>higher<sp/>quality<sp/>surface<sp/>reconstructions.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition<sp/>to<sp/>their<sp/>use<sp/>in<sp/>reconstruction,<sp/>distance<sp/>fields<sp/>are<sp/>also<sp/>useful<sp/>for<sp/>path<sp/>planning<sp/>because<sp/>they<sp/>provide<sp/>an<sp/>immediate<sp/>means<sp/>of<sp/>checking<sp/>whether<sp/>potential<sp/>future<sp/>robot<sp/>positions<sp/>are<sp/>in<sp/>collision.<sp/>This<sp/>fact,<sp/>the<sp/>utility<sp/>of<sp/>distance<sp/>functions<sp/>for<sp/>both<sp/>reconstruction<sp/>and<sp/>planning,<sp/>motivates<sp/>their<sp/>use<sp/>in<sp/>nvblox<sp/>(a<sp/>reconstruction<sp/>library<sp/>for<sp/>path<sp/>planning).</highlight></codeline>
+    </programlisting>
+    <location file="pages/technical.md"/>
+  </compounddef>
+</doxygen>
